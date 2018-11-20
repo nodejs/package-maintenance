@@ -1,7 +1,7 @@
 MIT License (MIT)
 =====================
 
-Copyright (c) 2017 Node.js package-maintenance collaborators
+Copyright (c) Node.js package-maintenance collaborators
 -----------------------------------
 
 *Node.js package-maintenance collaborators listed at <https://github.com/nodejs/package-maintenance/graphs/contributors>*
