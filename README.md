@@ -51,5 +51,6 @@ information about how to join as a participant or a viewer.
 ## Current Project Team Members
   + Michael Dawson (@mhdawson)
   + Matteo Collina (@mcollina)
+  + Christopher Hiller (@boneskull)
 
 ## Emeritus Project Team Members
