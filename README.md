@@ -1,6 +1,6 @@
 # package-maintenance team
 
-Repository for discussion on to help ensure baseline
+Repository for discussion on how to help ensure baseline
 maintenance and ability to safely use key packages in the
 ecosytem with current Node.js versions.
 
