@@ -52,5 +52,6 @@ information about how to join as a participant or a viewer.
   + Michael Dawson (@mhdawson)
   + Matteo Collina (@mcollina)
   + Christopher Hiller (@boneskull)
+  + Matt Edelman (@grawk)
 
 ## Emeritus Project Team Members
