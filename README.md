@@ -59,5 +59,7 @@ information about how to join as a participant or a viewer.
   + Jordan Harband (@ljharb)
   + Charlie Robbins (@indexzero)
   + Ahmad Nassri (@ahmadnassri)
+  + Monica EnePietrosanu (@menepie)
+  + Arunesh Chandra (@aruneshchandra) 
 
 ## Emeritus Project Team Members
