@@ -61,5 +61,6 @@ information about how to join as a participant or a viewer.
   + Ahmad Nassri (@ahmadnassri)
   + Monica EnePietrosanu (@menepie)
   + Arunesh Chandra (@aruneshchandra) 
+  + Mohammed Essehemy (@MohammedEssehemy)
 
 ## Emeritus Project Team Members
