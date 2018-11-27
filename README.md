@@ -58,5 +58,6 @@ information about how to join as a participant or a viewer.
   + Myles Borins (@MylesBorins)
   + Jordan Harband (@ljharb)
   + Charlie Robbins (@indexzero)
+  + Ahmad Nassri (@ahmadnassri)
 
 ## Emeritus Project Team Members
