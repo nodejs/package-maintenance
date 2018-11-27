@@ -53,5 +53,7 @@ information about how to join as a participant or a viewer.
   + Matteo Collina (@mcollina)
   + Christopher Hiller (@boneskull)
   + Matt Edelman (@grawk)
+  + Franziska Hinkelmann (@fhinkel)
+  + Refael Ackermann (@refack)
 
 ## Emeritus Project Team Members
