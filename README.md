@@ -55,6 +55,7 @@ information about how to join as a participant or a viewer.
   + Matt Edelman (@grawk)
   + Franziska Hinkelmann (@fhinkel)
   + Refael Ackermann (@refack)
+  + Myles Borins (@MylesBorins)
   + Jordan Harband (@ljharb)  
 
 ## Emeritus Project Team Members
