@@ -55,5 +55,6 @@ information about how to join as a participant or a viewer.
   + Matt Edelman (@grawk)
   + Franziska Hinkelmann (@fhinkel)
   + Refael Ackermann (@refack)
+  * Ahmad Nassri (@ahmadnassri)
 
 ## Emeritus Project Team Members
