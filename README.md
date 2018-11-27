@@ -56,6 +56,7 @@ information about how to join as a participant or a viewer.
   + Franziska Hinkelmann (@fhinkel)
   + Refael Ackermann (@refack)
   + Myles Borins (@MylesBorins)
-  + Jordan Harband (@ljharb)  
+  + Jordan Harband (@ljharb)
+  + Charlie Robbins (@indexzero)
 
 ## Emeritus Project Team Members
