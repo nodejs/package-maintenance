@@ -4,7 +4,7 @@ Repository for discussion on how to help ensure baseline
 maintenance and ability to safely use key packages in the
 ecosytem with current Node.js versions.
 
-## Goals 
+## Goals
 
 * Define and document how to prioritize which packages are key to the
   Node.js ecosystem and how/what assistance can/should be provided.
@@ -20,7 +20,7 @@ ecosytem with current Node.js versions.
 * Documenting a backlog and providing resources that help
   businesses identify how their developers can ramp up and
   get engaged to help. Test and validate a workflow by helping
-  with some issues that are slowing migration to Node.js 10.x. 
+  with some issues that are slowing migration to Node.js 10.x.
 * Building, documenting and evangelizing guidance, tools and
   processes (for example LTS for modules)
   that make it easier for maintainers to manage multiple
@@ -60,6 +60,9 @@ information about how to join as a participant or a viewer.
   + Charlie Robbins (@indexzero)
   + Ahmad Nassri (@ahmadnassri)
   + Monica EnePietrosanu (@menepie)
-  + Arunesh Chandra (@aruneshchandra) 
+  + Arunesh Chandra (@aruneshchandra)
+  + Mohammed Essehemy (@MohammedEssehemy)
+  + Emily Platzer (@craftninja)
+  + Benjamin Lupton (@balupton)
 
 ## Emeritus Project Team Members
