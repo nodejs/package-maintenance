@@ -62,5 +62,6 @@ information about how to join as a participant or a viewer.
   + Monica EnePietrosanu (@menepie)
   + Arunesh Chandra (@aruneshchandra) 
   + Mohammed Essehemy (@MohammedEssehemy)
+  + Emily Platzer (@craftninja)
 
 ## Emeritus Project Team Members
