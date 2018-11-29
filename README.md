@@ -49,6 +49,7 @@ an agenda, links to meeting minutes, and
 information about how to join as a participant or a viewer.
 
 ## Current Project Team Members
+
   + Michael Dawson ([@mhdawson](https://github.com/mhdawson))
   + Matteo Collina ([@mcollina](https://github.com/mcollina))
   + Christopher Hiller ([@boneskull](https://github.com/boneskull))
@@ -69,7 +70,7 @@ information about how to join as a participant or a viewer.
   + Wes Todd ([@wesleytodd](https://github.com/wesleytodd))
   + Pooya Parsa ([@pi0](https://github.com/pi0))
   + Pavel Vostrikov ([@vostrik](https://github.com/vostrik))
-  + Larry Lu ([@Larry850806](https://github.com/Larry85)
+  + Larry Lu ([@Larry850806](https://github.com/Larry85
   + Nairi Haroutiounian ([@nairihar](https://github.com/nairihar))
 
 ## Emeritus Project Team Members
