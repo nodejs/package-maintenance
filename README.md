@@ -64,5 +64,6 @@ information about how to join as a participant or a viewer.
   + Mohammed Essehemy (@MohammedEssehemy)
   + Emily Platzer (@craftninja)
   + Benjamin Lupton (@balupton)
+  + Pooya Parsa (@pi0)
 
 ## Emeritus Project Team Members
