@@ -67,6 +67,7 @@ information about how to join as a participant or a viewer.
   + Benjamin Lupton ([@balupton](https://github.com/balupton))
   + Viktor Vershanskij ([@wentout](https://github.com/wentout))
   + Kyle Martin ([@js-kyle](https://github.com/js-kyle))
+  + Wes Todd ([@wesleytodd](https://github.com/wesleytodd))
   + Pavel Vostrikov ([@vostrik](https://github.com/vostrik))
 
 ## Emeritus Project Team Members
