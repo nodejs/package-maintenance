@@ -74,5 +74,6 @@ information about how to join as a participant or a viewer.
   + Osmond van Hemert ([@ovhemert](https://github.com/ovhemert))
   + Nairi Haroutiounian ([@nairihar](https://github.com/nairihar))
   + Edward Snare (@edwardsnare)
+  + Joel Chen ([@jchip](https://github.com/jchip))
 
 ## Emeritus Project Team Members
