@@ -1,7 +1,7 @@
 
 Hi everyone :)
 
-Seems this is an important topic for all of us.
+Seems this is an [important topic for all of us](https://medium.com/@nodejs/call-to-action-accelerating-node-js-growth-e4862bee2919).
 So, I wish to help: @wentout
 
 IDN if my skills will be enough, but I can do some code that looks like code and works like code too.
