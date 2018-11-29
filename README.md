@@ -64,5 +64,6 @@ information about how to join as a participant or a viewer.
   + Mohammed Essehemy (@[MohammedEssehemy](https://github.com/MohammedEssehemy))
   + Emily Platzer ([@craftninja](https://github.com/craftninja))
   + Benjamin Lupton ([@balupton](https://github.com/balupton))
+  + Viktor Vershanskij ([@wentout](https://github.com/wentout))
 
 ## Emeritus Project Team Members
