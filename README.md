@@ -76,5 +76,7 @@ information about how to join as a participant or a viewer.
   + Edward Snare ([@edwardsnare)](https://github.com/edwardsnare))
   + Joel Chen ([@jchip](https://github.com/jchip))
   + Kenigbolo Meya Stephen ([@kenigbolo](https://github.com/kenigbolo))
+  + Victor Alencar ([@valencar](https://github.com/valencar))
+
 
 ## Emeritus Project Team Members
