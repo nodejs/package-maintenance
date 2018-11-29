@@ -49,6 +49,7 @@ an agenda, links to meeting minutes, and
 information about how to join as a participant or a viewer.
 
 ## Current Project Team Members
+
   + Michael Dawson ([@mhdawson](https://github.com/mhdawson))
   + Matteo Collina ([@mcollina](https://github.com/mcollina))
   + Christopher Hiller ([@boneskull](https://github.com/boneskull))
@@ -65,5 +66,6 @@ information about how to join as a participant or a viewer.
   + Emily Platzer ([@craftninja](https://github.com/craftninja))
   + Benjamin Lupton ([@balupton](https://github.com/balupton))
   + Viktor Vershanskij ([@wentout](https://github.com/wentout))
+  + Kyle Martin ([@js-kyle](https://github.com/js-kyle))
 
 ## Emeritus Project Team Members
