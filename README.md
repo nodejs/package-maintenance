@@ -64,6 +64,6 @@ information about how to join as a participant or a viewer.
   + Mohammed Essehemy (@MohammedEssehemy)
   + Emily Platzer (@craftninja)
   + Benjamin Lupton (@balupton)
-  + Viktor Vershanskij (@balupton)
+  + Viktor Vershanskij (@wentout)
 
 ## Emeritus Project Team Members
