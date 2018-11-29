@@ -62,7 +62,7 @@ information about how to join as a participant or a viewer.
   + Ahmad Nassri ([@ahmadnassri](https://github.com/ahmadnassri))
   + Monica EnePietrosanu ([@menepie](https://github.com/menepie))
   + Arunesh Chandra ([@aruneshchandra](https://github.com/aruneshchandra))
-  + Mohammed Essehemy (@[MohammedEssehemy](https://github.com/MohammedEssehemy))
+  + Mohammed Essehemy ([@MohammedEssehemy](https://github.com/MohammedEssehemy))
   + Emily Platzer ([@craftninja](https://github.com/craftninja))
   + Benjamin Lupton ([@balupton](https://github.com/balupton))
   + Viktor Vershanskij ([@wentout](https://github.com/wentout))
