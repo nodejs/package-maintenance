@@ -72,5 +72,6 @@ information about how to join as a participant or a viewer.
   + Pavel Vostrikov ([@vostrik](https://github.com/vostrik))
   + Larry Lu ([@Larry850806](https://github.com/Larry85))
   + Nairi Haroutiounian ([@nairihar](https://github.com/nairihar))
+  + Kenigbolo Meya Stephen ([@kenigbolo](https://github.com/kenigbolo))
 
 ## Emeritus Project Team Members
