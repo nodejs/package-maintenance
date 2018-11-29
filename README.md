@@ -68,6 +68,7 @@ information about how to join as a participant or a viewer.
   + Viktor Vershanskij ([@wentout](https://github.com/wentout))
   + Kyle Martin ([@js-kyle](https://github.com/js-kyle))
   + Wes Todd ([@wesleytodd](https://github.com/wesleytodd))
+  + Pooya Parsa ([@pi0](https://github.com/pi0))
   + Pavel Vostrikov ([@vostrik](https://github.com/vostrik))
 
 ## Emeritus Project Team Members
