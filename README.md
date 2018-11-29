@@ -70,7 +70,8 @@ information about how to join as a participant or a viewer.
   + Wes Todd ([@wesleytodd](https://github.com/wesleytodd))
   + Pooya Parsa ([@pi0](https://github.com/pi0))
   + Pavel Vostrikov ([@vostrik](https://github.com/vostrik))
-  + Larry Lu ([@Larry850806](https://github.com/Larry85))
+  + Larry Lu ([@Larry850806](https://github.com/Larry85
+  + Osmond van Hemert ([@ovhemert](https://github.com/ovhemert))
   + Nairi Haroutiounian ([@nairihar](https://github.com/nairihar))
 
 ## Emeritus Project Team Members
