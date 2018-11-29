@@ -62,7 +62,7 @@ information about how to join as a participant or a viewer.
   + Ahmad Nassri ([@ahmadnassri](https://github.com/ahmadnassri))
   + Monica EnePietrosanu ([@menepie](https://github.com/menepie))
   + Arunesh Chandra ([@aruneshchandra](https://github.com/aruneshchandra))
-  + Mohammed Essehemy (@[MohammedEssehemy](https://github.com/MohammedEssehemy))
+  + Mohammed Essehemy ([@MohammedEssehemy](https://github.com/MohammedEssehemy))
   + Emily Platzer ([@craftninja](https://github.com/craftninja))
   + Benjamin Lupton ([@balupton](https://github.com/balupton))
   + Viktor Vershanskij ([@wentout](https://github.com/wentout))
@@ -71,6 +71,7 @@ information about how to join as a participant or a viewer.
   + Pooya Parsa ([@pi0](https://github.com/pi0))
   + Pavel Vostrikov ([@vostrik](https://github.com/vostrik))
   + Larry Lu ([@Larry850806](https://github.com/Larry85))
+  + Nairi Haroutiounian ([@nairihar](https://github.com/nairihar))
   + Victor Alencar ([@valencar](https://github.com/valencar))
 
 ## Emeritus Project Team Members
