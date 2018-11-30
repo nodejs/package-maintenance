@@ -79,6 +79,7 @@ information about how to join as a participant or a viewer.
   + Victor Alencar ([@valencar](https://github.com/valencar))
   + Waqar Mohammad ([@waqardm](https://github.com/waqardm))
   + Lian Duan ([@dlhandsome](https://github.com/dlhandsome))
+  + Chan Gong ([@Gcaufy](https://github.com/Gcaufy))
 
 
 ## Emeritus Project Team Members
