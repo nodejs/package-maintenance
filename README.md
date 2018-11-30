@@ -73,7 +73,7 @@ information about how to join as a participant or a viewer.
   + Larry Lu ([@Larry850806](https://github.com/Larry85))
   + Osmond van Hemert ([@ovhemert](https://github.com/ovhemert))
   + Nairi Haroutiounian ([@nairihar](https://github.com/nairihar))
-  + Edward Snare ([@edwardsnare)](https://github.com/edwardsnare))
+  + Edward Snare ([@edwardsnare](https://github.com/edwardsnare))
   + Joel Chen ([@jchip](https://github.com/jchip))
   + Kenigbolo Meya Stephen ([@kenigbolo](https://github.com/kenigbolo))
   + Victor Alencar ([@valencar](https://github.com/valencar))
