@@ -80,6 +80,7 @@ information about how to join as a participant or a viewer.
   + Waqar Mohammad ([@waqardm](https://github.com/waqardm))
   + Lian Duan ([@dlhandsome](https://github.com/dlhandsome))
   + Chan Gong ([@Gcaufy](https://github.com/Gcaufy))
+  + Xin Du ([@clarkdo](https://github.com/clarkdo))
 
 
 ## Emeritus Project Team Members
