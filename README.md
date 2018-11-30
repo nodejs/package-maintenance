@@ -78,6 +78,7 @@ information about how to join as a participant or a viewer.
   + Kenigbolo Meya Stephen ([@kenigbolo](https://github.com/kenigbolo))
   + Victor Alencar ([@valencar](https://github.com/valencar))
   + Waqar Mohammad ([@waqardm](https://github.com/waqardm))
+  + Chan Gong ([@Gcaufy](https://github.com/Gcaufy))
 
 
 ## Emeritus Project Team Members
