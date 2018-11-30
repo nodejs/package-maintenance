@@ -77,7 +77,7 @@ information about how to join as a participant or a viewer.
   + Joel Chen ([@jchip](https://github.com/jchip))
   + Kenigbolo Meya Stephen ([@kenigbolo](https://github.com/kenigbolo))
   + Victor Alencar ([@valencar](https://github.com/valencar))
-  + Waqar Mohammad ([@waqardm] (https://github.com/waqardm))
+  + Waqar Mohammad ([@waqardm](https://github.com/waqardm))
 
 
 ## Emeritus Project Team Members
