@@ -83,5 +83,6 @@ information about how to join as a participant or a viewer.
 * Xin Du ([@clarkdo](https://github.com/clarkdo))
 * Alexey Pyltsyn ([@lex111](https://github.com/lex111))
 * Manuel Spigolon ([@eomm](https://github.com/Eomm))
+* Lance Ball ([@lance](https://github.com/lance))
 
 ## Emeritus Project Team Members
