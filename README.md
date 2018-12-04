@@ -81,5 +81,6 @@ information about how to join as a participant or a viewer.
 * Lian Duan ([@dlhandsome](https://github.com/dlhandsome))
 * Chan Gong ([@Gcaufy](https://github.com/Gcaufy))
 * Xin Du ([@clarkdo](https://github.com/clarkdo))
+* Alexey Pyltsyn ([@lex111](https://github.com/lex111))
 
 ## Emeritus Project Team Members
