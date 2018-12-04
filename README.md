@@ -2,7 +2,7 @@
 
 Repository for discussion on how to help ensure baseline
 maintenance and ability to safely use key packages in the
-ecosytem with current Node.js versions.
+ecosystem with current Node.js versions.
 
 ## Goals
 
