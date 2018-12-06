@@ -86,6 +86,7 @@ information about how to join as a participant or a viewer.
 * Alexey Pyltsyn ([@lex111](https://github.com/lex111))
 * Manuel Spigolon ([@eomm](https://github.com/Eomm))
 * Lance Ball ([@lance](https://github.com/lance))
+* Zied CHOUK ([@ZiedCHOUK](https://github.com/ZiedCHOUK))
 * James Youngs ([@sidhuko](https://github.com/sidhuko))
 * Rob Simpson ([@pertrai1](https://github.com/pertrai1))
 * Amelia Garripoli ([@argoc](https://github.com/argoc))
