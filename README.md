@@ -2,7 +2,9 @@
 
 Repository for discussion on how to help ensure baseline
 maintenance and ability to safely use key packages in the
-ecosystem with current Node.js versions.
+ecosystem with current Node.js versions. You can find more
+about this initiative in the article:
+[Call to Action: Accelerating Node.js Growth](https://medium.com/@nodejs/call-to-action-accelerating-node-js-growth-e4862bee2919)
 
 ## Goals
 
@@ -85,5 +87,14 @@ information about how to join as a participant or a viewer.
 * Manuel Spigolon ([@eomm](https://github.com/Eomm))
 * Lance Ball ([@lance](https://github.com/lance))
 * Zied CHOUK ([@ZiedCHOUK](https://github.com/ZiedCHOUK))
+* James Youngs ([@sidhuko](https://github.com/sidhuko))
+* Rob Simpson ([@pertrai1](https://github.com/pertrai1))
+* Amelia Garripoli ([@argoc](https://github.com/argoc))
+* Esphas Kueen ([@esphas](https://github.com/esphas)
+* Antonio Gonzalez ([@bluesockets](https://github.com/bluesockets))
+* Satyam Bansal([@satyam22])(https://github.com/satyam22)
+* Ankur Oberoi ([@aoberoi](https://github.com/aoberoi))
+* Felix-Antoine Paradis ([@reel](https://github.com/reel))
+* Glenn Hinks ([@ghinks](https://github.com/ghinks))
 
 ## Emeritus Project Team Members
