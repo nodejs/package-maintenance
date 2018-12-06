@@ -84,6 +84,6 @@ information about how to join as a participant or a viewer.
 * Alexey Pyltsyn ([@lex111](https://github.com/lex111))
 * Manuel Spigolon ([@eomm](https://github.com/Eomm))
 * Lance Ball ([@lance](https://github.com/lance))
-* James Youngs([@sidhuko](https://github.com/sidhuko))
+* James Youngs ([@sidhuko](https://github.com/sidhuko))
 
 ## Emeritus Project Team Members
