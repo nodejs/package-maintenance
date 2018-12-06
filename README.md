@@ -84,6 +84,7 @@ information about how to join as a participant or a viewer.
 * Alexey Pyltsyn ([@lex111](https://github.com/lex111))
 * Manuel Spigolon ([@eomm](https://github.com/Eomm))
 * Lance Ball ([@lance](https://github.com/lance))
+* Esphas Kueen ([@esphas](https://github.com/esphas)
 * Antonio Gonzalez ([@bluesockets](https://github.com/bluesockets))
 * Satyam Bansal([@satyam22])(https://github.com/satyam22)
 * Ankur Oberoi ([@aoberoi](https://github.com/aoberoi))
