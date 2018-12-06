@@ -85,5 +85,6 @@ information about how to join as a participant or a viewer.
 * Manuel Spigolon ([@eomm](https://github.com/Eomm))
 * Lance Ball ([@lance](https://github.com/lance))
 * Felix-Antoine Paradis ([@reel](https://github.com/reel))
+* Glenn Hinks ([@ghinks](https://github.com/ghinks))
 
 ## Emeritus Project Team Members
