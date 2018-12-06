@@ -2,7 +2,9 @@
 
 Repository for discussion on how to help ensure baseline
 maintenance and ability to safely use key packages in the
-ecosystem with current Node.js versions.
+ecosystem with current Node.js versions. You can find more
+about this initiative in the article:
+[Call to Action: Accelerating Node.js Growth](https://medium.com/@nodejs/call-to-action-accelerating-node-js-growth-e4862bee2919)
 
 ## Goals
 
