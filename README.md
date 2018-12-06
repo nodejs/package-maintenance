@@ -85,5 +85,9 @@ information about how to join as a participant or a viewer.
 * Manuel Spigolon ([@eomm](https://github.com/Eomm))
 * Lance Ball ([@lance](https://github.com/lance))
 * Antonio Gonzalez ([@bluesockets](https://github.com/bluesockets))
+* Satyam Bansal([@satyam22])(https://github.com/satyam22)
+* Ankur Oberoi ([@aoberoi](https://github.com/aoberoi))
+* Felix-Antoine Paradis ([@reel](https://github.com/reel))
+* Glenn Hinks ([@ghinks](https://github.com/ghinks))
 
 ## Emeritus Project Team Members
