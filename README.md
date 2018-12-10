@@ -97,5 +97,6 @@ information about how to join as a participant or a viewer.
 * Glenn Hinks ([@ghinks](https://github.com/ghinks))
 * Mike Perry Y Attara ([@ghinks](https://github.com/mikeattara))
 * Kamal Singh Rawat ([@ksrawat](https://github.com/ksrawat))
+* Benjamin Chen ([@BeniCheni](https://github.com/BeniCheni))
 
 ## Emeritus Project Team Members
