@@ -58,7 +58,6 @@ information about how to join as a participant or a viewer.
 * Matt Edelman ([@grawk](https://github.com/grawk))
 * Franziska Hinkelmann ([@fhinkel](https://github.com/fhinkel))
 * Refael Ackermann ([@refack](https://github.com/refack))
-* Myles Borins ([@MylesBorins](https://github.com/MylesBorins))
 * Jordan Harband ([@ljharb](https://github.com/ljharb))
 * Charlie Robbins ([@indexzero](https://github.com/indexzero))
 * Ahmad Nassri ([@ahmadnassri](https://github.com/ahmadnassri))
