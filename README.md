@@ -95,6 +95,7 @@ information about how to join as a participant or a viewer.
 * Ankur Oberoi ([@aoberoi](https://github.com/aoberoi))
 * Felix-Antoine Paradis ([@reel](https://github.com/reel))
 * Glenn Hinks ([@ghinks](https://github.com/ghinks))
-* Mike Perry Y Attara ([@ghinks](https://github.com/mikeattara))
+* Mike Perry Y Attara ([@mikeattara](https://github.com/mikeattara))
+* Tamil Vendhan Kanagarasu ([@mudivili](https://github.com/mudivili))
 
 ## Emeritus Project Team Members
