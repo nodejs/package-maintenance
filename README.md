@@ -96,5 +96,6 @@ information about how to join as a participant or a viewer.
 * Felix-Antoine Paradis ([@reel](https://github.com/reel))
 * Glenn Hinks ([@ghinks](https://github.com/ghinks))
 * Mike Perry Y Attara ([@ghinks](https://github.com/mikeattara))
+* Alessio Dionisi ([@adnsio](https://github.com/adnsio))
 
 ## Emeritus Project Team Members
