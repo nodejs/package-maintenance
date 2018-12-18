@@ -35,8 +35,7 @@ ecosystem. Feel free to join schedule meetings and participate
 in the issues within the repository.
 
 ## How to Join
-If you'd like to be listed as a team member, open a PR adding yourself
-to this MEMBERS.md along with a few words on how you are planning to
+If you'd like to be listed as a team member, open a PR with a few words on how you are planning to
 contribute to the team's efforts.
 
 ## Logistics
