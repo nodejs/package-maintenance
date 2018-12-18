@@ -58,7 +58,6 @@ information about how to join as a participant or a viewer.
 * Matt Edelman ([@grawk](https://github.com/grawk))
 * Franziska Hinkelmann ([@fhinkel](https://github.com/fhinkel))
 * Refael Ackermann ([@refack](https://github.com/refack))
-* Myles Borins ([@MylesBorins](https://github.com/MylesBorins))
 * Jordan Harband ([@ljharb](https://github.com/ljharb))
 * Charlie Robbins ([@indexzero](https://github.com/indexzero))
 * Ahmad Nassri ([@ahmadnassri](https://github.com/ahmadnassri))
@@ -97,5 +96,6 @@ information about how to join as a participant or a viewer.
 * Felix-Antoine Paradis ([@reel](https://github.com/reel))
 * Glenn Hinks ([@ghinks](https://github.com/ghinks))
 * Mike Perry Y Attara ([@mikeattara](https://github.com/mikeattara))
+* Kamal Singh Rawat ([@ksrawat](https://github.com/ksrawat))
 
 ## Emeritus Project Team Members
