@@ -53,4 +53,3 @@ information about how to join as a participant or a viewer.
 
 ## Members
 [See the list of members](./MEMBERS.md)
-
