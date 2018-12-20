@@ -107,5 +107,6 @@ information about how to join as a participant or a viewer.
 * Chandan Kumar ([@chandanrjit](https://github.com/chandanrjit))
 * Christian Kaatz ([@chrkaatz](https://github.com/chrkaatz))
 * Arne Schubert ([@atd-schubert](https://github.com/atd-schubert))
+* Ravi Joshi ([@Jo-ravar](https://github.com/Jo-ravar))
 
 ## Emeritus Project Team Members
