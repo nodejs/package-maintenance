@@ -99,5 +99,6 @@ information about how to join as a participant or a viewer.
 * Abdullah Tariq ([@abdullahtariq91](https://github.com/abdullahtariq91))
 * Kamal Singh Rawat ([@ksrawat](https://github.com/ksrawat))
 * Dominykas Blyžė ([@dominykas](https://github.com/dominykas))
+* Jose Navarro ([@ghinks](https://github.com/jmn8718))
 
 ## Emeritus Project Team Members
