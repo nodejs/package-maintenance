@@ -111,5 +111,6 @@ information about how to join as a participant or a viewer.
 * Benjamin Chen ([@BeniCheni](https://github.com/BeniCheni))
 * Pothamsetty K ([@potham])(https://github.com/potham)
 * Yash Handa ([@Yash-Handa](https://github.com/Yash-Handa))
+* Ke Yang ([@aojiaotage](https://github.com/aojiaotage))
 
 ## Emeritus Project Team Members
