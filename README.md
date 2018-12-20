@@ -101,5 +101,6 @@ information about how to join as a participant or a viewer.
 * Dominykas Blyžė ([@dominykas](https://github.com/dominykas))
 * Jose Navarro ([@ghinks](https://github.com/jmn8718))
 * Keith Holliday ([@thehollidayinn](https://github.com/thehollidayinn))
+* Ian Sutherland ([@iansu](https://github.com/iansu))
 
 ## Emeritus Project Team Members
