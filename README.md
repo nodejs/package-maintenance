@@ -114,5 +114,6 @@ information about how to join as a participant or a viewer.
 * Ke Yang ([@aojiaotage](https://github.com/aojiaotage))
 * Tamil Vendhan Kanagarasu ([@mudivili](https://github.com/mudivili))
 * Gentian Elmazi ([@ghinks](https://github.com/gentios))
+* Kamesh Dashora ([@kamesh95](https://github.com/kamesh95))
 
 ## Emeritus Project Team Members
