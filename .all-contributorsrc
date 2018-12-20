@@ -1,0 +1,12 @@
+{
+  "projectName": "package-maintenance",
+  "projectOwner": "nodejs",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "MEMBERS.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": []
+}
