@@ -106,5 +106,6 @@ information about how to join as a participant or a viewer.
 * Lars Graubner ([@lgraubner](https://github.com/lgraubner))
 * Chandan Kumar ([@chandanrjit](https://github.com/chandanrjit))
 * Christian Kaatz ([@chrkaatz](https://github.com/chrkaatz))
+* Arne Schubert ([@atd-schubert](https://github.com/atd-schubert))
 
 ## Emeritus Project Team Members
