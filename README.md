@@ -99,8 +99,9 @@ information about how to join as a participant or a viewer.
 * Mike Perry Y Attara ([@mikeattara](https://github.com/mikeattara))
 * Kamal Singh Rawat ([@ksrawat](https://github.com/ksrawat))
 * Dominykas Blyžė ([@dominykas](https://github.com/dominykas))
-* Jose Navarro ([@ghinks](https://github.com/jmn8718))
+* Jose Navarro ([@jmn8718](https://github.com/jmn8718))
 * Keith Holliday ([@thehollidayinn](https://github.com/thehollidayinn))
 * Ian Sutherland ([@iansu](https://github.com/iansu))
+* Jace Mogill ([@mogill](https://github.com/mogill))
 
 ## Emeritus Project Team Members
