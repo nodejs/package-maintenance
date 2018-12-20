@@ -105,5 +105,6 @@ information about how to join as a participant or a viewer.
 * Jace Mogill ([@mogill](https://github.com/mogill))
 * Lars Graubner ([@lgraubner](https://github.com/lgraubner))
 * Chandan Kumar ([@chandanrjit](https://github.com/chandanrjit))
+* Christian Kaatz ([@chrkaatz](https://github.com/chrkaatz))
 
 ## Emeritus Project Team Members
