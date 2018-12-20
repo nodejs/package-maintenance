@@ -100,5 +100,6 @@ information about how to join as a participant or a viewer.
 * Kamal Singh Rawat ([@ksrawat](https://github.com/ksrawat))
 * Dominykas Blyžė ([@dominykas](https://github.com/dominykas))
 * Jose Navarro ([@ghinks](https://github.com/jmn8718))
+* Keith Holliday ([@thehollidayinn](https://github.com/thehollidayinn))
 
 ## Emeritus Project Team Members
