@@ -115,5 +115,6 @@ information about how to join as a participant or a viewer.
 * Tamil Vendhan Kanagarasu ([@mudivili](https://github.com/mudivili))
 * Gentian Elmazi ([@ghinks](https://github.com/gentios))
 * Kamesh Dashora ([@kamesh95](https://github.com/kamesh95))
+* Alessio Dionisi ([@adnsio](https://github.com/adnsio))
 
 ## Emeritus Project Team Members
