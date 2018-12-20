@@ -110,5 +110,6 @@ information about how to join as a participant or a viewer.
 * Ravi Joshi ([@Jo-ravar](https://github.com/Jo-ravar))
 * Benjamin Chen ([@BeniCheni](https://github.com/BeniCheni))
 * Pothamsetty K ([@potham])(https://github.com/potham)
+* Yash Handa ([@Yash-Handa](https://github.com/Yash-Handa))
 
 ## Emeritus Project Team Members
