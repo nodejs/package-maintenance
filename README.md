@@ -103,5 +103,6 @@ information about how to join as a participant or a viewer.
 * Keith Holliday ([@thehollidayinn](https://github.com/thehollidayinn))
 * Ian Sutherland ([@iansu](https://github.com/iansu))
 * Jace Mogill ([@mogill](https://github.com/mogill))
+* Lars Graubner ([@lgraubner](https://github.com/lgraubner))
 
 ## Emeritus Project Team Members
