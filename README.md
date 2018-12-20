@@ -96,6 +96,7 @@ information about how to join as a participant or a viewer.
 * Felix-Antoine Paradis ([@reel](https://github.com/reel))
 * Glenn Hinks ([@ghinks](https://github.com/ghinks))
 * Mike Perry Y Attara ([@ghinks](https://github.com/mikeattara))
+* Abdullah Tariq ([@abdullahtariq91](https://github.com/abdullahtariq91))
 * Kamal Singh Rawat ([@ksrawat](https://github.com/ksrawat))
 
 ## Emeritus Project Team Members
