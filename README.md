@@ -109,5 +109,6 @@ information about how to join as a participant or a viewer.
 * Arne Schubert ([@atd-schubert](https://github.com/atd-schubert))
 * Ravi Joshi ([@Jo-ravar](https://github.com/Jo-ravar))
 * Benjamin Chen ([@BeniCheni](https://github.com/BeniCheni))
+* Pothamsetty K ([@potham])(https://github.com/potham)
 
 ## Emeritus Project Team Members
