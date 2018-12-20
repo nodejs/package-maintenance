@@ -112,5 +112,6 @@ information about how to join as a participant or a viewer.
 * Pothamsetty K ([@potham])(https://github.com/potham)
 * Yash Handa ([@Yash-Handa](https://github.com/Yash-Handa))
 * Ke Yang ([@aojiaotage](https://github.com/aojiaotage))
+* Tamil Vendhan Kanagarasu ([@mudivili](https://github.com/mudivili))
 
 ## Emeritus Project Team Members
