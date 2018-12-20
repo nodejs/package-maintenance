@@ -104,5 +104,6 @@ information about how to join as a participant or a viewer.
 * Ian Sutherland ([@iansu](https://github.com/iansu))
 * Jace Mogill ([@mogill](https://github.com/mogill))
 * Lars Graubner ([@lgraubner](https://github.com/lgraubner))
+* Chandan Kumar ([@chandanrjit](https://github.com/chandanrjit))
 
 ## Emeritus Project Team Members
