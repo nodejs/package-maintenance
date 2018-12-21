@@ -122,5 +122,6 @@ information about how to join as a participant or a viewer.
 * Hamza Baig ([@hamxabaig](https://github.com/hamxabaig))
 * Saif Eddine Jerbi ([@JerbiSaif](https://github.com/SaifJerbi))
 * Edgar Muentes ([@emuentes](https://github.com/emuentes))
+* Karan Vohra ([@kvohra3](https://github.com/kvohra3))
 
 ## Emeritus Project Team Members
