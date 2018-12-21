@@ -124,5 +124,6 @@ information about how to join as a participant or a viewer.
 * Edgar Muentes ([@emuentes](https://github.com/emuentes))
 * Karan Vohra ([@kvohra3](https://github.com/kvohra3))
 * Tommy York ([@tommyyork](https://github.com/tommyyork))
+* Wilbert Abreu ([@wilbert-abreu](https://github.com/wilbert-abreu))
 
 ## Emeritus Project Team Members
