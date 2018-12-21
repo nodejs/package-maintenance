@@ -130,5 +130,6 @@ information about how to join as a participant or a viewer.
 * Alexander Kolesnikov ([@eddort](https://github.com/eddort))
 * Anatoly Volgin ([@zeroWheel](https://github.com/zeroWheel))
 * Andrew Kuzmenko ([@andrewkuzmenko](https://github.com/andrewkuzmenko))
+* Zubov Kirill ([@Mobydack](https://github.com/Mobydack))
 
 ## Emeritus Project Team Members
