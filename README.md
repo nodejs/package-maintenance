@@ -125,5 +125,6 @@ information about how to join as a participant or a viewer.
 * Karan Vohra ([@kvohra3](https://github.com/kvohra3))
 * Tommy York ([@tommyyork](https://github.com/tommyyork))
 * Wilbert Abreu ([@wilbert-abreu](https://github.com/wilbert-abreu))
+* Terary Chambers  ([@terary](https://github.com/terary))
 
 ## Emeritus Project Team Members
