@@ -1,0 +1,15 @@
+{
+	"name": "package-maintenance",
+	"version": "1.0.0",
+	"description": "Repository for work for discussion of helping with maintenance of key packages in the ecosystem",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nodejs/package-maintenance.git"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/nodejs/package-maintenance/issues"
+	},
+	"homepage": "https://github.com/nodejs/package-maintenance#readme",
+	"contributors": []
+}
