@@ -120,5 +120,6 @@ information about how to join as a participant or a viewer.
 * Rick Markins ([@rkamrks](https://github.com/rkmarks))
 * Shailesh Kanzariya([@shailesh-kanzariya](https://github.com/shailesh-kanzariya))
 * Hamza Baig ([@hamxabaig](https://github.com/hamxabaig))
+* Saif Eddine Jerbi ([@JerbiSaif](https://github.com/SaifJerbi))
 
 ## Emeritus Project Team Members
