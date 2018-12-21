@@ -127,5 +127,6 @@ information about how to join as a participant or a viewer.
 * Wilbert Abreu ([@wilbert-abreu](https://github.com/wilbert-abreu))
 * Terary Chambers  ([@terary](https://github.com/terary))
 * Konstantin Bubyakin ([@Goodluckhf](https://github.com/Goodluckhf))
+* Alexander Kolesnikov ([@eddort](https://github.com/eddort))
 
 ## Emeritus Project Team Members
