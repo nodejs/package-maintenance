@@ -119,5 +119,6 @@ information about how to join as a participant or a viewer.
 * Zeke Sikelianos ([@zek](https://github.com/zeke))
 * Rick Markins ([@rkamrks](https://github.com/rkmarks))
 * Shailesh Kanzariya([@shailesh-kanzariya](https://github.com/shailesh-kanzariya))
+* Hamza Baig ([@hamxabaig](https://github.com/hamxabaig))
 
 ## Emeritus Project Team Members
