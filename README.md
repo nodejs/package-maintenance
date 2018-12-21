@@ -117,5 +117,6 @@ information about how to join as a participant or a viewer.
 * Kamesh Dashora ([@kamesh95](https://github.com/kamesh95))
 * Alessio Dionisi ([@adnsio](https://github.com/adnsio))
 * Zeke Sikelianos ([@zek](https://github.com/zeke))
+* Rick Markins ([@rkamrks](https://github.com/rkmarks))
 
 ## Emeritus Project Team Members
