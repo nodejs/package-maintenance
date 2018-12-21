@@ -121,5 +121,6 @@ information about how to join as a participant or a viewer.
 * Shailesh Kanzariya([@shailesh-kanzariya](https://github.com/shailesh-kanzariya))
 * Hamza Baig ([@hamxabaig](https://github.com/hamxabaig))
 * Saif Eddine Jerbi ([@JerbiSaif](https://github.com/SaifJerbi))
+* Edgar Muentes ([@emuentes](https://github.com/emuentes))
 
 ## Emeritus Project Team Members
