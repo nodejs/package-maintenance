@@ -57,7 +57,7 @@
 * Arne Schubert ([@atd-schubert](https://github.com/atd-schubert))
 * Ravi Joshi ([@Jo-ravar](https://github.com/Jo-ravar))
 * Benjamin Chen ([@BeniCheni](https://github.com/BeniCheni))
-* Pothamsetty K ([@potham])(https://github.com/potham)
+* Pothamsetty K ([@potham](https://github.com/potham))
 * Yash Handa ([@Yash-Handa](https://github.com/Yash-Handa))
 * Ke Yang ([@aojiaotage](https://github.com/aojiaotage))
 * Tamil Vendhan Kanagarasu ([@mudivili](https://github.com/mudivili))
