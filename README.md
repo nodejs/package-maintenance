@@ -32,11 +32,13 @@ about this initiative in the article:
 
 We encourage participation from members across the Node.js and JavaScript
 ecosystem. Feel free to join schedule meetings and participate
-in the issues within the repository.
+in the issues within the repository. 
 
 ## How to Join
-If you'd like to be listed as a team member, open a PR with a few words on how you are planning to
-contribute to the team's efforts.
+
+If you'd like to be listed as a team member, open a PR adding yourself
+to this [MEMBERS.md](MEMBERS.md) along with a few words on how you are planning
+to contribute to the team's efforts.
 
 ## Logistics
 
@@ -51,5 +53,10 @@ The issue will provide schedule logistics as well as
 an agenda, links to meeting minutes, and
 information about how to join as a participant or a viewer.
 
-## Members
-[See the list of members](./MEMBERS.md)
+## Current Project Team Members
+
+[See the list of Members](./MEMBERS.md)
+
+## Emeritus Project Team Members
+
+[See the list of Emeritus](./EMERITUS.md)
