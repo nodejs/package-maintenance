@@ -128,5 +128,6 @@ information about how to join as a participant or a viewer.
 * Terary Chambers  ([@terary](https://github.com/terary))
 * Konstantin Bubyakin ([@Goodluckhf](https://github.com/Goodluckhf))
 * Alexander Kolesnikov ([@eddort](https://github.com/eddort))
+* Anatoly Volgin ([@zeroWheel](https://github.com/zeroWheel))
 
 ## Emeritus Project Team Members
