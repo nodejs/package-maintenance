@@ -65,7 +65,7 @@
 * Kamesh Dashora ([@kamesh95](https://github.com/kamesh95))
 * Alessio Dionisi ([@adnsio](https://github.com/adnsio))
 * Zeke Sikelianos ([@zek](https://github.com/zeke))
-* Rick Markins ([@rkamrks](https://github.com/rkmarks))
+* Rick Markins ([@rkmarks](https://github.com/rkmarks))
 * Shailesh Kanzariya([@shailesh-kanzariya](https://github.com/shailesh-kanzariya))
 * Hamza Baig ([@hamxabaig](https://github.com/hamxabaig))
 * Saif Eddine Jerbi ([@JerbiSaif](https://github.com/SaifJerbi))
