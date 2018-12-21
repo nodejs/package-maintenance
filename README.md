@@ -126,5 +126,6 @@ information about how to join as a participant or a viewer.
 * Tommy York ([@tommyyork](https://github.com/tommyyork))
 * Wilbert Abreu ([@wilbert-abreu](https://github.com/wilbert-abreu))
 * Terary Chambers  ([@terary](https://github.com/terary))
+* Konstantin Bubyakin ([@Goodluckhf](https://github.com/Goodluckhf))
 
 ## Emeritus Project Team Members
