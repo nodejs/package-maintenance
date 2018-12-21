@@ -113,10 +113,11 @@ information about how to join as a participant or a viewer.
 * Yash Handa ([@Yash-Handa](https://github.com/Yash-Handa))
 * Ke Yang ([@aojiaotage](https://github.com/aojiaotage))
 * Tamil Vendhan Kanagarasu ([@mudivili](https://github.com/mudivili))
-* Gentian Elmazi ([@ghinks](https://github.com/gentios))
+* Gentian Elmazi ([@gentios](https://github.com/gentios))
 * Kamesh Dashora ([@kamesh95](https://github.com/kamesh95))
 * Alessio Dionisi ([@adnsio](https://github.com/adnsio))
 * Zeke Sikelianos ([@zek](https://github.com/zeke))
 * Rick Markins ([@rkamrks](https://github.com/rkmarks))
+* Shailesh Kanzariya([@shailesh-kanzariya](https://github.com/shailesh-kanzariya))
 
 ## Emeritus Project Team Members
