@@ -81,5 +81,6 @@
 * Zubov Kirill ([@Mobydack](https://github.com/Mobydack))
 * Petr Grishin ([@petrgrishin](https://github.com/petrgrishin))
 * Murukesh Sadasivan ([@murukesh](https://github.com/murukesh))
+* Frank Lemanschik ([@frank-dspeed])(https://github.com/frank-dspeed)
 * Nardyuzhev Vadim ([@vadinN](https://github.com/vadinN))
 * James George ([@jamesgeorge007](https://www.github.com/jamesgeorge007))
