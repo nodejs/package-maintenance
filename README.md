@@ -55,10 +55,10 @@ information about how to join as a participant or a viewer.
 
 ### Communications
 
-The working group can chat on the[Node.js slack](https://node-js.slack.com/)
+The working group can chat on the [Node.js slack](https://node-js.slack.com/)
 in the channel `#package-maintenance` in order to continue conversations beyond the meetings.
 All the contributors are expected to follow the [Code of Conduct](https://github.com/nodejs/admin/blob/master/CODE_OF_CONDUCT.md)
-of Node.js project.
+of the Node.js project.
 
 To join on slack you have to [send a request](https://www.nodeslackers.com/) and wait
 to be accepted: it is a manual workflow, so it could take some days (we are working to help improve this).
