@@ -53,6 +53,16 @@ The issue will provide schedule logistics as well as
 an agenda, links to meeting minutes, and
 information about how to join as a participant or a viewer.
 
+### Communications
+
+The working group can chat on the official [Node.js slack](https://node-js.slack.com/)
+in the channel `#package-maintenance` in order to continue conversations beyond the meetings.
+All the contributors are expected to follow the [Code of Conduct](https://github.com/nodejs/admin/blob/master/CODE_OF_CONDUCT.md)
+of Node.js project.
+
+To join on slack you have to [send a request](https://www.nodeslackers.com/) and wait
+to be accepted: it is a manual workflow, so it could take some days.
+
 ## Current Project Team Members
 
 [See the list of Members](./MEMBERS.md)
