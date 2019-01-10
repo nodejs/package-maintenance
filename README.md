@@ -32,10 +32,13 @@ about this initiative in the article:
 
 We encourage participation from members across the Node.js and JavaScript
 ecosystem. Feel free to join schedule meetings and participate
-in the issues within the repository. If you'd like to be listed as
-a team member, open a PR adding yourself to this README.md along with
-a few words on how you are planning to contribute to the team's
-efforts.
+in the issues within the repository. 
+
+## How to Join
+
+If you'd like to be listed as a team member, open a PR adding yourself
+to this [MEMBERS.md](MEMBERS.md) along with a few words on how you are planning
+to contribute to the team's efforts.
 
 ## Logistics
 
@@ -52,49 +55,8 @@ information about how to join as a participant or a viewer.
 
 ## Current Project Team Members
 
-* Michael Dawson ([@mhdawson](https://github.com/mhdawson))
-* Matteo Collina ([@mcollina](https://github.com/mcollina))
-* Christopher Hiller ([@boneskull](https://github.com/boneskull))
-* Matt Edelman ([@grawk](https://github.com/grawk))
-* Franziska Hinkelmann ([@fhinkel](https://github.com/fhinkel))
-* Refael Ackermann ([@refack](https://github.com/refack))
-* Jordan Harband ([@ljharb](https://github.com/ljharb))
-* Charlie Robbins ([@indexzero](https://github.com/indexzero))
-* Ahmad Nassri ([@ahmadnassri](https://github.com/ahmadnassri))
-* Monica EnePietrosanu ([@menepie](https://github.com/menepie))
-* Arunesh Chandra ([@aruneshchandra](https://github.com/aruneshchandra))
-* Mohammed Essehemy ([@MohammedEssehemy](https://github.com/MohammedEssehemy))
-* Emily Platzer ([@craftninja](https://github.com/craftninja))
-* Benjamin Lupton ([@balupton](https://github.com/balupton))
-* Viktor Vershanskij ([@wentout](https://github.com/wentout))
-* Kyle Martin ([@js-kyle](https://github.com/js-kyle))
-* Wes Todd ([@wesleytodd](https://github.com/wesleytodd))
-* Pooya Parsa ([@pi0](https://github.com/pi0))
-* Pavel Vostrikov ([@vostrik](https://github.com/vostrik))
-* Larry Lu ([@Larry850806](https://github.com/Larry85))
-* Osmond van Hemert ([@ovhemert](https://github.com/ovhemert))
-* Nairi Haroutiounian ([@nairihar](https://github.com/nairihar))
-* Edward Snare ([@edwardsnare](https://github.com/edwardsnare))
-* Joel Chen ([@jchip](https://github.com/jchip))
-* Kenigbolo Meya Stephen ([@kenigbolo](https://github.com/kenigbolo))
-* Victor Alencar ([@valencar](https://github.com/valencar))
-* Waqar Mohammad ([@waqardm](https://github.com/waqardm))
-* Lian Duan ([@dlhandsome](https://github.com/dlhandsome))
-* Chan Gong ([@Gcaufy](https://github.com/Gcaufy))
-* Xin Du ([@clarkdo](https://github.com/clarkdo))
-* Alexey Pyltsyn ([@lex111](https://github.com/lex111))
-* Manuel Spigolon ([@eomm](https://github.com/Eomm))
-* Lance Ball ([@lance](https://github.com/lance))
-* Zied CHOUK ([@ZiedCHOUK](https://github.com/ZiedCHOUK))
-* James Youngs ([@sidhuko](https://github.com/sidhuko))
-* Rob Simpson ([@pertrai1](https://github.com/pertrai1))
-* Amelia Garripoli ([@argoc](https://github.com/argoc))
-* Esphas Kueen ([@esphas](https://github.com/esphas))
-* Antonio Gonzalez ([@bluesockets](https://github.com/bluesockets))
-* Satyam Bansal([@satyam22](https://github.com/satyam22))
-* Ankur Oberoi ([@aoberoi](https://github.com/aoberoi))
-* Felix-Antoine Paradis ([@reel](https://github.com/reel))
-* Glenn Hinks ([@ghinks](https://github.com/ghinks))
-* Mike Perry Y Attara ([@ghinks](https://github.com/mikeattara))
+[See the list of Members](./MEMBERS.md)
 
 ## Emeritus Project Team Members
+
+[See the list of Emeritus](./EMERITUS.md)
