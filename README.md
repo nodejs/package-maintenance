@@ -60,7 +60,7 @@ in the channel `#package-maintenance` in order to continue conversations beyond 
 All the contributors are expected to follow the [Code of Conduct](https://github.com/nodejs/admin/blob/master/CODE_OF_CONDUCT.md)
 of the Node.js project.
 
-To join on slack you have to [send a request](https://www.nodeslackers.com/) and wait
+To join on slack you have to [send a request](http://www.nodeslackers.com/) and wait
 to be accepted: it is a manual workflow, so it could take some days (we are working to help improve this).
 
 ## Current Project Team Members
