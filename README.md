@@ -32,7 +32,7 @@ about this initiative in the article:
 
 We encourage participation from members across the Node.js and JavaScript
 ecosystem. Feel free to join schedule meetings and participate
-in the issues within the repository. 
+in the issues within the repository.
 
 ## How to Join
 
