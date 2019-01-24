@@ -1,4 +1,4 @@
-i# Baseline practice - Document support support levels
+# Baseline practice - Document support support levels
 
 With the larger number of packages within the JavaScript ecosystem the level of
 support provided by a maintainer varies greatly.  A mismatch between the
