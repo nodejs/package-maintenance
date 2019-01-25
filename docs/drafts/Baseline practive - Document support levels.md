@@ -33,7 +33,7 @@ file for a package which documents the maintainers expectations. For example:
 { "support": {
     "target" : "NODE_LTS",
     "response": "BEST_EFFORT",
-    "backing": "INDIVIDUAL"
+    "backing": "SPONSORED"
   }
 }
 ```
