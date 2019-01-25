@@ -14,7 +14,7 @@ provide. The goal is to close the gap between the expectations from the
 consumer and those of the maintainer and reduce the friction and stress
 that can arise due to the gap.
 
-There are 4 dimentions that we standardize in this practice which are:  
+There are 4 dimensions that we standardize in this practice which are:  
 
 * target
 * response
