@@ -21,7 +21,7 @@ There are 4 dimensions that we standardize in this practice which are:
 * response-paid
 * backing
 
-For each of these dimentions the potential options are not an ordered list.
+For each of these dimensions the potential options are not an ordered list.
 Instead like licences each ID will identify a unique option. If you wish to
 identify your package with an option which is not let listed, please PR your
 option into the lists in the sections which follow.
