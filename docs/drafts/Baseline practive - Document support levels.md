@@ -6,7 +6,7 @@ support a maintainer is planning to provide and that expected by a consumer of
 a module can cause friction and stress on both the package maintainer and
 the consumer. This is further complicated because the level of support
 provides for dependencies of a package may be different than that
-targetted by the package a consumer is directly consuming.
+targeted by the package a consumer is directly consuming.
 
 This baseline practice suggests a standardized set of information to
 quantify the level of support that a package maintainer wishes/is able to
