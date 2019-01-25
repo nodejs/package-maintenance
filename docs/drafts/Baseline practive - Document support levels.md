@@ -26,7 +26,7 @@ Instead like licences each ID will identify a unique option. If you wish to
 identify your package with an option which is not let listed, please PR your
 option into the lists in the sections which follow.
 
-The recommened baseline practice is to include an entry in the package.json
+The recommended baseline practice is to include an entry in `package.json`
 file for a package which documents the maintainers expectations. For example:
 
 ```json
