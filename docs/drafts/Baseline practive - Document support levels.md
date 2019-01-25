@@ -81,7 +81,7 @@ aims to provide.  The standardized options are as follows:
 * NODE-SUPERSET-LTS - The package is maintained for versions of Node.js including both LTS and non-LTS releases. Documentation
   for the package will include the non-LTS releases for which the package is still maintained. As with NODE-LTS 
   anyone creating an application using an LTS version of Node.js and using the latest major version of LTS
-  adopting modules will will not have to accept semver-major level (ie. breaking) changes into that
+  adopting modules will not have to accept semver-major level (ie. breaking) changes into that
   application in order to receive essential fixes.
 * NODE-SUPERSET - The package is maintained for versions of Node.js including both LTS and non-LTS releases, however, it
   may be necessary to accept semver-major level (ie. breaking) changes into that application in order to receive essential fixes.
