@@ -73,9 +73,10 @@ aims to provide.  The standardized options are as follows:
 * NONE - use at your own risk, no active support may or may not work for a given Node.js version.
 * NODE-LATEST - The package is maintained only for the Latest Node.js versions. You will be required to update
   to the latest Node.js version in order to ensure you can use new versions/get security fixes, get updates
-* NODE-LTS - The package is maintained for the active Node.js LTS releases. Anyone creating an application
-  using an LTS version of Node.js and using the latest major version of LTS adopting modules will will not
-  have to accept semver-major level (ie. breaking) changes into that application in order to receive essential fixes.
+* NODE-LTS - The package is maintained for the Node.js LTS releases (both in Active and Maintenence mode).
+  Anyone creating an application using an LTS version of Node.js and using the latest major version of
+  LTS adopting modules will will not have to accept semver-major level (ie. breaking) changes into that
+  application in order to receive essential fixes.
   Full details are available in: https://github.com/nodejs/package-maintenance/issues/119
   (should we bring this into the package-maintenance repo?)
 * NODE-SUPERSET - The package is maintained for versions of Node.js including both LTS and non-LTS releases. It
