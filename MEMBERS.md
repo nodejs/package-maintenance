@@ -86,3 +86,4 @@
 * James George ([@jamesgeorge007](https://www.github.com/jamesgeorge007))
 * Gabriel Schulhof ([@gabrielschulhof](https://www.github.com/gabrielschulhof))
 * Minh Nguyen ([@truongminh](https://github.com/truongminh))
+* Jacopo Daeli ([@JacopoDaeli](https://github.com/JacopoDaeli))
