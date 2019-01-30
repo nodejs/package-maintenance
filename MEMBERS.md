@@ -50,7 +50,6 @@
 * Jose Navarro ([@jmn8718](https://github.com/jmn8718))
 * Keith Holliday ([@thehollidayinn](https://github.com/thehollidayinn))
 * Ian Sutherland ([@iansu](https://github.com/iansu))
-* Jace Mogill ([@mogill](https://github.com/mogill))
 * Lars Graubner ([@lgraubner](https://github.com/lgraubner))
 * Chandan Kumar ([@chandanrjit](https://github.com/chandanrjit))
 * Christian Kaatz ([@chrkaatz](https://github.com/chrkaatz))
