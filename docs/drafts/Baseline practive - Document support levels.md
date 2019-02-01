@@ -23,7 +23,7 @@ There are 4 dimensions that we standardize in this practice which are:
 
 For each of these dimensions the potential options are not an ordered list.
 Instead like licenses each ID will identify a unique option. If you wish to
-identify your package with an option which is not let listed, please PR your
+identify your package with an option which is not yet listed, please PR your
 option into the lists in the sections which follow.
 
 The recommended baseline practice is to include an entry in `package.json`
