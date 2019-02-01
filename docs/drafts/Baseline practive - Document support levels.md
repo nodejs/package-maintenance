@@ -70,7 +70,7 @@ The support target captures the level of support that the package maintainer
 aims to provide.  The standardized options are as follows:
 
 * ABANDONED - Not recommended for use. The package is deprecated or no longer maintained.
-* NONE - use at your own risk, no active support may or may not work for a given Node.js version.
+* NONE - Use at your own risk, no active support. May or may not work for a given Node.js version.
 * NODE-LATEST - The package is maintained only for the Latest Node.js versions. You will be required to update
   to the latest Node.js version in order to ensure you can use new versions/get security fixes, get updates
 * NODE-LTS - The package is maintained for the Node.js LTS releases (both in Active and Maintenence mode).
