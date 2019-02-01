@@ -87,3 +87,4 @@
 * Minh Nguyen ([@truongminh](https://github.com/truongminh))
 * Jacopo Daeli ([@JacopoDaeli](https://github.com/JacopoDaeli))
 * Hassan Sani ([@inidaname](https://github.com/inidaname))
+* Ahmad Abdul-Aziz ([@devamaz](https://github.com/devamaz))
