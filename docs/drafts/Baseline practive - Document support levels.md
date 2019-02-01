@@ -94,7 +94,7 @@ Support response quantifies how quickly the maintainer targets/is able to respon
   a "we read your issue" response. Further work will depend on prioritization of the issue by the maintainer team.
 * REGULAR-1 - There are dedicated resources who regularly maintain the module, expected response time is 1 days or less for
   a "we read your issue" response. Further work will depend on prioritization of the issue by the maintainer team.
-* 24-7 - There are dedicated resources who regularly maintain the module and they are available 24/7. You can expecct to 
+* 24-7 - There are dedicated resources who regularly maintain the module and they are available 24/7. You can expect to 
   be able to contact the maintainers and get an initial response with 6 hours.
    
  Support-response indicates the expectation unless you have paid one of the maintainers or a company that provides
