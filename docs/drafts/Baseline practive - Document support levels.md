@@ -89,7 +89,7 @@ Support response quantifies how quickly the maintainer targets/is able to respon
 
 * ABANDONED - Don't expect a response, the package is not being actively maintained
 * BEST-EFFORT - The maintainer is interesed in fixing/discussing issues, however, it's not their day job so there should be 
-  no expectation on response times. If an when the maintainer has time they may respond.
+  no expectation on response times. If and when the maintainer has time they may respond.
 * REGULAR-7 - There are dedicated resources who regularly maintain the module, expected response time is 7 days or less for
   a "we read your issue" response. Further work will depend on prioritization of the issue by the maintainer team.
 * REGULAR-1 - There are dedicated resources who regularly maintain the module, expected response time is 1 days or less for
