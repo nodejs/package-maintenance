@@ -85,7 +85,7 @@ aims to provide.  The standardized options are as follows:
   
 ## Support-response and Support-response-paid
 
-Support response quantifies how quickly the maintainer targets/is able to respond to issues:
+Support response quantifies how quickly the maintainer chooses to, or is able to, respond to issues:
 
 * ABANDONED - Don't expect a response, the package is not being actively maintained
 * BEST-EFFORT - The maintainer is interesed in fixing/discussing issues, however, it's not their day job so there should be 
