@@ -104,7 +104,7 @@ Support response quantifies how quickly the maintainer targets/is able to respon
  ## Support-backing
  
  * ABANDONED - There is nobody backing this module
- * HOBBY - The single mainainer maintains the package for fun, does not get any support to continue maintenance.
+ * HOBBY - The single maintainer maintains the package for fun, does not get any support to continue maintenance.
  * SPONSORED - The single maintainer actively maintains the package but depends on sponsorship to be able to continue to
    maintain the package. Consider supporting this sponsorship through patreon etc.
  * BOUNTY - The package is maintained through the use of a bounty service
