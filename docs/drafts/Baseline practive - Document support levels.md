@@ -5,7 +5,7 @@ support provided by a maintainer varies greatly.  A mismatch between the
 support a maintainer is planning to provide and that expected by a consumer of
 a module will cause friction and stress on both the package maintainer and
 the consumer. This is further complicated because the level of support
-provides for dependencies of a package may be different than that
+provided for dependencies of a package may be different than that
 targeted by the package a consumer is directly consuming.
 
 This baseline practice suggests a standardized set of information to
