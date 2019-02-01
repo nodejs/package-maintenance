@@ -98,7 +98,7 @@ Support response quantifies how quickly the maintainer targets/is able to respon
   be able to contact the maintainers and get an initial response with 6 hours.
    
  Support-response indicates the expectation unless you have paid one of the maintainers or a company that provides
- 3rd party support. If paid support is available then Supporet-response-paid is an array of one or more options listing the
+ 3rd party support. If paid support is available then Support-response-paid is an array of one or more options listing the
  options that the maintainer knows are available.
  
  ## Support-backing
