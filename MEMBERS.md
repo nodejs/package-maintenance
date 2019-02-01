@@ -86,3 +86,4 @@
 * Gabriel Schulhof ([@gabrielschulhof](https://www.github.com/gabrielschulhof))
 * Minh Nguyen ([@truongminh](https://github.com/truongminh))
 * Jacopo Daeli ([@JacopoDaeli](https://github.com/JacopoDaeli))
+* Hassan Sani ([@inidaname](https://github.com/inidaname))
