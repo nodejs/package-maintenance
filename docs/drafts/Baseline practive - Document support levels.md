@@ -69,7 +69,7 @@ outside of their use case.
 The support target captures the level of support that the package maintainer
 aims to provide.  The standardized options are as follows:
 
-* ABANDONED - Not recommened for use. The package is depercated or not longer maintained.
+* ABANDONED - Not recommended for use. The package is deprecated or no longer maintained.
 * NONE - use at your own risk, no active support may or may not work for a given Node.js version.
 * NODE-LATEST - The package is maintained only for the Latest Node.js versions. You will be required to update
   to the latest Node.js version in order to ensure you can use new versions/get security fixes, get updates
