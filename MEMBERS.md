@@ -88,3 +88,4 @@
 * Jacopo Daeli ([@JacopoDaeli](https://github.com/JacopoDaeli))
 * Hassan Sani ([@inidaname](https://github.com/inidaname))
 * Ahmad Abdul-Aziz ([@devamaz](https://github.com/devamaz))
+* Samuel Omole ([@samie820](https://github.com/samie820))
