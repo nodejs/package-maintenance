@@ -76,6 +76,7 @@
 * Konstantin Bubyakin ([@Goodluckhf](https://github.com/Goodluckhf))
 * Alexander Kolesnikov ([@eddort](https://github.com/eddort))
 * Anatoly Volgin ([@zeroWheel](https://github.com/zeroWheel))
+* Karan Sapolia ([@karansapolia](https://github.com/karansapolia))
 * Andrew Kuzmenko ([@andrewkuzmenko](https://github.com/andrewkuzmenko))
 * Zubov Kirill ([@Mobydack](https://github.com/Mobydack))
 * Petr Grishin ([@petrgrishin](https://github.com/petrgrishin))
