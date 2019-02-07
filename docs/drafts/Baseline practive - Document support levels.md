@@ -24,7 +24,10 @@ There are 4 dimensions that we standardize in this practice which are:
 For each of these dimensions the potential options are not an ordered list.
 Instead like licenses each ID will identify a unique option. If you wish to
 identify your package with an option which is not yet listed, please PR your
-option into the lists in the sections which follow.
+option into the lists in the sections which follow. In the package.json the values
+can be any string, those which are not documented in the lists within this
+document considered "custom" and may irgnored for flagged by any tooling that
+consumes these elements in the package.json.
 
 In addiition a `url` field can optionally be provided with a link to more detailed
 support information.
