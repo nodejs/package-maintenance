@@ -26,14 +26,18 @@ Instead like licenses each ID will identify a unique option. If you wish to
 identify your package with an option which is not yet listed, please PR your
 option into the lists in the sections which follow.
 
+In addiition a `url` field can optionally be provided with a link to more detailed
+support information.
+
 The recommended baseline practice is to include an entry in `package.json`
 file for a package which documents the maintainers expectations. For example:
 
 ```json
 { "support": {
-    "target" : "NODE_LTS",
-    "response": "BEST_EFFORT",
-    "backing": "SPONSORED"
+    "target" : "LTS",
+    "response": "BEST-EFFORT",
+    "backing": "SPONSORED",
+    "url": "http://mygreatmodule.org/supportinfo.html"
   }
 }
 ```
@@ -42,10 +46,11 @@ or
 
 ```json
 { "support": {
-    "target" : "NODE_LTS",
+    "target" : "LTS",
     "response": "REGULAR-7",
     "response-paid": "REGULAR-1",
     "backing": "COMPANY"
+    "url": "http://mygreatmodule.org/supportinfo.html"
   }
 }
 ```
@@ -71,15 +76,15 @@ aims to provide.  The standardized options are as follows:
 
 * ABANDONED - Not recommended for use. The package is deprecated or no longer maintained.
 * NONE - Use at your own risk, no active support. May or may not work for a given Node.js version.
-* NODE-LATEST - The package is maintained only for the Latest Node.js versions. You will be required to update
+* LATEST - The package is maintained only for the Latest Node.js versions. You will be required to update
   to the latest Node.js version in order to ensure you can use new versions/get security fixes, get updates
-* NODE-LTS - The package is maintained for the Node.js LTS releases (both in Active and Maintenence mode).
+* LTS - The package is maintained for the Node.js LTS releases (both in Active and Maintenence mode).
   Anyone creating an application using an LTS version of Node.js and using the latest major version of
   LTS adopting modules will will not have to accept semver-major level (ie. breaking) changes into that
   application in order to receive essential fixes.
   Full details are available in: https://github.com/nodejs/package-maintenance/issues/119
   (should we bring this into the package-maintenance repo?)
-* NODE-SUPERSET - The package is maintained for versions of Node.js including both LTS and non-LTS releases. It
+* SUPERSET - The package is maintained for versions of Node.js including both LTS and non-LTS releases. It
   may be necessary to accept semver-major level (ie. breaking) changes into that application in order to receive essential fixes.
   Documentation for the package will include the non-LTS releases for which the package is still maintained. 
   
@@ -87,8 +92,8 @@ aims to provide.  The standardized options are as follows:
 
 Support response quantifies how quickly the maintainer chooses to, or is able to, respond to issues:
 
-* ABANDONED - Don't expect a response, the package is not being actively maintained
-* BEST-EFFORT - The maintainer is interesed in fixing/discussing issues, however, it's not their day job so there should be 
+* NONE - Don't expect a response, the package is not being actively maintained
+* BEST-EFFORT - The maintainer is interested in fixing/discussing issues, however, there should be 
   no expectation on response times. If and when the maintainer has time they may respond.
 * REGULAR-7 - There are dedicated resources who regularly maintain the module, expected response time is 7 days or less for
   a "we read your issue" response. Further work will depend on prioritization of the issue by the maintainer team.
@@ -103,13 +108,14 @@ Support response quantifies how quickly the maintainer chooses to, or is able to
  
  ## Support-backing
  
- * ABANDONED - There is nobody backing this module
+ * NONE - There is nobody backing this module
  * HOBBY - The single maintainer maintains the package for fun, does not get any support to continue maintenance.
  * SPONSORED - The single maintainer actively maintains the package but depends on sponsorship to be able to continue to
    maintain the package. Consider supporting this sponsorship through patreon etc.
  * BOUNTY - The package is maintained through the use of a bounty service
  * PROJECT - The package is maintained under the auspices of a larger project (ex Node.js project).
  * FOUNDATION - The package is maintained and supported under the auspices of a Foundation.
- * COMPANY - The package is maintained and supported by a corporate entity but many not be related
+ * COMPANY - The package is maintained and supported by a corporate entity but may not be related
    to their product or service offerings.
  * COMMERCIAL - The package is maintained and supported by a corporate entity as part of supporting their products.
+ * PAID-SUPPORT - The package is maintained and supported through paid support contracts.
