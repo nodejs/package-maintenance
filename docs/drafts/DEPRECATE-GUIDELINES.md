@@ -12,12 +12,12 @@ These guidelines exist to help with the course of actions to take in the event t
 
 ## What consititutes an unmaintained package?
 
-- The author is no longer responding to questions, issues, PRs, or making any updates.
+- The author is no longer responding to questions, issues, PRs, or making any updates, and specifically repeat "are you there" inquries for critical issues.
 - The author may have explicitly indicated that they will stop all activities on the package.
 - A different package that's more active and the author acknowledged as the replacement.
 - Critical issues exist for the package and not being addressed
   - Known vulnerabilities identified by `npm audit` or other parties
-  - Package is known to fail for LTS NodeJS
+  - Package is known to fail for LTS Node.js
 
 ## Identifying unmaintained package?
 
@@ -28,7 +28,7 @@ These guidelines exist to help with the course of actions to take in the event t
 - file high priority issues in the package's repo
 
   - if npm audit identified vulnerabilities that are critical
-  - if package is broken or fail to install for a LTS release of NodeJS
+  - if package fails to install/build for an LTS release of node.js
 
   - if author indicate they are no longer interested in maintaining, then add as unmaintained candidate
   - if no response within three months, then add as unmaintained candidate.
@@ -51,18 +51,18 @@ These guidelines exist to help with the course of actions to take in the event t
   - if author simply can't be reached and package is very outdated, then need to contact npm to get access to deprecate package.
 
 * A cli to allow `npm deprecate` a range of versions on a package.
-* or `npm deprecate` versions with published date older than a given time
+* or request new support of `npm deprecate` to allow deprecating versions published before a given time
 
 ## Identify replacement
 
-- If a package is fully unmaintained, then a replacement should be identify and add to the deprecate message.
-- If no replacement exist, then should identify the safe versions to use in deprecate message.
+- If a package is fully unmaintained, then a replacement should be identified and added to the deprecation message.
+- If no replacement exists, then should identify the safe versions to use in the deprecation message.
 
 ## Encourage Author to deprecate versions
 
 - File issue in repo to encourage author to deprecate a version that:
   - Has known critical bugs and should be avoided
-  - Known to fail for LTS NodeJS
+  - Known to fail for LTS Node.js
   - Has known critical vulnerabilities
 
 ## What user can do to avoid deprecate versions
