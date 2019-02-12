@@ -20,15 +20,14 @@ Doing so we will create a wide range of tools in order to:
 
 | Package* | Maintainer Reference |
 |----------|----------------------|
-| [Express](1)     | [@wesleytodd](https://github.com/wesleytodd)
-| [MQTT](2)        | [@mcollina](https://github.com/mcollina)
+| [Express]     | [@wesleytodd](https://github.com/wesleytodd)
+| [MQTT]        | [@mcollina](https://github.com/mcollina)
 
-
-
-[1] https://github.com/expressjs/express
-[2] https://github.com/mqttjs/MQTT.js
+[Express]: https://github.com/expressjs/express
+[MQTT]: https://github.com/mqttjs/MQTT.js
 
 *Ordered per joining time.
+
 
 ## Approach
 
@@ -41,3 +40,19 @@ The baseline to start with this work is:
 + Implement the roadmap
 + Coordinates with pilot packages to try the solutions implemented and verify the benefits
 + Share to the community the tools and the succesful process
+
+
+## Output
+
+During this phase of work, all the docs and useful stuff must be stored
+in the directory `./pilots/${package-name}/`. This directory can be merged in master
+whenever a main approach's step is reached.
+
+We should produce almost:
+
+| Docs | Description |
+|------|-------------|
+| SURVEY_ANSWER.md | Collect all the information received from the Maintainer Reference
+| TASKS.md         | An initial list of tasks based on the survey's answers
+| ROADMAP.md       | All the tasks that will be implemented (a list of issues links) with some target to aim
+| RESULTS.md       | At the end of the pilot phase, we should recap what we learned about the package itself and how the know-how could be shared
