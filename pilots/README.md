@@ -34,6 +34,9 @@ Doing so we will create a wide range of tools in order to:
 The baseline to start with this work is:
 
 + Prepare a [survey](./SURVEY.md) to collect more informations as possible
++ Dispose the [output](#output) directory and send the survey with all the details to the maintainer reference
++ The Maintainer Reference should open a PR to this repository with the replies
++ Dispelling every doubt before merge the PR
 + Think out the feedback received in tasks we should do to help the package
 + Brief with other pilot packages feedbacks to find common needs
 + Define a roadmap
