@@ -18,8 +18,8 @@ Doing so we will create a wide range of tools in order to:
 
 ## List
 
-| Package* | Maintainer Reference |
-|----------|----------------------|
+| Organization* | Maintainer Reference |
+|---------------|----------------------|
 | [Express]     | [@wesleytodd](https://github.com/wesleytodd)
 | [MQTT]        | [@mcollina](https://github.com/mcollina)
 
