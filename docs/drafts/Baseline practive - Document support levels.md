@@ -52,7 +52,7 @@ or
     "target" : "LTS",
     "response": "REGULAR-7",
     "response-paid": "REGULAR-1",
-    "backing": "COMPANY"
+    "backing": "COMPANY",
     "url": "http://mygreatmodule.org/supportinfo.html"
   }
 }
