@@ -29,7 +29,7 @@ can be any string, those which are not documented in the lists within this
 document considered "custom" and may irgnored for flagged by any tooling that
 consumes these elements in the package.json.
 
-In addiition a `url` field can optionally be provided with a link to more detailed
+In addition a `url` field can optionally be provided with a link to more detailed
 support information.
 
 The recommended baseline practice is to include an entry in `package.json`
