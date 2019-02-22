@@ -122,3 +122,4 @@ Support response quantifies how quickly the maintainer chooses to, or is able to
    to their product or service offerings.
  * COMMERCIAL - The package is maintained and supported by a corporate entity as part of supporting their products.
  * PAID-SUPPORT - The package is maintained and supported through paid support contracts.
+ * FREEMIUM - Basic version of the package it provided for free, premium version is available at a cost.
