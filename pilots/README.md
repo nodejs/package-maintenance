@@ -21,10 +21,10 @@ Doing so we will create a wide range of tools in order to:
 | Organization* | Maintainer Reference |
 |---------------|----------------------|
 | [Express]     | [@wesleytodd](https://github.com/wesleytodd)
-| [MQTT]        | [@mcollina](https://github.com/mcollina)
+| [MQTT.js]     | [@mcollina](https://github.com/mcollina)
 
 [Express]: https://github.com/expressjs/express
-[MQTT]: https://github.com/mqttjs/MQTT.js
+[MQTT.js]: https://github.com/mqttjs/MQTT.js
 
 *Ordered per joining time.
 
