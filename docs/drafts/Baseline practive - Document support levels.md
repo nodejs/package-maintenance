@@ -1,9 +1,9 @@
 # Baseline practice - Document support support levels
 
-With the larger number of packages within the JavaScript ecosystem the level of
-support provided by a maintainer varies greatly.  A mismatch between the
-support a maintainer is planning to provide and that expected by a consumer of
-a module will cause friction and stress on both the package maintainer and
+Package maintainers provide different level of support in the large npm ecosystem.
+A mismatch between the support a maintainer is planning to
+provide and that expected by a consumer of a module will cause
+friction and stress on both the package maintainer and
 the consumer. This is further complicated because the level of support
 provided for dependencies of a package may be different than that
 targeted by the package a consumer is directly consuming.
