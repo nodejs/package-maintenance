@@ -80,7 +80,7 @@ aims to provide.  The standardized options are as follows:
 * ABANDONED - Not recommended for use. The package is deprecated or no longer maintained.
 * NONE - Use at your own risk, no active support. May or may not work for a given Node.js version.
 * LATEST - The package is maintained only for the Latest Node.js versions. You will be required to update
-  to the latest Node.js version in order to ensure you can use new versions/get security fixes, get updates
+  to the latest LTS Node.js version in order to ensure you can use new versions/get security fixes.
 * LTS - The package is maintained for the Node.js LTS releases (both in Active and Maintenence mode).
   Anyone creating an application using an LTS version of Node.js and using the latest major version of
   LTS adopting modules will will not have to accept semver-major level (ie. breaking) changes into that
@@ -88,8 +88,20 @@ aims to provide.  The standardized options are as follows:
   Full details are available in: https://github.com/nodejs/package-maintenance/issues/119
   (should we bring this into the package-maintenance repo?)
 * SUPERSET - The package is maintained for versions of Node.js including both LTS and non-LTS releases. It
-  may be necessary to accept semver-major level (ie. breaking) changes into that application in order to receive essential fixes.
+  may be necessary to accept semver-major level (ie. breaking) changes into that
+  application in order to receive essential fixes.
   Documentation for the package will include the non-LTS releases for which the package is still maintained. 
+  
+  As an example based on the current active Node.js releases which are 6.x, 8.x, 10.x (LTS) and 11.x (Current)
+  support would be as follows where X indicates support is provided:
+  
+  | Support-target| 6.x | 8.x | 10.x | 11.x | Others as documented  |
+  |---------------|-----|-----|------|------|-----------------------|
+  | ABANDONED     |     |     |      |      |                       |
+  | NONE          |     |     |      |      |                       |
+  | LATEST        |     |     |   X  |      |                       |
+  | LTS           |  X  |  X  |   X  |      |                       |
+  | SUPERSET      |  X  |  X  |   X  |   X  |           X           |
   
 ## Support-response and Support-response-paid
 
