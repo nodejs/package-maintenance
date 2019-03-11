@@ -49,7 +49,7 @@ When you've opened the package's repo, to further check development activities:
 - Check for or file issue in the repo to encourage author to deprecate a version that:
 
   - Has known critical bugs and should be avoided
-  - Known to fail for LTS Node.js
+  - Is known to fail for LTS node.js
   - Has known critical vulnerabilities
 
 - Check if high priority issues in the package's repo are getting responses from owner
