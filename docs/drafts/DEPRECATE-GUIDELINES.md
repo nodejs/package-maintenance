@@ -103,5 +103,5 @@ Other ideas for tools that could help:
 
 - A cli to allow `npm deprecate` a range of versions on a package.
 - or request new support of `npm deprecate` to allow deprecating versions published before a given time
-- allow consumer to specify a specific version to use for a package through an `override` field in their package.json
+ - use npm 6.9+'s aliasing ability to provide a replacement for transitive deps.
 - if author simply can't be reached and package is very outdated, then need to contact npm to get access to deprecate package.
