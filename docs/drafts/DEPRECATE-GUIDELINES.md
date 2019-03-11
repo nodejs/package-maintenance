@@ -18,7 +18,7 @@ These guidelines exist to help with a course of action for package consumers and
 
 It's not always obvious if a package is unmaintained. Many packages are small and considered completed as published. A long period of no activity does not imply that a project is not maintained.
 
-Generally the question "is this package unmaintained?" arises when users found it to have issues that are not getting reponse or being addressed.
+Generally the question "is this package unmaintained?" arises when users find it to have issues that are not getting responded to, or being addressed.
 
 Some criterias to determine if it's unmaintained:
 
