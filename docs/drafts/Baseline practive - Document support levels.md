@@ -26,7 +26,7 @@ Instead like licenses each ID will identify a unique option. If you wish to
 identify your package with an option which is not yet listed, please PR your
 option into the lists in the sections which follow. In the package.json the values
 can be any string, those which are not documented in the lists within this
-document considered "custom" and may irgnored for flagged by any tooling that
+document considered "custom" and may ignored for flagged by any tooling that
 consumes these elements in the package.json.
 
 In addition a `url` field can optionally be provided with a link to more detailed
@@ -83,7 +83,7 @@ aims to provide.  The standardized options are as follows:
   to the latest LTS Node.js version in order to ensure you can use new versions/get security fixes.
 * LTS - The package is maintained for the Node.js LTS releases (both in Active and Maintenence mode).
   Anyone creating an application using an LTS version of Node.js and using the latest major version of
-  LTS adopting modules will will not have to accept semver-major level (ie. breaking) changes into that
+  LTS adopting modules will not have to accept semver-major level (ie. breaking) changes into that
   application in order to receive essential fixes.
   Full details are available in: https://github.com/nodejs/package-maintenance/issues/119
   (should we bring this into the package-maintenance repo?)
@@ -122,6 +122,9 @@ Support response quantifies how quickly the maintainer chooses to, or is able to
  options that the maintainer knows are available.
  
  ## Support-backing
+ 
+ This section can be a single value or an array of values, for example: [x, y,z]. This supports cases where the
+ backing comes from more than one source. The documented options include:
  
  * NONE - There is nobody backing this module
  * HOBBY - The single maintainer maintains the package for fun, does not get any support to continue maintenance.
