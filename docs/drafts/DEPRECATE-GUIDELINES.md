@@ -16,7 +16,7 @@ These guidelines exist to help with the course of actions for package consumers 
 
 ## What consititutes an unmaintained package?
 
-It's not always obvious if a package is unmaintained. Many packages are small and considered completed as published. Long period of no activity does not mean unmaintain.
+It's not always obvious if a package is unmaintained. Many packages are small and considered completed as published. A long period of no activity does not imply that a project is not maintained.
 
 Generally the question "is this package unmaintained?" arises when users found it to have issues that are not getting reponse or being addressed.
 
