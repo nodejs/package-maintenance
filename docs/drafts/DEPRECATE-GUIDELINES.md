@@ -36,6 +36,7 @@ If you are using a package that meets your requirements but you found issues or 
 - Note the deprecation messages during `npm install` and follow the instruction if the message offered any.
 - Check the package's npm page at `https://www.npmjs.com/package/<package-name>`. ie: <https://www.npmjs.com/package/express>
   - Check the "last publish" date and versions history to get a sense of its latest activies.
+  - Check if its `package.json` has a `support` field that indicates its support status.
   - Open the "repository" link if it has one to view development activities.
 
 ### Identifying unmaintained package?
@@ -61,7 +62,13 @@ When you've opened the package's repo, to further check development activities:
 
 ### Taking Further Actions
 
-Once you've identified a package may be unmaintained, please open an issue for the Node.js package-maintenance working group to check and identify path forward.
+Once you've identified a package may be unmaintained, there are some basic actions you can take to help yourself:
+
+- Fork the repo and enhance the code yourself.
+  - If you don't want to publish a modified copy under a different name, then consider using a tool like <https://github.com/ds300/patch-package>.
+- Consider becoming a maintainer for the package.
+- Search for a maintained alternative that may meet your requirements better.
+- Please open an issue for the Node.js package-maintenance working group so that we may request for npm ownership in case someone's interested in maintaining the package.
 
 ## For Package Owners
 
@@ -74,11 +81,12 @@ If you own a package and you want to stop maintaining it, then please help your 
 ### `npm deprecate` command
 
 - npm has the "deprecate" command, you can utilize this.
+- You can use semvers to deprecate a range. ie: `npm deprecate package@^1.0.0`
 - deprecate your latest version with a message that includes `"abandoned and unmaintained"`.
   - It allows updating the message so you can change it later - verified as of 02/05/2019
   - It can be undone by setting an empty message.
     - ie: `npm deprecate package@1.0.0 ""`
-- Even if you are still maintaining the package, please consider marking an old version as deprecated.
+- Please consider marking an old version with crtical issues or vulnerabilities as deprecated.
 
 ### Mark abandoned/unmaintained
 
@@ -103,5 +111,5 @@ Other ideas for tools that could help:
 
 - A cli to allow `npm deprecate` a range of versions on a package.
 - or request new support of `npm deprecate` to allow deprecating versions published before a given time
- - use npm 6.9+'s aliasing ability to provide a replacement for transitive deps.
+- use npm 6.9+'s aliasing ability to provide a replacement for transitive deps.
 - if author simply can't be reached and package is very outdated, then need to contact npm to get access to deprecate package.
