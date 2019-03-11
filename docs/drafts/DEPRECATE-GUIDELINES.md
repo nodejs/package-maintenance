@@ -8,7 +8,7 @@ To ensure that packages in the Node.js ecosystem are up to date or gracefully de
 
 # How?
 
-These guidelines exist to help with the course of actions for package consumers and owners to take in the event that a package becomes unmaintained.
+These guidelines exist to help with a course of action for package consumers and owners to take in the event that a package becomes unmaintained.
 
 - Provide a baseline and common practices for identifying unmaintained packages
 - Give package consumers some help with unmaintained packages.
