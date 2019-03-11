@@ -20,7 +20,7 @@ It's not always obvious if a package is unmaintained. Many packages are small an
 
 Generally the question "is this package unmaintained?" arises when users find it to have issues that are not getting responded to, or being addressed.
 
-Some criterias to determine if it's unmaintained:
+Some criteria to determine if it's unmaintained:
 
 - The author is no longer responding to questions, issues, PRs, or making any updates, and specifically repeat "are you there inquries" for critical issues.
 - The author may have explicitly indicated that they will stop all activities on the package.
