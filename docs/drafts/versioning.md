@@ -9,6 +9,5 @@ to version 1.0.0 on the next semver major release.
 ## Other versioning requirements
 - Increasing the minimum required version of node is a 
 breaking change and should be accompanied by major semver change.
-- Release tag comments
-- Using a change log, either via a file or tags
+-  release notes, in at least one of or possibly all of: in the commit message that bumps the version; in a changelog file in the version bump commit; in the tag annotation for the semver-tagged published commit.
 
