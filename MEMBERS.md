@@ -93,3 +93,4 @@
 * Sathish Gajendran ([@sathishgajendran](https://github.com/sathishgajendran))
 * Abdul Rahman Zantout ([@abedzantout](https://github.com/abedzantout))
 * James M. Greene ([@JamesMGreene](https://github.com/JamesMGreene))
+* Bethany Griggs ([@BethGriggs](https://github.com/bethgriggs))
