@@ -48,7 +48,8 @@ On the `files` field in `package.json`:
 
 - the opposite of `.npmignore`, if you forget to add some new files to this, you could publish a package that's broken because of missing files.
 - there's an open bug that [`files` affects npm's default rules](https://npm.community/t/ds-store-files-show-up-after-npm-publish/831/4)
-  - The result of this is that if you have a file that npm is suppose to ignore by default within a whitelisted directory, then npm will publish it.
+  - The result is npm's default ignore rules has no effect on files under directories that are whitelisted by `files`.
+  - For example, if you set `"files": [ "lib" ]`, then `lib/.gitignore` will be published and there's no easy way to avoid that.
 
 ## Verifications
 
