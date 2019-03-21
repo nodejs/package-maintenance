@@ -51,7 +51,7 @@ On the `files` field in `package.json`:
 
 ## Verification
 
-In the newer [npm] version 6, [`npm publish`] now shows the list of files published, but it doesn't offer you a chance to review them first.
+In the newer [npm] version 6, [`npm publish`] now shows the list of files published.
 
 If you want to review the files, you can use the [`npm pack`] command to generate a tarball first and look inside it.
 
