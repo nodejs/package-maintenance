@@ -42,30 +42,41 @@ On the `.gititnore` file:
 On the `.npmignore` file:
 
 - using `.npmignore`, you could potentially publish any unintended files left in the directory.
-- [npm] will stop using `.gitnore` if this exists, so beware because you may forget to add some rules to `.npmignore` after you add them to `.gitignore`
+- [npm] will stop using `.gitignore` if this exists, so beware because you may forget to add some rules to `.npmignore` after you add them to `.gitignore`
 
 On the `files` field in `package.json`:
 
 - the opposite of `.npmignore`, if you forget to add some new files to this, you could publish a package that's broken because of missing files.
 - there's an open bug that [`files` affects npm's default rules](https://npm.community/t/ds-store-files-show-up-after-npm-publish/831/4)
+  - The result of this is that if you have a file that npm is suppose to ignore by default within a whitelisted directory, then npm will publish it.
 
-## Verification
+## Verifications
 
-In the newer [npm] version 6, [`npm publish`] now shows the list of files published.
+Run `npm publish --dry-run` to check what you are about to publish first.  In the newer [npm] version 6, [`npm publish`] now shows the list of files so you can inspect that also.
 
-If you want to review the files, you can use the [`npm pack`] command to generate a tarball first and look inside it or run `npm publish --dry-run` to get the file list.
+You can use the [`npm pack`] command to generate a tarball to see exactly what will be uploaded to the registry.
 
 You can also use the [`npm pack`] command to download a tarball from a published version.
 
 For example: `npm pack npm@6.5.0`.
 
-## Sources, Tests, and Docs
+## Transpiling Sources
 
-A package not written in idiomatic JavaScript should be published with transpiled JavaScript as the primary executable.
+A package written in another language like TypeScript should be published with transpiled JavaScript as the primary executable.
 
-If you write your package in another language like TypeScript and you have other files like tests and extra docs, then it's your preference on whether to publish them or not.
+Generally the original sources should not be required to use your published package, but it's your preference whether to publish them or not.
 
-Keep in mind that tests is a location where someone could potentially hide malicious code to cause harm.
+## Publish and Install scripts
+
+If your package requires any build steps such as transpiling sources, then note that [npm's recommendation](https://docs.npmjs.com/misc/scripts#best-practices) is to run those before you publish, not when your user install your package.
+
+The [npm scripts] `prepare` and `prepublishOnly` are intended for this purpose.
+
+## Tests and Docs
+
+For your tests and extra docs, it's your preference on whether to publish them or not.
+
+Keep in mind that tests generally are more relaxed at what they are allowed to do and easier to overlook, so they are a location where someone could potentially hide malicious code to cause harm.
 
 ## Other Resources
 
@@ -82,3 +93,4 @@ There are tools that help you with the verication and publishing process:
 [public registry]: https://www.npmjs.com/
 [`.npmignore`]: https://docs.npmjs.com/misc/developers#keeping-files-out-of-your-package
 [`files`]: https://docs.npmjs.com/files/package.json#files
+[npm scripts]: https://docs.npmjs.com/misc/scripts#description
