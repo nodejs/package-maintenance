@@ -53,7 +53,7 @@ On the `files` field in `package.json`:
 
 In the newer [npm] version 6, [`npm publish`] now shows the list of files published.
 
-If you want to review the files, you can use the [`npm pack`] command to generate a tarball first and look inside it.
+If you want to review the files, you can use the [`npm pack`] command to generate a tarball first and look inside it or run `npm publish --dry-run` to get the file list.
 
 You can also use the [`npm pack`] command to download a tarball from a published version.
 
