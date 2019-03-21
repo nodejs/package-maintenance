@@ -42,7 +42,7 @@ On the `.gititnore` file:
 On the `.npmignore` file:
 
 - using `.npmignore`, you could potentially publish any unintended files left in the directory.
-- [npm] will stop using `.gitnore` if this exist, so beware because you may forget to add some rules to `.npmignore` after you add them to `.gitignore`
+- [npm] will stop using `.gitnore` if this exists, so beware because you may forget to add some rules to `.npmignore` after you add them to `.gitignore`
 
 On the `files` field in `package.json`:
 
