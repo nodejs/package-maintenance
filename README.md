@@ -9,24 +9,24 @@ about this initiative in the article:
 ## Goals
 
 * Define and document how to prioritize which packages are key to the
-  Node.js ecosystem and how/what assistance can/should be provided.
-  One of the key aspects of this is understanding what communication
-  channels we need in order to be able to identify when specific
-  issues are slowing migration from one Node.js version to another
-  or causing friction in the ecosystem in some other way.
-* Building and documenting guidance, tools and processes that
-  businesses can use to identify packages on which they depend,
-  and then to use this information to be able to build a business
-  case that supports their organization and developers helping to
+  Node.js ecosystem, and how/what assistance can/should be provided.
+  One key aspect is understanding what communication
+  channels are needed in order to identify when specific
+  issues are slowing migration from one Node.js version to another,
+  or causing friction in the ecosystem.
+* Building and documenting guidance, tools and processes so
+  businesses can identify the packages they depend on.
+  Businesses can use the information to build a business
+  case which supports both the organization and developers helping to
   maintain those packages.
-* Documenting a backlog and providing resources that help
-  businesses identify how their developers can ramp up and
-  get engaged to help. Test and validate a workflow by helping
-  with some issues that are slowing migration to Node.js 10.x.
+* Documenting a backlog and providing resources to help
+  businesses identify how their developers can contribute, and
+  get engaged. Developers can test and validate a workflow to help
+  with issues slowing migration to Node.js 10.x.
 * Building, documenting and evangelizing guidance, tools and
   processes (for example LTS for modules)
-  that make it easier for maintainers to manage multiple
-  streams and accept help from those who depend on their module.
+  can make it easier for maintainers to manage multiple
+  streams, and accept help from those who depend on their module.
 
 ## Joining
 
