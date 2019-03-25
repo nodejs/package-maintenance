@@ -17,6 +17,11 @@ It is a good idea to have unit tests, coverage that matches most use cases for t
 Here are some things to consider as you develop your package.
 
 Some useful tools:
+* [c8](https://www.npmjs.com/package/c8)
+* [Codecov](https://www.npmjs.com/package/codecov)
+* [Coveralls](https://www.npmjs.com/package/coveralls)
 * [Jest](https://www.npmjs.com/package/jest)
 * [Mocha](https://www.npmjs.com/package/mocha)
+* [Nock](https://www.npmjs.com/package/nock)
+* [nyc](https://www.npmjs.com/package/nyc)
 * [tape](https://www.npmjs.com/package/tape)
