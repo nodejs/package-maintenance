@@ -12,6 +12,7 @@ These are the basic questions to start with:
 + What are the most frequent problems?
 + What would you like to do to us?
 + What problems are due to your dependencies?
++ How do you discover if a new version of your dependencies are available and what changes are made?
 + Are your dependencies need of help? 
 + Do you have to contribute to your dependencies? Do you establish a good communication channel?
 
