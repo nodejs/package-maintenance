@@ -35,7 +35,7 @@ These guidelines exist to help package owners with some practices on managing pa
 
 Which one to go with is solely up to you and your preference, but beware of the following gotchas and tips:
 
-On the `.gititnore` file:
+On the `.gitignore` file:
 
 - [npm] automatically uses `.gitignore` if neither one exist
 
