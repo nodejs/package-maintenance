@@ -109,7 +109,6 @@ There are some ongoing discussion related to npm to make managing unmaintained p
 
 Other ideas for tools that could help:
 
-- A cli to allow `npm deprecate` a range of versions on a package.
 - or request new support of `npm deprecate` to allow deprecating versions published before a given time
 - use npm 6.9+'s aliasing ability to provide a replacement for transitive deps.
 - if author simply can't be reached and package is very outdated, then need to contact npm to get access to deprecate package.
