@@ -66,7 +66,9 @@ Once you've identified a package may be unmaintained, there are some basic actio
 
 - Fork the repo and enhance the code yourself.
   - If you don't want to publish a modified copy under a different name, then consider using a tool like <https://github.com/ds300/patch-package>.
-- Consider becoming a maintainer for the package.
+- Consider becoming a maintainer for the package. How to do that is currently under discussions.
+  - This working group has an active issue here https://github.com/nodejs/package-maintenance/issues/155
+  - The ultimate ownership rests upon npm and currently the dispute doc outlines the best course of action https://docs.npmjs.com/misc/disputes.html
 - Search for a maintained alternative that may meet your requirements better.
 - Please open an issue for the Node.js package-maintenance working group so that we may request for npm ownership in case someone's interested in maintaining the package.
 
@@ -77,6 +79,7 @@ If you own a package and you want to stop maintaining it, then please help your 
 - Use the `npm deprecate` command to mark package as unmaintained.
 - Add a note to your repo's `README.md` file.
 - Reach out to the Node.js package-maintenance working group to offer us ownership so we can hand it off to a new owner.
+- Update the `support` levels in your `package.json` according to the [support level doc]
 
 ### `npm deprecate` command
 
@@ -109,6 +112,8 @@ There are some ongoing discussion related to npm to make managing unmaintained p
 
 Other ideas for tools that could help:
 
-- or request new support of `npm deprecate` to allow deprecating versions published before a given time
+- request new support of `npm deprecate` to allow deprecating versions published before a given time
 - use npm 6.9+'s aliasing ability to provide a replacement for transitive deps.
 - if author simply can't be reached and package is very outdated, then need to contact npm to get access to deprecate package.
+
+[support level doc]: https://github.com/nodejs/package-maintenance/blob/master/docs/drafts/Baseline%20practice%20-%20Document%20support%20levels.md
