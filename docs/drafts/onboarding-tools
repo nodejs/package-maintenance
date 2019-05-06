@@ -11,6 +11,6 @@ If you have an idea for a tool that can help our community to hold themselves ac
 4. Build the tool as a public GitHub repo that follows Package Maintenance Team standards
 - https://github.com/nodejs/package-maintenance/blob/master/docs/drafts/Baseline%20practice%20-%20Document%20support%20levels.md
 
-5. Release your tool as a public NPM module (following our [documented steps for publishing modules](https://github.com/nodejs/package-maintenance/blob/master/docs/drafts/PUBLISH-GUIDELINES.md))
+5. Release your tool as a public npm module (following our [documented steps for publishing modules](https://github.com/nodejs/package-maintenance/blob/master/docs/drafts/PUBLISH-GUIDELINES.md))
 
 6. **As Needed:** Follow the steps for [transferring you repo into the org.](https://github.com/nodejs/admin/blob/0f2af76492b9efff8bafedbf650bb0a3c4f76e44/transfer-repo-into-the-org.md)
