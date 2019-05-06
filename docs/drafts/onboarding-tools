@@ -13,4 +13,4 @@ If you have an idea for a tool that can help our community to hold themselves ac
 
 5. Release your tool as a public npm module (following our [documented steps for publishing modules](https://github.com/nodejs/package-maintenance/blob/master/docs/drafts/PUBLISH-GUIDELINES.md))
 
-6. **As Needed:** Follow the steps for [transferring your repo into the org](https://github.com/nodejs/admin/blob/0f2af76492b9efff8bafedbf650bb0a3c4f76e44/transfer-repo-into-the-org.md).
+6. **As Needed:** Follow the steps for [transferring your repo into the org](https://github.com/nodejs/admin/blob/master/transfer-repo-into-the-org.md).
