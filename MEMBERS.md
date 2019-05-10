@@ -13,7 +13,6 @@
 * Arunesh Chandra ([@aruneshchandra](https://github.com/aruneshchandra))
 * Mohammed Essehemy ([@MohammedEssehemy](https://github.com/MohammedEssehemy))
 * Emily Platzer ([@craftninja](https://github.com/craftninja))
-* Benjamin Lupton ([@balupton](https://github.com/balupton))
 * Viktor Vershanskij ([@wentout](https://github.com/wentout))
 * Kyle Martin ([@js-kyle](https://github.com/js-kyle))
 * Wes Todd ([@wesleytodd](https://github.com/wesleytodd))
