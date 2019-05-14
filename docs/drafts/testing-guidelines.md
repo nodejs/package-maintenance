@@ -7,6 +7,17 @@ Testing is useful for developing new features, refactoring with confidence, and 
 
 Testing is even more important when new maintainers take over a package. Sometimes when we work on a codebase for a long time we forget to articulate all the cognitive load to which we have become accustomed. Good test coverage can alleviate this burden.
 
+### Updates
+Node.js has a [strict release pipeline](https://nodejs.org/en/about/releases/) focused on continuous improvement and update. In order to guarantee to your users that the module you made works correctly with the newer version of Node.js, it is a good practice to run your tests across multiple Node.js versions.
+
+This can be done developing a CI pipeline. Check out our [CI guidelines](https://github.com/nodejs/package-maintenance/blob/master/README.md).
+
+The minimal versions you should focus are:
+* LTS (long time support)
+* Current
+
+Of course, you are freely to maintain a package that run also with older versions of Node.js that reach the "end-of-life" stage.
+
 ### How?
 It is a good idea to have unit tests, coverage that matches most use cases for the module, and make sure things work in all supported environments.
 
