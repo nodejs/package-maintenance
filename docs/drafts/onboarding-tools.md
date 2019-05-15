@@ -9,7 +9,7 @@ If you have an idea for a tool that can help our community to hold themselves ac
 3. Discuss with the group during our team meeting so we can plan next steps. (See [Calendar](https://calendar.google.com/calendar/embed?src=nodejs.org_nr77ama8p7d7f9ajrpnu506c98@group.calendar.google.com) for date/time)
 
 4. Build the tool as a public GitHub repo that follows Package Maintenance Team standards
-- https://github.com/nodejs/package-maintenance/blob/master/docs/drafts/Baseline%20practice%20-%20Document%20support%20levels.md
+- [Document Support Levels](https://github.com/nodejs/package-maintenance/blob/master/docs/drafts/Baseline%20practice%20-%20Document%20support%20levels.md)
 
 5. Release your tool as a public npm module (following our [documented steps for publishing modules](https://github.com/nodejs/package-maintenance/blob/master/docs/drafts/PUBLISH-GUIDELINES.md))
 
