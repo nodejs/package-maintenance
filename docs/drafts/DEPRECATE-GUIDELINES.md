@@ -35,7 +35,7 @@ If you are using a package that meets your requirements but you found issues or 
 
 - Note the deprecation messages during `npm install` and follow the instruction if the message offered any.
 - Check the package's npm page at `https://www.npmjs.com/package/<package-name>`. ie: <https://www.npmjs.com/package/express>
-  - Check the "last publish" date and versions history to get a sense of its latest activies.
+  - Check the "last publish" date and versions history to get a sense of its latest activity. Note that you may want to `npm show $package time` to see all the published versions and times, regardless of their dist-tag setting.
   - Check if its `package.json` has a `support` field that indicates its support status.
   - Open the "repository" link if it has one to view development activities.
 
