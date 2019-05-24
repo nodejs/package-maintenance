@@ -37,7 +37,7 @@ If you are using a package that meets your requirements but you found issues or 
 - Check the package's npm page at `https://www.npmjs.com/package/<package-name>`. ie: <https://www.npmjs.com/package/express>
   - Check the "last publish" date and versions history to get a sense of its latest activity. Note that you may want to `npm show $package time` to see all the published versions and times, regardless of their dist-tag setting.
   - Check if its `package.json` has a `support` field that indicates its support status.
-  - Open the "repository" link if it has one to view development activities.
+  - Open the "repository" link if it has one to view development activities (you can run `npm repo $package` to do this as well)
 
 ### Identifying unmaintained package?
 
