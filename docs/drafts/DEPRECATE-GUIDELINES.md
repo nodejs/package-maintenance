@@ -47,7 +47,7 @@ When you've opened the package's repo, to further check development activities:
 
 - Search through existing issues and PRs (closed and open) to see if anyone else has submitted inquiries similar to what you are seeking.
 
-- Check for or file issue in the repo to encourage author to deprecate a version that:
+- Check for or file an issue in the repo to encourage the author to replace and deprecate a version that:
 
   - Has known critical bugs and should be avoided
   - Is known to fail for LTS node.js
