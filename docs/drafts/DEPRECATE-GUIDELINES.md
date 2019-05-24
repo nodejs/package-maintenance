@@ -45,7 +45,7 @@ When you've opened the package's repo, to further check development activities:
 
 - Check README or issues to see if the author has indicated they are no longer interested in maintaining the package
 
-- Search through existing issues and PRs to see if anyone else has submitted inquries similar to what you are seeking.
+- Search through existing issues and PRs (closed and open) to see if anyone else has submitted inquiries similar to what you are seeking.
 
 - Check for or file issue in the repo to encourage author to deprecate a version that:
 
