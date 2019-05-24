@@ -113,7 +113,7 @@ There are some ongoing discussion related to npm to make managing unmaintained p
 Other ideas for tools that could help:
 
 - request new support of `npm deprecate` to allow deprecating versions published before a given time
-- use npm 6.9+'s aliasing ability to provide a replacement for transitive deps.
+- use npm 6.9+'s aliasing ability to provide a replacement for transitive deps. You can find more info about this at https://github.com/npm/rfcs/blob/latest/implemented/0001-package-aliases.md
 - if author simply can't be reached and package is very outdated, then need to contact npm to get access to deprecate package.
 
 [support level doc]: https://github.com/nodejs/package-maintenance/blob/master/docs/drafts/Baseline%20practice%20-%20Document%20support%20levels.md
