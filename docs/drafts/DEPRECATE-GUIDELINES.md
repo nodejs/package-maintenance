@@ -43,7 +43,7 @@ If you are using a package that meets your requirements but you found issues or 
 
 When you've opened the package's repo, to further check development activities:
 
-- Check README or issues to see if the author indicated they are no longer interested in maintaining the package
+- Check README or issues to see if the author has indicated they are no longer interested in maintaining the package
 
 - Search through existing issues and PRs to see if anyone else has submitted inquries similar to what you are seeking.
 
