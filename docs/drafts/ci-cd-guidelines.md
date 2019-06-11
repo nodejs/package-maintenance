@@ -35,7 +35,7 @@ To say a CI/CD template follows the "tests" guidelines documented here, it would
       - Many CI/CD systems run this implicitly for JavaScript projects. You do not need to explicitly define `npm test` in these cases.
     - `npm ls`
       - If `npm ls` exits with a `0` exit code, your build should pass
-      - If `npm ls` exits with a non-`0` exit code, your dependnecy graph is invalid and should fail the run
+      - If `npm ls` exits with a non-`0` exit code, your dependency graph is invalid and should fail the run
   - **Optional**:
     - code coverage
       - failure if code coverage is below a well-documented threshold
