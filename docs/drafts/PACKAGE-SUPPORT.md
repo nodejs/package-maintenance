@@ -206,13 +206,26 @@ To understand if the version is expired or not, the user needs to do the operati
 
 ## Support `contact`
 
-The contact field is a JSON that show to users all the possible channels to contact the maintainer:
+The contact field is a JSON that show to users all the possible channels to contact the maintainer that could be:
+
+- `issues`: how to URL to the issues tracker. It could be the same of the `package.json`
+- `security`: a contact for security issues
+- `paid-channel`: a direct contact for paid support
+
+Each field is a JSON with more information like an external URL or an email.
 
 ```json
 "contact": {
-  "url": "http://support.it/issue", // URL to the issues tracker
-  "security": "mailto:security@nodejs.com", // A contact for security issues
-  "paid-channel": "mailto:iwantmoney@nodejs.com" // A direct contact for paid support
+  "issues": {
+    "url": "http://support.it/issue"
+  },
+  "security": {
+    "email": "mailto:security@nodejs.com"
+  },
+  "paid-channel": {
+    "url": "http://support.it/paid-suport",
+    "email": "mailto:paid-channel@node.js"
+  }
 },
 ```
 
