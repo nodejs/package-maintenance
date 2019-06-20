@@ -20,6 +20,7 @@ There are 4 main dimensions that we standardize in this practice which are:
 * `response`: how quickly the maintainer chooses to, or is able to, respond to issues
 * `response-paid`: how quickly the maintainer will respond to issues if paid
 * `backing`: how the project is supported
+* `funding`: how the clients can support the project
 
 In addition a `url` field can optionally be provided with a link to more detailed
 support information.
@@ -54,14 +55,19 @@ A `support` field with a `versions` key.
         "response": "none",
         "response-paid": "regular-1",
         "backing": [
-          "paid-support",
-          "sponsored"
+          "paid-support"
         ],
         "expires": "1 year",
         "contact": {
-          "url": "http://support.it/issue",
-          "security": "mailto:security@nodejs.com",
-          "paid-channel": "mailto:iwantmoney@nodejs.com"
+          "issues": {
+            "url": "http://support.it/issue"
+          },
+          "security": {
+            "file": "./SECURITY.md"
+          },
+          "paid-channel": {
+            "email": "mailto:iwantmoney@nodejs.com"
+          }
         },
         "funding": {
           "open-collective": "",
@@ -76,9 +82,15 @@ A `support` field with a `versions` key.
         "backing": "hobby",
         "expires": "3 months",
         "contact": {
-          "url": "http://support.it/issue",
-          "security": "mailto:security@nodejs.com",
-          "paid-channel": "mailto:iwantmoney@nodejs.com"
+          "issues": {
+            "url": "http://support.it/issue"
+          },
+          "security": {
+            "email": "mailto:security@nodejs.com"
+          },
+          "paid-channel": {
+            "email": "mailto:iwantmoney@nodejs.com"
+          }
         },
         "funding": {
           "open-collective": "",
@@ -109,8 +121,12 @@ The default for packages created by individuals for their own use should most of
         ],
         "expires": "3 years",
         "contact": {
-          "url": "https://github.com/nodejs/package-maintenance/issues",
-          "security": "mailto:security@nodejs.com"
+          "issues": {
+            "url: "https://github.com/nodejs/package-maintenance/issues"
+          },
+          "security": {
+            "email": "mailto:security@nodejs.com"
+          }
         }
       }
     ]
@@ -212,7 +228,7 @@ The contact field is a JSON that show to users all the possible channels to cont
 - `security`: a contact for security issues
 - `paid-channel`: a direct contact for paid support
 
-Each field is a JSON with more information like an external URL or an email.
+Each field is a JSON with more information like an external URL, an email or a project file.
 
 ```json
 "contact": {
@@ -220,7 +236,7 @@ Each field is a JSON with more information like an external URL or an email.
     "url": "http://support.it/issue"
   },
   "security": {
-    "email": "mailto:security@nodejs.com"
+    "file": "./SECURITY.md"
   },
   "paid-channel": {
     "url": "http://support.it/paid-suport",
