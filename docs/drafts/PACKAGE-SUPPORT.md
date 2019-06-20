@@ -49,7 +49,7 @@ A `support` field with a `versions` key.
   "support": {
     "versions": [
       {
-        "version": "<=1",
+        "version": "^1.0.0",
         "target": "abandoned",
         "response": "none",
         "response-paid": "regular-1",
@@ -89,6 +89,9 @@ A `support` field with a `versions` key.
   }
 }
 ```
+
+Note that the `version` ranges could overlap each other: it means that the maintainers provide more
+than one support type, and it is up to users choose the support level that best fits their need.
 
 The default for packages created by individuals for their own use should most often be:
 
