@@ -57,7 +57,7 @@ A `support` field with a `versions` key.
           "paid-support",
           "sponsored"
         ],
-        "expires": "2019-08-01T20:47:27.840Z",
+        "expires": "1 year",
         "contact": {
           "url": "http://support.it/issue",
           "security": "mailto:security@nodejs.com",
@@ -74,7 +74,7 @@ A `support` field with a `versions` key.
         "response": "regular-7",
         "response-paid": "regular-1",
         "backing": "hobby",
-        "expires": "2021-08-01T20:47:27.840Z",
+        "expires": "3 months",
         "contact": {
           "url": "http://support.it/issue",
           "security": "mailto:security@nodejs.com",
@@ -107,7 +107,7 @@ The default for packages created by individuals for their own use should most of
           "hobby",
           "sponsored"
         ],
-        "expires": "2019-08-01T20:47:27.840Z",
+        "expires": "3 years",
         "contact": {
           "url": "https://github.com/nodejs/package-maintenance/issues",
           "security": "mailto:security@nodejs.com"
@@ -191,7 +191,17 @@ backing comes from more than one source. The documented options include:
 
 ## Support `expires`
 
-The expire field is a string in ISO Date format which define the ending of the term of that support entry.
+The expire field defines the ending of the term of a support entry.
+It is a string in the format: `<duration:int> <unit:string>`.
+The duration parameter must be greater than zero and the unit values are:
+
+- `week` or `weeks`
+- `month` or `months`
+- `year` or `years`
+
+To understand if the version is expired or not, the user needs to do the operation:
+
+`date of last release in the version range` **+** `expires value` **>** `now` => the support is not expired
 
 
 ## Support `contact`
