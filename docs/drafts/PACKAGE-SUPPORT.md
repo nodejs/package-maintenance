@@ -115,14 +115,11 @@ The default for packages created by individuals for their own use should most of
         "version": "*",
         "target": "lts",
         "response": "best-effort",
-        "backing": [
-          "hobby",
-          "sponsored"
-        ],
+        "backing": [ "hobby" ],
         "expires": "3 years",
         "contact": {
           "issues": {
-            "url: "https://github.com/nodejs/package-maintenance/issues"
+            "url": "https://github.com/nodejs/package-maintenance/issues"
           },
           "security": {
             "email": "mailto:security@nodejs.com"
@@ -218,6 +215,7 @@ The duration parameter must be greater than zero and the unit values are:
 To understand if the version is expired or not, the user needs to do the operation:
 
 `date of last release in the version range` **+** `expires value` **>** `now` => the support is not expired
+`date of last release in the version range` **+** `expires value` **<** `now` => the support is expired
 
 
 ## Support `contact`
