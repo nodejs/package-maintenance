@@ -35,8 +35,8 @@ consumes these elements.
 
 ## Support file
 
-The support informations are stored in a `support.json` file 
-The recommended baseline practice is to include a file named `support.json` in the root direcotry of the project.
+The support informations are stored in a `support.json` file.
+The recommended baseline practice is to include a file named `support.json` in the root directory of the project.
 
 This file documents the maintainers expectations adding more useful metadata.
 
@@ -57,7 +57,7 @@ A `support` field with a `versions` key.
         "backing": [
           "paid-support"
         ],
-        "expires": "1 year",
+        "expires": "P1Y",
         "contact": {
           "issues": {
             "url": "http://support.it/issue"
@@ -80,7 +80,7 @@ A `support` field with a `versions` key.
         "response": "regular-7",
         "response-paid": "regular-1",
         "backing": "hobby",
-        "expires": "3 months",
+        "expires": "P1M3",
         "contact": {
           "issues": {
             "url": "http://support.it/issue"
@@ -116,7 +116,7 @@ The default for packages created by individuals for their own use should most of
         "target": "lts",
         "response": "best-effort",
         "backing": [ "hobby" ],
-        "expires": "3 years",
+        "expires": "P1Y2M10DT2H30M",
         "contact": {
           "issues": {
             "url": "https://github.com/nodejs/package-maintenance/issues"
@@ -205,14 +205,14 @@ backing comes from more than one source. The documented options include:
 ## Support `expires`
 
 The expire field defines the ending of the term of a support entry.
-It is a string in the format: `<duration:int> <unit:string>`.
-The duration parameter must be greater than zero and the unit values are:
+It is a string in the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.
 
-- `week` or `weeks`
-- `month` or `months`
-- `year` or `years`
+This standard can express:
++ _a date_ (ex: `2007-03-01T13:00:00Z`): the value is the expiring date. This value is strict and not dynamic.
++ _time range_ (ex: `2007-03-01T13:00:00Z/2008-05-11T15:30:00Z`): the value is the range of validity of the supported version. This value is strict and not dynamic.
++ _only duration_ (ex: `P1Y2M10DT2H30M`): the value must be added to the last release date. This value is dynamic.
 
-To understand if the version is expired or not, the user needs to do the operation:
+To understand if the version is expired or not, the user needs to do the operation for _duration_:
 
 `date of last release in the version range` **+** `expires value` **>** `now` => the support is not expired
 `date of last release in the version range` **+** `expires value` **<** `now` => the support is expired
