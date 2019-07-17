@@ -19,8 +19,7 @@ There are 4 main dimensions that we standardize in this practice which are:
 * `target`: the level of support that the package maintainer aims to provide
 * `response`: how quickly the maintainer chooses to, or is able to, respond to issues
 * `response-paid`: how quickly the maintainer will respond to issues if paid
-* `backing`: how the project is supported
-* `funding`: how the clients can support the project
+* `backing`: how the project can be supported
 
 In addition a `url` field can optionally be provided with a link to more detailed
 support information.
@@ -68,10 +67,6 @@ A `support` field with a `versions` key.
           "paid-channel": {
             "email": "mailto:iwantmoney@nodejs.com"
           }
-        },
-        "funding": {
-          "open-collective": "",
-          "btc": ""
         }
       },
       {
@@ -91,10 +86,6 @@ A `support` field with a `versions` key.
           "paid-channel": {
             "email": "mailto:iwantmoney@nodejs.com"
           }
-        },
-        "funding": {
-          "open-collective": "",
-          "btc": ""
         }
       }
     ]
@@ -185,7 +176,8 @@ options that the maintainer knows are available.
 
 ## Support `backing`
 
-This section can be a single value or an array of values, for example: [x, y, z]. This supports cases where the
+This section tracks how the project is funding.
+It can be a single value or an array of values, for example: [x, y, z]. This supports cases where the
 backing comes from more than one source. The documented options include:
 
 | Value | Description |
@@ -200,6 +192,8 @@ backing comes from more than one source. The documented options include:
 | `commercial`   | The package is maintained and supported by a corporate entity as part of supporting their products.
 | `paid-support` | The package is maintained and supported through paid support contracts.
 | `freemium`     | Basic version of the package it provided for free, premium version is available at a cost.
+| `donations`    | The project can be funded by any donations.
+| `open-collective` | The project can be funded by donations via `open-collective`.
 
 
 ## Support `expires`
@@ -241,16 +235,4 @@ Each field is a JSON with more information like an external URL, an email or a p
     "email": "mailto:paid-channel@node.js"
   }
 },
-```
-
-
-## Support `funding`
-
-This field should track all the possibilities to fund the project to receive a paid support.
-
-```json
-"funding": {
-  "open-collective": "",
-  "btc": ""
-}
 ```
