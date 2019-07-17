@@ -75,7 +75,7 @@ A `support` field with a `versions` key.
         "response": "regular-7",
         "response-paid": "regular-1",
         "backing": "hobby",
-        "expires": "P1M3",
+        "expires": "P1M",
         "contact": {
           "issues": {
             "url": "http://support.it/issue"
