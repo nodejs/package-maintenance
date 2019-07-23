@@ -94,3 +94,4 @@
 * James M. Greene ([@JamesMGreene](https://github.com/JamesMGreene))
 * Bethany Griggs ([@BethGriggs](https://github.com/bethgriggs))
 * Mayank Patel ([@mayank-patel](https://github.com/mayank-patel))
+* Lucas Holmquist ([@lholmquist](https://github.com/lholmquist))
