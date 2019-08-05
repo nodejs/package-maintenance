@@ -136,7 +136,7 @@ module that applies that configuration.
 Note that the `version` ranges could overlap each other: it means that the maintainers provide more
 than one support type, and it is up to users choose the support level that best fits their need.
 
-## Support `target`
+### Support `target`
 
 The support target captures the level of support that the package maintainer
 aims to provide.  The standardized options are as follows:
@@ -161,7 +161,7 @@ support would be as follows where X indicates support is provided:
 | `superset`    |  X  |  X  |   X  |   X  |           X           |
 
 
-## Support `response` and `response-paid`
+### Support `response` and `response-paid`
 
 Support response quantifies how quickly the maintainer chooses to, or is able to, respond to issues:
 
@@ -178,7 +178,7 @@ Support-response indicates the expectation unless you have paid one of the maint
 options that the maintainer knows are available.
 
 
-## Support `backing`
+### Support `backing`
 
 This section tracks how the project is funding.
 It can be a single value or an array of values, for example: [x, y, z]. This supports cases where the
@@ -200,7 +200,7 @@ backing comes from more than one source. The documented options include:
 | `open-collective` | The project can be funded by donations via `open-collective`.
 
 
-## Support `expires`
+### Support `expires`
 
 The expire field defines the ending of the term of a support entry.
 It is a string in the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.
@@ -216,7 +216,7 @@ To understand if the version is expired or not, the user needs to do the operati
 `date of last release in the version range` **+** `expires value` **<** `now` => the support is expired
 
 
-## Support `contact`
+### Support `contact`
 
 The contact field is a JSON that show to users all the possible channels to contact the maintainer that could be:
 
@@ -236,3 +236,10 @@ Each field is a JSON with more information like an external url, an email or a p
   }
 },
 ```
+
+## Authoritative
+
+A published module may contain outdates support information, so the valid support information refer
+to the last published `package.json`.
+If the module is not a Node.js module, the valid support informations are the latest version in the
+`package-support.json` file in the repository.
