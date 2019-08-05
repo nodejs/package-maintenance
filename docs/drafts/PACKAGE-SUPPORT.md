@@ -32,11 +32,13 @@ The values can be any string, those which are not documented in the lists within
 this document considered "custom" and may ignored for flagged by any tooling that
 consumes these elements.
 
-## Support field
-
-The support informations are stored in the `package.json` file in the root directory of the project.
+## Support informations
 
 This field documents the maintainers expectations adding more useful metadata.
+
+The support informations are stored in the `package.json` file in the root directory of the project.
+If the the project is not a published Node.js module, the data must be stored in the `package-support.json`
+file in the root directory.
 
 The file expects this example structure:
 
@@ -221,7 +223,7 @@ The contact field is a JSON that show to users all the possible channels to cont
 - `security`: a contact for security issues
 - `paid-channel`: a direct contact for paid support
 
-Each field is a JSON with more information like an external URL, an email or a project file.
+Each field is a JSON with more information like an external url, an email or a project file.
 
 ```json
 "contact": {
