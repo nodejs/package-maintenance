@@ -32,20 +32,19 @@ The values can be any string, those which are not documented in the lists within
 this document considered "custom" and may ignored for flagged by any tooling that
 consumes these elements.
 
-## Support file
+## Support field
 
-The support informations are stored in a `support.json` file.
-The recommended baseline practice is to include a file named `support.json` in the root directory of the project.
+The support informations are stored in the `package.json` file in the root directory of the project.
 
-This file documents the maintainers expectations adding more useful metadata.
+This field documents the maintainers expectations adding more useful metadata.
 
 The file expects this example structure:
 
-A `support` field with a `versions` key.
-`versions` is an array of JSON that contains all the useful information detailed below.
-
 ```json
 {
+  "name": "my-package",
+  "version": "1.0.0",
+  "description": "a package.json file",
   "support": {
     "versions": [
       {
@@ -93,10 +92,7 @@ A `support` field with a `versions` key.
 }
 ```
 
-Note that the `version` ranges could overlap each other: it means that the maintainers provide more
-than one support type, and it is up to users choose the support level that best fits their need.
-
-The default for packages created by individuals for their own use should most often be:
+The default for packages created by individuals for their own use should most often add this support's data:
 
 ```json
 {
@@ -125,12 +121,18 @@ The default for packages created by individuals for their own use should most of
 This reflects that the maintainer in this case may have no interest in ensuring that the package works
 outside of their use case.
 
+### Support `versions`
 
-## Support `version`
+The `versions` key is an array of JSON that contains all the useful information regarding a defined
+package version.
+
+### Support `version`
 
 The support version accepts a [semver range](https://semver.io/) value that define the versions of the
 module that applies that configuration.
 
+Note that the `version` ranges could overlap each other: it means that the maintainers provide more
+than one support type, and it is up to users choose the support level that best fits their need.
 
 ## Support `target`
 
@@ -216,7 +218,6 @@ To understand if the version is expired or not, the user needs to do the operati
 
 The contact field is a JSON that show to users all the possible channels to contact the maintainer that could be:
 
-- `issues`: how to URL to the issues tracker. It could be the same of the `package.json`
 - `security`: a contact for security issues
 - `paid-channel`: a direct contact for paid support
 
@@ -224,9 +225,6 @@ Each field is a JSON with more information like an external URL, an email or a p
 
 ```json
 "contact": {
-  "issues": {
-    "url": "http://support.it/issue"
-  },
   "security": {
     "file": "./SECURITY.md"
   },
