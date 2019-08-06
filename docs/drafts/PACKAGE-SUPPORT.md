@@ -240,6 +240,6 @@ Each field is a JSON with more information like an external URL, an email or a p
 ## Authoritative
 
 A published module may contain outdates support information, so the valid support information refer
-to the last published `package.json`.
+to the published module with the `latest` tag.
 If the module is not a Node.js module, the valid support information are the latest version in the
 `package-support.json` file in the repository.
