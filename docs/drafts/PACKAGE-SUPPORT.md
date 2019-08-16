@@ -35,10 +35,7 @@ consumes these elements.
 ## Support information
 
 This field documents the maintainers’ expectations, adding more useful metadata.
-
 The support information is stored in the `package.json` file in the root directory of the project.
-If the the project is not a published Node.js module, the data must be stored in the `package-support.json`
-file in the root directory.
 
 The file expects this example structure:
 
@@ -241,5 +238,3 @@ Each field is an object with more information like an external URL, an email, or
 
 A published module may contain outdates support information, so the valid support information refer
 to the published module with the `latest` tag.
-If the module is not a Node.js module, the valid support information are the latest version in the
-`package-support.json` file in the repository.
