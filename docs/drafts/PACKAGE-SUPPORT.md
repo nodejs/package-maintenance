@@ -1,28 +1,34 @@
 # Baseline practice - Document support levels
 
-Package maintainers provide different level of support in the large npm ecosystem.
-A mismatch between the support a maintainer is planning to
-provide and that expected by a consumer of a module will cause
+Package maintainers, in a wide variety of ecosystems, provide different
+levels of support. A mismatch between the support a maintainer is planning to
+provide and that expected by a consumer of a package will cause
 friction and stress on both the package maintainer and
 the consumer. This is further complicated because the level of support
 provided for dependencies of a package may be different than that
 targeted by the package a consumer is directly consuming.
 
+In the case of JavaSCript (Node.js and Broswer) there is a large ecosystem
+of packages which are maintained in the `npm` registry and it is
+this ecosystem in which we plan to test out this guidance. However, we
+believe it will be applicable to other ecosystems and plan to make the
+guidance generic enough to be applied in those ecosystems as well.
+
 This baseline practice suggests a standardized set of information to
 quantify the level of support that a package maintainer wishes/is able to
-provide. The goal is to close the gap between the expectations from the
+provide as well as information about how to access that support or to
+support the package itself (for example by contributing to its funding).
+The goal is to close the gap between the expectations from the
 consumer and those of the maintainer and reduce the friction and stress
 that can arise due to the gap.
 
-There are 4 main dimensions that we standardize in this practice which are:  
+There are 3 main dimensions that we standardize in this practice which are:  
 
-* `target`: the level of support that the package maintainer aims to provide
-* `response`: how quickly the maintainer chooses to, or is able to, respond to issues
-* `response-paid`: how quickly the maintainer will respond to issues if paid
-* `backing`: how the project can be supported
-
-In addition a `url` field can optionally be provided with a link to more detailed
-support information.
+* `target`: the platform versions that the package maintainer aims to support. For example
+  in the case of Node.js, the different versions of Node.js that the package supports.
+* `response`: how quickly the maintainer chooses to, or is able to, respond to issues and
+contacts for that level of support
+* `backing`: how the project is supported
 
 For each of these dimensions the potential options are not an ordered list.
 Instead like licenses each ID will identify a unique option. If you wish to
@@ -35,85 +41,26 @@ consumes these elements.
 ## Support information
 
 This field documents the maintainers’ expectations, adding more useful metadata.
-The support information is stored in the `package.json` file in the root directory of the project.
+For the JavaScript ecosystem it is recommended that this information be added to the existing
+`package.json` file in the root directory of the project. For other ecosystems, it is recommended that
+this information be stored in a file called `package-support.json` in the root directory of the 
+project.
 
-The file expects this example structure:
+The json which is either added to the `package.json` file or stored in `package-support.json` is
+as defined in the sections below.  
 
-```json
-{
-  "name": "my-package",
-  "version": "1.0.0",
-  "description": "a package.json file",
-  "support": {
-    "versions": [
-      {
-        "version": "^1.0.0",
-        "target": "abandoned",
-        "response": "none",
-        "response-paid": "regular-1",
-        "backing": [
-          "paid-support"
-        ],
-        "expires": "P1Y",
-        "contact": {
-          "issues": {
-            "url": "http://support.it/issue"
-          },
-          "security": {
-            "file": "./SECURITY.md"
-          },
-          "paid-channel": {
-            "email": "mailto:iwantmoney@nodejs.com"
-          }
-        }
-      },
-      {
-        "version": ">=2.0.0",
-        "target": "lts",
-        "response": "regular-7",
-        "response-paid": "regular-1",
-        "backing": "hobby",
-        "expires": "P1M",
-        "contact": {
-          "issues": {
-            "url": "http://support.it/issue"
-          },
-          "security": {
-            "email": "mailto:security@nodejs.com"
-          },
-          "paid-channel": {
-            "email": "mailto:iwantmoney@nodejs.com"
-          }
-        }
-      }
-    ]
-  }
-}
-```
-
-The default for packages created by individuals for their own use should most often add this support field:
+The default for packages created by individuals for their own use should be:
 
 ```json
-{
   "support": {
     "versions": [
       {
         "version": "*",
-        "target": "lts",
-        "response": "best-effort",
-        "backing": [ "hobby" ],
-        "expires": "P1Y2M10DT2H30M",
-        "contact": {
-          "issues": {
-            "url": "https://github.com/nodejs/package-maintenance/issues"
-          },
-          "security": {
-            "email": "mailto:security@nodejs.com"
-          }
-        }
+        "target": { "node": "none" },
+        "response": {"best-effort": {"url": "https://github.com/myproject"}},
+        "backing": { "hobby": },
       }
     ]
-  }
 }
 ```
 
@@ -122,61 +69,115 @@ outside of their use case.
 
 ### Support `versions`
 
-The `versions` key is an array of JSON that contains all the useful information regarding a defined
-package version.
+The `versions` key is an array of objects, each of which contains information for a package version
+range. The standardized fields include:
+
+* version
+* target
+* response
+* backing
+* expires
 
 ### Support `version`
 
 The support version accepts a [semver range](https://semver.io/) value that define the versions of the
-module that applies that configuration.
+package that applies that configuration.
 
 Note that the `version` ranges could overlap each other: it means that the maintainers provide more
 than one support type, and it is up to users choose the support level that best fits their need.
 
 ### Support `target`
 
-The support target captures the level of support that the package maintainer
-aims to provide.  The standardized options are as follows:
+The support target captures the platform versions that the package maintainer aims to support.
+These options may be different for each ecosystem so the target uses a namespace in 
+order to identify which values are expected.
 
-| Value         | Versions   | Description |
+The target field is an object in this format:
+
+{ :"XXXX": [ ] }
+
+where xxxx is the namespace identifier for the ecosystem and [ ] is either a string or an array
+of strings indicating the platform versions that the package maintainer aims to support.
+
+The standarized namespace identifiers are:
+
+* "node:"
+
+#### node name space
+
+The standardized options for the node name space are as follows:
+
+| Value         | example    | Description |
 |---------------|------------|-------------|
+| xxxxxx        |            | were xxxxxx is a [semver range](https://semver.io/) of Node.js versions supported.
 | `abandoned`   |            | Not recommended for use. The package is deprecated or no longer maintained
 | `none`        |            | Use at your own risk, no active support. May or may not work for a given Node.js version
 | `all`         | 8,10,11,12 | The package is maintained for versions of Node.js including both LTS and non-LTS releases. It may be necessary to accept semver-major level (ie. breaking) changes into that application in order to receive essential fixes. Documentation for the package will include the non-LTS releases for which the package is still maintained. 
-| `lts`         | 8,10       | The package is maintained for the Node.js LTS releases (both in Active and Maintenence mode). Anyone creating an application using an LTS version of Node.js and using the latest major version of LTS adopting modules will not have to accept semver-major level (ie. breaking) changes into that application in order to receive essential fixes. Full details are available [here](https://github.com/nodejs/package-maintenance/issues/119)
+| `lts`         | 8,10       | The package is maintained for the Node.js LTS releases (both in Active and Maintenence mode). Anyone creating an application using an LTS version of Node.js and using the latest major version of LTS adopting packages will not have to accept semver-major level (ie. breaking) changes into that application in order to receive essential fixes. Full details are available [here](https://github.com/nodejs/package-maintenance/issues/119)
 | `active`      | 10,12      | All releases not in maintenance
 | `lts_active`  | 10         | All releases both LTS and active
 | `lts_latest`  | 10         | The package is maintained only for the Latest Node.js version. You will be required to update to the latest LTS Node.js version in order to ensure you can use new versions/get security fixes
+| `maintained`  | 12,10,8    | Node.js versions which are not EOL
 | `current`     | 12         | The latest release from "all"
 
 Based on the current active Node.js releases which are 8.x (Maintenance LTS), 10.x (Active LTS) and 12.x (Current).
 
-### Support `response` and `response-paid`
+### Support `response` 
 
-Support response quantifies how quickly the maintainer chooses to, or is able to, respond to issues:
+The support response field quantifies how quickly the maintainer chooses to, or is able to, respond to issues. This field can be a single object or an array of objects. Each object contains the following:
+
+* type
+* paid (optional)
+* contact (optional)
+
+The contact field is an optional object which optionally includes:
+* name
+* email
+* url
+
+For example:
+
+```json
+response:[
+  { "type": "best-effort",
+    "paid": false,
+    "contact": {"url": "https://github.com/myproject"}
+  }, 
+  { "type": "24-7",
+    "paid": true,
+    "contact": {"name": "xyz customer service", "url": "xyz.com/service"}
+  }
+]
+```
+
+This allows the package maintainer to provide contact information for each of the support options that are available.
+
+The standardize support identifiers are as follows:
 
 | Value | Description |
 |-------|-------------|
 | `none`         | Don't expect a response, the package is not being actively maintained
 | `best-effort`  | The maintainer is interested in fixing/discussing issues, however, there should be no expectation on response times. If and when the maintainer has time they may respond.
-| `regular-7`    | There are dedicated resources who regularly maintain the module, expected response time is 7 days or less for a "we read your issue" response. Further work will depend on prioritization of the issue by the maintainer team.
-| `regular-1`    | There are dedicated resources who regularly maintain the module, expected response time is 1 days or less for a "we read your issue" response. Further work will depend on prioritization of the issue by the maintainer team.
-| `24-7`         | There are dedicated resources who regularly maintain the module and they are available 24/7. You can expect to be able to contact the maintainers and get an initial response with 6 hours.
-
-Support-response indicates the expectation unless you have paid one of the maintainers or a company that provides
-3rd party support. If paid support is available then Support-response-paid is an array of one or more options listing the
-options that the maintainer knows are available.
-
+| `regular-X`    | There are dedicated resources who regularly maintain the package, expected response time is X days or less for a "we read your issue" response. Further work will depend on prioritization of the issue by the maintainer team.
+| `24-7`         | There are dedicated resources who regularly maintain the package and they are available 24/7. You can expect to be able to contact the maintainers and get an initial response with 6 hours.
 
 ### Support `backing`
 
-This section tracks how the project is funding.
-It can be a single value or an array of values, for example: [x, y, z]. This supports cases where the
-backing comes from more than one source. The documented options include:
+This section provides information how the package is supported and how consumers can help support the package.
+It can be a single object or an array of objects, for example: [x, y, z]. This supports cases where the
+backing comes from more than one source. Each object consists of an identifier as defined below and an optional url with additional information. For example:
+
+```json
+{ "foundation": "https://openjsf.org/" }
+```
+
+This allows the package maintainer to indentify how the packge is supported as well as provide links to additional information for how a consumer may find more information or help support the package.
+
+The standardized identifiers include:
 
 | Value | Description |
 |-------|-------------|
-| `none`         | There is nobody backing this module
+| `none`         | There is nobody backing this package
 | `hobby`        | The single maintainer maintains the package for fun, does not get any support to continue maintenance.
 | `sponsored`    | The single maintainer actively maintains the package but depends on sponsorship to be able to continue to maintain the package. Consider supporting this sponsorship through patreon etc.
 | `bounty`       | The package is maintained through the use of a bounty service
@@ -192,7 +193,7 @@ backing comes from more than one source. The documented options include:
 
 ### Support `expires`
 
-The expire field defines the ending of the term of a support entry.
+The expires field defines the the date range over which the support entry is/was valid.
 It is a string in the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.
 
 This standard can express:
@@ -205,29 +206,15 @@ To understand if the version is expired or not, the user needs to do the operati
 `date of last release in the version range` **+** `expires value` **>** `now` => the support is not expired
 `date of last release in the version range` **+** `expires value` **<** `now` => the support is expired
 
+## Authoritative Version
 
-### Support `contact`
+If the support information is delievered as part of a package, leveraging the ecosystem's existing package
+manager (as is recommended for the JavaScript ecosystem at this point), the only way to update the support information is to publish a new version of the package. It also means that any version of the package except
+the latest may outdated support information.  
 
-The contact field is an object that shows to users all possible channels to contact maintainer(s):
+In ecosystems that follow this approach, tools to ensure they always pull the support information from the latest version of a published package.
 
-- `security`: a contact for security issues
-- `paid-channel`: a direct contact for paid support
+## Publishing
 
-Each field is an object with more information like an external URL, an email, or a project file.
-
-```json
-"contact": {
-  "security": {
-    "file": "./SECURITY.md"
-  },
-  "paid-channel": {
-    "url": "http://support.it/paid-suport",
-    "email": "mailto:paid-channel@node.js"
-  }
-},
-```
-
-## Authoritative
-
-A published module may contain outdates support information, so the valid support information refer
-to the published module with the `latest` tag.
+If the support information is delievered as part of a package, leveraging the ecosystem's existing package
+manager (as is recommended for the JavaScript ecosystem at this point), the only way to update the support information is to publish a new version of the package. Since an update to the support information does not affect code which consumes the package a publish which updates only the support information can be considered SemVer patch.
