@@ -29,14 +29,14 @@ Instead like licenses each ID will identify a unique option. If you wish to
 identify your package with an option which is not yet listed, please PR your
 option into the lists in the sections which follow. 
 The values can be any string, those which are not documented in the lists within
-this document considered "custom" and may ignored for flagged by any tooling that
+this document considered "custom" and may ignored or flagged by any tooling that
 consumes these elements.
 
 ## Support information
 
-This field documents the maintainers expectations adding more useful metadata.
+This field documents the maintainers’ expectations, adding more useful metadata.
 
-The support information are stored in the `package.json` file in the root directory of the project.
+The support information is stored in the `package.json` file in the root directory of the project.
 If the the project is not a published Node.js module, the data must be stored in the `package-support.json`
 file in the root directory.
 
@@ -218,12 +218,12 @@ To understand if the version is expired or not, the user needs to do the operati
 
 ### Support `contact`
 
-The contact field is a JSON that show to users all the possible channels to contact the maintainer that could be:
+The contact field is an object that shows to users all possible channels to contact maintainer(s):
 
 - `security`: a contact for security issues
 - `paid-channel`: a direct contact for paid support
 
-Each field is a JSON with more information like an external URL, an email or a project file.
+Each field is an object with more information like an external URL, an email, or a project file.
 
 ```json
 "contact": {
