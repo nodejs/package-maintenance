@@ -8,7 +8,7 @@ the consumer. This is further complicated because the level of support
 provided for dependencies of a package may be different than that
 targeted by the package a consumer is directly consuming.
 
-In the case of JavaSCript (Node.js and Broswer) there is a large ecosystem
+In the case of JavaScript (node.js and browsers) there is a large ecosystem
 of packages which are maintained in the `npm` registry and it is
 this ecosystem in which we plan to test out this guidance. However, we
 believe it will be applicable to other ecosystems and plan to make the
@@ -94,14 +94,14 @@ order to identify which values are expected.
 
 The target field is an object in this format:
 
-{ :"XXXX": [ ] }
+{ "xxxx": [ ] }
 
 where xxxx is the namespace identifier for the ecosystem and [ ] is either a string or an array
 of strings indicating the platform versions that the package maintainer aims to support.
 
 The standarized namespace identifiers are:
 
-* "node:"
+* "node"
 
 #### node name space
 
@@ -109,7 +109,7 @@ The standardized options for the node name space are as follows:
 
 | Value         | example    | Description |
 |---------------|------------|-------------|
-| xxxxxx        |            | were xxxxxx is a [semver range](https://semver.io/) of Node.js versions supported.
+| xxxxxx        |            | where xxxxxx is a [semver range](https://semver.io/) of Node.js versions supported.
 | `abandoned`   |            | Not recommended for use. The package is deprecated or no longer maintained
 | `none`        |            | Use at your own risk, no active support. May or may not work for a given Node.js version
 | `all`         | 8,10,11,12 | The package is maintained for versions of Node.js including both LTS and non-LTS releases. It may be necessary to accept semver-major level (ie. breaking) changes into that application in order to receive essential fixes. Documentation for the package will include the non-LTS releases for which the package is still maintained. 
