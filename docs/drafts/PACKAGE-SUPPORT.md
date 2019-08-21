@@ -57,11 +57,11 @@ The default for packages created by individuals for their own use should be:
       {
         "version": "*",
         "target": { "node": "none" },
-        "response": {"best-effort": {"url": "https://github.com/myproject"}},
-        "backing": { "hobby": },
+        "response": { "best-effort": { "url": "https://github.com/myproject" } },
+        "backing": { "hobby": "https://github.com/myproject" }
       }
     ]
-}
+  }
 ```
 
 This reflects that the maintainer in this case may have no interest in ensuring that the package works
@@ -130,22 +130,50 @@ The support response field quantifies how quickly the maintainer chooses to, or 
 * paid (optional)
 * contact (optional)
 
-The contact field is an optional object which optionally includes:
+The contact field is an optional object, or array of objects, which includes:
 * name
-* email
-* url
+* email (optional)
+* url (optional)
+
+Or you can shorten that all into a single string with this format: `name <email> (url)`.
 
 For example:
 
 ```json
-response:[
-  { "type": "best-effort",
+response: [
+  {
+    "type": "best-effort",
     "paid": false,
-    "contact": {"url": "https://github.com/myproject"}
-  }, 
-  { "type": "24-7",
+    "contact": {
+      "name": "Volunteers",
+      "url": "https://github.com/myproject"
+    }
+  },
+  {
+    "type": "regular-7",
+    "paid": false,
+    "contact": "John Foo <john@foo.com> (https://john.foo)"
+  },
+  {
+    "type": "24-7",
     "paid": true,
-    "contact": {"name": "xyz customer service", "url": "xyz.com/service"}
+    "contact": {
+      "name": "xyz customer service",
+      "email": "help@service.com",
+      "url": "xyz.com/service"
+    }
+  },
+  {
+    "type": "regular-1",
+    "paid": true,
+    "contact": [
+      "John Foo <john@foo.com> (https://john.foo)",
+      {
+        "name": "xyz customer service",
+        "email": "help@service.com",
+        "url": "xyz.com/service"
+      }
+    ]
   }
 ]
 ```
