@@ -240,7 +240,7 @@ If the support information is delievered as part of a package, leveraging the ec
 manager (as is recommended for the JavaScript ecosystem at this point), the only way to update the support information is to publish a new version of the package. It also means that any version of the package except
 the latest may outdated support information.  
 
-In ecosystems that follow this approach, tools to ensure they always pull the support information from the latest version of a published package.
+of a published package.  In the JavaScript ecosystem this means the `latest` tag from npm for a package.
 
 ## Publishing
 
