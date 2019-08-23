@@ -146,7 +146,7 @@ The contact field is an optional object, or array of objects, which includes:
 * email (optional)
 * url (optional)
 
-Or you can shorten that all into a single string with this format: `name <email> (url)`.
+Or you can shorten a given object into a single string with this format: `name <email> (url)`.
 
 For example:
 
@@ -191,7 +191,7 @@ response: [
 
 This allows the package maintainer to provide contact information for each of the support options that are available.
 
-The standardize support identifiers are as follows:
+The standardized support identifiers are as follows:
 
 | Value | Description |
 |-------|-------------|
@@ -210,7 +210,7 @@ backing comes from more than one source. Each object consists of an identifier a
 { "foundation": "https://openjsf.org/" }
 ```
 
-The value can be an array of URL as well:
+The value can be an array of URLs as well:
 
 ```json
 {
