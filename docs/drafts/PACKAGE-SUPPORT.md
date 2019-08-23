@@ -256,15 +256,18 @@ To understand if the version is expired or not, the user needs to do the operati
 `date of last release in the version range` **+** `expires value` **>** `now` => the support is not expired
 `date of last release in the version range` **+** `expires value` **<** `now` => the support is expired
 
-## Authoritative Version
 
-If the support information is delievered as part of a package, leveraging the ecosystem's existing package
-manager (as is recommended for the JavaScript ecosystem at this point), the only way to update the support information is to publish a new version of the package. It also means that any version of the package except
-the latest may outdated support information.  
+## Publishing and Authoritative Version
 
-In ecosystems that follow this approach, tools to ensure they always pull the support information from the latest version of a published package. In the JavaScript ecosystem this means the `latest` tag from npm for a package.
+If the support information is delievered as part of a package, leveraging the ecosystem's
+existing package manager (as is recommended for the JavaScript ecosystem at this point),
+the only way to update the support information is to publish a new version of the package.
 
-## Publishing
+Since an update to the support information does not affect code which consumes the
+package a publish which updates only the support information can be considered SemVer
+patch. You might consider minor or major versions if the support model is changing in a
+material way to consumers of your package.
 
-If the support information is delievered as part of a package, leveraging the ecosystem's existing package
-manager (as is recommended for the JavaScript ecosystem at this point), the only way to update the support information is to publish a new version of the package. Since an update to the support information does not affect code which consumes the package a publish which updates only the support information can be considered SemVer patch.
+Managing this information via releases means that any version of the package except the latest
+may outdated support information. In the JavaScript ecosystem this means the authoritative
+version of support information is the `latest` tag from npm for a package.
