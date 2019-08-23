@@ -193,10 +193,22 @@ The standardize support identifiers are as follows:
 
 This section provides information how the package is supported and how consumers can help support the package.
 It can be a single object or an array of objects, for example: [x, y, z]. This supports cases where the
-backing comes from more than one source. Each object consists of an identifier as defined below and an optional url with additional information. For example:
+backing comes from more than one source. Each object consists of an identifier as defined below and an optional URL with additional information. For example:
 
 ```json
 { "foundation": "https://openjsf.org/" }
+```
+
+The value can be an array of URL as well:
+
+```json
+{
+  "sponsored": [
+    "https://opencollective.com/my-account",
+    "https://www.patreon.com/my-account",
+    "https://tidelift.com/subscription/pkg/my-package"
+  ]
+}
 ```
 
 This allows the package maintainer to indentify how the packge is supported as well as provide links to additional information for how a consumer may find more information or help support the package.
@@ -207,7 +219,7 @@ The standardized identifiers include:
 |-------|-------------|
 | `none`         | There is nobody backing this package
 | `hobby`        | The single maintainer maintains the package for fun, does not get any support to continue maintenance.
-| `sponsored`    | The single maintainer actively maintains the package but depends on sponsorship to be able to continue to maintain the package. Consider supporting this sponsorship through patreon etc.
+| `sponsored`    | The single maintainer actively maintains the package but depends on sponsorship to be able to continue to maintain the package. Consider supporting this sponsorship through the funding platforms listed.
 | `bounty`       | The package is maintained through the use of a bounty service
 | `project`      | The package is maintained under the auspices of a larger project (ex Node.js project).
 | `foundation`   | The package is maintained and supported under the auspices of a Foundation.
@@ -216,7 +228,6 @@ The standardized identifiers include:
 | `paid-support` | The package is maintained and supported through paid support contracts.
 | `freemium`     | Basic version of the package it provided for free, premium version is available at a cost.
 | `donations`    | The project can be funded by any donations.
-| `open-collective` | The project can be funded by donations via `open-collective`.
 
 
 ### Support `expires`
