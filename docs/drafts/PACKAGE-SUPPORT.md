@@ -56,9 +56,20 @@ The default for packages created by individuals for their own use should be:
     "versions": [
       {
         "version": "*",
-        "target": { "node": "none" },
-        "response": { "best-effort": { "url": "https://github.com/myproject" } },
-        "backing": { "hobby": "https://github.com/myproject" }
+        "target": {
+          "node": "none"
+        },
+        "response": {
+          "type": "best-effort",
+          "paid": false,
+          "contact": {
+            "name": "Volunteers",
+            "url": "https://github.com/myproject"
+          }
+        },
+        "backing": {
+          "hobby": "https://github.com/myproject"
+        }
       }
     ]
   }
