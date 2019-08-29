@@ -76,6 +76,12 @@ Alternatively, we are looking into creating tools for cleaning up your `node_mod
 
 Finally, the tink project should make this a non issue because it only brings the files your application needed on demand.
 
+npm tink project is particular exciting and will solve a lot of the issues we discussed here. Check it out at the following links; it's got a lot more to offer.
+
+- [tink talk by Kat JSConfEU 2019](https://youtu.be/SHIci8-6_gs)
+- [tink package on npm](https://www.npmjs.com/package/tink)
+- [tink repo on github](https://github.com/npm/tink)
+
 ## Closing
 
 We established a baseline and a recommendation guide for publishing packages without meta files, using either the exclude or include support from npm.
