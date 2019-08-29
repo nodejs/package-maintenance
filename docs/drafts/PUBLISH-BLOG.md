@@ -66,7 +66,7 @@ That raises the question: should you publish your tests and sources as part of y
 
 It turns out there are two camps of opinions on this, and we found ourselves split on both sides of the fence.
 
-Both sides have good reasons. Published packages are immutable and more permanent than if they were on github.com so it's a good thing if we can download them run a version's tests if we want to. On the other hand, they use up bandwidth and disk space.
+Both sides have good reasons. Published packages are immutable and more permanent than if they were on github.com (there’s no guarantee a package will even have a repo, let alone one on github, and even less of a guarantee that the repo will never vanish) so it's a good thing if we can download them run a version's tests if we want to. On the other hand, they use up bandwidth and disk space.
 
 There are multiple paths that we explored for this.
 
