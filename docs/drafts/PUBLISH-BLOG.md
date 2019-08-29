@@ -1,26 +1,25 @@
-# Publishing Clean npm Packages
+# Publishing npm Packages
 
 ## Introduction
 
-In the node.js package maintainence working group, one of the topics we've been discussing is about publishing clean npm packages that do not include extra meta files.
+In the node.js package maintenance working group, one of the topics we've been discussing is about what files to include or exclude when publishing npm packages.
 
-The meta files are either OS specific or config files for the development tools used for the package.
+In general, a package's original directory could contain other meta files that may or may not be needed in published form. These files are either OS specific or config files for the development tools used for the package.
 
 Some common meta files are:
 
 - `coverage`, `.nyc_output` - coverage output for istanbul and nyc
 - `.idea`, `.vscode`, `.editorconfig` - configs for IDE or editors
-- `.eslintrc`, `.babelrc`, `.prettierrc`, `nycrc`, `.jshintrc`, `.nvmrc`
 - `.github`, `.travis.yml` - github and travis config directory
 - `.npmignore` - npm publish ignore list file
 - `.DS_Store` - Mac OS filesystem meta data
 
-In our discussionm, we agreed that these files, while generally small, should not be part of a published package.
+In our discussion, we agreed that these files, while generally small, should not be part of a published package.
 
 There were two things that we didn't have a conclusive agreement:
 
 The first is how should package keep these files out when publishing.
-The second is whether other files like tests and sources should be published.
+The second is whether other files like tests and sources should be published (but would be a non-issue once npm tink project is released)
 
 ## Publish without Meta Files
 
@@ -28,13 +27,13 @@ When publishing, npm allows you to either exclude certain files or include only 
 
 ### Excluding Files
 
-By default, npm uses exclusion to skip publishing files, and it actually comes with reasonable defaults to exclude some of the most common files like `.gitignore`. It automatically use `.gitignore` to exclude more files, but you can specify another file `.npmignore` instead - if `.npmignore` is present, `.gitignore` is ignored.
+By default, npm uses exclusion to skip publishing files, and it actually comes with reasonable defaults to exclude some of the most common files like `.gitignore`. It automatically use `.gitignore` to exclude more files, but if another file `.npmignore` is present, then it will be used and `.gitignore` is ignored.
 
 ### Including Files
 
-npm supports another way to skip publishing files through an include list in package.json. You can set a field `files` with an array of files that npm should only include in your published packages.
+npm supports another way to skip publishing files through an include list in package.json. You can set a field [`files`](https://docs.npmjs.com/files/package.json#files) with an array of files that npm should only include in your published packages.
 
-By default, npm also has some reasonable included files, like package.json, README.md, and LICENSE, and some reasonable excluded files, like package-lock.json, that you can not override.
+By default, npm also has some reasonable included files, like package.json, README.md, and LICENSE, and some reasonable excluded files, like package-lock.json, that you cannot override.
 
 ### Exclude or Include
 
@@ -46,19 +45,19 @@ With exclusion, new files are still published automatically, but with inclusion,
 
 There are two counter reasons for if you want to use inclusion instead.
 
-First, you may create new temporary files that are not intended to be published. There have been known incidents of packages being published with huge temp files accidentally. The downside of this is debatable, because the package still works perfectly.
+First, you may create new temporary files that are not intended to be published. There have been known incidents of packages being published with huge temp files accidentally, which is an inconvenient nuance, but the package still works perfectly.
 
 Second, the include list allows specifying a directory where all files under it are all automatically included.
 
 In the end, given that both ways are well supported by npm, we agreed to leave the choice to package authors.
 
-Regardless of which one you pick, if you publish packages to npm, then you should use the `--dry-run` npm option to preview the files before publishing - or even better, enable 2FA, and the publish process will print out a list of files to be published before pausing to await your 2FA code.
+Regardless of which one you pick, if you publish packages to npm, then you should use the `--dry-run` npm option to preview the files before publishing. If you enabled 2FA, then you get an added benefit where the publish process will print out a list of files to be published before pausing to await your 2FA code.
 
 ## Tests and Sources
 
-If you look at the packages installed in your `node_modules`, you would see that most of them have their tests with them also.
+If you look at the packages installed in your `node_modules`, you would see that most of them have their tests and rc files with them also.
 
-If a package's original code is written in another language like TypeScript, then they would have transpiled code for consumption, but the original sources are published also.
+If a package's original code is written in another language like TypeScript, then they would have transpiled code for consumption, but the original sources are often published also.
 
 As a user, it's most likely you don't need the tests and the sources to consume a package, so it's a waste that you have to download and install them when you just want to use the package in your code.
 
@@ -66,7 +65,7 @@ That raises the question: should you publish your tests and sources as part of y
 
 It turns out there are two camps of opinions on this, and we found ourselves split on both sides of the fence.
 
-Both sides have good reasons. Published packages are immutable and more permanent than if they were on github.com (there’s no guarantee a package will even have a repo, let alone one on github, and even less of a guarantee that the repo will never vanish) so it's a good thing if we can download them run a version's tests if we want to. On the other hand, they use up bandwidth and disk space.
+Both sides have good reasons. Published packages are immutable and more permanent than if they were hosted on any public source control like github.com where there's no guarantee that the repo will never vanish, so it's a good thing if we can download from the registry a version's tests if we want to. On the other hand, they use up bandwidth and disk space for all installs.
 
 There are multiple paths that we explored for this.
 
