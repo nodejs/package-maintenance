@@ -28,7 +28,7 @@ When publishing, npm allows you to either exclude certain files or include only 
 
 ### Excluding Files
 
-By default, npm uses exclusion to skip publishing files, and it actually comes with reasonable defaults to exclude some of the most common files like `.gitignore`. It automatically use `.gitignore` to exclude more files, but you can specify another file `.npmignore` instead.
+By default, npm uses exclusion to skip publishing files, and it actually comes with reasonable defaults to exclude some of the most common files like `.gitignore`. It automatically use `.gitignore` to exclude more files, but you can specify another file `.npmignore` instead - if `.npmignore` is present, `.gitignore` is ignored.
 
 ### Including Files
 
