@@ -46,7 +46,7 @@ With exclusion, new files are still published automatically, but with inclusion,
 
 There are two counter reasons for if you want to use inclusion instead.
 
-First, you may create new temporary files that are not intended to be published. There has been known incidents of packages being published with huge temp files accidentally.
+First, you may create new temporary files that are not intended to be published. There have been known incidents of packages being published with huge temp files accidentally. The downside of this is debatable, because the package still works perfectly.
 
 Second, the include list allows specifying a directory where all files under it are all automatically included.
 
