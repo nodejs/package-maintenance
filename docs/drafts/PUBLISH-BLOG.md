@@ -52,7 +52,7 @@ Second, the include list allows specifying a directory where all files under it 
 
 In the end, given that both ways are well supported by npm, we agreed to leave the choice to package authors.
 
-Regardless of which one you pick, if you publish packages to npm, then you should use the `--dry-run` npm option to preview the files before publishing.
+Regardless of which one you pick, if you publish packages to npm, then you should use the `--dry-run` npm option to preview the files before publishing - or even better, enable 2FA, and the publish process will print out a list of files to be published before pausing to await your 2FA code.
 
 ## Tests and Sources
 
