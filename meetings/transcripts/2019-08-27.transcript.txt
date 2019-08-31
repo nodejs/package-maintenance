@@ -1,0 +1,983 @@
+Wes Todd 0:00
+In such a way that that work is being done. So distributed, We didn't have a 
+central place to. So we were looking at like, Does GitHub have a good way to do 
+a search that we could direct people to that would have the tags from all the 
+repos that matter. But then we have repos that like are in the orgs, but aren't 
+maybe focuses. So like, do the tags and those repos count. Anyway, there's a 
+bunch of little discussions around how we want to manage that. So what we 
+landed on was we needed a tool that pulled them all together for us. So that is 
+what I went ahead and built, I posted a link to the page in the Express issue 
+for that. So I Oh, no, is the issue in here for that. But I'm not seeing the
+
+Glenn Hinks 0:46
+link. Right.
+
+Michael Dawson 0:49
+It's The Express GitHub IO status board.
+
+Wes Todd 0:52
+So Yeah, that's the link that is the The result of this, I was going to post a 
+link also to my like, sort of description to find that right now.
+
+Glenn Hinks 1:09
+There it is.
+
+LJHarb 1:11
+So So the basic idea,
+
+Wes Todd 1:13
+I served the purpose of Express really well. But I think also sort of extends 
+to what we're doing with a bunch of different projects that are unrelated. I 
+also saw, I just posted a link to my comment there. I also think it applies a 
+little bit to the work that the open, Jess FJS Foundation is doing, where 
+there's a ton of different projects with things in different states. But 
+there's a lot of work that needs to be tracked across all the different repos. 
+So The goal here was to pull those tags, so I posted some screenshots, but you 
+can also click the link and go, you know, it's very much a work in progress. 
+So, you know, don't judge too harshly. But The idea is, this is infrastructure 
+list. So that was I think one of the key requirements I wanted to set Was, it 
+could be run straight off GitHub. So with GitHub actions that made it a little 
+bit easier, but the first iteration was it just ran it on my local machine, Did 
+the index job and then push to a GitHub Pages branch, that, you know, it's not 
+real time. So with get up actions, I've got it so that it will run every two 
+hours, and it does a re index and then rebuild the GitHub Pages branch. I'm 
+pulling in a bunch of random things here that, you know, like I have this top 
+contributors list, we could discuss, you know, I think what what value people 
+see in showing here, but I think the big thing that targeted this issue was 
+these tags on the left, so we have help on it and discuss are ones that were 
+already existing and express and all the repos, we would probably want to 
+standardize on one. You know, I don't know, there's two subtle differences. And 
+why we did this up on it is is actually like a PR should be open from this. So 
+that's more like good first issue. So I'd like to actually transition us from 
+this to good first issue. But as it stands today, we don't have that. And the 
+discuss is more about like, these are ideas, or these are maybe issues that 
+people are having that we'd like people who are not necessarily super familiar 
+with the project, you can still come in here and pitch in maybe if it's just 
+you know, analyzing the ideas that are being presented and giving an opinion. 
+And then we have meetings, obviously for EC meetings, but then top priorities, 
+the top 10. So as I think the version I've built here only has two labeled, but 
+we're starting to roll out those labels on more of the issues. We're waiting on 
+one for TypeScript support that Blake Emily was supposed to open, but I think 
+hasn't yet, because that is one of our other top issues. Yeah, And so So this 
+is just this is an idea. If, you know, it's I haven't pushed on this PKGJS 
+organization, I'd be happy to, you know, if people want to collaborate or have 
+you know, input and, and ways and directions we could take this would make it 
+more valuable to this group specifically, or if there's other, you know, other 
+projects that have a similar structure to express that, that could see a lot of 
+gain out of centralizing the work so that they can, you know, direct new users 
+to one place instead of Oh, go read through the, you know, for orgs and 40 
+repos and get up to date on all the issues that are being tracked. You know, 
+so, so this is a start. And then we have some plans for writing some automation 
+on automatically tagging things with these specific tags. So we're going to 
+write the next thing I'm going to work on now that I've finished this as a 
+GitHub action that looks at new issues, and prs, automatically tags them with 
+things like needs triage. And then we had some ideas and express on how we want 
+to manage that, you know, I don't know if that is something we'd want to 
+propose here is like a practice, but I can, we haven't written it up yet. So I 
+hesitate to go too much into it. But the idea is, basically, we'd have a list 
+of a whitelisted list of users who can triage and if they make specific 
+comments, we would then add labels to those comments, those, those labels being 
+the ones that show up in the status board. So you can say like, you know, needs 
+maintainer attention, or, you know, stuff like that would help us get more 
+people involved without necessarily needing them to have commit access right 
+away with obviously love to move them to commit access. But, you know, on 
+Express, we're a little bit more cautious with that, since the impact of the 
+project is so large. So anyway, so that's sort of a synopsis here
+
+Michael Dawson 5:43
+is quite interesting. And I think one of the key things is it pulls together a 
+whole bunch of different repos, right? So get any one
+
+Wes Todd 5:50
+repo, you already have this, right? So if you if you have one project, repo, 
+and that's it, you know, that's already solved by GitHub. This is specifically 
+for the use case where there's lots of work being done in different repos. And 
+there's a need to centralize the, the status, you know, of the of the project 
+And that
+
+Michael Dawson 6:10
+way, because I mean, even for like the node repo, we have a lot of different 
+repos. And so you don't necessarily get a, you know, the unified view. So it's 
+quite interesting.
+
+Wes Todd 6:21
+To Jory on this on the foundation side, and she was saying one of the most 
+valuable things would just be centralizing the list of meetings, you know, and 
+all the issues. So all the docs and the, you know, meeting notes, you know, she 
+was saying, it's really hard for her to manage that across all the projects in 
+the open, you know, Jess Foundation, node, similarly, and the package 
+maintenance Working Group, as soon as we start those phases, you know, the 
+first phase is just a couple of projects. But as soon as we have 30, projects 
+on board, managing the work cross there, I think is going to be a chore. And I 
+think this might be a solution for that.
+
+Michael Dawson 6:58
+Okay, even the meetings like if they're basically based on a tag, like our auto 
+generated meetings, there's, you can go to our calendar, but the ones that are 
+actually like the issues, again, you'd have to go to each individual repo to 
+find out Oh, so it's actually it would be it sounds interesting. So that 
+definitely sounds good to see if this is like something that at the open jazz 
+level can be rolled out across the other projects as well. For specifically for 
+like the package maintenance side, I guess what we want to thin look at it say, 
+you know, how do we start to use this information to try and get more of the, 
+you know, the people who showed interest in helping out with packages involved? 
+And next
+
+Edgar 7:44
+question about the top issues is that the latest issue from each of those tags 
+are, how is it? Mark is top
+
+Wes Todd 7:53
+it's a work in progress, we got a lot of work to do. So technically, this is 
+the sort order as by as per the level DB database, so I have no put no sorting 
+into this at all. It's just I'm stuffing them in level DB, and whatever order 
+they come out, then I take the first three. So we would probably want to make 
+that a lot better.
+
+Edgar 8:12
+Maybe like a 10. It says how important it is or something or number of 
+comments, or I don't know something? Yeah, some metric.
+
+Wes Todd 8:19
+Yeah, no, I agree. Yeah, I think I think a sort of composite approach might be 
+best, because I think newness is good here. But also, activity.
+
+Glenn Hinks 8:31
+Yeah, yeah. Anyway, I'd be open,
+
+Wes Todd 8:33
+if you want to collaborate on on what would be the best way to show this. Maybe 
+we could, you could open an issue on that repo, and we can start discussing it. 
+So good. Sounds like
+
+Michael Dawson 8:43
+top priority. I don't know if there's going to be 10, it doesn't matter so 
+much. Because those aren't the latest ones. Those are the ones which the 
+Express TC has tagged to be ones they would like to see progress on versus the 
+latest issue somebody opened or whatever, right? Yeah. Because I can even see 
+like the, there could be a very active issue, but it might not be the priority 
+issue for the Express team. Right.
+
+Glenn Hinks 9:10
+I agree.
+
+Michael Dawson 9:12
+So I think it's important to make sure that like we what we do, If we focus and 
+raise awareness, and like try and encourage people that it is focused on here, 
+the things that really the Express team will will in this case, will say, Hey, 
+this is great that we're having more help on these verses. There's a huge 
+discussion on this, but I'm not really interested kind of thing.
+
+Edgar 9:32
+I think maybe maybe more than one, but maybe more than one kind of section or 
+something like that, especially as we talk about that node, or open JS level, 
+where it's like the most used tag, or something like that, you know, like tag 
+cloud style, where it's like, it seems that a lot of people are having problems 
+with x tag type of issues. Maybe that's a larger opportunity at the open JS 
+level, to come up with some sort of broader solution that helps the community 
+at large kind of a thing. But This is awesome. And I look forward to like, 
+digging in and thinking about other ways to approach organizing them.
+
+Michael Dawson 10:16
+Does it make sense for top priority to be at the top? Yeah.
+
+Wes Todd 10:22
+of the time. So what this is doing is just looping the the items in the in the 
+level up. So they're coming out in an order. And and this is very valid 
+feedback. You know, please feel free to open an issue and or go solve it in the 
+code, because it's, you know, over there accepting prs, It's not very clean. So 
+like I said, Don't judge too harshly. But Thank you for
+
+Michael Dawson 10:51
+right. Now trying to click on release button.
+
+Wes Todd 10:55
+Well, yeah, this is this is the year in the screenshot, though, if I Yes. Okay. 
+That does just click through. Yep. If you go to the actual board.
+
+Michael Dawson 11:03
+Sorry. I'm just trying to get back to that now. A little.
+
+Wes Todd 11:07
+Just down a little bit, I think from where you are.
+
+Michael Dawson 11:10
+There's the link, right? This guy? Oh, yeah. And I should be able to just click 
+that. So If we go there. And we say, I'm just looking like, what concretely Can 
+we try and points? You know, we had a number of people who showed interest, 
+like, is this something that we should now can now say, hey, here are the 
+things that, you know, if you have time, can you go try it help and look at?
+
+Wes Todd 11:37
+Yeah, so we still have some work to do this was to centralize the tags, we 
+still have some work to do in getting more of the tags on the issues. And so we 
+discussed, you know, open source sometimes goes a little bit slow. And we have 
+the plan. Now, we just have to execute on some of the ideas. So it is still a 
+little bit light here the discussion and help one that we've used for a long 
+time. So those ones, If you click on the header That shows more than just the 
+top three, Oh, maybe not. What did I do wrong here, maybe go back and click on 
+just top issues. Sorry. You know, this is my weekend project. Okay, this is all 
+of them. So This would maybe be the page to start with, if we wanted to link 
+people to, again, open to like, better ways to present this because it's just a 
+big long list. And that's not super helpful.
+
+Michael Dawson 12:28
+So It's great. So is it? Is it? Do you think it's, you know, do Do you think 
+there's, it's worth waiting a little bit longer before we try and go out and 
+say, Hey, here's what you know, here's the things that could really use some 
+help? Or is it worth you know, starting with what's there, I just want to get a 
+feel for
+
+Wes Todd 12:46
+I'm, you know, I'm I'm not afraid of showing incomplete work here on this 
+particular tool, if it gets helped to the issues that are tagged here. So the 
+issues are valid and real and ready to go. This UI of it is you know, that the 
+only thing that's may be not ready. See, there you go broken link. Again, like 
+I said, totally work in progress. I need to fix those links, apparently, really 
+not ready to local to, we'll check
+
+Michael Dawson 13:19
+in next week to see if, you know, if it's time to start to try in and say okay, 
+we've got a list of concrete work we'd like people to help out with. Now Let's 
+start asking people to do that. Right. Yep.
+
+Wes Todd 13:34
+Yeah, that sounds good. And if in the meantime, if anybody wants to start 
+participating in that, you know, that will make it move a lot faster. I'm, you 
+know, quite busy. So
+
+Edgar 13:44
+yeah, in terms of what I've seen, especially like under the discuss, tag, It's 
+pretty common for conversation to have ended and the tickets just to not have 
+been like, automatically closed or anything like that. So it might be helpful 
+for whoever wants to take it on to start by implementing or putting together a 
+PR an issue ticket for implementing something that Wes was talking about the 
+other day, about adding some kind of automatic ticket closer or issue closer. 
+So if somebody wants to help out with that, It may not be a ticket that's 
+actually on this board here. But that might be something that would that would 
+help to shorten these lists A little bit.
+
+Wes Todd 14:27
+Yeah, absolutely. And if somebody wants to open up that ticket, I will then or 
+that issue, I will tag it as a temporary because that's definitely one of them, 
+you'd have to So the issue here is that you have to go to all of these repos 
+and do it right. So that they're spread out everywhere. So any, anybody who 
+takes the song is going to have to do a cross repo effort, right? They're going 
+to open up probably, you know, 30 hours to do that. Which is great. I mean, if 
+somebody wants take that on that would be that would be phenomenal.
+
+Michael Dawson 14:54
+Is that something that's automated?
+
+Glenn Hinks 14:57
+Oh, yeah.
+
+Wes Todd 14:58
+Okay, that would work too. Yeah, probably just curious. Like,
+
+Michael Dawson 15:00
+you know, that would also then be a handy tool that says, hey, you're, you 
+know, one of the repos just run this thing. And you'll get a PR that says, 
+Please, that enables the auto close bond, or whatever it is, as long as it 
+doesn't require, like more manual work to make it happen.
+
+Wes Todd 15:19
+Yeah, definitely. Yeah, that would be great. A great tool,
+
+Edgar 15:24
+which board Do you think that would go on, like an open JS sort of a ticket, or 
+like, Express ecosystem ticket is there like one Express repo that applies to 
+all of the other sibling discussions
+
+Wes Todd 15:37
+is sort of where we keep a lot of those conversations, If you wanted to start 
+there, and that would be a good spot to keep track of the work.
+
+Michael Dawson 15:46
+It's either that or this repo, we could have something in our board that says, 
+you know, here's one of the things that we've identified that is going to be 
+useful for Express and beyond. You know,
+
+Wes Todd 15:56
+somebody so my only concern with this repo is that the if it's so far beyond 
+Yes, or the specific goal of unexpressed, we need to get that rolled out. I 
+would like to at least have one in that discussions with your post so that 
+Doug, and the other main trainers are aware that this is something we're moving 
+forward with the comment, Make sense? They won't, they won't pay they, they 
+might be paying attention to this repo, but I wouldn't count on it. So
+
+Michael Dawson 16:27
+right? quicker, you're thinking of doing that, like an issue in this repo 
+within link to an issue in the Express repo saying, and here's the first one 
+we're going to, here's the one, we're going to test it out with West Side, This 
+would be great.
+
+Edgar 16:40
+Like a scope, I can happily agreed to.
+
+Darcy Clarke 16:44
+Okay, awesome.
+
+Michael Dawson 16:46
+feedback, and then maybe we can figure out is like, Hey, is this something we 
+publicize at the open JS level as a tool that's available to the projects and 
+whoever else? Actually, or actually, you know, I could just see like, you know, 
+as part of our package maintenance effort here, we want to publicize tools to 
+make it easier for the, the maintainer is, and if it's, you know, obviously, if 
+you've got a bunch of repose, if you could just go somewhere and say, please 
+give me a PR to enable the auto close bought for this, this and this one that 
+sounds like it's it fits that bill. So.
+
+Wes Todd 17:18
+So in a weird way, this status board could be a launching ground for that, too, 
+because one of the things you have to do to set this up is list all of the 
+repos. Right. And this pulls what, like a bunch of metadata about what type of 
+repo so like, for example, you're not going to submit a auto close issue box? 
+Well, no, and articles issue by word, but like things like updating, you know, 
+other code related things you'd want to look at, like, Is it a, Is it a JS 
+package? Right? Is it a Is it you know, what? What qualities about it? So for 
+like, Express, if you wanted to, you could pull the Jason list of projects for 
+here to do as your your, you know, tooling input, Right?
+
+Michael Dawson 18:00
+Yeah. You could have a dashboard. Like you could see, in the end, the dashboard 
+could have a button that says, update my, you know, make sure I've got a auto 
+close on all my repos. Yep.
+
+Wes Todd 18:14
+Yeah. And so one of the things if you go to the projects, thing, So I haven't 
+done this yet, but it's on my to do list, I have a to do list on the repo for 
+this status word thing. So I got a bunch of badges here. I'm not sure how 
+valuable all of them are. But what I really want to add is things like little 
+icons for does it have TypeScript typing's? Does it have any we could add this 
+kind of thing doesn't have his auto clothes bought enabled? So you could then 
+look at the project and say, oh, which ones don't have it all go at it to those 
+words. Yep. Right, or which ones don't have TypeScript type things today. If 
+I'm the TypeScript person who's really into it, I'll go down this list. And 
+just find anyone that doesn't and open a PR that that shows that. So so the 
+idea would be to put more information in here, I know, it's already a busy 
+page. So maybe there's some designer help that can be done.
+
+Michael Dawson 19:04
+Just like get a watchers and stars Kind of like, versus some of those other 
+things might be more helpful to the maintainer. Right?
+
+Wes Todd 19:14
+I completely agree. I started with this, mostly because we had this thing 
+called badge board. And it was being poorly maintained and had the restriction 
+of was only worked on one organization. So I was hoping to do a little two 
+birds with one stone here and make this a replacement for the badge board as 
+well as, you know, centralization for all this other stuff. So this page is not 
+optimal. I would love to get some design input on how we could make this more 
+valuable ever.
+
+Michael Dawson 19:42
+But Yeah, the concept of having that list and you know, even Yeah, definitely. 
+And then you might even want to make it like, it seems to me want to actually 
+change these over time, right? Like, you're if you're trying to roll something 
+new out, for example, you might want to add in that, That new column near the 
+front and push some other things tear to the end, or, Yeah, definitely. But 
+generally, being able to get a view with all this stuff easily seems looks 
+really useful. Because Yeah, I could see having a, you know, the, the package 
+maintainer tool kit that we might build here, this would be a good piece of 
+that, like, here's your dashboard, here's the dashboard you can start with.
+
+LJHarb 20:31
+And I also thought
+
+Wes Todd 20:32
+this might be valuable to like, individual containers, I don't know, I, you 
+know, obviously thinking of use cases, but, you know, if you maintain 100 
+packages, This could be a, you know, a way that he can you just like, promote 
+to your, you know, he put it on your website and just say like, hey, look, you 
+know, support me because I maintain all of these are, you know, I think there's 
+a lot of use cases where we're listing this kind of stuff and having a good 
+view in here as maybe even
+
+Michael Dawson 20:59
+just tap, just you know, so you can keep keep an eye on some aspects of all 
+your packages that are important to you. Yep. Okay, so it sounds like our 
+concrete. Next actions are just going to open that other issue. And then we'll 
+we'll review next week to see if we're ready to start to promote specific 
+things that sound great.
+
+Glenn Hinks 21:21
+I opened both issues for selecting and implementing the mot. So let me know if 
+I should change it to just selecting and discussing and then another ticket for 
+actually implementing or That way we don't have tickets that are UNCLOS, 
+Audible for extended periods of time. Whatever works, Things
+
+LJHarb 21:43
+seems fine to me. Cool, cool.
+
+Darcy Clarke 21:48
+Okay, So,
+
+Unknown 21:50
+back to
+
+Darcy Clarke 21:53
+If I can get back to Okay, we're gonna be able to get back to my minutes.
+
+Michael Dawson 22:00
+Okay, actually, it wasn't sure that so Okay, so there we go back to the 
+minutes. Let me just Yep. Okay, good. I see a few. So actions. Next, wait till 
+next week to get ready to cry to promote krY.
+
+LJHarb 22:22
+Word submission.
+
+Darcy Clarke 22:28
+Okay, thanks for that overview. So The next thing on the agenda is open GSB 
+Foundation project progression.
+
+Glenn Hinks 22:38
+You put that on the agenda here?
+
+Darcy Clarke 22:49
+I think it was done. Dominic kiss, you added that.
+
+Glenn Hinks 22:57
+Me which 138?
+
+Michael Dawson 23:16
+Sorry, is to 38 I think I just
+
+Darcy Clarke 23:19
+hear I can share that one for a second here. I'm blinked out for a second.
+
+Michael Dawson 23:49
+Sounds like this was just added to make sure we think about how it relates to 
+this particular group.
+
+Glenn Hinks 24:01
+I think the
+
+Michael Dawson 24:03
+the there's definitely some synergy. What I think is, though, that not all 
+packages will necessarily join a fount you know, a foundation or even the open 
+jazz foundation. So the the group that we would, you know, the foundation that 
+will be foundation members is probably a subset of the packages that we 
+potentially want to target, helping. The Foundation has had some discuss, there 
+have been some discussions that level sort of like a GS comments, which would 
+be like resources and help for, you know, beyond just members, so maybe there's 
+some some overlap or synergy, or as that gets ramped up that there hasn't 
+really been too much work at that level yet.
+
+Glenn Hinks 24:52
+Right? Would it make sense for me to find whichever document we have that 
+documents the progression of how you get this group in law, and I suppose I'll 
+just add a link to, to whatever document is on open GSK Foundation. And we can 
+then close this issue. And then I guess for Now we can remove the label for the 
+agenda, right?
+
+Michael Dawson 25:17
+Yes, That makes sense to me, unless anybody else has a suggestion.
+
+Glenn Hinks 25:25
+Sounds good.
+
+Darcy Clarke 25:27
+Okay, so we'll do that. going on. Okay. Links
+
+Glenn Hinks 25:43
+to?
+
+Michael Dawson 25:54
+Okay, so the next one on our agenda is standard grammar keywords for reference 
+to know GS release lines.
+
+Darcy Clarke 26:09
+So as I remember, We had a list. And on this one, I think the Bethany was going 
+to give us some feedback from the elite, Right. Yeah,
+
+Michael Dawson 26:30
+I think otherwise, in parallel, We've also incorporated into our into our 
+support package information.
+
+Glenn Hinks 26:43
+Yeah.
+
+Darcy Clarke 26:46
+Midway, our ad document. The release, the release meeting will be at 29. So we 
+can watch what they will decide. Okay.
+
+Michael Dawson 27:03
+Okay, So at this point, probably not too much for us to discuss the meeting 
+itself or waiting for that feedback. And I think it's still worth you know, we 
+can always adjust our support documentation package, the supporting phone the 
+package, because it's still a draft. So we don't necessarily need to balk on 
+that. But it will wait in this feedback and then incorporate it makes sense.
+
+Darcy Clarke 27:29
+Absolutely.
+
+Michael Dawson 27:31
+Okay, then I think we can move on to the next issue was discussion of the 
+support file itself? which we've had a bunch of discussion back and forth. I'm 
+just going to scroll down to the very bottom. Sorry, go ahead.
+
+Darcy Clarke 27:47
+Yes, there are some new comments in the past days.
+
+Michael Dawson 27:57
+Right. Are those comments? Like I think some of the comments were still about 
+around the discussion of whether it should be like in line in the package or a 
+dynamic link? Right.
+
+Darcy Clarke 28:11
+Exactly. Exactly. Market? Oh, I think that we could match going on with the 
+discussion, maybe in other requests, or with new ideas of from the feedback 
+that we read the rest? Yeah, my mic. Sorry. Go ahead.
+
+Wes Todd 28:36
+I just said I second that I think we can I think we can merge the question. 
+There were new entrance into the conversation. And I think we have it went over 
+all of their concerns at some point or another, but not a valid concerns, we 
+just have already at least partially addressed them. And we, if we hold up, you 
+know, just because we're waiting on new people, I think it'd be just easier 
+just to make edits, Once we merge it, and it will be to, you know, continue to 
+hold this
+
+LJHarb 29:06
+very long issued along, you know, how many comments on this right?
+
+Wes Todd 29:11
+It makes it harder to manage so.
+
+Michael Dawson 29:15
+So I'm just typing in, I think you should be able to see it. So our plan would 
+be the land does, is it this draft? Still anyways. So then I think we want to 
+write up
+
+Darcy Clarke 29:29
+the log, Which which produces introduces, introduces it along
+
+Glenn Hinks 29:43
+with some of
+
+Darcy Clarke 29:47
+the contentious
+
+Michael Dawson 29:50
+points, You know, live non live, right. So basically says to get that, and I 
+think that's one of the comments was providing that context, along with the doc 
+is actually quite useful. So if we actually wrote up a blog that says, hey, 
+we've been working on this, This is what we've currently got, here's the 
+discussions we've already had, in terms of, you know, should we do this? Should 
+we do this, this is the rationale for why we chose what's there now. And then 
+basically use that to drive like, because, you know, we thought this was at 
+least you know, our group, the core group has a consensus on what we look like. 
+Now Let's get the broader consensus and to sort of drive that, that review 
+through, say, some blog posts with the additional context. And then hopefully, 
+use that feedback, to revise and then promote it to,
+
+Glenn Hinks 30:40
+to non draft.
+
+Darcy Clarke 30:51
+And I just wanted to add from the gym. So we're really looking forward to 
+having some sort of solution for this. As a lot of people will have realized 
+most recently, that there's been some progression in the community for trying 
+to get funding and sort of support landed and some experiments that are being 
+had. And we're fully admit, couldn't be here on this call. So I'm sort of 
+standing in here on his behalf from NPR. But we're, we're totally behind 
+getting something like this landed and supporting it as quickly as possible. 
+And so I'll be also contributing, I think, to this discussion after this 
+meeting, with a few things that are, you know, I think we could potentially 
+update to make this
+
+Darcy Clarke 31:45
+more rounded a spec.
+
+Michael Dawson 31:47
+Sounds good. Certainly, at some point, we're hoping we can get like MPM and 
+debt or something like that to give populate the default values for these 
+things.
+
+LJHarb 31:57
+And Darcy, as well, I think there's an open RFC by Katie Mitchell, for a 
+sustainability property that sort of
+
+Glenn Hinks 32:05
+overlaps.
+
+LJHarb 32:07
+Like, technically conflicts, but spiritually overlaps with with this proposal. 
+So it would probably be useful if, if NPR is planning on adopting this 
+proposal, you know, with or without your suggestions, it would probably be 
+useful to at some point soon indicate that on that RFC,
+
+Wes Todd 32:26
+For sure, I dropped the link to that I added the head the tab open. I got the 
+link to that in the chat. Also, I am they they are going to have a little 
+Google Hangout or something, I don't know, sometime next month, I'm on the 
+invite for that. So I told them that I would bring their, you know, ideas and 
+feedback, I said, I could be a conduit from from them to this group. So I think 
+are awesome. And Ken Mitchell and mix, mix Irvine, I think and a few others, 
+just sort of, I think they want to continue with their experiments. You know, 
+God bless them for doing that for the community, because it's obviously drawing 
+a lot of ire from people. You know, go Go for it. But I might not want to be on 
+the forefront of that. But I'm happy to take any, you know, input they have and 
+bring it back to this group. And then, you know, I linked to them, I posted an 
+issue in that funding repo that said, Hey, do you want to collaborate? And I 
+think for said, Yeah, and he asked us when the next meeting of this was, I 
+posted a link to this. I don't know if he was able to watch her join. But But I 
+think the overlap is, is strong, and I think they're interested in 
+participating in the bigger,
+
+Unknown 33:41
+you know, picture stuff as well.
+
+Michael Dawson 33:45
+Okay, that sounds great. I in terms of the link, that was was it one of the 
+seven that you talked about? No, that was the Okay, that was the one that was 
+potentially, you know, we've got already got it in the minutes. Thank you. 
+Perfect. Okay.
+
+Wes Todd 34:00
+Well, somebody submitted it. Yeah, um, they are you talking about the funding? 
+repo one, because there's also I opened an issue to ask if they wanted to 
+collaborate with our group and the funding, which is the real, the one that
+
+Darcy Clarke 34:14
+you have that it would be good. Let me find that really quick. Yeah.
+
+Michael Dawson 34:45
+Okay, They said it. So I guess the question is, is ok, we probably need
+
+Glenn Hinks 34:52
+a
+
+Michael Dawson 34:53
+volunteers to start working on that blog post. I'm willing to volunteer but it 
+would be good to have maybe a few people work on it.
+
+Darcy Clarke 35:07
+I can help out if you want, Michael. Okay, Who is that? That's Darcy
+
+Darcy Clarke 35:13
+Darcy. Okay, though. I'm not officially on. I guess the this team been watching 
+for? Sure. Hey, anybody else? I guess we already had. I can't see.
+
+Wes Todd 35:30
+Just to point out being on this team is a pull request away. So
+
+Michael Dawson 35:33
+Exactly. Yeah, it's not summit manual. We already had you lined up, I think to 
+write a blog post for something right. I'm Turner.
+
+Darcy Clarke 35:44
+Yeah, for sure. I can have. Okay, So like I say, Michael, so.
+
+Glenn Hinks 35:54
+So Yeah, Glenn. I'm a I've got over all my other volunteers and things I've 
+done this summer. I'm available again. So I'd love to chip in to be careful 
+what to volunteer for in the future, though. Okay.
+
+Michael Dawson 36:08
+Okay. Sure. So I got there see myself manual on Glenn. And if anybody else is 
+interested, just let me know. Otherwise, I'll send something out to get the 
+guests working on that
+
+LJHarb 36:19
+Review of just not to write Yeah, I'm sorry, going in and saying I'd be glad to 
+prove it.
+
+Michael Dawson 36:25
+Yeah, what absolutely, we'll put something together and get the the overall 
+team send it. Or like probably an issue in this repo. So everybody can comment 
+and help improve it before it actually goes at. And so and just to confirm, 
+like, it sounds like we're all comfortable landing, that doesn't mean there's 
+no objections in the tissue itself. But if nobody has any here, we'll go ahead 
+and land that and then move on to the the blog post is the next issue. Next 
+step.
+
+Darcy Clarke 36:55
+I just think we brought up an issue last week about I think was last week or 
+the week before for the target. Again, the grammar was just one thing that we 
+want to make sure that we're being inclusive there. And then I've also tried to 
+looking over what the spec is like the way it is right now. I mean, I'm okay 
+with landing it and then maybe making revisions for
+
+Michael Dawson 37:18
+that. Absolutely. Like, Yeah, Do you want to open a PR as soon as we get it 
+landed? That way we can sort of discuss pieces in in more specific consumable 
+Did you have like, but if there's something you want us to discuss a little bit 
+now with that would be good to?
+
+Darcy Clarke 37:35
+Uh, yeah, maybe just the difference? Because I'm catching up on some of the 
+conversation here. The difference between, let's say, engines and target. And 
+the consideration of the singer Kramer vs. Existing sort of know, operations 
+that we have to support sort of package versions.
+
+Michael Dawson 38:01
+Right. So engines? Yeah, so engines is a list of. So we're, you're saying okay, 
+maybe we should use engines Instead? It was that the?
+
+Darcy Clarke 38:12
+Yeah, I'm wondering, one the spec the way it's written now, is it to allow for 
+multiple support entries in that object?
+
+Michael Dawson 38:24
+Yes. So if we have in in the targets, See, you can have multiple, so support 
+entry. So you can definitely say that like, for this particular target, Here's 
+what we have for support, and then have something different, like, let's see if 
+we go with the very top. So you end up with versions. So and each version in 
+that each entry in there is something that has things that will qualify based 
+on version target response and so forth.
+
+Darcy Clarke 39:00
+Yes, Just nomenclature, maybe, because engines is already used. And also then 
+you would have, maybe the grammar would be less contentious than because he 
+would be utilizing like, actual version numbers and like,
+
+Michael Dawson 39:19
+well, let's see, it's the so what we've ended up in targets is that and we 
+namespace that. So that like you can have the target D it's now a namespace 
+then then array. So you could use something else for that was one of the the 
+key discussions was we didn't want it to be just note specific. So you can have 
+whatever they face, we've only defined what it should be for node. And now it 
+does include September version, so you can specify individual versions. But 
+then we did define, you know, these other things like LTS active LTS active, 
+and we thought that was important because we want people to be able to specify 
+an intent without having to update it every time. No changes. So right, like, 
+you know, if a version of it Of note goes out of LTS, you don't necessarily 
+want to update your support policy if what your intent is, is that I support 
+all the LTS versions.
+
+Darcy Clarke 40:21
+So that's not covered by like a carrot operator?
+
+Michael Dawson 40:26
+Uh, well, not necessarily because like, you know, LTS versions are, say 1011. 
+And 12. Or sorry, are like 810 and 12, but not 11. So which they're not 
+necessarily sequential.
+
+Darcy Clarke 40:43
+And the ability to put an array in there as well, though, That's as far as a
+
+Michael Dawson 40:48
+Yes. So you could you could, you know, if you want to say the current LTS 
+versions, you could easily put together through this one, which the century 
+which is the cyber range, like a basically it xxx is an array of similar 
+ranges. But we don't want people to have to change that. So like, if if LTS is 
+currently 810 and 12, or sorry, it's currently 810. As as of October, it will 
+be 10 and 12. And we don't want people to have to change their entry, which was 
+like a range you would have to do right eight? For sure.
+
+Darcy Clarke 41:25
+Yeah, look at this again. But I think I don't really have any blockers. I think 
+probably just there would be like minor revisions to
+
+Michael Dawson 41:34
+Okay. Sounds good. So Yeah, if because, you know, if engines can do all of 
+this, then I think we're always for using something that exists. So Yeah, take 
+a look. And then you submitted PR for what you think would make sense.
+
+Wes Todd 41:50
+But one thing I didn't think about until you just brought this up here is 
+getting this when the LTS window shifts. A So if you drop support for node 
+eight, When the LTS window shifts, that's a major version bump, you can't get 
+around, you have to change it. Right. So, you know, this doesn't necessarily 
+come through for that, and I didn't think about until now. So we should maybe. 
+Do we feel like that would need to be resolved before remerge? Or are we all 
+right?
+
+Michael Dawson 42:20
+Well, follow that up with. But It's like, this comes back to the contentious 
+issue of you can change your support level whenever you want. Yeah,
+
+LJHarb 42:30
+but it still my December major change in like, So I think, be like if you put 
+in LTS, If you put in, let's say LTS active and then are putting maintained and 
+then eight drops off. You unless you have published a major version, you're 
+still obligated to maintain support for no date on that package. Now you can 
+say no warning, which means you didn't want the way to say that your packages 
+compliant with some bar and you don't want to piss off your entire user base.
+
+Darcy Clarke 43:05
+Yeah, it's kind of the contracts that you're right there with your user base. 
+And that's kind of like this is a brand new part of that contract that you 
+make. So Yeah, I sort of see where folks are,
+
+LJHarb 43:17
+I wonder if maybe we live in the same way we have regular dash and where you 
+can put in any value. And then as you're coming to wonder if we could change 
+these keywords to indicate the lowest current like the lowest current value or 
+something, or a you know, like so you could say like LTS active colon 10. And 
+then it's all the current LTS actives, since 10 was active or something, or I 
+don't know if that's too much complexity, maybe we should just drop the 
+keywords and we should just use December Ranges
+
+Glenn Hinks 43:54
+Regarding the keywords, So the actual motivations, that a specific release 
+supports, is a fixed thing, right? If it is, if for example, you have expressed 
+for its supports, note six, eight and 10. Right, if you want to drop notice, 
+you need to bump major. However, the support field and the keywords, They 
+indicate the intent and the policy of what you intend to do. So I'm October, We 
+will start supporting 12 which is not a member major, right. But you say we 
+support LTS active which means come October we will support those 12. And 
+whether you maintain support for node eight, when nobody stops off. The intent 
+in your policies say that, you know, we will support active LTS releases. Once 
+a day drops off, all bets are off. That's The only thing that it says right. 
+And once nowadays kind of drops off the of their support, and you do want to 
+drop the support for nowadays, then you publish assembler major, and then you 
+no longer support notice. But in the support policy field, you you say that LPs 
+active means that when the new OBS comes out, we both are supporting it. And 
+when the OBS drops off, we may or may not support it anymore, but we don't have 
+a commitment to support it. Now, when we talk support, we will have to fund 
+major, which we don't have a commitment to continue supporting this version.
+
+LJHarb 45:21
+But there is a commitment there to to in that. Like if you're in v1 and eight 
+drops off. There is a commitment to not publish a version of the one after 
+that, that does not support no date. Correct. And there is a I think it's worth 
+considering that like that may not be super apparent to everyone. Like right 
+now it's really obvious when you change your engines value or when you delete a 
+matrix from Travis MMO. That he like, it's really obvious that you're dropping 
+support for a node version. And in pull requests and stuff, it may not be 
+apparent and if like ci just invisibly stops running on note eight people may 
+publish a one point x and not realize that they've broken note eight.
+
+Glenn Hinks 46:05
+Yeah, so so so to the two fields are complimentary, right one means, which 
+meant version two and then central been visit several matrix is mandatory when 
+you actually dropped.
+
+Wes Todd 46:17
+And so I think it's also trivial to say that for packages that are intending to 
+maintain support, they can have LTS and some range in an array. Right? So the 
+change there would actually be pretty simple is when the wind shifts, If the 
+maintainer cares to say, Yeah, I still do commit to supporting this. All they 
+have to do is do a PR that makes it take changes it from the string LTS to an 
+array of eight comma LTS right, or whatever the you know, the road is.
+
+LJHarb 46:45
+And that's kind of the thing, though, is that the best practice that we should 
+be encouraging should not be just casually drop support for something the 
+instant it goes, do it? Well, that's there may be some people that agree that 
+think that that should be the best practice. But I would say there's not 
+consensus on that both in this group and in the wider community. And we 
+shouldn't come up with We should be careful not to come up with a version a 
+scheme that implicitly pushes one of the sides of that debate. In the same way 
+we've tried to avoid committing to a decision on the like files or Cynthia 
+ignore stuff. And I think we've made the right choice there. In not implicitly 
+privileging one of the sides of that debate. I think we should do that here 
+too. And like at some point, like sure, I could put LTS comma, eight. And then 
+you know, I've supported committed to supporting eight, even when it drops off, 
+right, you do LTS, and then eight and then 10. Right. But The and that would 
+achieve the good semantic that no one disagrees with us as new things enter 
+LTS, we definitely support them. But that at that point, you're kind of 
+defeating the purpose of having the keyword because then I can just like add 12 
+when it goes into LTS manually. And like documenting intent is useful. But 
+there's two incentive or one is the attempt to add support for new things as 
+they enter a category, which is great, No controversy there. The other is the 
+intention to rock support for things as they leave a category. And that's 
+something that I think it is really important to not be implicit to not be 
+silent. Like It should be an explicit manual choice in order to drop that 
+support. And it's totally fine. If you want to do that. But then you should be 
+doing that alongside December major. And the way I think to, to encourage doing 
+that with December major is forcing your explicit decision. I don't know how to 
+do that with the keywords,
+
+Michael Dawson 48:34
+Right, I think you could add additional keep, like maybe not with the existing 
+keywords. Other than having to, you know, I think you could express that, as 
+you've already said, but then you'd have to actually change things. So I think 
+adding potentially adding some keywords or qualifiers. So that might make 
+sense. You know, so that could be a PR to add those additional keat quality 
+keywords slash qualifiers to express that intent, because our goal is to let 
+you most easily express the intent of what you're going to be doing going 
+forward.
+
+Glenn Hinks 49:06
+And it's not just that the other back to consumer, When I open up the package 
+for the first time, I want to see what's going to happen with that package In 
+The next year, right. So just as you know, at the end of the year, you might 
+add eight to the list. And you will say that we support a ton of it. But you 
+would also like to say that we will not indefinitely support node eight, right? 
+And and you do need to express that as well. So this is just providing the 
+vocabulary to express certain things. So the key words that they do have their 
+place there, in terms of of letting people say these things, right? Because 
+nobody would ever expect anybody to keep maintaining six or no dates, and 
+definitely,
+
+LJHarb 49:52
+I do six and all my packages, and definitely, I broke
+
+Glenn Hinks 49:58
+down to two. This is this is truly the right commitment, but not all of us can 
+afford to do that. So Yeah, So Yeah, I think time check. Right now.
+
+Michael Dawson 50:12
+So yeah, so maybe I suggest if you can submit a PR that adds or modifies those 
+those keywords to so that we you know, probably I'm thinking like add some 
+keywords so that you can cover that. Hey, I want I want I will add new LTS is, 
+but I'll continue to support everything else. You know that I think that's the 
+best way to cover that because we've obviously got a bit of a gap.
+
+Wes Todd 50:38
+Yeah. And I think to be clear, we're going to emerge this, that PR will be an 
+independent.
+
+Michael Dawson 50:43
+Yes. Yeah, I think that'll make that'll make it easier to say, Okay, here, we 
+need to add this for these few things. Yeah. So I'll still like after this 
+meeting, I'll go ahead and land this, Then I'll expect the number of prs to go 
+in and start modifying these things that we still need to discuss. Okay, sounds 
+good. Um, yeah, thanks for the time check, Emily. Okay, so let's move on to the 
+next issue, which is
+
+Darcy Clarke 51:08
+support field to support license.
+
+Wes Todd 51:16
+I assume we're going to time box this with the time check. So should we maybe 
+take a quick look at the remaining thing and see if there's anything that's 
+pressing instead of just
+
+Michael Dawson 51:24
+a good idea? Because we're down to two minutes, aren't we?
+
+Wes Todd 51:27
+Yeah. Yeah, like we make time to do one thing.
+
+Michael Dawson 51:30
+Yeah. So basically, we've got you know, I think you could share my screen these 
+are the things that are still tagged as anybody call it one of them in 
+particular that we need to dive into.
+
+Joel Chip 51:46
+Michael, I just want to point out that no 165 Brenda blocking somebody a PR and 
+it's under review as ELJ heart as make some comments. I'll be
+
+Glenn Hinks 51:57
+reading and
+
+Michael Dawson 51:59
+watching those comments after meeting. In the other things, because I think 
+otherwise we probably are out of time and
+
+Darcy Clarke 52:11
+4218 for example, can be closed. See when we will nurture the two to zero. 
+Okay. 200 to two zero. Yeah, Yeah, exactly. Okay. Then This one is
+
+Glenn Hinks 52:40
+PR, pure submitted.
+
+Darcy Clarke 52:49
+Any others?
+
+Michael Dawson 52:56
+Okay, if not, I think Yeah, we'll leave everything else to next time since 
+we're at four o'clock almost. Exactly. Thanks to everybody for taking the time 
+to to join in and have a good discussion and look forward to talking to 
+everybody again next time.
+
+Glenn Hinks 53:13
+I go.
+
+Darcy Clarke 53:14
+Okay, thanks. Bye Bye.
