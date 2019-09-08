@@ -256,6 +256,8 @@ To understand if the version is expired or not, the user needs to do the operati
 `date of last release in the version range` **+** `expires value` **>** `now` => the support is not expired
 `date of last release in the version range` **+** `expires value` **<** `now` => the support is expired
 
+If no `expires` is specified, the support metadata will be considered invalid 2 years from the last published date. This ensures that
+invalid or out of date data can only be present for up to 2 years.
 
 ## Publishing and Authoritative Version
 
