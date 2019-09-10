@@ -196,7 +196,7 @@ The standardized support identifiers are as follows:
 | Value | Description |
 |-------|-------------|
 | `none`         | Don't expect a response, the package is not being actively maintained
-| `ad-hoc`       | The maintainer is interested in fixing/discussing issues, however, there should be no expectation on response times. If and when the maintainer has time they may respond.
+| `ad-hoc`       | The maintainer is interested in fixing/discussing issues. However, there should be no expectation on response times. If and when the maintainer has time, they may respond.
 | `regular-X`    | There are dedicated resources who regularly maintain the package, expected response time is X days or less for a "we read your issue" response. Further work will depend on prioritization of the issue by the maintainer team.
 | `24-7`         | There are dedicated resources who regularly maintain the package and they are available 24/7. You can expect to be able to contact the maintainers and get an initial response with 6 hours.
 
