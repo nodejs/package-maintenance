@@ -31,7 +31,7 @@ By default, npm uses exclusion to skip publishing files, and it actually comes w
 
 ### Including Files
 
-npm supports another way to skip publishing files through an include list in package.json. You can set a field [`files`](https://docs.npmjs.com/files/package.json#files) with an array of files that npm should only include in your published packages.
+npm supports another way to skip publishing files through an include list in package.json. You can set a field [`files`](https://docs.npmjs.com/files/package.json#files) with an array of files and/or directories that npm should only include in your published packages.
 
 By default, npm also has some reasonable included files, like package.json, README.md, and LICENSE, and some reasonable excluded files, like package-lock.json, that you cannot override.
 
