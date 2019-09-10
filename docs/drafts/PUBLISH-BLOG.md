@@ -57,7 +57,7 @@ Regardless of which one you pick, if you publish packages to npm, then you shoul
 
 If you look at the packages installed in your `node_modules`, you would see that most of them have their tests and rc files with them also.
 
-If a package's original code is written in another language like TypeScript, or transpiled from modern JavaScript to more widely compatible JavaScript via a tool like Babel, then they would have transpiled code for consumption, but the original sources are often published also.
+If a package's original code is written in another language like TypeScript, then they would transpile the code for consumption. In this case, the original source code is not needed but is sometimes still published.
 
 As a user, it's most likely you don't need the tests and the sources to consume a package, so it's a waste that you have to download and install them when you just want to use the package in your code.
 
