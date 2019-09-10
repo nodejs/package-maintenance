@@ -16,7 +16,7 @@ Some common meta files are:
 
 In our discussion, we agreed that these files, while generally small, should not be part of a published package.
 
-There were two things that we didn't have a conclusive agreement:
+There were two things that we didn't have conclusive agreement on:
 
 The first is how should package keep these files out when publishing.
 The second is whether other files like tests and sources should be published (but would be a non-issue once npm tink project is released)
