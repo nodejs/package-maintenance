@@ -85,6 +85,6 @@ npm tink project is particular exciting and will solve a lot of the issues we di
 
 We established a baseline and a recommendation guide for publishing packages without meta files, using either the exclude or include support from npm.
 
-The original github issue and comments can be found here https://github.com/nodejs/package-maintenance/issues/164.
+The original github issue and comments can be found here [package-maintenance/issues/164](https://github.com/nodejs/package-maintenance/issues/164).
 
 We consider the options for publishing tests and sources. While we look forward to the tink project that will handle this better, we are exploring interim solutions to trim some fats from `node_modules`.
