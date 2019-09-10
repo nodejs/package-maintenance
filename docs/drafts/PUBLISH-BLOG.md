@@ -18,7 +18,7 @@ In our discussion, we agreed that these files, while generally small, should not
 
 There were two things that we didn't have conclusive agreement on:
 
-The first is how should package keep these files out when publishing.
+1. how packages should exclude these files when publishing
 The second is whether other files like tests and sources should be published (but would be a non-issue once npm tink project is released)
 
 ## Publish without Meta Files
