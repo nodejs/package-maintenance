@@ -123,15 +123,16 @@ The standardized options for the node name space are as follows:
 | xxxxxx        |            | xxxxxx is a [semver range](https://semver.io/) of Node.js versions supported
 | `abandoned`   |            | Not recommended for use. The package is deprecated or no longer maintained
 | `none`        |            | Use at your own risk, no active support. May or may not work for a given Node.js version
-| `all`         | 8,10,11,12 | The package is maintained for versions of Node.js including both LTS and non-LTS releases and the last EOL version. It may be necessary to accept semver-major level (ie. breaking) changes into that application in order to receive essential fixes. Documentation for the package will include the non-LTS releases for which the package is still maintained
+| `all`         | ...,8,9,10,11,12 | The package is maintained for versions of Node.js including both LTS and non-LTS releases regardless of whether they are EOL or not. It may be necessary to accept semver-major level (ie. breaking) changes into that application in order to receive essential fixes. Documentation for the package will include the non-LTS releases for which the package is still maintained
 | `lts`         | 8,10       | The package is maintained for the Node.js LTS releases (both in Active and Maintenence mode). Anyone creating an application using an LTS version of Node.js and using the latest major version of LTS adopting packages will not have to accept semver-major level (ie. breaking) changes into that application in order to receive essential fixes. Full details are available [here](https://github.com/nodejs/package-maintenance/issues/119)
-| `active`      | 10,12      | All releases not in maintenance and EOL
-| `lts_active`  | 10         | All releases both LTS and active. There will be two versions for 6 months when a new LTS will be released
+| `active`      | 10,12      | All releases that are in active LTS
+| `lts_active`  | 10         | All releases both LTS and active. There may be more than one LTS release in active mainteance at a given point in time
 | `lts_latest`  | 10         | The package is maintained only for the Latest Node.js version. You will be required to update to the latest LTS Node.js version in order to ensure you can use new versions/get security fixes
 | `maintained`  | 12,10,8    | Node.js versions which are not EOL
 | `current`     | 12         | The latest release from "all"
 
-Based on the current active Node.js releases which are 8.x (Maintenance LTS), 10.x (Active LTS) and 12.x (Current).
+The example above are based on the state of Node.js releases at the time of writing (2019-10-07)
+which are: 8.x (Maintenance LTS), 10.x (Active LTS) and 12.x (Current).
 Checkout the actual state in the [Release Schedule](https://github.com/nodejs/Release#release-schedule).
 
 ### Support `response` 
