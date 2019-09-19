@@ -96,3 +96,4 @@
 * Mayank Patel ([@mayank-patel](https://github.com/mayank-patel))
 * Lucas Holmquist ([@lholmquist](https://github.com/lholmquist))
 * Darcy Clarke ([@darcyclarke](https://github.com/darcyclarke))
+* Giorgos Ntemiris ([@gntem](https://github.com/gntem))
