@@ -59,7 +59,7 @@ If you look at the packages installed in your `node_modules`, you would see that
 
 If a package's original code is written in another language like TypeScript, then they would transpile the code for consumption. In this case, the original source code is not needed but is sometimes still published.
 
-As a user, it's most likely you don't need the tests and the sources to consume a package, so it's a waste that you have to download and install them when you just want to use the package in your code.
+As a user, you may not need the tests and the sources to consume a package. If so, they waste download bandwidth and disk space.
 
 That raises the question: should you publish your tests and sources as part of your package?
 
