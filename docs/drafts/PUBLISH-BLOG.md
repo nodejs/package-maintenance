@@ -51,13 +51,13 @@ Second, the include list allows specifying a directory where all files under it 
 
 In the end, given that both ways are well supported by npm, we agreed to leave the choice to package authors.
 
-Regardless of which one you pick, if you publish packages to npm, then you should use the `--dry-run` npm option to preview the files before publishing. If you enabled 2FA, then you get an added benefit where the publish process will print out a list of files to be published before pausing to await your 2FA code.
+Regardless of which one you pick, if you publish packages to npm, then you should use the `--dry-run` npm option to preview the files before publishing. If you enabled 2FA, then you get an added benefit as a side effect where the publish process will print out a list of files to be published before pausing to await your 2FA code.
 
 ## Tests and Sources
 
 If you look at the packages installed in your `node_modules`, you would see that most of them have their tests and rc files with them also.
 
-If a package's original code is written in another language like TypeScript, then they would transpile the code for consumption. In this case, the original source code is not needed but is sometimes still published.
+If a package's original code is written in code that require transpilation to something like ES5, then the original source code probably is not needed but is sometimes still published.
 
 As a user, you may not need the tests and the sources to consume a package. If so, they waste download bandwidth and disk space.
 
