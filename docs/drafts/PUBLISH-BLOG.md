@@ -47,6 +47,12 @@ There are two counter reasons for if you want to use inclusion instead.
 
 First, you may create new temporary files that are not intended to be published. There have been known incidents of packages being published with huge temp files accidentally, which is an inconvenient nuance, but the package still works perfectly.
 
+Some actual incidents found through github issues:
+
+- https://github.com/STRML/async-limiter/issues/2
+- https://github.com/wix/yoshi/pull/978
+- https://github.com/bholloway/resolve-url-loader/issues/115
+
 Second, the include list allows specifying a directory where all files under it are all automatically included.
 
 In the end, given that both ways are well supported by npm, we agreed to leave the choice to package authors.
