@@ -39,7 +39,7 @@ npm also has some reasonable included files, like `package.json`, `README.md` an
 
 Since the two approaches are completely opposite of each other, there are different reasons to pick one over the other.
 
-The main one revolves around new files you may add to your package.
+The main reason revolves around new files you may add to your package.
 
 With exclusion, new files are still published automatically, but with inclusion, you may end up publishing a broken package because you forgot to include the new files.
 
