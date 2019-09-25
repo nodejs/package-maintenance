@@ -9,7 +9,7 @@ In general, a package's original directory could contain other meta files that m
 Some common meta files are:
 
 - `coverage`, `.nyc_output` - coverage output for istanbul and nyc
-- `.idea`, `.vscode`, `.editorconfig` - configs for IDE or editors
+- `.idea`, `.vscode` - configs for IDE or editors
 - `.github`, `.travis.yml` - github and travis config directory
 - `.npmignore` - npm publish ignore list file
 - `.DS_Store` - Mac OS filesystem meta data
