@@ -32,9 +32,7 @@ node_js:
 
 When you use the keywords (`node`, `lts/*`), you will automatically start testing in new versions as they come out. This does, however, mean that you will also automatically _stop_ testing in versions that may still need to be supported.
 
-## How: setting up automated updates
-
-(todo)
+Alternatively, you can use [Renovate](https://docs.renovatebot.com/node/) to automatically add new versions to your `.travis.yml`.
 
 ## How: dropping support for older Node.js versions
 
