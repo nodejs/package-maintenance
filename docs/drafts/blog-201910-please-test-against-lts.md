@@ -4,15 +4,15 @@ _tl;dr: we'd like to encourage package authors to make sure their Continuous Int
 
 At the start of 2019, npm released a [list of top 1000 most downloaded packages](https://docs.google.com/spreadsheets/d/1lZDNYsLntwD2q9XaTw-XLuG0VpHH6cOV-Uoa7Y1aTSM/edit#gid=1745448509). We scanned that list to find that a large number of these packages have not been updated in over a year, but even if they have - they still did not include the latest Node.js LTS version (10.x at the time) in their Continuous Integration (CI) setup.<sup>1</sup>
 
-It is important to note, that CI providers, including Travis (the de facto standard<sup>2</sup> in JavaScript package ecosystem) **might not be using LTS** as the default. There is [work in progress to change this](https://github.com/travis-ci/travis-build/pull/1747), however it is a good time to double check your testing configuration - in October 2019 Node.js 12.x will become the active LTS version and 13.x will be released. At the end of December 2019 Node.js 8.x will reach end-of-life.
+It is important to note, that CI providers, including Travis (the de facto standard<sup>2</sup> in JavaScript package ecosystem) **might not be using LTS** as the default. There is [work in progress to change this](https://github.com/travis-ci/travis-build/pull/1747), however it is a good time to double check your testing configuration - in October 2019 Node.js 12.x will become the active LTS version and 13.x will be released. At the end of December 2019 Node.js 8.x will reach end-of-life.<sup>3</sup>
 
 ## Why
 
 The [release schedule](https://nodejs.org/en/about/releases/) of Node.js is set up to have a new release with breaking changes every 6 months. According to [semver](https://semver.org), each such release increments the major version number. Even-numbered releases (10, 12, etc) receive "long-term support" (30 months) and because of that only LTS versions are recommended to be used in production applications.
 
-While library authors are free to chose any support policy<sup>3</sup> they prefer, their libraries are likely to be used in one of up to 3 supported LTS versions. We recommend to include all of these versions in the CI test matrix. At the time of writing this would mean Node.js 8 and 10. By January 2020 this will become 10 and 12.
+While library authors are free to chose any support policy<sup>4</sup> they prefer, their libraries are likely to be used in one of up to 3 supported LTS versions. We recommend to include all of these versions in the CI test matrix. At the time of writing this would mean Node.js 8 and 10. By January 2020 this will become 10 and 12.
 
-Odd-numbered (11, 13, etc) Node.js releases typically become unsupported after 6 months when a new even-numbered release is made available. While it is generally recommended that production applications do not use non-LTS Node.js versions, for library authors the recommendation is different - we'd like to encourage you to include the Current version (at the time of writing - 12, in January 2020 - 13) in the test matrix, as this can serve as an advance warning for both - library authors and Node.js maintainers<sup>4</sup>.
+Odd-numbered (11, 13, etc) Node.js releases typically become unsupported after 6 months when a new even-numbered release is made available. While it is generally recommended that production applications do not use non-LTS Node.js versions, for library authors the recommendation is different - we'd like to encourage you to include the Current version (at the time of writing - 12, in January 2020 - 13) in the test matrix, as this can serve as an advance warning for both - library authors and Node.js maintainers<sup>5</sup>.
 
 The above recommendation is for the minimal set of versions that should be supported - if it is an option at all, we'd like to encourage everyone to support older versions as well.
 
@@ -46,5 +46,6 @@ You should also keep the [`engines` field](https://docs.npmjs.com/files/package.
 
 1. Out of top 1000 packages using Travis for CI, 315 had neither a variation of 10.x nor `lts/*` in their setup; ~150 of those had commits since 10.x was first released, of which ~120 had commits since 10.x became active LTS.
 2. Out of top 1000 packages, 877 were pointing to GitHub repos with a `.travis.yml` file at the root in September 2019.
-3. The [Package Maintenance Working Group](https://github.com/nodejs/package-maintenance/) is working on a way to [define your support levels](https://github.com/nodejs/package-maintenance/blob/master/docs/drafts/PACKAGE-SUPPORT.md) - we welcome discussions and contributions.
-4. The Node.js project also runs some smoke tests using The [Canary in the Goldmine tool](https://github.com/nodejs/citgm).
+3. Originally, Node.js 8.x was mean to be supported until March 2020, however the scheduled had to be moved forward due to the OpenSSL version that it getting to [end-of-life in December 2019](https://developer.ibm.com/blogs/openssl-111-has-landed-in-nodejs-master-and-why-its-important-for-nodejs-lts-releases/).
+4. The [Package Maintenance Working Group](https://github.com/nodejs/package-maintenance/) is working on a way to [define your support levels](https://github.com/nodejs/package-maintenance/blob/master/docs/drafts/PACKAGE-SUPPORT.md) - we welcome discussions and contributions.
+5. The Node.js project also runs some smoke tests using The [Canary in the Goldmine tool](https://github.com/nodejs/citgm).
