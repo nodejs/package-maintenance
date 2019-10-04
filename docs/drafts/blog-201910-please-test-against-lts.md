@@ -46,6 +46,6 @@ You should also keep the [`engines` field](https://docs.npmjs.com/files/package.
 
 1. Out of top 1000 packages using Travis for CI, 315 had neither a variation of 10.x nor `lts/*` in their setup; ~150 of those had commits since 10.x was first released, of which ~120 had commits since 10.x became active LTS.
 2. Out of top 1000 packages, 877 were pointing to GitHub repos with a `.travis.yml` file at the root in September 2019.
-3. Originally, Node.js 8.x was mean to be supported until March 2020, however the scheduled had to be moved forward due to the OpenSSL version that it getting to [end-of-life in December 2019](https://developer.ibm.com/blogs/openssl-111-has-landed-in-nodejs-master-and-why-its-important-for-nodejs-lts-releases/).
+3. Originally, Node.js 8.x was mean to be supported until March 2020, however the schedule had to be moved forward due to the OpenSSL version that it uses getting to [end-of-life in December 2019](https://developer.ibm.com/blogs/openssl-111-has-landed-in-nodejs-master-and-why-its-important-for-nodejs-lts-releases/).
 4. The [Package Maintenance Working Group](https://github.com/nodejs/package-maintenance/) is working on a way to [define your support levels](https://github.com/nodejs/package-maintenance/blob/master/docs/drafts/PACKAGE-SUPPORT.md) - we welcome discussions and contributions.
 5. The Node.js project also runs some smoke tests using The [Canary in the Goldmine tool](https://github.com/nodejs/citgm).
