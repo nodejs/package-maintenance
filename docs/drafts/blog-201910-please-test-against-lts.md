@@ -38,7 +38,7 @@ When you're testing with a Current (or nightly) Node.js version before it become
 
 ## How: dropping support for older Node.js versions
 
-Maintaining an Open Source Software library can become a burden and it is unfeasible to expect that all versions of Node.js should be supported by library authors indefinitely. Changing the minimum Node.js version requirement is considered a **breaking change** and according to semver rules requires a major version of your package to be incremented.
+Maintaining an Open Source Software library can become a burden and it is unfeasible to expect that all versions of Node.js should be supported by library authors indefinitely. Changing the minimum Node.js version requirement is considered a **breaking change** and according to semver rules requires a major version of your package to be incremented. Still, this decision should not be taken lightly, as bumping a major version of your package can have a snowball effect on the package dependents and the rest of the ecosystem.
 
 You should also keep the [`engines` field](https://docs.npmjs.com/files/package.json#engines) in your `package.json` up to date to indicate supported versions.
 
