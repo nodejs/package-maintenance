@@ -10,7 +10,7 @@ It is important to note, that CI providers, including Travis (the de facto stand
 
 The [release schedule](https://nodejs.org/en/about/releases/) of Node.js is set up to have a new release with breaking changes every 6 months. According to [semver](https://semver.org), each such release increments the major version number. Even-numbered releases (10, 12, etc) receive "long-term support" (30 months) and because of that only LTS versions are recommended to be used in production applications.
 
-While library authors are free to chose any support policy<sup>4</sup> they prefer, their libraries are likely to be used in one of up to 3 supported LTS versions. We recommend to include all of these versions in the CI test matrix. At the time of writing this would mean Node.js 8 and 10. By January 2020 this will become 10 and 12.
+While library authors are free to choose any support policy<sup>4</sup> they prefer, their libraries are likely to be used in one of up to 3 supported LTS versions. We recommend to include all of these versions in the CI test matrix. At the time of writing this would mean Node.js 8 and 10. By January 2020 this will become 10 and 12.
 
 Odd-numbered (11, 13, etc) Node.js releases typically become unsupported after 6 months when a new even-numbered release is made available. While it is generally recommended that production applications do not use non-LTS Node.js versions, for library authors the recommendation is different - we'd like to encourage you to include the Current version (at the time of writing - 12, in January 2020 - 13) in the test matrix, as this can serve as an advance warning for both - library authors and Node.js maintainers<sup>5</sup>.
 
