@@ -1,6 +1,6 @@
-# Which versions of node should library authors test against?
+# Choosing the Node.js versions for your CI tests (hint: use LTS)
 
-_tl;dr: we'd like to encourage package authors to make sure their Continuous Integration (CI) setup includes all supported Node.js "long-term support" (LTS) versions, as well as the Current stable release._
+_tl;dr: we'd like to encourage package authors to make sure their Continuous Integration (CI) setup includes **all supported Node.js "long-term support" (LTS) versions**, as well as the Current stable release._
 
 At the start of 2019, npm released a [list of top 1000 most downloaded packages](https://docs.google.com/spreadsheets/d/1lZDNYsLntwD2q9XaTw-XLuG0VpHH6cOV-Uoa7Y1aTSM/edit#gid=1745448509). We scanned that list to find that a large number of these packages have not been updated in over a year, but even if they have - they still did not include the latest Node.js LTS version (10.x at the time) in their Continuous Integration (CI) setup.<sup>1</sup>
 
@@ -20,7 +20,7 @@ Additionally, while it is recommended to use the latest version of a major relea
 
 ## How: setting up your `.travis.yml`
 
-Travis uses [`nvm`](https://github.com/nvm-sh/nvm) to install node, so you can use any version or keyword it supports in your [`.travis.yml`](https://docs.travis-ci.com/user/languages/javascript-with-nodejs/#specifying-nodejs-versions). This means that your setup should look something like this:
+Travis uses [`nvm`](https://github.com/nvm-sh/nvm) to install Node.js, so you can use any version or keyword it supports in your [`.travis.yml`](https://docs.travis-ci.com/user/languages/javascript-with-nodejs/#specifying-nodejs-versions). This means that your setup should look something like this:
 
 ```
 language: node_js
@@ -51,3 +51,5 @@ You should also keep the [`engines` field](https://docs.npmjs.com/files/package.
 3. Originally, Node.js 8.x was meant to be supported until March 2020, however the schedule had to be moved forward due to the OpenSSL version that it uses getting to [end-of-life in December 2019](https://developer.ibm.com/blogs/openssl-111-has-landed-in-nodejs-master-and-why-its-important-for-nodejs-lts-releases/).
 4. The [Package Maintenance Working Group](https://github.com/nodejs/package-maintenance/) is working on a way to [define your support levels](https://github.com/nodejs/package-maintenance/blob/master/docs/drafts/PACKAGE-SUPPORT.md) - we welcome discussions and contributions.
 5. The Node.js project also runs smoke tests using The [Canary in the Goldmine tool](https://github.com/nodejs/citgm).
+
+Thanks to [all the reviewers](https://github.com/nodejs/package-maintenance/pull/260)!
