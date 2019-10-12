@@ -36,6 +36,14 @@ Alternatively, you can use [Renovate](https://docs.renovatebot.com/node/) to aut
 
 When you're testing with a Current (or nightly) Node.js version before it becomes LTS you can also enable [`allow_failures`](https://docs.travis-ci.com/user/build-matrix/#rows-that-are-allowed-to-fail) for it.
 
+## How: other CI tools
+
+- Appveyor, at the time of writing, has Node.js 8.x installed by default. [They also allow testing in multiple Node.js versions](https://www.appveyor.com/docs/lang/nodejs-iojs/). You can use the `Install-Product node ''` command to install the latest (Current) available release. You should verify your configuration to include all the other LTS versions as well.
+- Circle CI requires you to explicitly list the docker images you want to use for testing. The [images provided by Circle CI on Docker Hub](https://hub.docker.com/r/circleci/node/tags) do have aliases such as `lts` or `current`, they even provide a [ChakraCore](https://github.com/nodejs/node-chakracore) based image. You should make sure your configured list is up to date.
+- Github Actions includes all LTS versions and the Current version in their [Node.js starter workflow](https://github.com/actions/starter-workflows/blob/master/ci/node.js.yml), however you will need to maintain that list to keep it up to date. There is an open issue discussing the [options for matrix aliases](https://github.com/actions/setup-node/issues/26) with the `setup-node` action and a PR to introduce [keywords for individual versions](https://github.com/actions/setup-node/pull/58).
+
+Please leave a comment with other tips!
+
 ## How: dropping support for older Node.js versions
 
 Maintaining an Open Source Software library can become a burden and it is unfeasible to expect that all versions of Node.js should be supported by library authors indefinitely. Changing the minimum Node.js version requirement is considered a **breaking change** and according to semver rules requires a major version of your package to be incremented.
