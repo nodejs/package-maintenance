@@ -97,3 +97,4 @@
 * Lucas Holmquist ([@lholmquist](https://github.com/lholmquist))
 * Darcy Clarke ([@darcyclarke](https://github.com/darcyclarke))
 * Giorgos Ntemiris ([@gntem](https://github.com/gntem))
+* Helio Frota ([@helio-frota](https://github.com/helio-frota))
