@@ -14,19 +14,19 @@ Each project should document its security policy in an easily accessible place.
 
 Here are several common ways of publishing security policies:
 
-1. Security section on project website, e.g. `https://PROJECTSITE/security`.
-1. [security.txt](https://securitytxt.org/) file on project website.
 1. [Security policy in a GitHub repository](https://help.github.com/en/github/managing-security-vulnerabilities/adding-a-security-policy-to-your-repository).
 1. `SECURITY.md` or `SECURITY` file in the root folder of project repository (if hosted outside of GitHub).
+1. Security section on project website, e.g. `https://example.com/security`.
+1. [security.txt](https://securitytxt.org/) file on project website.
 1. Security section of the project `README` file.
 
 ### Reporting a security issue
 
-Project security policy should describe a process for reporting vulnerabilities. It is encouraged that the reporting process is confidential to allow maintainers to triage and resolve the vulnerability in private before disclosing it to the public.
+Project security policy should describe a process for reporting vulnerabilities. It is strongly encouraged that the reporting process is confidential to allow maintainers to triage and resolve the vulnerability in private before disclosing it to the public.
 
 Here are several common ways of reporting vulnerabilities:
 
-1. Designated email address, e.g. `security@PROJECTSITE`.
+1. Designated email address, e.g. `security@example.com`.
 1. [Node.js Ecosystem Security WG](https://github.com/nodejs/security-wg) responsible disclosure program on [HackerOne](https://hackerone.com/nodejs-ecosystem).
 
 The policy should clearly specify when confidential reporting is not supported and generally available bug tracking system should be used.
@@ -50,3 +50,4 @@ Here are several examples of short and useful security policies:
 - [Node.js Ecosystem Security WG Template](https://github.com/nodejs/security-wg/blob/master/processes/responsible_disclosure_template.md)
 - [Express Security Policies and Procedures](https://github.com/expressjs/express/security/policy)
 - [Node-RED Security Policy](https://github.com/node-red/node-red/security/policy)
+- [Fastify Security Policy](https://github.com/fastify/fastify/blob/master/SECURITY.md) (refers to the Node.s Ecosystem Security WG process for reporting vulnerabilities)
