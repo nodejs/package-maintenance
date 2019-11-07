@@ -63,6 +63,15 @@ of the Node.js project.
 To join on slack you have to [send a request](http://www.nodeslackers.com/) and wait
 to be accepted: it is a manual workflow, so it could take some days (we are working to help improve this).
 
+## Pull Request Merging Policy
+
+The package maintenance team policy on PR closure is for there to be
+- At least 4 approvals
+- No blocking reviews
+- 7 day period from the 4th approval to merging
+
+All PRs shall follow the [contributions policy](CONTRIBUTING.md)
+
 ## Current Project Team Members
 
 [See the list of Members](./MEMBERS.md)
