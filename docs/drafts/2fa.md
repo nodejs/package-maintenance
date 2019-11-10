@@ -18,13 +18,45 @@ Note: at the time of writing neither documents or gives advice on using two-fact
 
 ## Potential solutions
 
+All of the listed solutions below have their pros and cons. While the order of desireability of these solutions has been discussed, the list below does not imply any order of preferences.
+
 ### Release manager
 
-- Cons: 
-    - complexity
-    - compatibility
-    - effort to build
-    - maintenance
+The release manager could be a place where packages are staged after `npm publish` without an OTP. A human would need to use the manager (CLI/GUI) and could release one or more pending packages, approving the publishing with an OTP. This would need be implemented by the registry (for public packages - npm).
+
+Such a manager should enable further tooling to integrate notifications and approvals via email or chat systems.
+
+The primary benefit of this is the simplicity of using this for teams - the CI can publish the package under a bot account
+
+Possible complications:
+
+- Are the version numbers reserved once published/staged?
+- Are the users allowed to install the "staged" packages by explicitly opting in?
+- Existing tooling may already be too dependent on a specific version becoming visible in the registry immediately after publish.
+- Can this be standardized enough to work with alternative registries?
+- This may required signficant effort to build and maintain, incl. by npm Inc.
+
+Poor man's version:
+
+- Allow adding a 2FA approval on specific versions retroactively. This would allow tooling to be built on the consumer side to avoid non-2FA releases, while the maintainers keep the option of "singing off" the releases.
+
+### Extension in CI providers
+
+As 2FA in CI is partly a problem because there is no way to enter the OTP, it can be solved by simply adding a way to enter an OTP in CI.
+
+For maximum usability, the required input should integrate with various ways of notifying the maintainers, possibly by also allowing the input via the notification channels (e.g. chatbots), and should provide for graceful timeouts.
+
+Some CI systems (e.g. Jenkins) already do have some form of user input at build time.
+
+Possible complications:
+
+- Requires a lot of coordination with many different CI providers. While Travis is the de-facto standard in the npm ecosystem and Github Actions have a lot of initial traction, there are many other systems.
+- The cost of building such a feature is likely non-negligible for the CI providers (input is harder than output), even if the feature itself may have many other practical applications.
+- The setup would vary system by system, which could lead to unnecessary complexity in the ecosystem (esp. for maintainers who contribute to multiple projects).
+- Unclear if there's an easy way to make the input work for teams, because the 2FA is tied to a single identity, i.e. who can enter the OTP when the CI is waiting for it? 
+    - Could be solved by configuring multiple publish tokens and selecting the correct one, but this requires configuration complexity.
+    - Could be solved by using a team account to publish, but this requires sharing a secret across the team.
+    - Could be solved by using the identity of the person who kicked off the release build (i.e. the person who merged a PR), but this requires interpersonal coordination and couples merge priveleges with publish priveleges.
 
 ### Remote OTP
 
@@ -51,13 +83,20 @@ POC: ask https://twitter.com/MarshallOfSound
     - none publicly available and free
     - trust
 
-### Use remote decryption service
+### Remote decryption service
 
 - Cons: 
     - requires setup
 
-### Use GitHub releases / alternative registries for staging
+### Alternative registries/release repositories for staging
 
 - Cons: 
     - requires setup
     - requires a manual action
+
+### Alternative second factors (e.g. package signing)
+
+
+## Somewhat related other ideas
+
+- Registries should allow including a meta field to link back to the CI job used to publish a specific version for audit purposes.
