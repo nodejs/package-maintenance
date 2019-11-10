@@ -162,3 +162,4 @@ Cons:
 - npm client should have an `otpUrl` config option in `.npmrc`. While it is easy enough to provide a `--otp=$(curl http://example.com)`, depending on publishing methods used (e.g. `semantic-release`), such an integration is trickier.
 - Managing the publish tokens in CI can be cumbersome, esp. if you have a lot of repos - there is scope for more tooling to deal with Travis, Github Actions APIs to mass-manage multiple repos as a member of multiple organizations and as an organization.
 - It's been a long standing request from the community (regardless of whether it solves any problem) to have package signatures. The tooling for staged releases/alternative registries and remote decryption/signing services could be used to also publish the signatures on GitHub releases.
+- Package signing from CI might not be good enough, as the CI job is triggered by a merge, which is not protected by 2FA.
