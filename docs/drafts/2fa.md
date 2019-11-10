@@ -147,6 +147,8 @@ Such tooling can be further extended to e.g. allow pre-publishing unsigned packa
 
 The major benefit of this approach is team management - anyone with publish access could run `npm publish [tarball URL]` to unstage a release. The tarball sha hash could also be pre-pushed by the CI system into the release storage area for integrity verification.
 
+Another feature that could be built on top of this is using the tarballs directly from build artifacts as input into CITGM for package ecosystems.
+
 Cons: 
 
 - Requires potentially complex setup.
