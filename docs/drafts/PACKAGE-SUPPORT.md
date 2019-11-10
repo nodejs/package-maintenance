@@ -105,7 +105,7 @@ repository (or within an external repository). This supports offline and
 
 In the future, we hope that the developer experience could be further inproved
 through itegration with the npm client. For validation could be integrated into
-npm publish, and this information could be surfaced on npmjs.com, and/or the
+`npm publish`, and this information could be surfaced on npmjs.com, and/or the
 information could be inlined into the packument so that `npm view $package`
 could surface the data.
 
