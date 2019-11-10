@@ -66,7 +66,7 @@ These options allow the support information to be provided through a file:
 
 and enable the following use cases:
 
-1.common case: "support": true with an associated package-support.json file in the
+1. common case: `"support": true` with an associated `package-support.json` file in the
   package repo at the top level
 1. much less common case: an alternate file path within the package’s repo,
   such as "support": "./path/to/support.json"
