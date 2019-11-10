@@ -56,7 +56,7 @@ be one of the following:
   entry which contains the canonical support information. 
 * object, with repository key matching the schema for the existing
   [repository](https://docs.npmjs.com/files/package.json#repository) entry, and optional
-  path field that comnplies with the format described above under `a string`
+  path field that complies with the format described above under `a string`
 
 These options allow the support information to be provided through a file:
 
