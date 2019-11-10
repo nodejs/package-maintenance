@@ -87,7 +87,7 @@ requiring any special tooling or action from the maintainer.
 
 In the least common case where the support information is not within the same repository,
 we recommend that a non-canonical copy of the support information be copied into the package at the
-same relative path as the external repository when publishing. We intend to work on tooling to simplify this 
+same relative path as the external repository when publishing. We intend to work on tooling (including npm client) to simplify this 
 process including validation of the path and content of the support information as well as the
 required coping for the least common case.
 
