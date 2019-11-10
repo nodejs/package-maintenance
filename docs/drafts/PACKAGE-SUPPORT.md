@@ -49,7 +49,7 @@ A new field called `support` is added to package.json. The contents of this fiel
 be one of the following:
 * true: This will indicate that the canonical version of the support information for the
   package is available in a file within the repository specified by the
-  [repository](https://docs.npmjs.com/files/package.json#repository) entry.  In this case the filapath for the file containing the support information will be 
+  [repository](https://docs.npmjs.com/files/package.json#repository) entry.  In this case the filepath for the file containing the support information will be 
   `./package-support.json`
 * a string: a relative path, starting with `./`, that points to a file within the
   repository specified in the [repository](https://docs.npmjs.com/files/package.json#repository)
