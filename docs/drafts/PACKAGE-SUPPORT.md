@@ -79,7 +79,7 @@ and enable the following use cases:
 In all of these cases `package-support.json` (or your alternative filename) should be included in your `files`
 array, or `.npmignore` configured to avoid excluding it.
 
-The rational for deliverying the canonical version of the support info through a file
+The rationale for deliverying the canonical version of the support info through a file
 within a repository (and ideally the package's repository) is that it maximizes the likelihood
 that every published package contains a copy of the support information that was
 current at the time of the publish. Further, it does this in the most common cases without
