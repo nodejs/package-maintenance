@@ -129,15 +129,13 @@ consumes these elements.
 
 ## Support information
 
-
 This field documents the maintainers’ expectations, adding more useful metadata.
-For the JavaScript ecosystem it is recommended that this information be added to the existing
-`package.json` file in the root directory of the project. For other ecosystems, it is recommended that
+For the JavaScript ecosystem it is recommended that this be provided as outlined in the
+section titled `Integration into packages`. For other ecosystems, it is recommended that
 this information be stored in a file called `package-support.json` in the root directory of the 
 project.
 
-The json which is either added to the `package.json` file or stored in `package-support.json` is
-as defined in the sections below.  
+The json is as defined in the sections below.  
 
 The default for packages created by individuals for their own use should be:
 
