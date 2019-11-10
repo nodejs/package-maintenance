@@ -38,7 +38,7 @@ Possible complications:
 
 Poor man's version:
 
-- Allow adding a 2FA approval on specific versions retroactively. This would allow tooling to be built on the consumer side to avoid non-2FA releases, while the maintainers keep the option of "singing off" the releases.
+- Allow adding a 2FA approval on specific versions retroactively. This would allow tooling to be built on the consumer side to avoid non-2FA releases, while the maintainers keep the option of "singing off" the releases at their convenience - tooling can be built to help these tasks as well.
 
 ### Extension in CI providers
 
@@ -63,7 +63,9 @@ Possible complications:
 
 The below options all center around an idea that a CI job would make a request to a pre-configured somewhat-secret URL, which would trigger a notification to the maintainer, whereby they could enter the OTP.
 
-It's worth noting, that there are already existing commercial system thsat are used in enterprise settings to provide a second factor via mobile notifications, calls and SMS. However these systems are complex and likely too expensive for small OSS teams and sole maintainers.
+It's worth noting, that there are already existing commercial system that are used in enterprise settings to provide a second factor via mobile notifications, calls and SMS. However these systems are complex and likely too expensive for small OSS teams and sole maintainers.
+
+The major benefit of this is that this works today, with existing tooling (at least a POC level) and does not depend on any third party action (even if it could potentially be helpful).
 
 Possible complications:
 
@@ -120,26 +122,41 @@ Possible providers:
 Additional cons:
 
 - Would require reaching out to providers and negotiating to get a free-for-OSS plan.
-- Trust.
+- Trusting a third party.
 - Vendor lock-in.
 
 ### Remote decryption service
 
+(krypt.co?) provides a way to have private keys stored on the mobile phone and use them for remote signing. This means that a CI system can be configured to have the encrypted OTP generator seed on it, and the decryption would be requested via an API. The maintainer can then approve the access to the seed, which can be used to generate the OTP and pass it to `npm publish`.
+
+Alternatively, if package registries accepted package signatures as a second factor, the service could be used to sign the package remotely, using a personal device.
+
 Cons: 
-- requires setup
+
+- Potentially complicated setup.
+- Trusting a third party.
+- Vendor lock-in.
 
 ### Alternative registries/release repositories for staging
 
+While it is hard to integrate CI systems and the public npm registry _with_ 2FA today, a small scale release manager can be built by using non-npm registries or GitHub Releases as a staging area.
+
+The CI system could be set up to publish packages into an alternative registry or to upload the tarball to a release artifact storage area. Tooling can then be built to query such storage areas for unpublished packages and it could possibly publish things en-masse.
+
+Such tooling can be further extended to e.g. allow pre-publishing unsigned packages under a different scope even on a public npm registry, to allow e.g. easy nightly releases or a way to manage the release of commercially supported versions (see `@commercial` scope of Hapi.js).
+
+The major benefit of this approach is team management - anyone with publish access could run `npm publish [tarball URL]` to unstage a release. The tarball sha hash could also be pre-pushed by the CI system into the release storage area for integrity verification.
+
 Cons: 
-- requires setup
-- requires a manual action
 
-### Alternative second factors (e.g. package signing)
-
-Similar to using a decryption service
+- Requires potentially complex setup.
+- Requires a manual action on the maintainer's computer, with a non-obvious notification mechanism.
+- Requires tooling to be built and maintained.
+- GitHub release assets are mutable (?).
 
 ## Somewhat related other ideas
 
 - Registries should allow including a meta field to link back to the CI job used to publish a specific version for audit purposes.
 - npm client should have an `otpUrl` config option in `.npmrc`. While it is easy enough to provide a `--otp=$(curl http://example.com)`, depending on publishing methods used (e.g. `semantic-release`), such an integration is trickier.
 - Managing the publish tokens in CI can be cumbersome, esp. if you have a lot of repos - there is scope for more tooling to deal with Travis, Github Actions APIs to mass-manage multiple repos as a member of multiple organizations and as an organization.
+- It's been a long standing request from the community (regardless of whether it solves any problem) to have package signatures. The tooling for staged releases/alternative registries and remote decryption/signing services could be used to also publish the signatures on GitHub releases.
