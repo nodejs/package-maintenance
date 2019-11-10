@@ -103,7 +103,7 @@ of the support data, but the true source of truth is always a file within the pa
 repository (or within an external repository). This supports offline and
 “no external internet” use cases as best as can be achieved.
 
-In the future, we hope that the developer experience could be further inproved
+In the future, we hope that the developer experience could be further improved
 through itegration with the npm client. For validation could be integrated into
 `npm publish`, and this information could be surfaced on npmjs.com, and/or the
 information could be inlined into the packument so that `npm view $package`
