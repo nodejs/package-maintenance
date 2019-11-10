@@ -51,7 +51,7 @@ be one of the following:
   package is available in a file within the repository specified by the
   [repository](https://docs.npmjs.com/files/package.json#repository) entry.  In this case the filapath for the file containing the support information will be 
   `./package-support.json`
-* a string: a relative path, starting with ./, that points to a file within the
+* a string: a relative path, starting with `./`, that points to a file within the
   repository specified in the [repository](https://docs.npmjs.com/files/package.json#repository)
   entry which contains the canonical support information. 
 * object, with repository key matching the schema for the existing
