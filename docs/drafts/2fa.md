@@ -57,46 +57,89 @@ Possible complications:
     - Could be solved by configuring multiple publish tokens and selecting the correct one, but this requires configuration complexity.
     - Could be solved by using a team account to publish, but this requires sharing a secret across the team.
     - Could be solved by using the identity of the person who kicked off the release build (i.e. the person who merged a PR), but this requires interpersonal coordination and couples merge priveleges with publish priveleges.
+- Notification fatigue.
 
 ### Remote OTP
 
-#### Approval via mobile 
+The below options all center around an idea that a CI job would make a request to a pre-configured somewhat-secret URL, which would trigger a notification to the maintainer, whereby they could enter the OTP.
+
+It's worth noting, that there are already existing commercial system thsat are used in enterprise settings to provide a second factor via mobile notifications, calls and SMS. However these systems are complex and likely too expensive for small OSS teams and sole maintainers.
+
+Possible complications:
+
+- Similar to the extension in CI providers, there could be complexity in setting things up for teams (i.e. selecting the correct publish tokens and humans for providing the OTP).
+- Server costs (all of the below require servers for making requests, which depending on the approach could be long running requests, i.e. they could be costly even on serverless implementations). While it is possible to design a system which relies on a public git repository as a backing store, there may additionaly be database costs.
+- Maintenance costs (the software running on the servers needs to be updated, monitored, etc)
+- Trust problems (depending on the approach, a third party system might be undesirable, as it may be hard to ensure that such a third party is unable to retrieve the secret OTP generator seed).
+- Notification fatigue.
+
+#### Remote OTP entry via mobile 
 
 POC: https://github.com/nearform/optic
 
-- Cons: 
-    - dependency on Firebase
-    - needs a server
+The POC is a PWA, which can be added to the home screen. It allows scanning a QR code to initialize the OTP generator and can work as a standalone authenticator application. Once a token is configured, it provides a URL which responds with the OTP after the maintainer pushes the "Approve" button on their phone/browser.
 
-#### Entry via chatbot
+The CI system can be configured to wait for a response from this URL just before publishing and to provide the code to npm via `--otp` or an environment variable.
+
+Additional cons: 
+
+- Dependency on Firebase to deliver notifications (vendor lock in, possible costs).
+- Needs a server.
+- Likely should not be trusted to be run by a third party, i.e. a maintainer should run a private instace of this, unless a trustworthy organization would be able to do that (npm Inc.? OpenJS Foundation? One of major Node.js contributor organizations?).
+
+Missing features:
+
+- Impossible to move to another device without resetting the URL, i.e. changing the phone requires re-configuration of CI.
+- Possibly scary, as the first thing it asks for is the generator secret (i.e. needs UX and documentation work).
+
+#### Remote OTP entry via chatbot
  
-POC: ask https://twitter.com/MarshallOfSound
+POC: still on it's way to be OSS - ask https://twitter.com/MarshallOfSound for details
 
-- Cons: 
-    - dependency on Slack
-    - needs a server
-    - needs the OTP to actually be typed out
+The POC is a chatbot integration. There is an API endpoint which can be trigger a question and another endpoint which can be polled for the response.
 
-#### SaaS
+The CI system can be configured to use a client module which deals with the API.
 
-- Cons: 
-    - none publicly available and free
-    - trust
+Additional cons: 
+
+- Dependency on Slack.
+- Needs a server.
+- Needs the OTP to actually be typed out.
+
+#### Remote OTP entry via authentication SaaS provider
+
+As there are existing commercial systems to provide 2FA APIs to organization, these could potentialy be used for OSS.
+
+Possible providers:
+
+- Duo
+- Authy
+- Okta
+- Auth0
+
+Additional cons:
+
+- Would require reaching out to providers and negotiating to get a free-for-OSS plan.
+- Trust.
+- Vendor lock-in.
 
 ### Remote decryption service
 
-- Cons: 
-    - requires setup
+Cons: 
+- requires setup
 
 ### Alternative registries/release repositories for staging
 
-- Cons: 
-    - requires setup
-    - requires a manual action
+Cons: 
+- requires setup
+- requires a manual action
 
 ### Alternative second factors (e.g. package signing)
 
+Similar to using a decryption service
 
 ## Somewhat related other ideas
 
 - Registries should allow including a meta field to link back to the CI job used to publish a specific version for audit purposes.
+- npm client should have an `otpUrl` config option in `.npmrc`. While it is easy enough to provide a `--otp=$(curl http://example.com)`, depending on publishing methods used (e.g. `semantic-release`), such an integration is trickier.
+- Managing the publish tokens in CI can be cumbersome, esp. if you have a lot of repos - there is scope for more tooling to deal with Travis, Github Actions APIs to mass-manage multiple repos as a member of multiple organizations and as an organization.
