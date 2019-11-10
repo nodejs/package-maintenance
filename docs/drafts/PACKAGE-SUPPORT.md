@@ -77,7 +77,7 @@ and enable the following use cases:
   * ”support”: { “repository”: { “type”: “git”, “url”: “node/.github”, “directory”: “packages” } }
 
 In all of these cases `package-support.json` (or your alternative filename) should be included in your `files`
-array, or .npmignore configured to avoid excluding it.
+array, or `.npmignore` configured to avoid excluding it.
 
 The rational for deliverying the canonical version of the support info through a file
 within a repository (and ideally the package's repository) is that it maximizes the likelihood
