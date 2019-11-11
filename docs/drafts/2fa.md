@@ -127,7 +127,7 @@ Additional cons:
 
 ### Remote decryption service
 
-(krypt.co?) provides a way to have private keys stored on the mobile phone and use them for remote signing. This means that a CI system can be configured to have the encrypted OTP generator seed on it, and the decryption would be requested via an API. The maintainer can then approve the access to the seed, which can be used to generate the OTP and pass it to `npm publish`.
+[krypt.co](https://krypt.co) provides a way to have private keys stored on the mobile phone and use them for remote signing. This means that a CI system can be configured to have the encrypted OTP generator seed on it, and the decryption would be requested via an API. The maintainer can then approve the access to the seed, which can be used to generate the OTP and pass it to `npm publish`.
 
 Alternatively, if package registries accepted package signatures as a second factor, the service could be used to sign the package remotely, using a personal device.
 
