@@ -74,7 +74,7 @@ and enable the following use cases:
   Examples might be
   * ”support”: { “repository”: { “type”: “git”, “url”: “node/.github” }, “path”: “support.json” }
   * ”support”: { “repository”: { “type”: “git”, “url”: “node/.github” } }
-  * ”support”: { “repository”: { “type”: “git”, “url”: “node/.github”, “directory”: “packages” } }
+  * `"support": { "repository": { "type": "git", "url": "node/.github", "directory": "packages" }`
 
 In all of these cases `package-support.json` (or your alternative filename) should be included in your `files`
 array, or `.npmignore` configured to avoid excluding it.
