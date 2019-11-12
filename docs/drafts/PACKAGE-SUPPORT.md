@@ -70,7 +70,7 @@ and enable the following use cases:
   package repo at the top level
 1. much less common case: an alternate file path within the package’s repo,
   such as `"support": "./path/to/support.json"`
-3.much much rarer case: sharing the same support data across multiple repos.
+1. much much rarer case: sharing the same support data across multiple repos.
   Examples might be
   * ”support”: { “repository”: { “type”: “git”, “url”: “node/.github” }, “path”: “support.json” }
   * ”support”: { “repository”: { “type”: “git”, “url”: “node/.github” } }
