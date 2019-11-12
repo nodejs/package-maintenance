@@ -66,11 +66,11 @@ These options allow the support information to be provided through a file:
 
 and enable the following use cases:
 
-1. common case: `"support": true` with an associated `package-support.json` file in the
+1. most common case: `"support": true` with an associated `package-support.json` file in the
   package repo at the top level
-1. much less common case: an alternate file path within the package’s repo,
+1.less common case: an alternate file path within the package’s repo,
   such as `"support": "./path/to/support.json"`
-1. much much rarer case: sharing the same support data across multiple repos.
+1. least common case: sharing the same support data across multiple repos.
   Examples might be
   * ”support”: { “repository”: { “type”: “git”, “url”: “node/.github” }, “path”: “support.json” }
   * ”support”: { “repository”: { “type”: “git”, “url”: “node/.github” } }
