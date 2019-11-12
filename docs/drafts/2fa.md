@@ -116,10 +116,10 @@ As there are existing commercial systems to provide 2FA APIs to organization, th
 
 Possible providers:
 
-- Duo
-- Authy
-- Okta
-- Auth0
+- [Duo](https://duo.com/product/multi-factor-authentication-mfa)
+- [Authy](https://authy.com) (with [Twilio](https://www.twilio.com/docs/authy)?)
+- [Okta](https://www.okta.com/products/adaptive-multi-factor-authentication/)
+- [Auth0](https://auth0.com/docs/multifactor-authentication)
 
 Additional cons:
 
