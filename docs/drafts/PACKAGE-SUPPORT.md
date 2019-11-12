@@ -30,7 +30,7 @@ The sections which follow will address each of these separately.
 
 # Integration into packages
 
-The recommendation is a result of significant discussion due to the following
+This recommendation is designed to meet the following
 conflicting requirements:
 * ability to review and process the support information
   off-line with access to only the package itself.
