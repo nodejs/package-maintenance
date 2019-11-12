@@ -72,7 +72,7 @@ and enable the following use cases:
   such as `"support": "./path/to/support.json"`
 1. least common case: sharing the same support data across multiple repos.
   Examples might be
-  * ”support”: { “repository”: { “type”: “git”, “url”: “node/.github” }, “path”: “support.json” }
+  * `"support": { "repository": { "type": "git", "url": "node/.github" }, "path": "support.json" }`
   * ”support”: { “repository”: { “type”: “git”, “url”: “node/.github” } }
   * `"support": { "repository": { "type": "git", "url": "node/.github", "directory": "packages" }`
 
