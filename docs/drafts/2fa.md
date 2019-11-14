@@ -24,7 +24,7 @@ All of the listed solutions below have their pros and cons. While the order of d
 
 ### Release manager
 
-The release manager could be a place where packages are staged after `npm publish` without an OTP. A human would need to use the manager (CLI/GUI) and could release one or more pending packages, approving the publishing with an OTP. This would need be implemented by the registry (for public packages - npm).
+The release manager could be a place where packages are staged after `npm publish` without an OTP. A human would need to use the manager (CLI/GUI) and could release one or more pending packages, approving the publishing with an OTP. This would need be implemented by the registry (for public packages - npm) or as a separate application, allowing "proxy" publishing.
 
 Such a manager should enable further tooling to integrate notifications and approvals via email or chat systems.
 
@@ -36,7 +36,7 @@ Possible complications:
 - Are the users allowed to install the "staged" packages by explicitly opting in?
 - Existing tooling may already be too dependent on a specific version becoming visible in the registry immediately after publish.
 - Can this be standardized enough to work with alternative registries?
-- This may required signficant effort to build and maintain, incl. by npm Inc.
+- This may required significant effort to build and maintain, incl. by npm Inc.
 
 Poor man's version:
 
