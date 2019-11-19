@@ -38,7 +38,7 @@ conflicting requirements:
 * ability to get the most up to date version of the support info without
   having to pull down the latest published version of a package.
 
-The integration suggested by this best practice aims to maximize the likelyhood that
+The integration suggested by this best practice aims to maximize the likelihood that
 offline information is available and accurate while at the same time not tying
 the canonical version of the support information with a published version of the
 package.
