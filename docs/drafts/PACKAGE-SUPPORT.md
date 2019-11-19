@@ -89,7 +89,7 @@ In the least common case where the support information is not within the same re
 we recommend that a non-canonical copy of the support information be copied into the package at the
 same relative path as the external repository when publishing. We intend to work on tooling (including npm client) to simplify this 
 process including validation of the path and content of the support information as well as the
-required coping for the least common case.
+required copying for the least common case.
 
 Another benefit of delivering the support information from a repository is that existing
 repositories (GitHub, GitLab, Bitbucket, etc.) provide a higher level of trust than
