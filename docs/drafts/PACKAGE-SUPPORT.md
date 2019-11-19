@@ -33,7 +33,7 @@ The sections which follow will address each of these separately.
 This recommendation is designed to meet the following
 conflicting requirements:
 * ability to review and process the support information
-  off-line with access to only the package itself.
+  offline with access to only the package itself.
 * ability to update the support information without having to publish the module
 * ability to get the most up to date version of the support info without
   having to pull down the latest published version of a package.
