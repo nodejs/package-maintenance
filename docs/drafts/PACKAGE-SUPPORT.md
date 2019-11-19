@@ -92,7 +92,7 @@ process including validation of the path and content of the support information 
 required coping for the least common case.
 
 Another benefit of delivering the support information from a repository is that existing
-repositories (github, github, bitbucket, etc.) provide a higher level of trust than
+repositories (GitHub, GitLab, Bitbucket, etc.) provide a higher level of trust than
 an unconstrained URL and tooling which pulls and processes the support information
 can optionally limit where it will pull support information (along with the allowable
 protocols like git, svn etc.) to a trusted set of repositories, increasing the
