@@ -1,19 +1,21 @@
-# What?
+# Publishing packages
+
+## What?
 
 This is guidelines for publishing packages to the npm registry.
 
-# Why?
+## Why?
 
 After you publish your package to the public npm registry, it's visible to everyone on the internet and your users will install your package into their `node_modules`.  There are a few reasons that keeping your published package tidy:
 
 - Security - avoid accidentally publishing your credential files like keys
 - Tidiness - avoid publishing non essential temp files like `.nyc_output` or `coverage`
 
-# How?
+## How?
 
 These guidelines exist to help package owners with some practices on managing packages for publishing.  The primary focus is about filtering files that are published, but there are other helpful related resources as well.
 
-## Overview
+### Overview
 
 [npm] maintains a public registry for everyone to publish packages.  Here are some related resources:
 
@@ -26,7 +28,7 @@ These guidelines exist to help package owners with some practices on managing pa
 | search/view published packages | [public registry]           | [for example](https://www.npmjs.com/package/npm)          |
 | filter publish files           | [`.npmignore`] or [`files`] | Use one base on your preference                           |
 
-## `.npmignore` or `files`
+### `.npmignore` or `files`
 
 [npm] has default ignore rules and loads from `.gitignore` but it also offer two methods for you to keep your published packages tidy.
 
@@ -51,7 +53,7 @@ On the `files` field in `package.json`:
   - The result is npm's default ignore rules has no effect on files under directories that are whitelisted by `files`.
   - For example, if you set `"files": [ "lib" ]`, then `lib/.gitignore` will be published and there's no easy way to avoid that.
 
-## Verifications
+### Verifications
 
 Run `npm publish --dry-run` to check what you are about to publish first.  In the newer [npm] version 6, [`npm publish`] now shows the list of files so you can inspect that also.
 
@@ -61,25 +63,25 @@ You can also use the [`npm pack`] command to download a tarball from a published
 
 For example: `npm pack npm@6.5.0`.
 
-## Transpiling Sources
+### Transpiling Sources
 
 A package written in another language like TypeScript should be published with transpiled JavaScript as the primary executable.
 
 Generally the original sources should not be required to use your published package, but it's your preference whether to publish them or not.
 
-## Publish and Install scripts
+### Publish and Install scripts
 
 If your package requires any build steps such as transpiling sources, then note that [npm's recommendation](https://docs.npmjs.com/misc/scripts#best-practices) is to run those before you publish, not when your user install your package.
 
 The [npm scripts] `prepare` and `prepublishOnly` are intended for this purpose.
 
-## Tests and Docs
+### Tests and Docs
 
 For your tests and extra docs, it's your preference on whether to publish them or not.
 
 Keep in mind that tests generally are more relaxed at what they are allowed to do and easier to overlook, so they are a location where someone could potentially hide malicious code to cause harm.
 
-## Other Resources
+### Other Resources
 
 There are tools that help you with the verication and publishing process:
 
