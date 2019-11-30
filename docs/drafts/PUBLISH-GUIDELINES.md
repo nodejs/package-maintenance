@@ -2,7 +2,7 @@
 
 ## What?
 
-This is guidelines for publishing packages to the npm registry.
+These are guidelines for publishing packages to the npm registry.
 
 ## Why?
 
