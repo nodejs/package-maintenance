@@ -2,7 +2,7 @@
 
 ## What?
 
-This is guidelines for unmaintained packages.
+These are guidelines for unmaintained packages.
 
 ## Why?
 
