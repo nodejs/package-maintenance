@@ -7,7 +7,6 @@ friction and stress on both the package maintainer and
 the consumer. This is further complicated because the level of support
 provided for dependencies of a package may be different than that
 targeted by the package a consumer is directly consuming.
-
 In the case of JavaScript (node.js and browsers) there is a large ecosystem
 of packages which are maintained in the `npm` registry and it is
 this ecosystem in which we plan to test out this guidance. However, we
@@ -21,6 +20,96 @@ support the package itself (for example by contributing to its funding).
 The goal is to close the gap between the expectations from the
 consumer and those of the maintainer and reduce the friction and stress
 that can arise due to the gap.
+
+There are 2 different aspects documented by this practice:
+
+* Integration into packages
+* Format and structure of the information 
+
+The sections which follow will address each of these separately.
+
+# Integration into packages
+
+This recommendation is designed to meet the following
+conflicting requirements:
+* ability to review and process the support information
+  offline with access to only the package itself.
+* ability to update the support information without having to publish the module
+* ability to get the most up to date version of the support info without
+  having to pull down the latest published version of a package.
+
+The integration suggested by this best practice aims to maximize the likelihood that
+offline information is available and accurate while at the same time not tying
+the canonical version of the support information with a published version of the
+package.
+
+## Integration into package.json
+
+A new field called `support` is added to package.json. The contents of this field will 
+be one of the following:
+* true: This will indicate that the canonical version of the support information for the
+  package is available in a file within the repository specified by the
+  [repository](https://docs.npmjs.com/files/package.json#repository) entry.  In this case the filepath for the file containing the support information will be 
+  `./package-support.json`
+* a string: a relative path, starting with `./`, that points to a file within the
+  repository specified in the [repository](https://docs.npmjs.com/files/package.json#repository)
+  entry which contains the canonical support information. 
+* object, with repository key matching the schema for the existing
+  [repository](https://docs.npmjs.com/files/package.json#repository) entry, and optional
+  path field that complies with the format described above under `a string`
+
+These options allow the support information to be provided through a file:
+
+* in the root of the repository for the package
+* in a location other than the root in the repository for the package
+* in a different repository from the package itself
+
+and enable the following use cases:
+
+1. most common case: `"support": true` with an associated `package-support.json` file in the
+  package repo at the top level
+1.less common case: an alternate file path within the package’s repo,
+  such as `"support": "./path/to/support.json"`
+1. least common case: sharing the same support data across multiple repos.
+  Examples might be
+  * `"support": { "repository": { "type": "git", "url": "https://github.com/nodejs/node-addon-api.git" }, "path": "support.json" }`
+  * `”support”: { "repository": { "type": "git", "url": “https://github.com/nodejs/node-addon-api.git” } }`
+  * `"support": { "repository": { "type": "git", "url": "https://github.com/nodejs/node-addon-api.git", "directory": "packages" }`
+
+In all of these cases `package-support.json` (or your alternative filename) should be included in your `files`
+array, or `.npmignore` configured to avoid excluding it.
+
+The rationale for delivering the canonical version of the support info through a file
+within a repository (and ideally the package's repository) is that it maximizes the likelihood
+that every published package contains a copy of the support information that was
+current at the time of the publish. Further, it does this in the most common cases without
+requiring any special tooling or action from the maintainer.
+
+In the least common case where the support information is not within the same repository,
+we recommend that a non-canonical copy of the support information be copied into the package at the
+same relative path as the external repository when publishing. We intend to work on tooling (including npm client) to simplify this 
+process including validation of the path and content of the support information as well as the
+required copying for the least common case.
+
+Another benefit of delivering the support information from a repository is that existing
+repositories (GitHub, GitLab, Bitbucket, etc.) provide a higher level of trust than
+an unconstrained URL and tooling which pulls and processes the support information
+can optionally limit where it will pull support information (along with the allowable
+protocols like git, svn etc.) to a trusted set of repositories, increasing the
+safety of running tools processing the support information.
+
+The end result of this approach is that by default, each publish will contain a snapshot
+of the support data, but the true source of truth is always a file within the package’s
+repository (or within an external repository). This supports offline and
+“no external internet” use cases as best as can be achieved.
+
+In the future, we hope that the developer experience could be further improved
+through itegration with the npm client. For validation could be integrated into
+`npm publish`, and this information could be surfaced on npmjs.com, and/or the
+information could be inlined into the packument so that `npm view $package`
+could surface the data.
+
+# Format and Structure
 
 There are 3 main dimensions that we standardize in this practice which are:  
 
@@ -41,13 +130,12 @@ consumes these elements.
 ## Support information
 
 This field documents the maintainers’ expectations, adding more useful metadata.
-For the JavaScript ecosystem it is recommended that this information be added to the existing
-`package.json` file in the root directory of the project. For other ecosystems, it is recommended that
+For the JavaScript ecosystem it is recommended that this be provided as outlined in the
+section titled `Integration into packages`. For other ecosystems, it is recommended that
 this information be stored in a file called `package-support.json` in the root directory of the 
 project.
 
-The json which is either added to the `package.json` file or stored in `package-support.json` is
-as defined in the sections below.  
+The json is as defined in the sections below.  
 
 The default for packages created by individuals for their own use should be:
 
