@@ -11,7 +11,7 @@ of your `package.json`
         - [`boundation-all`](https://github.com/balupton/dotfiles/blob/master/.scripts/users/balupton/commands/boundation-all) runs boundation-upgrade on all bevry's packages
     - [`testen`](https://github.com/bevry/testen) tests your project against multiple node.js versions locally
     - [`editions`](https://editions.bevry.me) enables support for older node versions, as well as provides standardised data about the environments the package supports and what technology it uses
-    - [`projectz`](https://github.com/bevry/projectz) enforces consistency of the meta files, such as the readme and package.json, and installation and license information, including badge information via [`badges](https://github.com/bevry/badges)
+    - [`projectz`](https://github.com/bevry/projectz) enforces consistency of the meta files, such as the readme and package.json, and installation and license information, including badge information via [`badges`](https://github.com/bevry/badges)
     - [dependabot](https://dependabot.com) configuration to auto-merge passing dependency updates
     - [`awesome-travis`](https://github.com/bevry/awesome-travis) has several scripts such as
         - [`awesome-travis/surge`](https://github.com/bevry/awesome-travis/blob/master/scripts/surge.bash) which publishes the commit, branch, and tag to surge for browsing of docs and cdn
