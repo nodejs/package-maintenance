@@ -12,9 +12,10 @@ Defining a process of reporting and disclosing security vulnerabilities helps ma
 
 Each project should document its security policy in an easily accessible place.
 
-Here are several common ways of publishing security policies:
+The recommended approach is to [publish security policy in a GitHub repository](https://help.github.com/en/github/managing-security-vulnerabilities/adding-a-security-policy-to-your-repository).
 
-1. [Security policy in a GitHub repository](https://help.github.com/en/github/managing-security-vulnerabilities/adding-a-security-policy-to-your-repository).
+Here are several alternative ways of publishing security policies:
+
 1. `SECURITY.md` or `SECURITY` file in the root folder of project repository (if hosted outside of GitHub).
 1. Security section on project website, e.g. `https://example.com/security`.
 1. [security.txt](https://securitytxt.org/) file on project website.
