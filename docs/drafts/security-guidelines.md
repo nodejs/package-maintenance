@@ -50,4 +50,4 @@ Here are several examples of short and useful security policies that fit differe
 - [Node.js Ecosystem Security WG Template](https://github.com/nodejs/security-wg/blob/master/processes/responsible_disclosure_template.md): the common security policy that all packages may follow
 - [Express Security Policies and Procedures](https://github.com/expressjs/express/security/policy): support a customized workflow and the Node.js Ecosystem Security process
 - [Node-RED Security Policy](https://github.com/node-red/node-red/security/policy): has defined a dedicated security reporting workflow
-- [Fastify Security Policy](https://github.com/fastify/fastify/blob/master/SECURITY.md): adopt the Node.s Ecosystem Security WG process for reporting vulnerabilities
+- [Fastify Security Policy](https://github.com/fastify/fastify/blob/master/SECURITY.md): adopt the Node.js Ecosystem Security WG process for reporting vulnerabilities
