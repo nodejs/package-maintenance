@@ -43,6 +43,10 @@ Here are the recommended ways to disclose a vulnerability:
 
 Note that vulnerabilities reported to the responsible disclosure program on [HackerOne](https://hackerone.com/nodejs-ecosystem) will be automatically disclosed by HackerOne staff and the Ecosystem Security WG triage team members.
 
+### Releasing security patches
+
+If releasing security patches deviates from the standard package release process, it should be clearly stated in the security policy. In particular, if package maintainers cannot commit to releasing security patches in a timely fashion, it should be noted explicitly to allow package consumers to make an informed decision about using the package based on their risk tolerance.
+
 ## Examples
 
 Here are several examples of short and useful security policies that fit different maintainers' needs:
