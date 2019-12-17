@@ -45,9 +45,9 @@ Note that vulnerabilities reported to the responsible disclosure program on [Hac
 
 ## Examples
 
-Here are several examples of short and useful security policies:
+Here are several examples of short and useful security policies that fit different maintainers' needs:
 
-- [Node.js Ecosystem Security WG Template](https://github.com/nodejs/security-wg/blob/master/processes/responsible_disclosure_template.md)
-- [Express Security Policies and Procedures](https://github.com/expressjs/express/security/policy)
-- [Node-RED Security Policy](https://github.com/node-red/node-red/security/policy)
-- [Fastify Security Policy](https://github.com/fastify/fastify/blob/master/SECURITY.md) (refers to the Node.s Ecosystem Security WG process for reporting vulnerabilities)
+- [Node.js Ecosystem Security WG Template](https://github.com/nodejs/security-wg/blob/master/processes/responsible_disclosure_template.md): the common security policy that all packages may follow
+- [Express Security Policies and Procedures](https://github.com/expressjs/express/security/policy): support a customized workflow and the Node.js Ecosystem Security process
+- [Node-RED Security Policy](https://github.com/node-red/node-red/security/policy): has defined a dedicated security reporting workflow
+- [Fastify Security Policy](https://github.com/fastify/fastify/blob/master/SECURITY.md): adopt the Node.s Ecosystem Security WG process for reporting vulnerabilities
