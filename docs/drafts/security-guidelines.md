@@ -17,8 +17,8 @@ The recommended approach is to [publish security policy in a GitHub repository](
 Here are several alternative ways of publishing security policies:
 
 1. `SECURITY.md` or `SECURITY` file in the root folder of project repository (if hosted outside of GitHub).
-1. Security section on project website, e.g. `https://example.com/security`.
-1. [security.txt](https://securitytxt.org/) file on project website.
+1. Security page on project website, e.g. `https://nodejs.org/en/security/`.
+1. [security.txt](https://securitytxt.org/) file on project website, e.g. `https://nodejs.org/.well-known/security.txt`.
 1. Security section of the project `README` file.
 
 ### Reporting a security issue
