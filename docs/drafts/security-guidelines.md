@@ -36,9 +36,10 @@ The policy should clearly specify when confidential reporting is not supported a
 
 Public disclosure should follow release of a patch that addresses a vulnerability.
 
-Here are the recommended ways to disclose a vulnerability:
+The recommended approach is to [create a maintainer advisory on GitHub](https://help.github.com/en/github/managing-security-vulnerabilities/creating-a-maintainer-security-advisory).
 
-1. [Create a maintainer advisory on GitHub](https://help.github.com/en/github/managing-security-vulnerabilities/creating-a-maintainer-security-advisory).
+Here are several alternative ways to disclose a vulnerability:
+
 1. [Report a vulnerability to npm](https://www.npmjs.com/advisories/report).
 1. Submit a pull request to [vulnerability database](https://github.com/nodejs/security-wg/blob/master/processes/vuln_db.md) maintained by [Node.js Ecosystem Security WG](https://github.com/nodejs/security-wg).
 
