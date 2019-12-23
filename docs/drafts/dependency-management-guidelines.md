@@ -81,7 +81,7 @@ All of the below tools provide a GitHub App to create PRs with updates. They als
 - [Greenkeeper](https://greenkeeper.io/)
     - Creates branches to test even the in-range updates and reports status if they make tests fail
 - [Renovate](https://renovate.whitesourcesoftware.com/)
-    - Supports other languages, besides Javascript
+    - Supports other languages, besides JavaScript
     - Supports updating `.travis.yml`, Circle CI yml and `.nvmrc`, i.e. it can update the Node.js version you use for running tests
 - [Snyk](https://snyk.io/)
     - Supports other languages, besides JavaScript
