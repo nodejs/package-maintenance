@@ -72,8 +72,14 @@ There are several tools that will help you manage this from your local command l
 
 ### Automatically keeping dependencies up to date
 
-(todo)
+If your package has [automated tests](testing-guidelines.md) and [CI/CD](ci-cd-guidelines.md), you can use one of several services, free for Open Source Software, to automatically keep your dependencies up to date.
 
-- Greenkeeper
-- Renovate
-- Dependabot
+All of the below tools provide a GitHub App to create PRs with updates. They also support maintaining lock files to update sub-dependencies. Each tool also has built-in or community supported ways of automatically merging the PRs as long as tests pass, although this does carry some risk.
+
+- [Dependabot](https://dependabot.com/)
+    - Supports other languages, besides JavaScript 
+- [Greenkeeper](https://greenkeeper.io/)
+    - Creates branches to test even the in-range updates and reports status if they make tests fail
+- [Renovate](https://renovate.whitesourcesoftware.com/)
+    - Supports other languages, besides Javascript
+    - Supports updating `.travis.yml`, Circle CI yml and `.nvmrc`, i.e. it can update the Node.js version you use for running tests
