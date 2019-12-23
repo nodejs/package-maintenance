@@ -2,7 +2,7 @@
 
 ## What
 
-This document outlines the best practices on keeping package dependencies (incl. Node itself) up to date.
+This document outlines the best practices on keeping package dependencies (including Node itself) up to date.
 
 ## Why
 
