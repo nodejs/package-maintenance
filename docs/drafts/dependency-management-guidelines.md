@@ -36,7 +36,7 @@ JavaScript ecosystem relies on [semantic versioning](https://semver.org/) and mo
 
 You may also use a tilde (`~`) character instead of the caret (`^`), to only accept bugfix (patch) releases, but this may mean that your dependency will become out of date sooner.
 
-Accepting _all_ releases (i.e. `*` instead of a version range) is risky and could break your package unexpectedly.
+Accepting _all_ releases (i.e. `*` or `latest` instead of a version range, or an unbounded version range using `>`/`>=`) is risky and almost certainly will break your package unexpectedly when a new major version of the dependency is released.
 
 Further reading:
 
