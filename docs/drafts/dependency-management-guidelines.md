@@ -17,16 +17,48 @@ There are some potential caveats to take into consideration when upgrading depen
 - Dropping support for specific Node.js versions is normally considered a breaking change, which means that upgrading a dependency might imply that you also need to drop support for these versions, which in turn will force you to release a new major version of your package as well.
 - In some cases, upgrading a dependency might result in incompatibilities with other packages which rely on peer dependencies, i.e. you may be increasing the size of the `node_modules` folder and/or static bundle.
 
-Node.js itself can also be considered a dependency of your package, therefore you should make sure to test in latest LTS and current Node.js versions in your Continuous Integration system - see [Choosing the Node.js version for testing](https://medium.com/@nodejs/choosing-the-node-js-versions-for-your-ci-tests-hint-use-lts-89b67f68d7ca).
+Node.js itself can also be considered a dependency of your package, therefore you should make sure to test in latest LTS and current Node.js versions in your Continuous Integration (CI) system - see [Choosing the Node.js version for testing](https://medium.com/@nodejs/choosing-the-node-js-versions-for-your-ci-tests-hint-use-lts-89b67f68d7ca).
 
 ## How
 
-- Choosing dependencies
-- Defining version ranges in `package.json`
-- Using `npm outdated`
-- Using `npm update`
-- Using lockfiles
-- Tools to automatically manage updates
-    - Greenkeeper
-    - Renovate
-    - Dependabot
+### Choosing dependencies
+
+There is no single recipe for choosing the right dependency for your package, but there are some indicators to pay attention to and questions to ask yourself:
+
+- Do you need a dependency at all? Each dependency has a download cost, and if it is build by someone else - it may have security and reliability implications.
+- Does the package have tests and do they run automatically in a CI system, e.g. Travis or GitHub Actions.
+- Is the package actively maintained? Lack of activity in the source control does not mean it is unmaintained, as it may simply be done, but it is something to pay attention to.
+- Make sure the package is not already marked as deprecated on npm and in the README - authors may give you suggestions for alternatives.
+
+### Defining the dependency version ranges
+
+JavaScript ecosystem relies on [semantic versioning](https://semver.org/) and most packages respect its rules. Therefore, it is usually recommended that your `package.json` accepts new minor/patch releases of your dependencies automatically. This is the default behavior of npm - when you first `npm install [new dependency]`, it will by default prefix the version with a `^` to indicate that all new releases under the same major version are acceptable.
+
+You may also use a tilde (`~`) character instead of the caret (`^`), to only accept bugfix (patch) releases, but this may mean that your dependency will become out of date sooner.
+
+Accepting _all_ releases (i.e. `*` instead of a version range) is risky and could break your package unexpectedly.
+
+Further reading:
+
+- npm documentation: [About semantic version](https://docs.npmjs.com/about-semantic-versioning)
+- npm documentation: [Updating packages downloaded from the registry](https://docs.npmjs.com/updating-packages-downloaded-from-the-registry)
+
+### Using lock files
+
+(todo)
+
+### Updating the dependencies manually
+
+You can list outdated dependencies using the `npm outdated` command. If there are any in-range updates - you can use `npm update` command to install them.
+
+You will need to modify your `package.json` version specifier to receive out-of-range updates.
+
+There are several tools that will help you manage this from your local command line, such as [`npm-check`](https://www.npmjs.com/package/npm-check) and [`npm-check-updates`](https://www.npmjs.com/package/npm-check-updates), however you can also set up external tools to automatically create Pull Requests with updates. 
+
+### Automatically keeping dependencies up to date
+
+(todo)
+
+- Greenkeeper
+- Renovate
+- Dependabot
