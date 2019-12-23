@@ -83,3 +83,6 @@ All of the below tools provide a GitHub App to create PRs with updates. They als
 - [Renovate](https://renovate.whitesourcesoftware.com/)
     - Supports other languages, besides Javascript
     - Supports updating `.travis.yml`, Circle CI yml and `.nvmrc`, i.e. it can update the Node.js version you use for running tests
+- [Snyk](https://snyk.io/)
+    - Supports other languages, besides JavaScript
+    - Supports ignoring specific deps, and limiting the amount of open simultaneous PRs to reduce noise level
