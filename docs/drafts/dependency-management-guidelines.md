@@ -53,7 +53,7 @@ You can chose to use the `npm shrinkwrap` command to instead create an `npm-srhi
 
 Using the lock files has downsides:
 
-- `package-lock.json` is only used in development, so you may be testing your package with a different set of dependency versions than your users will be using it, which may occasionally lead to unexpected results.
+- `package-lock.json` (and `yarn.lock`) is only used in development, so you may be testing your package with a different set of dependency versions than your users will be using it, which may occasionally lead to unexpected results.
 - no dependency updates will be received automatically with `npm install`.
 
 You can disable the lock files in your global or local `.npmrc` file by adding a `package-lock=false` line. This does however mean that npm will also ignore the shrinkwraps included in your dependencies.
