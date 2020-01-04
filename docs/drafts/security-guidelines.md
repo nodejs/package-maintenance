@@ -45,9 +45,25 @@ Here are several alternative ways to disclose a vulnerability:
 
 Note that vulnerabilities reported to the responsible disclosure program on [HackerOne](https://hackerone.com/nodejs-ecosystem) will be automatically disclosed by HackerOne staff and the Ecosystem Security WG triage team members.
 
+### Collaboration between maintainers and reporters
+
+The policy should recommend that maintainers and reporters collaborate to ensure the accuracy of the vulnerability report and the security advisory. In particular, information such as: 
+
+1. Severity (e.g. CVSS score)
+1. Category (e.g. CWE category)
+1. Exact package that is vulnerable
+1. Affected versions
+1. Vulnerability impact
+
+should be established in collaboration between maintainers and the reporter.
+
+If possible, the policy should recommend means of communication between all parties working towards responsible disclosure. [Maintainer advisories on GitHub](https://help.github.com/en/github/managing-security-vulnerabilities/creating-a-maintainer-security-advisory) and [the responsible disclosure program on HackerOne](https://hackerone.com/nodejs-ecosystem) are recommended to ensure the confidentiality.
+
 ### Releasing security patches
 
-If releasing security patches deviates from the standard package release process, it should be clearly stated in the security policy. In particular, if package maintainers cannot commit to releasing security patches in a timely fashion, it should be noted explicitly to allow package consumers to make an informed decision about using the package based on their risk tolerance.
+If releasing security patches deviates from the standard package release process, it should be clearly stated in the security policy.
+
+In particular, if package maintainers cannot commit to releasing security patches in a timely fashion, it should be noted explicitly to allow package consumers to make an informed decision about using the package based on their risk tolerance.
 
 ## Examples
 
