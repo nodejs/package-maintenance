@@ -49,7 +49,7 @@ The lock files are a snapshot of your full dependency tree, incl. all sub-depend
 
 The `package-lock.json` will get created automatically by default and it will not be published into the registry, i.e. it is only intended to be used for development purposes. npm recommends you commit this file into your source control.
 
-You can chose to use the `npm shrinkwrap` command to instead create an `npm-srhinkwrap.json` file. It is the same in structure as the `package-lock.json`, but it will also be published together with your package in the registry, which means that not only people who develop the package, but also the users will receive the exact set of dependencies.
+You can chose to use the `npm shrinkwrap` command to instead create an `npm-shrinkwrap.json` file. It is the same in structure as the `package-lock.json`, but it will also be published together with your package in the registry, which means that not only people who develop the package, but also the users will receive the exact set of dependencies.
 
 Using the lock files has downsides:
 
