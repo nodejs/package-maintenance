@@ -100,3 +100,4 @@
 * Helio Frota ([@helio-frota](https://github.com/helio-frota))
 * Steven ([@styfle](https://github.com/styfle))
 * Owen Buckley ([@thescientist13](https://github.com/thescientist13))
+* Pranshu Srivastava ([@rexagod](https://github.com/rexagod))
