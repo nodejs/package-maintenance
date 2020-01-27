@@ -310,7 +310,7 @@ The standardized identifiers include:
 |-------|-------------|
 | `none`         | There is nobody backing this package.
 | `hobby`        | The single maintainer maintains the package for fun, does not get any support to continue maintenance.
-| `npm-funding`  | The project is asking for function and can be funded through the links provided in the `funding` field within the package.json.
+| `npm-funding`  | The project is asking for funding and can be funded through the links provided in the `funding` field within the package.json.
 | `bounty`       | The package is maintained through the use of a bounty service.
 | `project`      | The package is maintained under the auspices of a larger project (ex Node.js project).
 | `foundation`   | The package is maintained and supported under the auspices of a Foundation.
