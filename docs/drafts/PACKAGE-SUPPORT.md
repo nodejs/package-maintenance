@@ -294,7 +294,7 @@ The standardized support identifiers are as follows:
 
 This section provides information how the package is supported and how consumers can help support the package.
 It can be a single object or an array of objects, for example: [x, y, z]. This supports cases where the
-backing comes from more than one source. Each object consists of an identifier as defined below and an optional URL with additional information. For example:
+backing comes from more than one source. Each object consists of an identifier as defined below and an optional URL (except for entries with type `npm-funding` which cannot have a URL) with additional information. For example:
 
 ```json
 { "foundation": "https://openjsf.org/" }
