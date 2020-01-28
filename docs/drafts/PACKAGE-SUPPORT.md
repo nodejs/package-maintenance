@@ -302,7 +302,7 @@ backing comes from more than one source. Each object consists of an identifier a
 
 The value can be an array of URLs as well:
 
-This allows the package maintainer to indentify how the packge is supported as well as provide links to additional information for how a consumer may find more information or help support the package.
+ This allows the package maintainer to identify how the package is supported as well as provide links to additional information for how a consumer may find more information or help support the package.
 
 The standardized identifiers include:
 
