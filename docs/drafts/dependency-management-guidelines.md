@@ -59,6 +59,7 @@ Using the lock files has downsides:
 
 - `package-lock.json` (and `yarn.lock`) is only used in development, so you may be testing your package with a different set of dependency versions than your users will be using it, which may occasionally lead to unexpected results.
 - no dependency updates will be received automatically with `npm install`.
+- using a shrinkwrap in a package intended to be used as a library may prevent deduplication of dependencies, increasing the `node_modules` / bundle size.
 
 You can disable the lock files in your global or local `.npmrc` file by adding a `package-lock=false` line. This does however mean that npm will also ignore the shrinkwraps included in your dependencies.
 
