@@ -25,7 +25,7 @@ Node.js itself can also be considered a dependency of your package, therefore yo
 
 There is no single recipe for choosing the right dependency for your package, but there are some indicators to pay attention to and questions to ask yourself:
 
-- Do you need a dependency at all? Each dependency has a download cost, and if it is build by someone else - it may have security and reliability implications.
+- Should you build it yourself or use a package from the ecosystem? Adding a dependency is a trade-off. Each dependency has a download cost, and if it is built by someone else - it may have security and reliability implications. However building your own implementation may suffer from even worse bugs (incl. security) and might not have enough eyes to catch them. 
 - Does the package have tests and do they run automatically in a CI system, e.g. Travis or GitHub Actions.
 - Is the package actively maintained? Lack of activity in the source control does not mean it is unmaintained, as it may simply be done, but it is something to pay attention to.
 - Make sure the package is not already marked as deprecated on npm and in the README - authors may give you suggestions for alternatives.
