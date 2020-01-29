@@ -40,6 +40,8 @@ You may also use a tilde (`~`) character instead of the caret (`^`), to only acc
 
 Accepting _all_ releases (i.e. `*` or `latest` instead of a version range, or an unbounded version range using `>`/`>=`) is risky and almost certainly will break your package unexpectedly when a new major version of the dependency is released.
 
+As with adding dependencies in general, updating them without any review carries security risks. In sensitive contexts you might want to consider gatekeeping every update by pinning the dependencies to their exact version.
+
 Further reading:
 
 - npm documentation: [About semantic version](https://docs.npmjs.com/about-semantic-versioning)
