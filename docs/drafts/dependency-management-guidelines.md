@@ -29,6 +29,8 @@ There is no single recipe for choosing the right dependency for your package, bu
 - Does the package have tests and do they run automatically in a CI system, e.g. Travis or GitHub Actions.
 - Is the package actively maintained? Lack of activity in the source control does not mean it is unmaintained, as it may simply be done, but it is something to pay attention to.
 - Make sure the package is not already marked as deprecated on npm and in the README - authors may give you suggestions for alternatives.
+- Does the project offer support? Do the releases have a changelog to ease the update?
+  
 
 ### Defining the dependency version ranges
 
