@@ -294,7 +294,7 @@ The standardized support identifiers are as follows:
 
 This section provides information how the package is supported and how consumers can help support the package.
 It can be a single object or an array of objects, for example: [x, y, z]. This supports cases where the
-backing comes from more than one source. Each object consists of an identifier as defined below and an optional URL with additional information. For example:
+backing comes from more than one source. Each object consists of an identifier as defined below and an optional URL (except for entries with type `npm-funding` which must have a value of `true`) with additional information. For example:
 
 ```json
 { "foundation": "https://openjsf.org/" }
@@ -304,24 +304,22 @@ The value can be an array of URLs as well:
 
 ```json
 {
-  "sponsored": [
-    "https://opencollective.com/my-account",
-    "https://www.patreon.com/my-account",
-    "https://tidelift.com/subscription/pkg/my-package"
+  "bounty": [
+    "https://www.bountiesareus.com/my-account",
+    "https://www.wepaybounties.com/my-account"
   ]
 }
-```
 
-This allows the package maintainer to indentify how the packge is supported as well as provide links to additional information for how a consumer may find more information or help support the package.
+This allows the package maintainer to identify how the package is supported as well as provide links to additional information for how a consumer may find more information or help support the package.
 
 The standardized identifiers include:
 
 | Value | Description |
 |-------|-------------|
-| `none`         | There is nobody backing this package
+| `none`         | There is nobody backing this package.
 | `hobby`        | The single maintainer maintains the package for fun, does not get any support to continue maintenance.
-| `sponsored`    | The single maintainer actively maintains the package but depends on sponsorship to be able to continue to maintain the package. Consider supporting this sponsorship through the funding platforms listed.
-| `bounty`       | The package is maintained through the use of a bounty service
+| `npm-funding`  | The project is asking for funding and can be funded through the links provided in the `funding` field within the package.json.
+| `bounty`       | The package is maintained through the use of a bounty service.
 | `project`      | The package is maintained under the auspices of a larger project (ex Node.js project).
 | `foundation`   | The package is maintained and supported under the auspices of a Foundation.
 | `company`      | The package is maintained and supported by a corporate entity but may not be related to their product or service offerings.
