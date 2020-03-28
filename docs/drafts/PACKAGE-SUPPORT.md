@@ -68,13 +68,13 @@ and enable the following use cases:
 
 1. most common case: `"support": true` with an associated `package-support.json` file in the
   package repo at the top level
-1.less common case: an alternate file path within the package’s repo,
+1. less common case: an alternate file path within the package’s repo,
   such as `"support": "./path/to/support.json"`
 1. least common case: sharing the same support data across multiple repos.
   Examples might be
-  * `"support": { "repository": { "type": "git", "url": "https://github.com/nodejs/node-addon-api.git" }, "path": "support.json" }`
-  * `”support”: { "repository": { "type": "git", "url": “https://github.com/nodejs/node-addon-api.git” } }`
-  * `"support": { "repository": { "type": "git", "url": "https://github.com/nodejs/node-addon-api.git", "directory": "packages" }`
+    * `"support": { "repository": { "type": "git", "url": "https://github.com/nodejs/node-addon-api.git" }, "path": "support.json" }`
+    * `”support”: { "repository": { "type": "git", "url": “https://github.com/nodejs/node-addon-api.git” } }`
+    * `"support": { "repository": { "type": "git", "url": "https://github.com/nodejs/node-addon-api.git", "directory": "packages" }`
 
 In all of these cases `package-support.json` (or your alternative filename) should be included in your `files`
 array, or `.npmignore` configured to avoid excluding it.
