@@ -2,10 +2,16 @@
 
 This is the location for documentation, guides and other information developed by the package-maintenance team.  It is intended to provide as a set of resources and references for all package developers and maintainers. 
 
-## Goals and Objectives
-The goal of the Package Maintenance team, and of these docs as stated above, is to provide a set of resource and references that a package maintainer can follow as part of the maintenance and development of their package(s).  By provding these guidelines and recommendations, the hope is that projects can benefit from the combined experience of the NodeJS team and the community at large in way that facilities knowledge sharing and collaboration, in particular around things like tooling and automation, such that shared configurations and setups can reduce the barrier to entry and time needed for authors to setup, by providing that information first hand.
 
-> _In the spirit of open source, we are always open to contributions to help improve the docs now and over time, so if find anything missing or that could be improved, please don't hesitiate to open an or PR for the team._
+## Goals and Objectives
+By providing these guidelines and recommendations, the hope is that projects can benefit from the combined experience of the Node.js project and the community at large in a way that helps facilitate knowledge sharing and collaboration.  For example, documentation for topics like Continuous Integration can be used to share tooling configurations and setups that can help reduce the barrier to entry and time needed for authors to setup their own projects.
+
+> _In the spirit of open source, we are always open to contributions to help improve these docs, so if you find anything missing or that could be improved, please don't hesitiate to open an issue or PR for the team._
+
+
+## Notes / Assumptions
+As Node.js and most of the packages in the ecosystem are predominantly hosted on GitHub, there will be a natural leaning towards the features and capabilities provided by the GitHub platform referenced in these docs.  However, we understand that not one size fits all and so will aim to provide recommendations that are well rounded.  In this way, we want to at least communicate the foundational elements such that this information can and then be applied in whatever way fits a package's given workflow.  
+
 
 ## Table of Contents
 1. [Licensing](./licensing.md)
@@ -18,6 +24,4 @@ The goal of the Package Maintenance team, and of these docs as stated above, is 
 1. [Publishing Guidelines (draft)](./drafts/PUBLISH-GUIDELINES.md)
 1. [Versioning](./versioning.md)
 1. [Support (draft)](./drafts/PACKAGE-SUPPORT.md)
-
-## Notes / Assumptions
-As Node.js and most of the packages in the ecosystem are predominantly hosted on GitHub, there will be a natural leaning towards the features and capabilities provided by the GitHub platform references in these docs.  However, we understand that not one size fits all and will aim to provide recommendations that are well rounded and platform agnositc and from a voice of generatlity, emphasizing the value of the practice / recommendation.  In this way, we want to at least communicate the foundational elements such this information can and then be applied in whatever way fits a package's given workflow.  
+1. [Governance (draft)](./drafts/governance.md)
