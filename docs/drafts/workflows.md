@@ -16,7 +16,7 @@ As contributions come into a project, establishing a clear roadmap for the proje
 
 ## Automation
 - linting
-testing
+- testing
 - link out CI / CD guidelines
 
 ##  Code Owners
