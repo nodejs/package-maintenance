@@ -8,7 +8,6 @@
 * Refael Ackermann ([@refack](https://github.com/refack))
 * Jordan Harband ([@ljharb](https://github.com/ljharb))
 * Charlie Robbins ([@indexzero](https://github.com/indexzero))
-* Ahmad Nassri ([@ahmadnassri](https://github.com/ahmadnassri))
 * Monica EnePietrosanu ([@menepie](https://github.com/menepie))
 * Arunesh Chandra ([@aruneshchandra](https://github.com/aruneshchandra))
 * Mohammed Essehemy ([@MohammedEssehemy](https://github.com/MohammedEssehemy))
