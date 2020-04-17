@@ -80,6 +80,13 @@ The moderator is responsible for summarizing the discussion of each
 agenda item and sends it as a pull request after the meeting.
 
 ### Repository Management
+All repositories under the management of the package maintenance team must include:
+
+* LICENCE.md from the list approved by the OpenJS Foundation
+* CODE_OF_CONDUCT.md referencing the Node.js Code of conduct in the admin repo.
+* CONTRIBUTING.md which includes the current version of the DCO used by the Node.js Project
+* An PR template(s) used for all Pull requests which includes the current version of the DCO used by the Node.js Project.
+* A README.md which includes references to the GOVERNANCE.md in the package-maintenance repository as the authoritative governance which applies to the repository. 
 
 #### nodejs/package-maintenance 
 
