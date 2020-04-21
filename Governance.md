@@ -99,7 +99,7 @@ and can add/remove members as they join or leave the team.
 
 ##### Landing PRs
 
-The package maintenance team policy on landing a PR in this respositry
+The package maintenance team policy on landing a PR in this repository
 is for there to be:
 - At least 4 approvals from rebular members
 - No blocking reviews
