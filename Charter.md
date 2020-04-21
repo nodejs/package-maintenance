@@ -1,4 +1,4 @@
-## Working Group Charter Template
+## Package Maintenance Working Group Charter
 
 The Node.js Package Maintenance Working Group is jointly governed by the members
 of that Working Group (WG).
