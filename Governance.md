@@ -172,7 +172,7 @@ transfeering a repository into or out of the organization).
 
 Maintainers for the repositories in the Pkgjs repository are managed
 through the [pkgjs-maintainers](https://github.com/orgs/nodejs/teams/pkgjs-maintainers/)
-team.  Administrative members are given the maintainer fole for that team
+team.  Administrative members are given the maintainer role for that team
 and can add/remove members as appropriate.
 
 ##### Landing PRs
