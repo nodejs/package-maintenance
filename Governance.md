@@ -1,4 +1,4 @@
-## Template: Package Maintenance Working Group Governance
+## Package Maintenance Working Group Governance
 
 ### Collaborators
 
