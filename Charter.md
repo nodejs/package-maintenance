@@ -5,7 +5,7 @@ of that Working Group (WG).
 
 The WG responsibilities include:
 
-* Management of repositorities within the [pkgjs](https://github.com/pkgjs)
+* Management of repositories within the [pkgjs](https://github.com/pkgjs)
   GitHub organization including but not limited to:
     * Managing the list of organization owners which supplement the standard
       Node.js organization owners as outlined in:
