@@ -36,11 +36,14 @@ Changes to Administrative WG membership should be posted in
 the agenda, and may be suggested as any other agenda
 item (see "WG Meetings" below).
 
-If an addition or removal is proposed during a meeting, and the full
-WG is not in attendance to participate, then the addition or removal
-is added to the agenda for the subsequent meeting.  This is to ensure
+If an addition or removal is proposed, this should be raised in an 
+issue, tagged for the next agenda, and concensus should be reached
+in the issue. This is to ensure
 that all Administrative  members are given the opportunity to
-participate in all membership decisions.
+participate in all membership decisions. The addition or removal
+is considered approved once the issue has been open for 2 meetings
+or 14 days whichever is longer,and at least half the Administrative
+members are in favor.
 
 No more than 1/3 of the Administrative WG members may be
 affiliated with the same employer. If removal or resignation
