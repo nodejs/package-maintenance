@@ -118,7 +118,7 @@ and can add/remove members as appropriate.
 
 ##### Landing PRs
 
-The package maintenance team policy on landing a PR in this respositry
+The package maintenance team policy on landing a PR in this repository
 is for there to be:
 - At least 2 approvals from package-maintenance members 
 - No blocking reviews
