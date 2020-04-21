@@ -82,7 +82,7 @@ to be accepted: it is a manual workflow, so it could take some days (we are work
 
 The package maintenance team policy on landing a PR n the nodejs/package-maintenance
 repository is for there to be:
-- At least 4 approvals from rebular members
+- At least 4 approvals from regular members
 - No blocking reviews
 - 7 day period from the 4th approval to merging
 
