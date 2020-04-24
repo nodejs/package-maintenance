@@ -14,7 +14,7 @@ The WG responsibilities include:
     * Managing the maintainer teams for all of the repositories.
     * Contribution policy for repositories
 * Technical direction for the projects within
-  the [pkgjs](https://github.com/pkgjs)  orgnanization
+  the [pkgjs](https://github.com/pkgjs)  organization
 * Project governance and process (including this policy)
 * Managing the maintainer teams and contribution policies for the
   following repositories
