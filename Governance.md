@@ -188,6 +188,29 @@ repository is for there to be:
 - No blocking reviews
 - 72 hours since the PR was openened 
 
+Certain types of pull requests can be fast-tracked and may land after a shorter
+delay. For example:
+
+* Focused changes that affect only documentation and/or the test suite:
+  * `code-and-learn` tasks often fall into this category.
+  * `good-first-issue` pull requests may also be suitable.
+* Changes that fix regressions:
+  * Regressions that break the workflow (red CI or broken compilation).
+  * Regressions that happen right before a release, or reported soon after.
+
+To propose fast-tracking a pull request, apply the `fast-track` label. Then add
+a comment that Collaborators may upvote.
+
+If someone disagrees with the fast-tracking request, remove the label. Do not
+fast-track the pull request in that case.
+
+The pull request may be fast-tracked if two Collaborators approve the
+fast-tracking request. To land, the pull request itself still needs two
+Collaborator approvals and a passing CI.
+
+Collaborators may request fast-tracking of pull requests they did not author.
+In that case only, the request itself is also one fast-track approval. Upvote
+the comment anyway to avoid any doubt.
 ### Consensus Seeking Process
 
 The WG follows a [Consensus Seeking][] decision-making model.
