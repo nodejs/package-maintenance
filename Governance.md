@@ -59,7 +59,7 @@ For the current list of members, see the project [README.md][].
 ### WG Meetings
 
 The WG meets regularly as scheduled on the Node.js
-[calendar](nodejs.org/calendar). Each meeting should be
+[calendar](https://nodejs.org/calendar). Each meeting should be
 published to YouTube.
 
 Items are added to the WG agenda that are considered contentious or
