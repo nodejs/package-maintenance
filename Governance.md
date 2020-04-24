@@ -97,7 +97,7 @@ All repositories under the management of the package maintenance team must inclu
 
 Maintainers for the nodejs/package-maintenance repo are managed
 through the [package-maintenance](https://github.com/orgs/nodejs/teams/package-maintenance/)
-team.  Administrative members are given the maintainer fole for that team
+team.  Administrative members are given the maintainer role for that team
 and can add/remove members as they join or leave the team.
 
 ##### Landing PRs
