@@ -131,7 +131,7 @@ is for there to be:
 
 ##### Maintainers
 
-Maintainers for the repositories in the Pkgjs repository are managed
+Maintainers for this repository are managed
 through the [ci-config-github-actions-maintainers](https://github.com/orgs/nodejs/teams/ci-config-github-actions-maintainers/)
 team. Administrative members are given the maintainer role for that team
 and can add/remove members as appropriate.
