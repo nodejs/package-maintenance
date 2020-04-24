@@ -115,7 +115,7 @@ All PRs shall follow the [contributions policy](CONTRIBUTING.md)
 ##### Maintainers
 
 Maintainers for this repository are managed
-through the [ci-condifg-travis-maintainers](https://github.com/orgs/nodejs/teams/ci-config-travis-maintainers/)
+through the [ci-config-travis-maintainers](https://github.com/orgs/nodejs/teams/ci-config-travis-maintainers/)
 team. Administrative members are given the maintainer role for that team
 and can add/remove members as appropriate.
 
