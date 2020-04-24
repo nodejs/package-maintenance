@@ -8,7 +8,7 @@ The package-maintence team has two levels of membership. Administrative
 members and regular members. 
 
 If you'd like to be listed as regular team member, open a PR adding yourself
-to this [MEMBERS.md](MEMBERS.md) along with a few words on how you are planning
+to [MEMBERS.md](MEMBERS.md) along with a few words on how you are planning
 to contribute to the team's efforts.
 
 Administrative members take on additional levels of responsibility with
