@@ -10,7 +10,7 @@ The WG responsibilities include:
     * Managing the list of organization owners which supplement the standard
       Node.js organization owners as outlined in:
 [https://github.com/nodejs/admin/blob/master/GITHUB_ORG_MANAGEMENT_POLICY.md#owners](https://github.com/nodejs/admin/blob/master/GITHUB_ORG_MANAGEMENT_POLICY.md#owners)
-    * Approving new repositories
+    * Overseeing new repositories (creating, moving, removing)
     * Managing the maintainer teams for all of the repositories.
     * Contribution policy for repositories
 * Technical direction for the projects within
