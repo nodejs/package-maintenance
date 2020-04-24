@@ -87,7 +87,7 @@ All repositories under the management of the package maintenance team must inclu
 
 * LICENCE.md from the list approved by the OpenJS Foundation
 * CODE_OF_CONDUCT.md referencing the Node.js Code of conduct in the admin repo.
-* CONTRIBUTING.md which includes the current version of the DCO used by the Node.js Project
+* CONTRIBUTING.md which includes the current version of the Developer Certificate of Origin (DCO) used by the Node.js Project
 * An PR template(s) used for all Pull requests which includes the current version of the DCO used by the Node.js Project.
 * A README.md which includes references to the GOVERNANCE.md in the package-maintenance repository as the authoritative governance which applies to the repository. 
 
