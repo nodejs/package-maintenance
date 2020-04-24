@@ -145,6 +145,8 @@ is for there to be:
 - 72 hours since the PR was openened 
 
 #### pkgjs organization
+All members of the pkgjs organization will be required to have 2FA enabled, 
+and the repository will be configured to enforce this requirement.
 
 ##### Adding or removing repositories
 
