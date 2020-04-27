@@ -104,7 +104,7 @@ repository (or within an external repository). This supports offline and
 “no external internet” use cases as best as can be achieved.
 
 In the future, we hope that the developer experience could be further improved
-through itegration with the npm client. For validation could be integrated into
+through integration with the npm client. For validation could be integrated into
 `npm publish`, and this information could be surfaced on npmjs.com, and/or the
 information could be inlined into the packument so that `npm view $package`
 could surface the data.
@@ -349,7 +349,7 @@ invalid or out of date data can only be present for up to 2 years.
 
 ## Publishing and Authoritative Version
 
-If the support information is delievered as part of a package, leveraging the ecosystem's
+If the support information is delivered as part of a package, leveraging the ecosystem's
 existing package manager (as is recommended for the JavaScript ecosystem at this point),
 the only way to update the support information is to publish a new version of the package.
 
