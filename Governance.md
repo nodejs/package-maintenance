@@ -184,7 +184,7 @@ and can add/remove members as appropriate.
 
 The package maintenance team policy on landing a PR in the repositories within the Pkgjs
 repository is for there to be:
-- At least 2 approvals from package-maintenance members 
+- At least 1 approval from package-maintenance members 
 - No blocking reviews
 - 72 hours since the PR was openened 
 
