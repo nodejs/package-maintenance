@@ -2,9 +2,9 @@
 
 ## Overview
 
-As a project grows and contributions and activity increases, documentation on the project and the member(s) maintaining the project can help make for managing expections amongst (new) contirbutors, as well as communicating the high level vision for the project, more manageable.  
+As a project grows and contributions and activity increases, documentation on the project and the member(s) maintaining the project can help make managing expections amongst (new) contirbutors more manageable.  It can also present an oppourtunity to communicate the high level vision and goals of the project.
 
-The goal of this document is to provide ideas and recommendations to project maintainers for ways they can organize their own projects to either help with things like code review delegation, ensuring consistent code quality standard, or what the project plan is.
+The aim of this document is to provide ideas and recommendations to project maintainers for ways they can organize and document their own project's governance to either help with things like code review delegation, ensuring consistent code quality standard, or what the project plan is.
 
 ## Vision
 Starting with a section that clearly states the solution space / objectives of the project is a good way to introduce the overarching vision of the project and help contextualize all further decision making.  (technical or otherwise).  Articulating the "why" of the project helps ensure maintainers and contibutors alike are aligned on the direction of the project.
