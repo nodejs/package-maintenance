@@ -104,7 +104,7 @@ and can add/remove members as they join or leave the team.
 
 The package maintenance team policy on landing a PR in this repository
 is for there to be:
-- At least 4 approvals from rebular members
+- At least 4 approvals from rebular members other than the author of the PR
 - No blocking reviews
 - 7 day period from the 4th approval to merging
 
@@ -123,7 +123,7 @@ and can add/remove members as appropriate.
 
 The package maintenance team policy on landing a PR in this repository
 is for there to be:
-- At least 2 approvals from package-maintenance members 
+- At least 2 approvals from package-maintenance members other than the author of the PR
 - No blocking reviews
 - 72 hours since the PR was openened 
 
@@ -140,7 +140,7 @@ and can add/remove members as appropriate.
 
 The package maintenance team policy on landing a PR in this respositry
 is for there to be:
-- At least 2 approvals from package-maintenance members 
+- At least 2 approvals from package-maintenance members other than the author of the PR
 - No blocking reviews
 - 72 hours since the PR was openened 
 
@@ -176,15 +176,21 @@ transfeering a repository into or out of the organization).
 ##### Maintainers
 
 Maintainers for the repositories in the Pkgjs repository are managed
-through the [pkgjs-maintainers](https://github.com/orgs/nodejs/teams/pkgjs-maintainers/)
-team.  Administrative members are given the maintainer role for that team
-and can add/remove members as appropriate.
+through a team created for each repository.  They will be named as
+[pkgjs-maintainers](https://github.com/orgs/nodejs/teams/REPO-maintainers/)
+where REPO is the name of the repository.  Administrative members are given
+the maintainer role these team and can add/remove members as appropriate.
+In addition all maintainers for a given repository can add/remove
+maintainers are given the maintainer role fot the teams for which they are
+added and can add/remove members as appropriate.
 
 ##### Landing PRs
 
 The package maintenance team policy on landing a PR in the repositories within the Pkgjs
 repository is for there to be:
-- At least 1 approval from package-maintenance members 
+- At least 1 approval from package-maintenance members other than the author of the PR,
+  unless there is single maintainer for the repository. In that case the single maintainer
+  can land their own PRs.
 - No blocking reviews
 - 72 hours since the PR was openened 
 
@@ -211,6 +217,7 @@ Collaborator approvals and a passing CI.
 Collaborators may request fast-tracking of pull requests they did not author.
 In that case only, the request itself is also one fast-track approval. Upvote
 the comment anyway to avoid any doubt.
+
 ### Consensus Seeking Process
 
 The WG follows a [Consensus Seeking][] decision-making model.
