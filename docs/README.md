@@ -9,7 +9,7 @@ By providing these guidelines and recommendations, the hope is that projects can
 > _In the spirit of open source, we are always open to contributions to help improve these docs, so if you find anything missing or that could be improved, please don't hesitiate to open an issue or PR for the team._
 
 
-## Notes / Assumptions
+## Notes and Assumptions
 As Node.js and most of the packages in the ecosystem are predominantly hosted on GitHub, there will be a natural leaning towards the features and capabilities provided by the GitHub platform referenced in these docs.  However, we understand that not one size fits all and so will aim to provide recommendations that are well rounded.  In this way, we want to at least communicate the foundational elements such that this information can and then be applied in whatever way fits a package's given workflow.  
 
 
