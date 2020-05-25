@@ -181,7 +181,7 @@ through a team created for each repository.  They will be named as
 where REPO is the name of the repository.  Administrative members are given
 the maintainer role these team and can add/remove members as appropriate.
 In addition all maintainers for a given repository can add/remove
-maintainers are given the maintainer role fot the teams for which they are
+maintainers are given the maintainer role for the teams for which they are
 added and can add/remove members as appropriate.
 
 ##### Landing PRs
