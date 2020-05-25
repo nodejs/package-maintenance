@@ -150,7 +150,7 @@ and the repository will be configured to enforce this requirement.
 
 ##### Adding or removing repositories
 
-Any repository created under the Pkgjs.js GitHub Organization is considered to be
+Any repository created under the Pkgjs GitHub Organization is considered to be
 a project under the ownership of the OpenJS Foundation, and thereby subject
 to the Intellectual Property and Governance policies of the Foundation.
 
