@@ -80,7 +80,7 @@ to be accepted: it is a manual workflow, so it could take some days (we are work
 
 ## Pull Request Merging Policy
 
-The package maintenance team policy on landing a PR n the nodejs/package-maintenance
+The package maintenance team policy on landing a PR in the nodejs/package-maintenance
 repository is for there to be:
 - At least 4 approvals from regular members
 - No blocking reviews
