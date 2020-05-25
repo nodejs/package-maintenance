@@ -177,7 +177,7 @@ transfeering a repository into or out of the organization).
 
 Maintainers for the repositories in the Pkgjs repository are managed
 through a team created for each repository.  They will be named as
-[pkgjs-maintainers](https://github.com/orgs/nodejs/teams/REPO-maintainers/)
+[REPO-maintainers](https://github.com/orgs/pkgjs/teams/REPO-maintainers/)
 where REPO is the name of the repository.  Administrative members are given
 the maintainer role these team and can add/remove members as appropriate.
 In addition all maintainers for a given repository can add/remove
