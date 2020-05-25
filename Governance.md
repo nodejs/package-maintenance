@@ -42,7 +42,7 @@ in the issue. This is to ensure
 that all Administrative  members are given the opportunity to
 participate in all membership decisions. The addition or removal
 is considered approved once the issue has been open for 2 meetings
-or 14 days whichever is longer,and at least half the Administrative
+or 14 days whichever is longer, and at least half the Administrative
 members are in favor.
 
 No more than 1/3 of the Administrative WG members may be
