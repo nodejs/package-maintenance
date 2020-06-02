@@ -101,3 +101,4 @@
 * Andrew Hughes ([@andrewhughes101](https://github.com/andrewhughes101))
 * Pranshu Srivastava ([@rexagod](https://github.com/rexagod))
 * Jon Church ([@jonchurch](https://github.com/jonchurch))
+* Antoni Kepinski ([@xxczaki](https://github.com/xxczaki))
