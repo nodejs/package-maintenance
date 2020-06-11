@@ -73,7 +73,7 @@ and enable the following use cases:
 1. least common case: sharing the same support data across multiple repos.
   Examples might be
     * `"support": { "repository": { "type": "git", "url": "https://github.com/nodejs/node-addon-api.git" }, "path": "support.json" }`
-    * `”support”: { "repository": { "type": "git", "url": “https://github.com/nodejs/node-addon-api.git” } }`
+    * `"support": { "repository": { "type": "git", "url": "https://github.com/nodejs/node-addon-api.git" } }`
     * `"support": { "repository": { "type": "git", "url": "https://github.com/nodejs/node-addon-api.git", "directory": "packages" }`
 
 In all of these cases `package-support.json` (or your alternative filename) should be included in your `files`
@@ -309,6 +309,7 @@ The value can be an array of URLs as well:
     "https://www.wepaybounties.com/my-account"
   ]
 }
+```
 
 This allows the package maintainer to identify how the package is supported as well as provide links to additional information for how a consumer may find more information or help support the package.
 
