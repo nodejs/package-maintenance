@@ -67,4 +67,4 @@ If you're using GitHub, here are some good features you can take advantage of to
 * [UnifiedJS Governance](https://github.com/unifiedjs/collective#readme)
 * [Rust RFCs](https://github.com/rust-lang/rfcs)
 * [React Team](https://reactjs.org/community/team.html)
-- [RomeJS Governance](https://github.com/romejs/rome/blob/main/CODE_OF_CONDUCT.md)
+- [RomeJS Governance](https://github.com/romejs/rome/blob/main/GOVERNANCE.md)
