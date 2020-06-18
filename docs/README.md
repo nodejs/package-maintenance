@@ -23,6 +23,6 @@ As Node.js and most of the packages in the ecosystem are predominantly hosted on
 1. [Testing (draft)](./drafts/code-of-conduct.md)
 1. [Publishing Guidelines (draft)](./drafts/PUBLISH-GUIDELINES.md)
 1. [Versioning](./versioning.md)
-1. [Support (draft)](./drafts/PACKAGE-SUPPORT.md)
+1. [Support](./PACKAGE-SUPPORT.md)
 1. [Governance (draft)](./drafts/governance.md)
 1. [Tools (draft)](./drafts/tools.md)
