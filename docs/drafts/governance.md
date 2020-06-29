@@ -2,7 +2,7 @@
 
 ## Overview
 
-As a project grows and contributions and activity start to increase, establishing a good operating rhythm and workflow can go a long way towards helping a project run smoothly.  Detailing the project's motivations and  vision, maintenance and development cycles, and decision making and rules of conduct are just a few activitires that can all be used to help keep a project healthy and happy.
+As a project grows and contributions and activity start to increase, establishing a good operating rhythm and workflow can go a long way towards helping a project run smoothly.  Detailing the project's motivations and  vision, maintenance and development cycles, and decision making and rules of conduct are just a few activities that can all be used to help keep a project healthy and happy.
 
 The aim of this document is to provide thoughts and recommendations to project maintainers for ways they can organize, document, and ultimately establish a Governance model that can be applied to their own project's needs.
 
