@@ -26,7 +26,7 @@ This is helpful for maintainers because they wouldn't have to clone a fork to te
 > _As with owners and maintainers, enumarting the privileges and permissions of this group would also be recommended._
 
 ## Project Organization
-Although not necessarily coupled, but how the project is structured / distributed and how the team is organized can be different models.  This may the case with projects that use a monorepo structure or have a plugin like architecture, and are often building on top of a "core" or "cli" base package (`peerDependency` model).  As projects expand horizontally and vertically, delegating maintainers to oversee sections of code or packages in your project can help with scaling communication and ownership, in particular in regards to issue triage and PR reviews.  In addiiton, this helps build up subject matter expertise.
+There can be different models for how the project is structured / distributed and how the team is organized. This may the case with projects that use a monorepo structure or have a plugin like architecture, and are often building on top of a "core" or "cli" base package (`peerDependency` model).  As projects expand horizontally and vertically, delegating maintainers to oversee sections of code or packages in your project can help with scaling communication and ownership, in particular in regards to issue triage and PR reviews.  In addition, this helps build up subject matter expertise.
 
 If your project groups multiple related packages (e.g. _transforms_, _middleware_, _plugins_, etc), consider how to govern those projects as they fan outwards, in particular when it comes to managing breaking changes, new APIs, and how that all cacades downstream to the users of the core package.
 
