@@ -12,7 +12,7 @@ It is always helpful to include a section that clearly states the solution space
 ## Team Organization
 
 ### Owners / Maintainers
-Highlighting the current owner(s) of the project, as well any maintainers helps communicate who the stakeholders are in the project as it relates to issue triage, PR feedback, and general advocacy for the project.
+Highlighting the current owner(s) and maintainers of the project helps communicate who the stakeholders are in the project as it relates to issue triage, PR feedback, and general advocacy for the project.
 
 It is common that certain members of this group may get special permissions for actions like merging PRs, editing issues, etc, so that should also be documented here.  
 
