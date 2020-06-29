@@ -30,7 +30,7 @@ Although not necessarily coupled, but how the project is structured / distribute
 
 If your project groups multiple related packages (e.g. _transforms_, _middleware_, _plugins_, etc), consider how to govern those projects as they fan outwards, in particular when it comes to managing breaking changes, new APIs, and how that all cacades downstream to the users of the core package.
 
-> It may be apporopriate at this level that your project maintainers start meeting reguraly to discuss and involve themselves in overall project governance and decision making together.
+> It may be apporopriate at this level that your project maintainers start meeting regularly to discuss and involve themselves in overall project governance and decision making together.
 
 
 ## Technical Organization
