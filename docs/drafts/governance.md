@@ -36,7 +36,7 @@ If your project groups multiple related packages (e.g. _transforms_, _middleware
 ## Technical Organization
 
 ### Code Quality 
-If the project has a preferred styleguide, coding conventions, or other general rules around code quality, documenting those can be a good courtesy to those first time contributers to your project.  This can help prepare  contributions for such "housekeeping" tasks like minding the projects linting and formatting rules, expectations around writing unit test, or necessity around writing / updating documentation.
+If the project has a preferred style guide, coding conventions, or other general rules around code quality, documenting those can be a good courtesy to those first time contributors to your project.  This can help prepare  contributions for such "housekeeping" tasks like minding the projects linting and formatting rules, expectations around writing unit test, or necessity around writing / updating documentation.
 
 ### RFC Process
 It's often good to segment off, or flag certain issues as `RFC` in particular to communicate important changes, potentially breaking, that are deserving of deeper conversation and analysis.  Standing for [_"Request for Comment"_](https://en.wikipedia.org/wiki/Request_for_Comments), it is a good way to initiate high level changes to the project that can be set aside and reviewed periodically by the maintainers, or can be used by the maintainers to communicate back outwards to the community.
