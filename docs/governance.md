@@ -23,7 +23,7 @@ In some cases, projects can opt to invite members to the repository but with lim
 
 This is helpful for maintainers because they wouldn't have to clone a fork to test out the work, and also is less friction for conributors, who wouldn't have to maintain a fork.
 
-> _As with owners and maintainers, enumarting the privileges and permissions of this group would also be recommended._
+> _As with owners and maintainers, enumerating the privileges and permissions of this group would also be recommended._
 
 ## Project Organization
 There can be different models for how the project is structured / distributed and how the team is organized. This may the case with projects that use a monorepo structure or have a plugin like architecture, and are often building on top of a "core" or "cli" base package (`peerDependency` model).  As projects expand horizontally and vertically, delegating maintainers to oversee sections of code or packages in your project can help with scaling communication and ownership, in particular in regards to issue triage and PR reviews.  In addition, this helps build up subject matter expertise.
