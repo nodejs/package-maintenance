@@ -33,15 +33,14 @@ The initial and fundamental start of any testing strategy should start with a un
 the unit test may be the first place to catch code that will not parse. It is also the way to define the expectation for a particular
 function or code block. The unit test should describe what to expect from that code when given a defined set of inputs.
 
-For a test to be considered a unit test it should consume no external services and only the code block under test should be considered part of that test. All external services that the code block under test consumes should be
-stubbed. There are many mocking tools available and this document will not favor one set of tools over any other.
+For a test to be considered a unit test it should consume no remote services.
 
 It is generally considered good practice to run units as part of any commit or build strategy.
 
 #### Integration Testing
 Integration testing in general requires that the code under test be in a package.
 
-For many packages integration testing requires that the built package be run via a testing tool upon several environments. The 
+For many packages integration testing requires that the built package be run via a testing tool upon several environments. The /
 field of continuous integration and deployment (CICD) is complex. The package being built shall be run through
 a CICD pipeline. Several integrations are available for GitHub based repositories. (There are also alternatives to GitHub.)
 
