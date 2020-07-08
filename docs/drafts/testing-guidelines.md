@@ -16,7 +16,7 @@ The minimal versions you should focus are:
 * LTS (long time support)
 * Current
 
-Of course, you are free to maintain a package that also runs with older versions of Node.js that have reached the "end-of-life" stage.
+Supporting older versions of node is encouraged where practical.
 
 For browser-based modules and modules that are designed to work equally both client and server side it is essential to test on various 
 versions of your target browser and to publish which environments are supported.
