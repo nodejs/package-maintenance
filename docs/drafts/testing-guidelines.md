@@ -18,7 +18,7 @@ The minimal versions you should focus are:
 
 Of course, you are free to maintain a package that also runs with older versions of Node.js that have reached the "end-of-life" stage.
 
-For browser based modules and modules that are designed to work equally both client and server side it is essential to test on various 
+For browser-based modules and modules that are designed to work equally both client and server side it is essential to test on various 
 versions of your target browser and to publish which environments are supported.
 
 ### How?
