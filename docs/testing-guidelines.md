@@ -44,7 +44,7 @@ For many packages integration testing requires that the built package be run via
 field of continuous integration and deployment (CI/CD) is complex. The package being built shall be run through
 a CI/CD pipeline. Several integrations are available for GitHub based repositories. (There are also alternatives to GitHub.)
 
-For many open source projects on Github free integration environments are available.
+For many open-source projects on GitHub, free integration environments are available.
 
 #### Acceptance Testing
 Every package will have different criteria for acceptance. The maintenance committee has particular interest in making sure
