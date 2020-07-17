@@ -12,7 +12,7 @@ Node.js has a [strict release pipeline](https://nodejs.org/en/about/releases/) f
 
 This can be done developing a CI pipeline. Check out our [CI guidelines](https://github.com/nodejs/package-maintenance/blob/master/README.md).
 
-The minimal versions you should focus are:
+The minimum versions you should focus are:
 * LTS (long time support)
 * Current
 
