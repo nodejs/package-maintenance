@@ -40,7 +40,7 @@ It is generally considered good practice to run units as part of any commit or b
 #### Integration Testing
 Integration testing in general requires that the code under test be in a package.
 
-For many packages integration testing requires that the built package be run via a testing tool upon several environments. The /
+For many packages integration testing requires that the built package be run via a testing tool upon several environments. The 
 field of continuous integration and deployment (CI/CD) is complex. The package being built shall be run through
 a CI/CD pipeline. Several integrations are available for GitHub based repositories. (There are also alternatives to GitHub.)
 These include but are not limited to 
