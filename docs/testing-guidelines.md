@@ -13,8 +13,8 @@ Node.js has a [strict release pipeline](https://nodejs.org/en/about/releases/) f
 This can be done developing a CI pipeline. Check out our [CI guidelines](https://github.com/nodejs/package-maintenance/blob/master/README.md).
 
 The minimum versions you should focus are:
-* LTS (long time support)
-* Current
+* [LTS](https://nodejs.org/en/about/releases/) (long term support)
+* [Current](https://nodejs.org/en/about/releases/)
 
 Supporting older versions of Node.js is encouraged where practical.
 
@@ -24,9 +24,9 @@ versions of your target browser and to publish which environments are supported.
 ### How?
 It is a good idea to have unit tests, coverage that matches most use cases for the module, and make sure things work in all supported environments.
 
-* **unit test**: test your code
-* **integration test**: test your code with other applications dependencies
-* **acceptance test**: test your application sticks in performance, heavy load, etc..
+* **Unit Test**: test your code
+* **Integration Test**: test your code with other applications dependencies
+* **Acceptance Test**: test your application under a load
 
 #### Unit Testing
 The initial and fundamental start of any testing strategy should start with a unit testing strategy. For the JavaScript language
@@ -43,6 +43,11 @@ Integration testing in general requires that the code under test be in a package
 For many packages integration testing requires that the built package be run via a testing tool upon several environments. The /
 field of continuous integration and deployment (CI/CD) is complex. The package being built shall be run through
 a CI/CD pipeline. Several integrations are available for GitHub based repositories. (There are also alternatives to GitHub.)
+These include but are not limited to 
+- [GitHub Actions](https://docs.github.com/en/actions)
+- [GitLabs](https://about.gitlab.com/)
+- [CircleCI](https://docs.github.com/en/actions)
+- [TravisCI](https://travis-ci.com/)
 
 For many open-source projects on GitHub, free integration environments are available.
 
