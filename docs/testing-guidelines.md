@@ -46,7 +46,7 @@ a CI/CD pipeline. Several integrations are available for GitHub based repositori
 These include but are not limited to 
 - [GitHub Actions](https://docs.github.com/en/actions)
 - [GitLabs](https://about.gitlab.com/)
-- [CircleCI](https://docs.github.com/en/actions)
+- [CircleCI](https://circleci.com/product/)
 - [TravisCI](https://travis-ci.com/)
 
 For many open-source projects on GitHub, free integration environments are available.
