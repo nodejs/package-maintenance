@@ -90,8 +90,8 @@ All PRs shall follow the [contributions policy](CONTRIBUTING.md)
 
 ## Current Project Team Members
 
-[See the list of Administrative Members](./ADMINISTRATIVE-MEMBERS.md)
-[See the list of Members](./MEMBERS.md)
+* [See the list of Administrative Members](./ADMINISTRATIVE-MEMBERS.md)
+* [See the list of Members](./MEMBERS.md)
 
 ## Emeritus Project Team Members
 
