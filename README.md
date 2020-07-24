@@ -59,7 +59,7 @@ For more details refer to the WG Governance document.
 
 ### Meetings
 
-Meetings of the working group typically occur **TBD** as shown on the
+Meetings of the working group typically occur bi-weekly as shown on the
 the node.js project [calendar](https://nodejs.org/calendar).
 A few days before each meeting, an
 [issue](https://github.com/nodejs/package-maintenance/issues)
