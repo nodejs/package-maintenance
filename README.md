@@ -28,6 +28,15 @@ about this initiative in the article:
   can make it easier for maintainers to manage multiple
   streams, and accept help from those who depend on their module.
 
+## For Maintainers
+
+Are you a maintainer of an open source project looking for help and resources maintaining your package and community?  To get you started,
+- Review [our growing set of documentation](https://github.com/nodejs/package-maintenance/blob/master/docs/README.md) around topics like CI / CD, testing, and governance
+
+### Feedback
+
+Want to provide feedback on your experiences as a maintainer?  Want to let us know what topic and tools you think would be helpful to pursue within this group?  Open a PR to fill out [this survey](https://github.com/nodejs/package-maintenance/blob/master/pilots/SURVEY.md) and the team will be sure to review and get in touch with you.
+
 ## Joining
 
 We encourage participation from members across the Node.js and JavaScript
