@@ -28,6 +28,15 @@ about this initiative in the article:
   can make it easier for maintainers to manage multiple
   streams, and accept help from those who depend on their module.
 
+## For Maintainers
+
+Are you a maintainer of an open source project looking for help and resources maintaining your package and community?  To get you started,
+- Review [our growing set of documentation](https://github.com/nodejs/package-maintenance/blob/master/docs/README.md) around topics like CI / CD, testing, and governance
+
+### Feedback
+
+Want to provide feedback on your experiences as a maintainer?  Want to let us know what topic and tools you think would be helpful to pursue within this group?  Open a PR to fill out [this survey](https://github.com/nodejs/package-maintenance/blob/master/pilots/SURVEY.md) and the team will be sure to review and get in touch with you.
+
 ## Joining
 
 We encourage participation from members across the Node.js and JavaScript
@@ -36,15 +45,30 @@ in the issues within the repository.
 
 ## How to Join
 
-If you'd like to be listed as a team member, open a PR adding yourself
+The package-maintence team has two levels of membership. Administrative
+members and regular members. 
+
+If you'd like to be listed as regular team member, open a PR adding yourself
 to this [MEMBERS.md](MEMBERS.md) along with a few words on how you are planning
 to contribute to the team's efforts.
+
+Administrative members take on additional levels of responsibility with
+respect to managing the [pkgjs](https://github.com/pkgjs) organization
+and the other repositories managed by the working group. Administrative
+members should have a long standing involvement in the working group.
+
+Individuals who have made significant contributions and who wish to be
+considered as an Administrative member may create an issue or
+contact an Administrative WG member directly. It is not necessary
+to wait for an Administrative WG member to nominate the individual.
+
+For more details refer to the WG Governance document.
 
 ## Logistics
 
 ### Meetings
 
-Meetings of the working group typically occur **TBD** as shown on the
+Meetings of the working group typically occur bi-weekly as shown on the
 the node.js project [calendar](https://nodejs.org/calendar).
 A few days before each meeting, an
 [issue](https://github.com/nodejs/package-maintenance/issues)
@@ -65,8 +89,9 @@ to be accepted: it is a manual workflow, so it could take some days (we are work
 
 ## Pull Request Merging Policy
 
-The package maintenance team policy on PR closure is for there to be
-- At least 4 approvals
+The package maintenance team policy on landing a PR in the nodejs/package-maintenance
+repository is for there to be:
+- At least 4 approvals from regular members
 - No blocking reviews
 - 7 day period from the 4th approval to merging
 
@@ -74,6 +99,7 @@ All PRs shall follow the [contributions policy](CONTRIBUTING.md)
 
 ## Current Project Team Members
 
+[See the list of Administrative Members](./ADMINISTRATIVE-MEMBERS.md)
 [See the list of Members](./MEMBERS.md)
 
 ## Emeritus Project Team Members
