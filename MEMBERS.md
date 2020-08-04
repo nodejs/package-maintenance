@@ -104,4 +104,6 @@
 * Jon Church ([@jonchurch](https://github.com/jonchurch))
 * Antoni Kepinski ([@xxczaki](https://github.com/xxczaki))
 * Rodion Abdurakhimov ([@rodion-arr](https://github.com/rodion-arr))
+* Ella Polo ([@polec1](https://github.com/poloec1))
 * Ash Cripps ([@AshCripps](https://github.com/AshCripps))
+
