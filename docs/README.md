@@ -25,4 +25,3 @@ As Node.js and most of the packages in the ecosystem are predominantly hosted on
 1. [Versioning](./versioning.md)
 1. [Support](./PACKAGE-SUPPORT.md)
 1. [Governance](./governance.md)
-1. [Tools (draft)](./drafts/tools.md)
