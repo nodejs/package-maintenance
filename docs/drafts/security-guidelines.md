@@ -24,7 +24,7 @@ Here are several alternative ways of publishing security policies:
 A project's public issue tracker should point out that security issues need to be kept private initially.
 If using GitHub issues, maybe mention in the [issue template](https://help.github.com/en/github/building-a-strong-community/configuring-issue-templates-for-your-repository#creating-issue-templates)
 that there is a separate process for security-sensitive issues.  If using a vulnerability rewards program,
-the public issue tracker advice should make it clear what is in bounds ([example](https://www.google.com/about/appsecurity/reward-program/#vulns)).
+the public issue tracker advice should make it clear what is in bounds.
 
 ### Reporting a security issue
 
@@ -81,3 +81,4 @@ Here are several examples of short and useful security policies that fit differe
 | [Node-RED Security Policy](https://github.com/node-red/node-red/security/policy) | Defines a dedicated security reporting workflow |
 | [Fastify Security Policy](https://github.com/fastify/fastify/blob/master/SECURITY.md) | Adopt the Node.js Ecosystem Security WG reporting vulnerabilities process |
 | [Node.js Issue Template](https://github.com/nodejs/node/issues/new/choose) | Uses issue templates to guide vulnerability reporters away from the public issue tracker. |
+| [Google VRP Bounds](https://www.google.com/about/appsecurity/reward-program/#vulns) | Explains to security researches what is in bounds for a vulnerability rewards program. |
