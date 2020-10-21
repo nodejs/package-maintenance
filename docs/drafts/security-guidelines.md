@@ -21,6 +21,11 @@ Here are several alternative ways of publishing security policies:
 1. [security.txt](https://securitytxt.org/) file on project website, e.g. `https://nodejs.org/.well-known/security.txt`.
 1. Security section of the project `README` file.
 
+A project's public issue tracker should point out that security issues need to be kept private initially.
+If using GitHub issues, maybe mention in the [issue template](https://help.github.com/en/github/building-a-strong-community/configuring-issue-templates-for-your-repository#creating-issue-templates)
+that there is a separate process for security-sensitive issues.  If using a vulnerability rewards program,
+the public issue tracker advice should make it clear what is in bounds ([example](https://www.google.com/about/appsecurity/reward-program/#vulns)).
+
 ### Reporting a security issue
 
 Project security policy should describe a process for reporting vulnerabilities. It is strongly encouraged that the reporting process is confidential to allow maintainers to triage and resolve the vulnerability in private before disclosing it to the public.
@@ -75,3 +80,4 @@ Here are several examples of short and useful security policies that fit differe
 | [Express Security Policies and Procedures](https://github.com/expressjs/express/security/policy) | Supports a customized workflow and the Node.js Ecosystem Security WG reporting vulnerabilities process |
 | [Node-RED Security Policy](https://github.com/node-red/node-red/security/policy) | Defines a dedicated security reporting workflow |
 | [Fastify Security Policy](https://github.com/fastify/fastify/blob/master/SECURITY.md) | Adopt the Node.js Ecosystem Security WG reporting vulnerabilities process |
+| [Node.js Issue Template](https://github.com/nodejs/node/issues/new/choose) | Uses issue templates to guide vulnerability reporters away from the public issue tracker. |
