@@ -181,7 +181,7 @@ transfeering a repository into or out of the organization).
 
 When publishing packages owned by the pkgjs org, the maintainers of the project
 can choose to use the global scope or the `@pkgjs` scope on the registry. When
-the package is first published, we always turn on required 2FA to publish. In
+the package is first published, we always turn on "Require two-factor authentication to publish". In
 the case of using the global scope, you also need to transfer ownership of the
 package to the `@pkgjs` org on npm.
 
