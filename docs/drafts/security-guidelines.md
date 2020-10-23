@@ -22,7 +22,7 @@ Here are several alternative ways of publishing security policies:
 1. Security section of the project `README` file.
 
 A project's public issue tracker should point out that security issues need to be kept private initially.
-If using GitHub issues, maybe mention in the [issue template](https://help.github.com/en/github/building-a-strong-community/configuring-issue-templates-for-your-repository#creating-issue-templates)
+If using GitHub issues, mention in the [issue template](https://help.github.com/en/github/building-a-strong-community/configuring-issue-templates-for-your-repository#creating-issue-templates)
 that there is a separate process for security-sensitive issues.  If using a vulnerability rewards program,
 the public issue tracker advice should make it clear what is in bounds.
 
