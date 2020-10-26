@@ -34,7 +34,7 @@ There is no single recipe for choosing the right dependency for your package, bu
 
 ### Defining the dependency version ranges
 
-JavaScript ecosystem relies on [semantic versioning](https://semver.org/) and most packages respect its rules. Therefore, it is usually recommended that your `package.json` accepts new minor/patch releases of your dependencies automatically. This is the default behavior of npm - when you first `npm install [new dependency]`, it will by default prefix the version with a `^` to indicate that all new releases under the same major version are acceptable.
+The JavaScript ecosystem relies on [semantic versioning](https://semver.org/) and most packages respect its rules. Therefore, it is usually recommended that your `package.json` accepts new minor/patch releases of your dependencies automatically. This is the default behavior of npm - when you first `npm install [new dependency]`, it will by default prefix the version with a `^` to indicate that all new releases under the same major version are acceptable.
 
 You may also use a tilde (`~`) character instead of the caret (`^`), to only accept bugfix (patch) releases, but this may mean that your dependency will become out of date sooner.
 
@@ -47,21 +47,21 @@ Further reading:
 - npm documentation: [About semantic version](https://docs.npmjs.com/about-semantic-versioning)
 - npm documentation: [Updating packages downloaded from the registry](https://docs.npmjs.com/updating-packages-downloaded-from-the-registry)
 
-### Using lock files
+### Using lockfiles
 
-The lock files are a snapshot of your full dependency tree, incl. all sub-dependencies, their precise versions and also integrity hashes. Having a lock file allows npm to recreate the dependency tree exactly as it was. npm supports two lock files: `package-lock.json` and `npm-shrinkwrap.json`. Yarn uses its own lock file format.
+Lockfiles are a snapshot of your full dependency tree, incl. all sub-dependencies, their precise versions and also integrity hashes. Having a lockfile allows npm to recreate the dependency tree exactly as it was. npm supports three lockfiles: `package-lock.json` and `npm-shrinkwrap.json`, and in npm 7+, `yarn.lock`, Yarn's format.
 
-The `package-lock.json` will get created automatically by default and it will not be published into the registry, i.e. it is only intended to be used for development purposes. npm recommends you commit this file into your source control.
+`package-lock.json` will get created automatically by default and it will not be published into the registry, i.e. it is only intended to be used for development purposes. npm recommends you commit this file into your source control.
 
-You can chose to use the `npm shrinkwrap` command to instead create an `npm-shrinkwrap.json` file. It is the same in structure as the `package-lock.json`, but it will also be published together with your package in the registry, which means that not only people who develop the package, but also the users will receive the exact set of dependencies.
+You can choose to use the `npm shrinkwrap` command to instead create an `npm-shrinkwrap.json` file. It is the same in structure as the `package-lock.json`, but it will also be published together with your package in the registry, which means that not only people who develop the package, but also the users will receive the exact set of dependencies, and will be unable to dedupe transitive dependencies with the rest of their dependency graph.
 
-Using the lock files has downsides:
+Using lockfiles has downsides:
 
 - `package-lock.json` (and `yarn.lock`) is only used in development, so you may be testing your package with a different set of dependency versions than your users will be using it, which may occasionally lead to unexpected results.
 - no dependency updates will be received automatically with `npm install`.
-- using a shrinkwrap in a package intended to be used as a library may prevent deduplication of dependencies, increasing the `node_modules` / bundle size.
+- using `npm-shrinkwrap.json` in a package intended to be used as a library may prevent deduplication of dependencies, increasing `node_modules` / bundle size.
 
-You can disable the lock files in your global or local `.npmrc` file by adding a `package-lock=false` line. This does however mean that npm will also ignore the shrinkwraps included in your dependencies.
+You can disable lockfiles in your global or local `.npmrc` file by adding a `package-lock=false` line. This does however mean that npm will also ignore the `npm-shrinkwrap.json` files included in your dependencies.
 
 Further reading:
 
@@ -83,8 +83,6 @@ All of the below tools provide a GitHub App to create PRs with updates. They als
 
 - [Dependabot](https://dependabot.com/)
     - Supports other languages, besides JavaScript 
-- [Greenkeeper](https://greenkeeper.io/)
-    - Creates branches to test even the in-range updates and reports status if they make tests fail
 - [Renovate](https://renovate.whitesourcesoftware.com/)
     - Supports other languages, besides JavaScript
     - Supports updating `.travis.yml`, Circle CI yml and `.nvmrc`, i.e. it can update the Node.js version you use for running tests
