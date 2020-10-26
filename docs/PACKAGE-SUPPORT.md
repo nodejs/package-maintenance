@@ -202,7 +202,7 @@ The standardized namespace identifiers are:
 
 * `node`
 
-#### `node` name space
+#### `node` namespace
 
 The standardized options for the `node` namespace are as follows:
 
