@@ -5,7 +5,7 @@ maintainers may choose not to support a package with a license that is restricti
 or may be construed as a patent license.
 
 There are many licenses to choose from. We would refer package owners who have not 
-already choosen a license to review the [commonly used SPDX licenses](https://spdx.org/licenses/) and 
+already chosen a license to review the [commonly used SPDX licenses](https://spdx.org/licenses/) and 
 [suggested means to choose license](https://choosealicense.com/).
 
 This is an ordered list of the most popular licenses from the public registry with MIT being the most

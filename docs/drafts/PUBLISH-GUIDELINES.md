@@ -83,7 +83,7 @@ Keep in mind that tests generally are more relaxed at what they are allowed to d
 
 ### Other Resources
 
-There are tools that help you with the verication and publishing process:
+There are tools that help you with the verification and publishing process:
 
 - https://www.npmjs.com/package/publish-please
 

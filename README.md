@@ -45,7 +45,7 @@ in the issues within the repository.
 
 ## How to Join
 
-The package-maintence team has two levels of membership. Administrative
+The package-maintenance team has two levels of membership. Administrative
 members and regular members. 
 
 If you'd like to be listed as regular team member, open a PR adding yourself
