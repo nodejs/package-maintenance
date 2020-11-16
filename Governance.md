@@ -4,7 +4,7 @@
 
 ### WG Membership
 
-The package-maintence team has two levels of membership. Administrative
+The package-maintenance team has two levels of membership. Administrative
 members and regular members. 
 
 If you'd like to be listed as regular team member, open a PR adding yourself
@@ -37,7 +37,7 @@ the agenda, and may be suggested as any other agenda
 item (see "WG Meetings" below).
 
 If an addition or removal is proposed, this should be raised in an 
-issue, tagged for the next agenda, and concensus should be reached
+issue, tagged for the next agenda, and consensus should be reached
 in the issue. This is to ensure
 that all Administrative  members are given the opportunity to
 participate in all membership decisions. The addition or removal
@@ -129,7 +129,7 @@ The package maintenance team policy on landing a PR in this repository
 is for there to be:
 - At least 2 approvals from package-maintenance members other than the author of the PR
 - No blocking reviews
-- 72 hours since the PR was openened 
+- 72 hours since the PR was opened 
 
 #### nodejs/ci-config-github-actions
 
@@ -142,11 +142,11 @@ and can add/remove members as appropriate.
 
 ##### Landing PRs
 
-The package maintenance team policy on landing a PR in this respositry
+The package maintenance team policy on landing a PR in this repository
 is for there to be:
 - At least 2 approvals from package-maintenance members other than the author of the PR
 - No blocking reviews
-- 72 hours since the PR was openened 
+- 72 hours since the PR was opened 
 
 #### pkgjs organization
 All members of the pkgjs organization will be required to have 2FA enabled, 
@@ -175,7 +175,7 @@ of the Administrative members.
 
 In certain cases, OpenJS Cross Project Council and/or OpenJS Foundation Board
 of Directors approval may also be required. (Most likely in the case of
-transfeering a repository into or out of the organization).
+transferring a repository into or out of the organization).
 
 ##### Maintainers
 
@@ -196,7 +196,7 @@ repository is for there to be:
   unless there is single maintainer for the repository. In that case the single maintainer
   can land their own PRs.
 - No blocking reviews
-- 72 hours since the PR was openened 
+- 72 hours since the PR was opened 
 
 Certain types of pull requests can be fast-tracked and may land after a shorter
 delay. For example:

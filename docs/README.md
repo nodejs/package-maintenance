@@ -6,7 +6,7 @@ This is the location for documentation, guides and other information developed b
 ## Goals and Objectives
 By providing these guidelines and recommendations, the hope is that projects can benefit from the combined experience of the Node.js project and the community at large in a way that helps facilitate knowledge sharing and collaboration.  For example, documentation for topics like Continuous Integration can be used to share tooling configurations and setups that can help reduce the barrier to entry and time needed for authors to setup their own projects.
 
-> _In the spirit of open source, we are always open to contributions to help improve these docs, so if you find anything missing or that could be improved, please don't hesitiate to open an issue or PR for the team._
+> _In the spirit of open source, we are always open to contributions to help improve these docs, so if you find anything missing or that could be improved, please don't hesitate to open an issue or PR for the team._
 
 
 ## Notes and Assumptions

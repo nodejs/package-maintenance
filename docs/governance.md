@@ -7,7 +7,7 @@ As a project grows and contributions and activity start to increase, establishin
 The aim of this document is to provide thoughts and recommendations to project maintainers for ways they can organize, document, and ultimately establish a Governance model that can be applied to their own project's needs.
 
 ## Vision
-It is always helpful to include a section that clearly states the solution space / objectives of the project.  This helps introduce the overarching vision of the project and help contextualize all further decision making.  (technical or otherwise).  Articulating the "why" of the project helps ensure maintainers and contibutors alike are aligned on the direction of the project as so is a good candidate to put first.
+It is always helpful to include a section that clearly states the solution space / objectives of the project.  This helps introduce the overarching vision of the project and help contextualize all further decision making.  (technical or otherwise).  Articulating the "why" of the project helps ensure maintainers and contributors alike are aligned on the direction of the project as so is a good candidate to put first.
 
 ## Team Organization
 
@@ -21,16 +21,16 @@ An owner will typically be the administrator of the repository.
 ### Contributors
 In some cases, projects can opt to invite members to the repository but with limited permissions.  This may include write access to a repository to facilitate branch creation and submitting PRs, but _not_ write access to the _**master**_ branch (or other protected branches).  
 
-This is helpful for maintainers because they wouldn't have to clone a fork to test out the work, and also is less friction for conributors, who wouldn't have to maintain a fork.
+This is helpful for maintainers because they wouldn't have to clone a fork to test out the work, and also is less friction for contributors, who wouldn't have to maintain a fork.
 
 > _As with owners and maintainers, enumerating the privileges and permissions of this group would also be recommended._
 
 ## Project Organization
 There can be different models for how the project is structured / distributed and how the team is organized. This may the case with projects that use a monorepo structure or have a plugin like architecture, and are often building on top of a "core" or "cli" base package (`peerDependency` model).  As projects expand horizontally and vertically, delegating maintainers to oversee sections of code or packages in your project can help with scaling communication and ownership, in particular in regards to issue triage and PR reviews.  In addition, this helps build up subject matter expertise.
 
-If your project groups multiple related packages (e.g. _transforms_, _middleware_, _plugins_, etc), consider how to govern those projects as they fan outwards, in particular when it comes to managing breaking changes, new APIs, and how that all cacades downstream to the users of the core package.
+If your project groups multiple related packages (e.g. _transforms_, _middleware_, _plugins_, etc), consider how to govern those projects as they fan outwards, in particular when it comes to managing breaking changes, new APIs, and how that all cascades downstream to the users of the core package.
 
-> It may be apporopriate at this level that your project maintainers start meeting regularly to discuss and involve themselves in overall project governance and decision making together.
+> It may be appropriate at this level that your project maintainers start meeting regularly to discuss and involve themselves in overall project governance and decision making together.
 
 
 ## Technical Organization
@@ -44,14 +44,14 @@ It's often good to segment off, or flag certain issues as `RFC` in particular to
 The idea being that the more you can communicate earlier, the better.
 
 ## Moderation / Documentation
-Documentation is a great way to help communicate to new and current contributors what can be expected from the project overall and how to contribute to it.  This can be a good oppourtunity to detail the architecture and patterns found in the project with links and references being made available. 
+Documentation is a great way to help communicate to new and current contributors what can be expected from the project overall and how to contribute to it.  This can be a good opportunity to detail the architecture and patterns found in the project with links and references being made available. 
 
 Some important documents that can help quickly communicate general information about your project are:
 * _README_ - A great way to quickly explain the purpose of your package, how to use it, and other key concepts for anyone new to your project.
 * _Code of Conduct_ - Helps establish and ensure respectful communication for the project and how others should be treated.
 * _Contributing Guidelines_ - A great way to highlight what should be expected from contributors when submitting PRs.  Often times this can include providing unit tests for new or fixed code, following expected code quality / formatting guidelines, and how to report bugs.
 * _Governance_ - A document similar to this one, outlining how code, issues, and responsibilities are managed within your project.
-* _License_ - It is highly encouraged that all open source repos have a meaningful license file.
+* _License_ - It is highly encouraged that all open source repositories have a meaningful license file.
 
 ## GitHub
 If you're using GitHub, here are some good features you can take advantage of to help automate and organize your project:

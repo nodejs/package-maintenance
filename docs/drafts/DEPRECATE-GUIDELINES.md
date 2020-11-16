@@ -16,7 +16,7 @@ These guidelines exist to help with a course of action for package consumers and
 - Give package consumers some help with unmaintained packages.
 - Give package owners some help with handling and deprecating packages.
 
-### What consititutes an unmaintained package?
+### What constitutes an unmaintained package?
 
 It's not always obvious if a package is unmaintained. Many packages are small and considered completed as published. A long period of no activity does not imply that a project is not maintained.
 
@@ -91,7 +91,7 @@ If you own a package and you want to stop maintaining it, then please help your 
   - It allows updating the message so you can change it later - verified as of 02/05/2019
   - It can be undone by setting an empty message.
     - ie: `npm deprecate package@1.0.0 ""`
-- Please consider marking an old version with crtical issues or vulnerabilities as deprecated.
+- Please consider marking an old version with critical issues or vulnerabilities as deprecated.
 
 #### Mark abandoned/unmaintained
 
