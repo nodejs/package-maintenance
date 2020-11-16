@@ -2,9 +2,9 @@
 
 The pilot packages are the alpha tester of this working group. They will help us to archive our
 [WG goals](https://github.com/nodejs/package-maintenance#goals):
-+ identifing the major problems a module have to face
++ identifying the major problems a module have to face
 + defining priorities for our todo-list
-+ verifing the benefits of the tools and process built
++ verifying the benefits of the tools and process built
 + improving all the stuff created to evangelize the community
 
 The help provided to all these packages will be to think and to implement solutions for their problems,
@@ -33,7 +33,7 @@ Doing so we will create a wide range of tools in order to:
 
 The baseline to start with this work is:
 
-+ Prepare a [survey](./SURVEY.md) to collect more informations as possible
++ Prepare a [survey](./SURVEY.md) to collect more information as possible
 + Dispose the [output](#output) directory and send the survey with all the details to the maintainer reference
 + The Maintainer Reference should open a PR to this repository with the replies
 + Dispelling every doubt before merge the PR
@@ -42,7 +42,7 @@ The baseline to start with this work is:
 + Define a roadmap
 + Implement the roadmap
 + Coordinates with pilot packages to try the solutions implemented and verify the benefits
-+ Share to the community the tools and the succesful process
++ Share to the community the tools and the successful process
 
 
 ## Output
