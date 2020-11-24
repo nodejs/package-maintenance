@@ -140,27 +140,27 @@ The json is as defined in the sections below.
 The default for packages created by individuals for their own use should be:
 
 ```json
-  "support": {
-    "versions": [
-      {
-        "version": "*",
-        "target": {
-          "node": "none"
-        },
-        "response": {
-          "type": "time-permitting",
-          "paid": false,
-          "contact": {
-            "name": "Volunteers",
-            "url": "https://github.com/myproject"
-          }
-        },
-        "backing": {
-          "hobby": "https://github.com/myproject"
+{
+  "versions": [
+    {
+      "version": "*",
+      "target": {
+        "node": "none"
+      },
+      "response": {
+        "type": "time-permitting",
+        "paid": false,
+        "contact": {
+          "name": "Volunteers",
+          "url": "https://github.com/myproject"
         }
+      },
+      "backing": {
+        "hobby": "https://github.com/myproject"
       }
-    ]
-  }
+    }
+  ]
+}
 ```
 
 This reflects that the maintainer in this case may have no interest in ensuring that the package works
