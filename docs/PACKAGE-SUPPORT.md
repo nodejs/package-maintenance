@@ -187,41 +187,41 @@ than one support type, and it is up to users choose the support level that best 
 
 ### Support `target`
 
-The support target captures the platform versions that the package maintainer aims to support.
-These options may be different for each ecosystem so the target uses a namespace in 
-order to identify which values are expected.
+The support target captures the platform versions that the package maintainer aims to support. The `target` value is an object, where the key is the ecosystem identifier (namespace) and the value is either a string or an array of strings indicating the platform versions that the package maintainer aims to support.
 
-The target field is an object in this format:
+```json5
+{
+  "target": {
+    "ecosystem1": 'value-specific-to-ecosystem1',
+    "ecosystem2": [ /* values for ecosystem2 */ ]
+  }
+}
+```
 
-{ "xxxx": [ ] }
+The standardized namespace identifiers are:
 
-where xxxx is the namespace identifier for the ecosystem and [ ] is either a string or an array
-of strings indicating the platform versions that the package maintainer aims to support.
+* `node`
 
-The standarized namespace identifiers are:
+#### `node` namespace
 
-* "node"
+The standardized options for the `node` namespace are as follows:
 
-#### node name space
+| Value                | Current | Active LTS | Maintenance LTS | EOL | Example    | Description |
+|----------------------|---------|------------|-----------------|-----|------------|-------------|
+| (valid semver range) |         |            |                 |     |             | A [semver range](https://semver.io/) of Node.js versions supported.
+| `abandoned`          |         |            |                 |     |             | Not recommended for use. The package is deprecated or no longer maintained
+| `none`               |         |            |                 |     |             | Use at your own risk, no active support. May or may not work for a given Node.js version
+| `all`                |   ✔     |     ✔      |        ✔        |  ✔  | ...11,12,13,14,15 | The package is maintained for versions of Node.js including both LTS and non-LTS releases regardless of whether they are EOL or not. It may be necessary to accept semver-major level (ie. breaking) changes into that application in order to receive essential fixes. Documentation for the package will include the non-LTS releases for which the package is still maintained (some maintainers support as far back as 0.6)
+| `lts`                |         |     ✔      |        ✔        |     | 10,12       | The package is maintained for the Node.js LTS releases (both in Active and Maintenance status). Anyone creating an application using an LTS version of Node.js and using the latest major version of LTS adopting packages will not have to accept semver-major level (ie. breaking) changes into that application in order to receive essential fixes. Full details are available [here](https://github.com/CloudNativeJS/ModuleLTS)
+| `active`             |   ✔     |     ✔      |                 |     | 10,12,14,15 | Current release and active LTS releases
+| `lts_active`         |         |  ✔ (all)   |                 |     | 10,12       | All releases in _active_ LTS status. There may be more than one LTS release in active maintenance at a given point in time
+| `lts_latest`         |         | ✔ (latest) |                 |     | 12          | The package is maintained only for the Latest LTS Node.js version. You will be required to update to the latest LTS Node.js version in order to ensure you can use new versions/get security fixes
+| `supported`          |   ✔     |     ✔      |        ✔        |     | 10,12,14,15 | Node.js versions which are not EOL
+| `current`            |   ✔     |            |                 |     | 15          | The latest release from "all"
 
-The standardized options for the node name space are as follows:
+Unless the package documentation explicitly states otherwise, the support is only implied for the latest release in any major release line.
 
-| Value         | Current | Active LTS | Maintenance LTS | EOL | Example    | Description |
-|---------------|---------|------------|-----------------|-----|------------|-------------|
-| xxxxxx        |         |            |                 |     |            | xxxxxx is a [semver range](https://semver.io/) of Node.js versions supported
-| `abandoned`   |         |            |                 |     |            | Not recommended for use. The package is deprecated or no longer maintained
-| `none`        |         |            |                 |     |            | Use at your own risk, no active support. May or may not work for a given Node.js version
-| `all`         |   ✔     |     ✔      |        ✔        |  ✔  | ...,8,9,10,11,12 | The package is maintained for versions of Node.js including both LTS and non-LTS releases regardless of whether they are EOL or not. It may be necessary to accept semver-major level (ie. breaking) changes into that application in order to receive essential fixes. Documentation for the package will include the non-LTS releases for which the package is still maintained (some maintainers support as far back as 0.6)
-| `lts`         |         |     ✔      |        ✔        |     | 8,10       | The package is maintained for the Node.js LTS releases (both in Active and Maintenence status). Anyone creating an application using an LTS version of Node.js and using the latest major version of LTS adopting packages will not have to accept semver-major level (ie. breaking) changes into that application in order to receive essential fixes. Full details are available [here](https://github.com/CloudNativeJS/ModuleLTS)
-| `active`      |   ✔     |     ✔      |                 |     | 10,12      | Current release and active LTS releases
-| `lts_active`  |         |     ✔ (all)     |                 |     | 10         | All releases in _active_ LTS status. There may be more than one LTS release in active maintenance at a given point in time
-| `lts_latest`  |         | ✔ (latest) |                 |     | 10         | The package is maintained only for the Latest LTS Node.js version. You will be required to update to the latest LTS Node.js version in order to ensure you can use new versions/get security fixes
-| `supported`   |   ✔     |     ✔      |        ✔        |     | 12,10,8    | Node.js versions which are not EOL
-| `current`     |   ✔     |            |                 |     | 12         | The latest release from "all"
-
-The example above are based on the state of Node.js releases at the time of writing (2019-10-07)
-which are: 8.x (Maintenance LTS), 10.x (Active LTS) and 12.x (Current).
-Checkout the actual state in the [Release Schedule](https://github.com/nodejs/Release#release-schedule).
+The examples above are based on the state of Node.js releases at the time of writing (2020-10-21) which are: 10.22.1 (Maintenance LTS), 12.19.0 (Active LTS), 14.14.0 (Current, soon to become Active LTS), 15.0.0 (Current). Checkout the actual state in the [Release Schedule](https://github.com/nodejs/Release#release-schedule).
 
 ### Support `response` 
 
@@ -241,7 +241,8 @@ Or you can shorten a given object into a single string with this format: `name <
 For example:
 
 ```json
-response: [
+{
+"response": [
   {
     "type": "time-permitting",
     "paid": false,
@@ -277,6 +278,7 @@ response: [
     ]
   }
 ]
+}
 ```
 
 This allows the package maintainer to provide contact information for each of the support options that are available.

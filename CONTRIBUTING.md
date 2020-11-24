@@ -1,6 +1,6 @@
 # Contributing to package-maintenance
 
-We welcome partipation in this effort. Please feel free to
+We welcome participation in this effort. Please feel free to
 raise or comment on issues and join any of the scheduled meetings.
 
 ## Developer's Certificate of Origin 1.1
