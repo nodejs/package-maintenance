@@ -177,6 +177,14 @@ In certain cases, OpenJS Cross Project Council and/or OpenJS Foundation Board
 of Directors approval may also be required. (Most likely in the case of
 transferring a repository into or out of the organization).
 
+##### Publishing Packages
+
+When publishing packages owned by the [pkgjs](https://github.com/pkgjs) org, the maintainers of the project
+can choose to use the global scope or the `@pkgjs` scope on the registry. When
+the package is first published, we always turn on "Require two-factor authentication to publish". In
+the case of using the global scope, you also need to transfer ownership of the
+package to the `@pkgjs` org on npm.
+
 ##### Maintainers
 
 Maintainers for the repositories in the Pkgjs repository are managed
