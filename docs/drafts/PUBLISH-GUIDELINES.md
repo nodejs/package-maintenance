@@ -71,7 +71,7 @@ Generally the original sources should not be required to use your published pack
 
 ### Publish and Install scripts
 
-If your package requires any build steps such as transpiling sources, then note that [npm's recommendation](https://docs.npmjs.com/misc/scripts#best-practices) is to run those before you publish, not when your user install your package.
+If your package requires any build steps such as transpiling sources, then note that [npm's recommendation](https://docs.npmjs.com/misc/scripts#best-practices) is to run those before you publish, not when your users install your package.
 
 The [npm scripts] `prepare` and `prepublishOnly` are intended for this purpose.
 
