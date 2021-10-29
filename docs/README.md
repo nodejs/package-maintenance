@@ -19,7 +19,7 @@ As Node.js and most of the packages in the ecosystem are predominantly hosted on
 1. [Continuous Integration / Delivery (draft)](./drafts/ci-cd-guidelines.md)
 1. [Workflows (draft)](./drafts/workflows.md)
 1. [Code of Conduct (draft)](./drafts/code-of-conduct.md)
-1. [Security (draft)](./drafts/security-guidelines.md)
+1. [Security](./security-guidelines.md)
 1. [Testing](./testing-guidelines.md)
 1. [Publishing Guidelines (draft)](./drafts/PUBLISH-GUIDELINES.md)
 1. [Dependency management](./dependency-management-guidelines.md)

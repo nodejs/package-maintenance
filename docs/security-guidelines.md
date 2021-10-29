@@ -45,7 +45,7 @@ The recommended approach is to [create a maintainer advisory on GitHub](https://
 
 Here are several alternative ways to disclose a vulnerability:
 
-1. [Report a vulnerability to npm](https://www.npmjs.com/advisories/report).
+1. [Report a vulnerability to npm](https://docs.npmjs.com/reporting-malware-in-an-npm-package).
 1. Submit a pull request to [vulnerability database](https://github.com/nodejs/security-wg/blob/master/processes/vuln_db.md) maintained by [Node.js Ecosystem Security WG](https://github.com/nodejs/security-wg).
 
 Note that vulnerabilities reported to the responsible disclosure program on [HackerOne](https://hackerone.com/nodejs-ecosystem) will be automatically disclosed by HackerOne staff and the Ecosystem Security WG triage team members.
