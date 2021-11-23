@@ -30,10 +30,7 @@ the public issue tracker advice should make it clear what is in bounds.
 
 Project security policy should describe a process for reporting vulnerabilities. It is strongly encouraged that the reporting process is confidential to allow maintainers to triage and resolve the vulnerability in private before disclosing it to the public.
 
-Here are several common ways of reporting vulnerabilities:
-
-1. Designated email address, e.g. `security@example.com`.
-1. [Node.js Ecosystem Security WG](https://github.com/nodejs/security-wg) responsible disclosure program on [HackerOne](https://hackerone.com/nodejs-ecosystem).
+A common way of reporting vulnerabilities is through a designated email address, e.g. `security@example.com`.
 
 The policy should clearly specify when confidential reporting is not supported and generally available bug tracking system should be used.
 
@@ -48,8 +45,6 @@ Here are several alternative ways to disclose a vulnerability:
 1. [Report a vulnerability to npm](https://docs.npmjs.com/reporting-malware-in-an-npm-package).
 1. Submit a pull request to [vulnerability database](https://github.com/nodejs/security-wg/blob/master/processes/vuln_db.md) maintained by [Node.js Ecosystem Security WG](https://github.com/nodejs/security-wg).
 
-Note that vulnerabilities reported to the responsible disclosure program on [HackerOne](https://hackerone.com/nodejs-ecosystem) will be automatically disclosed by HackerOne staff and the Ecosystem Security WG triage team members.
-
 ### Collaboration between maintainers and reporters
 
 The policy should recommend that maintainers and reporters collaborate to ensure the accuracy of the vulnerability report and the security advisory. In particular, information such as: 
@@ -62,7 +57,7 @@ The policy should recommend that maintainers and reporters collaborate to ensure
 
 should be established in collaboration between maintainers and the reporter.
 
-If possible, the policy should recommend means of communication between all parties working towards responsible disclosure. [Maintainer advisories on GitHub](https://help.github.com/en/github/managing-security-vulnerabilities/creating-a-maintainer-security-advisory) and [the responsible disclosure program on HackerOne](https://hackerone.com/nodejs-ecosystem) are recommended to ensure the confidentiality.
+If possible, the policy should recommend means of communication between all parties working towards responsible disclosure. See [Maintainer advisories on GitHub](https://help.github.com/en/github/managing-security-vulnerabilities/creating-a-maintainer-security-advisory)
 
 ### Releasing security patches
 
