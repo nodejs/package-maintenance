@@ -79,7 +79,7 @@ If you own a package and you want to stop maintaining it, then please help your 
 
 - Use the `npm deprecate` command to mark package as unmaintained.
 - Add a note to your repo's `README.md` file.
-- Update the `support` levels in your `package.json` according to the [support level doc]
+- Update the `support` levels in your `package.json` according to the [support level doc](./PACKAGE-SUPPORT.md)
 
 #### `npm deprecate` command
 
@@ -109,5 +109,3 @@ If you own a package and you want to stop maintaining it, then please help your 
 There are some ongoing discussion related to npm to make managing unmaintained packages easier.
 
 - Package override RFC https://github.com/aeschright/rfcs/blob/ca127d7c5fb7ecde534172d771351c0b8f819e79/accepted/0009-package-overrides.md
-
-[support level doc]: https://github.com/nodejs/package-maintenance/blob/master/docs/drafts/Baseline%20practice%20-%20Document%20support%20levels.md
