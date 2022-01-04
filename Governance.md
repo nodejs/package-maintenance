@@ -102,8 +102,8 @@ and can add/remove members as they join or leave the team.
 
 ##### Landing PRs
 
-The package maintenance team policy on landing a PR in this repository
-is for there to be:
+The package maintenance team policy on landing a PR in this repository, except for specific
+cases outline below is for there to be:
 - At least 4 approvals from regular members other than the author of the PR
 - No blocking reviews
 - 7 day period from the 4th approval to merging
@@ -111,6 +111,14 @@ is for there to be:
 the countdown period every possible effort must be made to contact the reviewer. If the reviewer cannot be 
 contacted to review the changes within the countdown period, and their requested changes are believed to be addressed, the PR may be landed. This rule is not intended to circumvent
 the policy of consensus when it is known that consensus has not been reached.
+
+For the following cases:
+  - PRs for minutes
+  - Changes which don't change semantics (for examples, rewording, etc.)
+
+The requirements are as follows:
+- At least 2 approvals from collaborators
+- No blocking reviews
 
 All PRs shall follow the [contributions policy](CONTRIBUTING.md)
 
