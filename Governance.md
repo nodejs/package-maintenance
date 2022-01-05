@@ -103,7 +103,7 @@ and can add/remove members as they join or leave the team.
 ##### Landing PRs
 
 The package maintenance team policy on landing a PR in this repository, except for specific
-cases outline below is for there to be:
+cases outlined below, is for there to be:
 - At least 4 approvals from regular members other than the author of the PR
 - No blocking reviews
 - 7 day period from the 4th approval to merging
