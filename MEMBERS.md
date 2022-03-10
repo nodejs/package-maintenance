@@ -38,3 +38,4 @@
 * Rodion Abdurakhimov ([@rodion-arr](https://github.com/rodion-arr))
 * Sachin Jangid ([@gittysachin](https://github.com/gittysachin))
 * Zack Schuster ([@zackschuster](https://github.com/zackschuster))
+* Tierney Cyren ([@bnb](https://github.com/bnb)]
