@@ -31,7 +31,6 @@
 * Glenn Hinks ([@ghinks](https://github.com/ghinks))
 * Abdullah Tariq ([@abdullahtariq91](https://github.com/abdullahtariq91))
 * Kamal Singh Rawat ([@ksrawat](https://github.com/ksrawat))
-* Dominykas Blyžė ([@dominykas](https://github.com/dominykas))
 * Jose Navarro ([@jmn8718](https://github.com/jmn8718))
 * Keith Holliday ([@thehollidayinn](https://github.com/thehollidayinn))
 * Lars Graubner ([@lgraubner](https://github.com/lgraubner))

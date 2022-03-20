@@ -14,6 +14,7 @@
 * Esphas Kueen ([@esphas](https://github.com/esphas))
 * Felix-Antoine Paradis ([@reel](https://github.com/reel))
 * Mike Perry Y Attara ([@mikeattara](https://github.com/mikeattara))
+* Dominykas Blyžė ([@dominykas](https://github.com/dominykas))
 * Ian Sutherland ([@iansu](https://github.com/iansu))
 * Pothamsetty K ([@potham](https://github.com/potham))
 * Rick Markins ([@rxmarbles](https://github.com/rxmarbles))
