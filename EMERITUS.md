@@ -28,7 +28,6 @@
 * Antonio Gonzalez ([@bluesockets](https://github.com/bluesockets))
 * Satyam Bansal([@satyam22](https://github.com/satyam22))
 * Ankur Oberoi ([@aoberoi](https://github.com/aoberoi))
-* Glenn Hinks ([@ghinks](https://github.com/ghinks))
 * Abdullah Tariq ([@abdullahtariq91](https://github.com/abdullahtariq91))
 * Kamal Singh Rawat ([@ksrawat](https://github.com/ksrawat))
 * Jose Navarro ([@jmn8718](https://github.com/jmn8718))

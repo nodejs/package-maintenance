@@ -13,6 +13,7 @@
 * Zied CHOUK ([@ZiedCHOUK](https://github.com/ZiedCHOUK))
 * Esphas Kueen ([@esphas](https://github.com/esphas))
 * Felix-Antoine Paradis ([@reel](https://github.com/reel))
+* Glenn Hinks ([@ghinks](https://github.com/ghinks))
 * Mike Perry Y Attara ([@mikeattara](https://github.com/mikeattara))
 * Dominykas Blyžė ([@dominykas](https://github.com/dominykas))
 * Ian Sutherland ([@iansu](https://github.com/iansu))
