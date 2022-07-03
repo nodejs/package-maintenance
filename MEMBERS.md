@@ -41,3 +41,4 @@
 * Sachin Jangid ([@gittysachin](https://github.com/gittysachin))
 * Zack Schuster ([@zackschuster](https://github.com/zackschuster))
 * Tierney Cyren ([@bnb](https://github.com/bnb)]
+* Ayush Anand ([@Ayushsunny](https://github.com/Ayushsunny)]
