@@ -25,7 +25,6 @@
 * Karan Sapolia ([@karansapolia](https://github.com/karansapolia))
 * Andrew Kuzmenko ([@andrewkuzmenko](https://github.com/andrewkuzmenko))
 * Petr Grishin ([@petrgrishin](https://github.com/petrgrishin))
-* Frank Lemanschik ([@frank-dspeed](https://github.com/frank-dspeed))
 * Nardyuzhev Vadim ([@vadinN](https://github.com/vadinN))
 * Hassan Sani ([@inidaname](https://github.com/inidaname))
 * Sathish Gajendran ([@sathishgajendran](https://github.com/sathishgajendran))
