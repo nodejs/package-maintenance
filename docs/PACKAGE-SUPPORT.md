@@ -206,22 +206,25 @@ The standardized namespace identifiers are:
 
 The standardized options for the `node` namespace are as follows:
 
-| Value                | Current | Active LTS | Maintenance LTS | EOL | Example    | Description |
-|----------------------|---------|------------|-----------------|-----|------------|-------------|
-| (valid semver range) |         |            |                 |     |             | A [semver range](https://semver.io/) of Node.js versions supported.
-| `abandoned`          |         |            |                 |     |             | Not recommended for use. The package is deprecated or no longer maintained
-| `none`               |         |            |                 |     |             | Use at your own risk, no active support. May or may not work for a given Node.js version
-| `all`                |   ✔     |     ✔      |        ✔        |  ✔  | ...11,12,13,14,15 | The package is maintained for versions of Node.js including both LTS and non-LTS releases regardless of whether they are EOL or not. It may be necessary to accept semver-major level (ie. breaking) changes into that application in order to receive essential fixes. Documentation for the package will include the non-LTS releases for which the package is still maintained (some maintainers support as far back as 0.6)
-| `lts`                |         |     ✔      |        ✔        |     | 10,12       | The package is maintained for the Node.js LTS releases (both in Active and Maintenance status). Anyone creating an application using an LTS version of Node.js and using the latest major version of LTS adopting packages will not have to accept semver-major level (ie. breaking) changes into that application in order to receive essential fixes. Full details are available [here](https://github.com/CloudNativeJS/ModuleLTS)
-| `active`             |   ✔     |     ✔      |                 |     | 10,12,14,15 | Current release and active LTS releases
-| `lts_active`         |         |  ✔ (all)   |                 |     | 10,12       | All releases in _active_ LTS status. There may be more than one LTS release in active maintenance at a given point in time
-| `lts_latest`         |         | ✔ (latest) |                 |     | 12          | The package is maintained only for the Latest LTS Node.js version. You will be required to update to the latest LTS Node.js version in order to ensure you can use new versions/get security fixes
-| `supported`          |   ✔     |     ✔      |        ✔        |     | 10,12,14,15 | Node.js versions which are not EOL
-| `current`            |   ✔     |            |                 |     | 15          | The latest release from "all"
+| name | alias | description |
+|------|-------|-------------|
+| current |  | The Node.js release that is defined to be "Current" status by the [Node.js Release Process](https://github.com/nodejs/release). |
+| lts/latest | lts-latest | A subset of the Node.js LTS releases, only including the the _most recent_ Node.js Release that is in "Active" LTS status as defined by the [Node.js Release Process]( https://github.com/nodejs/release). |
+| lts/active | lts-active | A subset of the Node.js LTS releases, including _all_ of the Node.js Releases that are in "Active" LTS status as defined by the [Node.js Release Process](https://github.com/nodejs/release). |
+| lts/maintenance | lts-maintenance | A subset of the Node.js LTS releases, including _all_ of the Node.js Releases that are in "Maintenance" LTS status as defined by the [Node.js Release Process](https://github.com/nodejs/release). |
+| eol |  | A subset of the Node.js releases, including _all_ of the Node.js Releases that are in "End of Life" status as defined by the [Node.js Release Process](https://github.com/nodejs/release). |
+
+There was a previous iteration of this proposal that used different values for the `node` namespace. Here is the mapping of those old values to the new values:
+
+| Old Name | Translated Values | Old Description |
+|---|---|---|
+| `all` | `current, lts/active, lts/maintenance, eol` | The package is maintained for versions of Node.js including both LTS and non-LTS releases regardless of whether they are EOL or not. It may be necessary to accept semver-major level (ie. breaking) changes into that application in order to receive essential fixes. Documentation for the package will include the non-LTS releases for which the package is still maintained (some maintainers support as far back as 0.6) |
+| `lts` | `lts/active, lts/maintenance` | The package is maintained for the Node.js LTS releases (both in Active and Maintenance status). Anyone creating an application using an LTS version of Node.js and using the latest major version of LTS adopting packages will not have to accept semver-major level (ie. breaking) changes into that application in order to receive essential fixes. Full details are available [here](https://github.com/CloudNativeJS/ModuleLTS) |
+| `lts_latest` | `lts/latest` | The package is maintained only for the Latest LTS Node.js version. You will be required to update to the latest LTS Node.js version in order to ensure you can use new versions/get security fixes |
+| `supported` | `current, lts/active, lts/maintenance` | Node.js versions which are not EOL |
+| `current` | `current` | The latest release from "all" |
 
 Unless the package documentation explicitly states otherwise, the support is only implied for the latest release in any major release line.
-
-The examples above are based on the state of Node.js releases at the time of writing (2020-10-21) which are: 10.22.1 (Maintenance LTS), 12.19.0 (Active LTS), 14.14.0 (Current, soon to become Active LTS), 15.0.0 (Current). Checkout the actual state in the [Release Schedule](https://github.com/nodejs/Release#release-schedule).
 
 ### Support `response` 
 
