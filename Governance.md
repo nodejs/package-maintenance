@@ -41,7 +41,7 @@ The WG has authority over Version Management solutions in the project including:
 
 [^note]A note on the meaning of "maintaining the relationship":
 
-This means proposals to change the relationship between Node.js and npm or other tools (from either side) should be presented to the PMWG first to work out the details of the proposed changed.
+This means proposals to change the relationship between Node.js and npm or other tools (from either side) should be presented to the PMWG first to work out the details of the proposed change.
 
 ## Collaborators
 
