@@ -6,4 +6,4 @@ Help application developers to:
 
 1. Install Node.js and a package manager for a local development environment.
 
-1. Run different versions of Node.js and different versions of package managers for different projects, deterministically.
+1. Run the correct version of Node.js and of a package manager for each project.
