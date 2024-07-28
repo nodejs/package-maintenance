@@ -42,4 +42,5 @@
 * Tierney Cyren ([@bnb](https://github.com/bnb)]
 * Ayush Anand ([@Ayushsunny](https://github.com/Ayushsunny)]
 * Luke Karrys ([@lukekarrys](https://github.com/lukekarrys)]
+* Claudio Wunder ([@ovflowd](https://github.com/ovflowd)]
 
