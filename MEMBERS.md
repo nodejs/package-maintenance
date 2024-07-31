@@ -39,8 +39,8 @@
 * Rodion Abdurakhimov ([@rodion-arr](https://github.com/rodion-arr))
 * Sachin Jangid ([@gittysachin](https://github.com/gittysachin))
 * Zack Schuster ([@zackschuster](https://github.com/zackschuster))
-* Tierney Cyren ([@bnb](https://github.com/bnb)]
-* Ayush Anand ([@Ayushsunny](https://github.com/Ayushsunny)]
-* Luke Karrys ([@lukekarrys](https://github.com/lukekarrys)]
-* Claudio Wunder ([@ovflowd](https://github.com/ovflowd)]
-
+* Tierney Cyren ([@bnb](https://github.com/bnb))
+* Ayush Anand ([@Ayushsunny](https://github.com/Ayushsunny))
+* Luke Karrys ([@lukekarrys](https://github.com/lukekarrys))
+* Claudio Wunder ([@ovflowd](https://github.com/ovflowd))
+* Leo Balter ([@leobalter](https://github.com/leobalter))
