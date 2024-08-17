@@ -10,7 +10,7 @@ And following up on the [proposal to revise the downloads page](./proposal-revis
 
 2. Also on the download page, we should add instructions for installing package managers which node has at any point historically supported (Yarn and `pnpm`), plus any others to be determined by a new policy (yet to be proposed) to add and remove recommended package managers. These instructions should follow whatever recommendation we receive from those projects' maintainers.
 
-3. Corepack's documentation should be moved out of the Node.js API documentation and into its own website, or accessible as Markdown files in the Corepack repo. Corepack is a separate project from Node.js and intermingling its documentation within Node.js's is confusing; we don't do that for `npm` even though we distribute `npm`.
+3. Corepack's documentation should be moved out of the Node.js API documentation and into its own website, or accessible as Markdown files in the Corepack repo. Corepack is a separate project from `node` and intermingling its documentation within `node`'s is confusing; we don't do that for `npm` even though we distribute `npm`.
 
 4. Once all of the above is complete, we should prepare the eventual removal of Corepack from the Node.js distribution by recommending alternative workflows. Users who wish to continue using Corepack will be recommended to do so via the instructions available on the Node.js download page or in Corepack's documentation.
 
