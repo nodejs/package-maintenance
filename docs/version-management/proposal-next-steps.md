@@ -12,6 +12,6 @@ And following up on the [proposal to revise the downloads page](./proposal-revis
 
 3. Corepack's documentation should be moved out of the Node.js API documentation and into its own website, or accessible as Markdown files in the Corepack repo. Corepack is a separate project from `node` and intermingling its documentation within `node`'s is confusing; we don't do that for `npm` even though we distribute `npm`.
 
-4. Once all of the above is complete, we should prepare the eventual removal of Corepack from the Node.js distribution by recommending alternative workflows. Users who wish to continue using Corepack will be recommended to do so via the instructions available on the Node.js download page or in Corepack's documentation.
+4. Once all of the above is complete, we should start recommending alternative workflows in case Corepack is removed from the Node.js distribution. Users who wish to continue using Corepack will be recommended to do so via the instructions available on the Node.js download page or in Corepack's documentation.
 
 5. Corepack governence and maintenence will be relinquished to the Corepack team who can decide on next steps for the project.
