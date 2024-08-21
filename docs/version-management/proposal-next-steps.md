@@ -14,4 +14,3 @@ And following up on the [proposal to revise the downloads page](./proposal-revis
 
 4. Once all of the above is complete, we should start recommending alternative workflows in case Corepack is removed from the Node.js distribution. Users who wish to continue using Corepack will be recommended to do so via the instructions available on the Node.js download page or in Corepack's documentation.
 
-5. Corepack governence and maintenence will be relinquished to the Corepack team who can decide on next steps for the project.
