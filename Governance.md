@@ -1,289 +1,177 @@
-## Package Maintenance Working Group Governance
+## Package Maintenance Working Group Charter
 
-### Collaborators
+The Node.js Package Maintenance Working Group is jointly governed by the members
+of that Working Group (WG), and maintains oversight of its constituting teams:
+the `@nodejs/package-maintenance` and `@nodejs/corepack` teams.
 
-### WG Membership
+The WG responsibilities include:
 
-The package-maintenance team has two levels of membership. Administrative
-members and regular members. 
+* Management of the "version management tools" shipped with the Node.js distribution (see below).
+* Management of repositories within the [pkgjs](https://github.com/pkgjs)
+  GitHub organization including but not limited to:
+    * Managing the list of organization owners which supplement the standard
+      Node.js organization owners as outlined in:
+[https://github.com/nodejs/admin/blob/master/GITHUB_ORG_MANAGEMENT_POLICY.md#owners](https://github.com/nodejs/admin/blob/master/GITHUB_ORG_MANAGEMENT_POLICY.md#owners)
+    * Overseeing new repositories (creating, moving, removing).
+    * Managing the maintainer teams for all of the repositories.
+    * Contribution policy for repositories.
+* Technical direction for the projects within
+  the [pkgjs](https://github.com/pkgjs) organization.
+* Project governance and process (including this policy).
+* Managing the maintainer teams and contribution policies for the
+  following repositories:
+  * nodejs/ci-config-travis
+  * nodejs/ci-config-github-actions
+  * nodejs/package-maintenance
 
-If you'd like to be listed as regular team member, open a PR adding yourself
-to [MEMBERS.md](MEMBERS.md) along with a few words on how you are planning
-to contribute to the team's efforts.
+For the current list of WG members, see the project [README.md][].
 
-Administrative members take on additional levels of responsibility with
-respect to managing the [pkgjs](https://github.com/pkgjs) organization
-and the other repositories managed by the working group. Administrative
-members should have a long standing involvement in the working group.
+[README.md]: ./README.md#current-project-team-members
 
-Individuals who have made significant contributions and who wish to be
-considered as an Administrative member may create an issue or
-contact an Administrative WG member directly. It is not necessary
-to wait for an Administrative WG member to nominate the individual.
+### Version Management Tools
 
-There is no specific set of requirements or qualifications for WG
-membership beyond these rules.
+The WG has authority over Version Management solutions in the project including:
 
-The WG may add additional Administrative members to the WG by
-consensus. If there are any objections to adding any individual
-member, an attempt should be made to resolve those objections
-following the WG's Consensus Seeking Process.
+* Maintaining the relationship[^note] with any tools included in the Node.js default distribution with the express purpose of the following:
+  - Download or install additional software from sources outside the default distribution.
+  - Download or install additional Node.js distributions (default or third-party).
+* Contribution policy for all of the additional software included in the Node.js distribution as qualified above.
+* Conduct guidelines for the Version Management group.
+* Recommend technical solutions for Version Management for the Node.js ecosystem.
 
-A WG member may be removed from the WG by voluntary resignation, or by
-consensus of the Administrative WG members.
+[^note]A note on the meaning of "maintaining the relationship":
 
-Changes to Administrative WG membership should be posted in
-the agenda, and may be suggested as any other agenda
-item (see "WG Meetings" below).
+This means proposals to change the relationship between Node.js and npm or other tools (from either side) should be presented to the PMWG first to work out the details of the proposed change.
 
-If an addition or removal is proposed, this should be raised in an 
-issue, tagged for the next agenda, and consensus should be reached
-in the issue. This is to ensure
-that all Administrative  members are given the opportunity to
-participate in all membership decisions. The addition or removal
-is considered approved once the issue has been open for 2 meetings
-or 14 days whichever is longer, and at least half the Administrative
-members are in favor.
+## Collaborators
 
-No more than 1/3 of the Administrative WG members may be
-affiliated with the same employer. If removal or resignation
-of a WG member, or a change of employment by a WG member,
-creates a situation where more than 1/3 of the WG membership
-shares an employer, then the situation must be immediately
-remedied by the resignation or removal of one or more
-Administrative WG members affiliated with the
-over-represented employer(s).
+For the current list of WG members, see the project README.md.
 
-For the current list of members, see the project [README.md][].
+This GitHub repository is maintained by the WG (all teams WG
+members are Collaborators for the repository) and additional
+Collaborators who are added by the WG on an ongoing basis.
 
-### WG Meetings
+Individuals making significant and valuable contributions are made
+Collaborators and given commit-access to the ad-hoc repository.
+These individuals are identified by the WG and their addition
+as Collaborators is discussed during the WG meeting.
 
-The WG meets regularly as scheduled on the Node.js
-[calendar](https://nodejs.org/calendar). Each meeting should be
-published to YouTube.
+**Note**: If you make a significant contribution and are not considered for
+commit access, log an issue or contact a WG member directly and it will
+be brought up in the next WG meeting.
 
-Items are added to the WG agenda that are considered contentious or
-are modifications of governance, contribution policy, WG membership,
-or release process.
+Modifications of the contents of this repository are made
+on a collaborative basis. Anybody with a GitHub account may propose a
+modification via pull request and it will be considered by the project
+Collaborators. All pull requests must be reviewed and accepted by a
+Collaborator with sufficient expertise who is able to take full responsibility
+for the change. In the case of pull requests proposed by an existing
+Collaborator, an additional Collaborator is required for sign-off. Consensus
+should be sought if additional Collaborators participate and there is
+disagreement around a particular modification. See Consensus Seeking
+Process below for further detail on the consensus model used for governance.
+
+Collaborators may opt to elevate significant or controversial modifications,
+or modifications that have not found consensus to the WG for discussion by
+assigning the WG-agenda tag to a pull request or issue. The WG should serve
+as the final arbiter where required.
+
+## WG Membership
+
+WG seats are not time-limited. There is no fixed size of the WG.
+
+There is no specific set of requirements or qualifications
+for WG membership beyond these rules.
+
+The WG may add additional members to the WG by consensus(defined
+as no objections, more than 50% of the members participating in the
+discussion, and all those participating in the discussion agreeing).
+
+A WG member may be removed from the WG by voluntary resignation,
+by unanimous consensus of all other WG members, or by a TSC decision. If a
+member is removed from the WG then they are also removed from all WG teams.
+
+Changes to WG membership should be posted in the agenda, and may be
+suggested as any other agenda item (see "WG Meetings" below).
+
+If an addition or removal is proposed during a meeting, and the full WG
+is not in attendance to participate, then the addition or removal is
+added to the agenda for the subsequent meeting, or taken async
+that all members are given the opportunity to participate in all
+membership decisions. If a WG member is unable to attend a meeting
+where a planned membership decision is being made,
+then their consent is assumed.
+
+No more than 1/3 of the voting WG members may be affiliated with the same
+employer. If removal or resignation of a WG member, or a change of
+employment by a WG member, creates a situation where more than 1/3
+of the WG membership shares an employer, then the situation must be
+immediately remedied by the resignation or removal of one or more
+WG members affiliated with the over-represented employer(s).
+
+## WG Meetings
+
+The WG meets regularly, check the foundation calendar for details.
+One of the WG members will volunteer to act as the moderator
+for each meeting subject to agreement from the rest of the
+members. Each meeting should be published to YouTube.
+
+Items are added to the WG agenda that are considered contentious or are
+modifications of governance, contribution policy,
+WG membership, or release process.
 
 The intention of the agenda is not to approve or review all patches;
-that should happen continuously on GitHub. 
+that should happen continuously on GitHub and be handled
+by the larger group of Collaborators.
 
-Any community member or contributor can ask that something be added to
-the next meeting's agenda by logging a GitHub Issue. Any Collaborator,
-WG member or the moderator can add the item to the agenda by adding
-the ***package-maintenance-agenda*** tag to the issue.
+Any community member or contributor can ask that something be
+added to the next meeting's agenda by logging a GitHub Issue.
+Any Collaborator, WG member or the moderator can add the item
+to the agenda by adding the WG-agenda tag to the issue.
 
 Prior to each WG meeting the moderator will share the Agenda with
 members of the WG. WG members can add any items they like to the
-agenda at the beginning of each meeting. The moderator and the WG
-cannot veto or remove items.
+agenda at the beginning of each meeting.
 
-The moderator is responsible for summarizing the discussion of each
-agenda item and sends it as a pull request after the meeting.
+The WG may invite persons or representatives from certain
+projects to participate in a non-voting capacity.
 
-### Repository Management
-All repositories under the management of the package maintenance team must include:
+The moderator is responsible for summarizing the discussion of
+each agenda item and sends it as a pull request after the meeting.
 
-* LICENCE.md from the list approved by the OpenJS Foundation
-* CODE_OF_CONDUCT.md referencing the Node.js Code of conduct in the admin repo.
-* CONTRIBUTING.md which includes the current version of the Developer Certificate of Origin (DCO) used by the Node.js Project
-* An PR template(s) used for all Pull requests which includes the current version of the DCO used by the Node.js Project.
-* A README.md which includes references to the GOVERNANCE.md in the package-maintenance repository as the authoritative governance which applies to the repository. 
+## Consensus Seeking Process
 
-#### nodejs/package-maintenance 
-
-##### Maintainers
-
-Maintainers for the nodejs/package-maintenance repo are managed
-through the [package-maintenance](https://github.com/orgs/nodejs/teams/package-maintenance/)
-team.  Administrative members are given the maintainer role for that team
-and can add/remove members as they join or leave the team.
-
-##### Landing PRs
-
-The package maintenance team policy on landing a PR in this repository, except for specific
-cases outlined below, is for there to be:
-- At least 4 approvals from regular members other than the author of the PR
-- No blocking reviews
-- 7 day period from the 4th approval to merging
-- In the event there are 4 approvals but existing pending reviews still exist a countdown of 21 days will start. During
-the countdown period every possible effort must be made to contact the reviewer. If the reviewer cannot be 
-contacted to review the changes within the countdown period, and their requested changes are believed to be addressed, the PR may be landed. This rule is not intended to circumvent
-the policy of consensus when it is known that consensus has not been reached.
-
-For the following cases:
-  - PRs for minutes
-  - Changes which don't change semantics (for examples, rewording, etc.)
-
-The requirements are as follows:
-- At least 2 approvals from collaborators
-- No blocking reviews
-
-All PRs shall follow the [contributions policy](CONTRIBUTING.md)
-
-#### nodejs/ci-config-travis
-
-##### Maintainers
-
-Maintainers for this repository are managed
-through the [ci-config-travis-maintainers](https://github.com/orgs/nodejs/teams/ci-config-travis-maintainers/)
-team. Administrative members are given the maintainer role for that team
-and can add/remove members as appropriate.
-
-##### Landing PRs
-
-The package maintenance team policy on landing a PR in this repository
-is for there to be:
-- At least 2 approvals from package-maintenance members other than the author of the PR
-- No blocking reviews
-- 72 hours since the PR was opened 
-
-#### nodejs/ci-config-github-actions
-
-##### Maintainers
-
-Maintainers for this repository are managed
-through the [ci-config-github-actions-maintainers](https://github.com/orgs/nodejs/teams/ci-config-github-actions-maintainers/)
-team. Administrative members are given the maintainer role for that team
-and can add/remove members as appropriate.
-
-##### Landing PRs
-
-The package maintenance team policy on landing a PR in this repository
-is for there to be:
-- At least 2 approvals from package-maintenance members other than the author of the PR
-- No blocking reviews
-- 72 hours since the PR was opened 
-
-#### pkgjs organization
-All members of the pkgjs organization will be required to have 2FA enabled, 
-and the repository will be configured to enforce this requirement.
-
-##### Adding or removing repositories
-
-Any repository created under the Pkgjs GitHub Organization is considered to be
-a project under the ownership of the OpenJS Foundation, and thereby subject
-to the Intellectual Property and Governance policies of the Foundation.
-
-Any member may request the management of repositories within the
-Pkgjs GitHub Organization by opening an issue in the
-[package-maintenance repository][nodejs/package-maintenance].
-The actions requested could be:
-
-- Creating a new repository
-- Deleting an existing repository
-- Archiving an existing repository
-- Transferring a repository into or out of the organization
-
-Provided there are no objections from any members raised in
-the issue, such requests are approved automatically after 72 hours. If any
-objection is made, the request may be moved to a vote
-of the Administrative members.
-
-In certain cases, OpenJS Cross Project Council and/or OpenJS Foundation Board
-of Directors approval may also be required. (Most likely in the case of
-transferring a repository into or out of the organization).
-
-##### Publishing Packages
-
-When publishing packages owned by the [pkgjs](https://github.com/pkgjs) org, the maintainers of the project
-can choose to use the global scope or the `@pkgjs` scope on the registry. When
-the package is first published, we always turn on "Require two-factor authentication to publish". In
-the case of using the global scope, you also need to transfer ownership of the
-package to the `@pkgjs` org on npm.
-
-##### Maintainers
-
-Maintainers for the repositories in the Pkgjs repository are managed
-through a team created for each repository.  They will be named as
-[REPO-maintainers](https://github.com/orgs/pkgjs/teams/REPO-maintainers/)
-where REPO is the name of the repository.  Administrative members are given
-the maintainer role these team and can add/remove members as appropriate.
-In addition all maintainers for a given repository can add/remove
-maintainers are given the maintainer role for the teams for which they are
-added and can add/remove members as appropriate.
-
-##### Landing PRs
-
-The package maintenance team policy on landing a PR in the repositories within the Pkgjs
-repository is for there to be:
-- At least 1 approval from package-maintenance members other than the author of the PR,
-  unless there is single maintainer for the repository. In that case the single maintainer
-  can land their own PRs.
-- No blocking reviews
-- 72 hours since the PR was opened 
-
-Certain types of pull requests can be fast-tracked and may land after a shorter
-delay. For example:
-
-* Focused changes that affect only documentation and/or the test suite:
-  * `code-and-learn` tasks often fall into this category.
-  * `good-first-issue` pull requests may also be suitable.
-* Changes that fix regressions:
-  * Regressions that break the workflow (red CI or broken compilation).
-  * Regressions that happen right before a release, or reported soon after.
-
-To propose fast-tracking a pull request, apply the `fast-track` label. Then add
-a comment that Collaborators may upvote.
-
-If someone disagrees with the fast-tracking request, remove the label. Do not
-fast-track the pull request in that case.
-
-The pull request may be fast-tracked if two Collaborators approve the
-fast-tracking request. To land, the pull request itself still needs two
-Collaborator approvals and a passing CI.
-
-Collaborators may request fast-tracking of pull requests they did not author.
-In that case only, the request itself is also one fast-track approval. Upvote
-the comment anyway to avoid any doubt.
-
-### Consensus Seeking Process
-
-The WG follows a [Consensus Seeking][] decision-making model.
+The WG follows a Consensus Seeking decision-making model.
 
 When an agenda item has appeared to reach a consensus the moderator
-will ask "Does anyone object?" as a final call for dissent from the
-consensus.
+will ask "Does anyone object?" as a final call for dissent from the consensus.
 
-If an agenda item cannot reach a consensus a WG member can call for
-either a closing vote or a vote to table the issue to the next
-meeting. The call for a vote must be seconded by a majority of the WG
-or else the discussion will continue. Simple majority wins.
+If an agenda item cannot reach a consensus, any WG member can call for a
+vote. Proposing a vote should follow the usual pull request approval process,
+with the exception that WG members can object to a vote taking place. If
+consensus cannot be reached on the wording of a vote proposal, each party can
+suggest their own wording and they'll both be included in the vote proposals.
+Vote should be counted using the Condorcet method, the winning proposition
+is the one that beats all the other propositions.
 
-Note that changes to administrative WG membership require
-consensus. If there are any objections to adding or removing
-individual members, an effort must be made to resolve
-those objections. If consensus cannot be reached, a
-vote may be called following the process above. Administrative
-members are responsible for voting in these cases.
+Note that changes to WG membership do not follow the the process,
+see "WG Membership" above.
 
-<a id="developers-certificate-of-origin"></a>
-## Developer's Certificate of Origin 1.1
+## Onboarding
 
-By making a contribution to this project, I certify that:
+The process for adding new WG members is the following:
 
-* (a) The contribution was created in whole or in part by me and I
-  have the right to submit it under the open source license
-  indicated in the file; or
+* A PR is open to add the new member to the list on the README.
+* The nominee manifests their interest (in case of a self-nomination, this step can be skipped).
+* The PR receives at least one approval and no objections.
+* After 7 days, the PR can merge.
 
-* (b) The contribution is based upon previous work that, to the best
-  of my knowledge, is covered under an appropriate open source
-  license and I have the right under that license to submit that
-  work with modifications, whether created in whole or in part
-  by me, under the same open source license (unless I am
-  permitted to submit under a different license), as indicated
-  in the file; or
+## Offboarding
 
-* (c) The contribution was provided directly to me by some other
-  person who certified (a), (b) or (c) and I have not modified
-  it.
-
-* (d) I understand and agree that this project and the contribution
-  are public and that a record of the contribution (including all
-  personal information I submit with it, including my sign-off) is
-  maintained indefinitely and may be redistributed consistent with
-  this project or the open source license(s) involved.
-
-[Consensus Seeking]: http://en.wikipedia.org/wiki/Consensus-seeking_decision-making
-[nodejs/package-maintenance]: https://github.com/nodejs/package-maintenance
+* A PR is open to remove the individual from the list in the README.
+* The PR merges if the condition for revoking WG membership are met
+  (see "WG Membership" above).
+* The individual is removed from all the teams in the oversight of the WG.
+* The individual is removed from the nodejs GitHub org unless they are member
+  for a reason other than WG membership.
+  
