@@ -104,10 +104,10 @@ and can add/remove members as they join or leave the team.
 
 The package maintenance team policy on landing a PR in this repository, except for specific
 cases outlined below, is for there to be:
-- At least 4 approvals from regular members other than the author of the PR
+- At least 2 approvals from regular members other than the author of the PR
 - No blocking reviews
-- 7 day period from the 4th approval to merging
-- In the event there are 4 approvals but existing pending reviews still exist a countdown of 21 days will start. During
+- 7 day period from the 2nd approval to merging
+- In the event there are 2 approvals but existing pending reviews still exist a countdown of 21 days will start. During
 the countdown period every possible effort must be made to contact the reviewer. If the reviewer cannot be 
 contacted to review the changes within the countdown period, and their requested changes are believed to be addressed, the PR may be landed. This rule is not intended to circumvent
 the policy of consensus when it is known that consensus has not been reached.
