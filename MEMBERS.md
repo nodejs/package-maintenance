@@ -45,3 +45,4 @@
 * Claudio Wunder ([@ovflowd](https://github.com/ovflowd))
 * Leo Balter ([@leobalter](https://github.com/leobalter))
 * Sebastian Beltran ([@bjohansebas](https://github.com/bjohansebas))
+* Chris de Almeida ([@ctcpip](https://github.com/ctcpip))
