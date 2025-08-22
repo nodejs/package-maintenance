@@ -62,20 +62,13 @@ considered as an Administrative member may create an issue or
 contact an Administrative WG member directly. It is not necessary
 to wait for an Administrative WG member to nominate the individual.
 
-For more details refer to the WG Governance document.
+For more details refer to the [WG Governance document](./GOVERNANCE.md).
 
 ## Logistics
 
 ### Meetings
 
-Meetings of the working group typically occur bi-weekly as shown on the
-the node.js project [calendar](https://nodejs.org/calendar).
-A few days before each meeting, an
-[issue](https://github.com/nodejs/package-maintenance/issues)
-will be created with the date and time of the meeting.
-The issue will provide schedule logistics as well as
-an agenda, links to meeting minutes, and
-information about how to join as a participant or a viewer.
+The working group previously held regular meetings, but meetings are no longer scheduled. Records and minutes of previous meetings can be found in the `meetings` folder in this repository.
 
 ### Communications
 
