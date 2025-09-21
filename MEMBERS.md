@@ -47,3 +47,4 @@
 * Sebastian Beltran ([@bjohansebas](https://github.com/bjohansebas))
 * Chris de Almeida ([@ctcpip](https://github.com/ctcpip))
 * Aviv Keller ([@avivkeller](https://github.com/avivkeller))
+* Ethan Arrowood ([@Ethan-Arrowood](https://github.com/Ethan-Arrowood))
