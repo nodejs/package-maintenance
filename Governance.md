@@ -4,10 +4,10 @@
 
 ### WG Membership
 
-#### Regular Members
-
 The package-maintenance team has two levels of membership. Administrative
-members and regular members. 
+members and regular members.
+
+#### Regular Members
 
 If you'd like to be listed as regular team member, open a PR adding yourself
 to [MEMBERS.md](MEMBERS.md) along with a few words on how you are planning
