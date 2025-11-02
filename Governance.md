@@ -5,15 +5,19 @@
 ### WG Membership
 
 The package-maintenance team has two levels of membership. Administrative
-members and regular members. 
+members and regular members.
+
+#### Regular Members
 
 If you'd like to be listed as regular team member, open a PR adding yourself
 to [MEMBERS.md](MEMBERS.md) along with a few words on how you are planning
 to contribute to the team's efforts.
 
+#### Administrative Members
+
 Administrative members take on additional levels of responsibility with
 respect to managing the [pkgjs](https://github.com/pkgjs) organization
-and the other repositories managed by the working group. Administrative
+and the other [repositories managed](#repository-management) by the working group. Administrative
 members should have a long standing involvement in the working group.
 
 Individuals who have made significant contributions and who wish to be
@@ -32,18 +36,9 @@ following the WG's Consensus Seeking Process.
 A WG member may be removed from the WG by voluntary resignation, or by
 consensus of the Administrative WG members.
 
-Changes to Administrative WG membership should be posted in
-the agenda, and may be suggested as any other agenda
-item (see "WG Meetings" below).
+Changes to Administrative WG membership should be proposed in an issue.
 
-If an addition or removal is proposed, this should be raised in an 
-issue, tagged for the next agenda, and consensus should be reached
-in the issue. This is to ensure
-that all Administrative  members are given the opportunity to
-participate in all membership decisions. The addition or removal
-is considered approved once the issue has been open for 2 meetings
-or 14 days whichever is longer, and at least half the Administrative
-members are in favor.
+If an addition or removal is proposed, it should be raised in an issue and consensus should be reached in the issue. This is to ensure that all Administrative members are given the opportunity to participate in all membership decisions. The addition or removal is considered approved once the issue has been open for at least 14 days and there are no objections. If objections are raised, they must be resolved following the WG's Consensus Seeking Process.
 
 No more than 1/3 of the Administrative WG members may be
 affiliated with the same employer. If removal or resignation
@@ -56,33 +51,8 @@ over-represented employer(s).
 
 For the current list of members, see the project [README.md][].
 
-### WG Meetings
-
-The WG meets regularly as scheduled on the Node.js
-[calendar](https://nodejs.org/calendar). Each meeting should be
-published to YouTube.
-
-Items are added to the WG agenda that are considered contentious or
-are modifications of governance, contribution policy, WG membership,
-or release process.
-
-The intention of the agenda is not to approve or review all patches;
-that should happen continuously on GitHub. 
-
-Any community member or contributor can ask that something be added to
-the next meeting's agenda by logging a GitHub Issue. Any Collaborator,
-WG member or the moderator can add the item to the agenda by adding
-the ***package-maintenance-agenda*** tag to the issue.
-
-Prior to each WG meeting the moderator will share the Agenda with
-members of the WG. WG members can add any items they like to the
-agenda at the beginning of each meeting. The moderator and the WG
-cannot veto or remove items.
-
-The moderator is responsible for summarizing the discussion of each
-agenda item and sends it as a pull request after the meeting.
-
 ### Repository Management
+
 All repositories under the management of the package maintenance team must include:
 
 * LICENCE.md from the list approved by the OpenJS Foundation
@@ -242,14 +212,9 @@ the comment anyway to avoid any doubt.
 
 The WG follows a [Consensus Seeking][] decision-making model.
 
-When an agenda item has appeared to reach a consensus the moderator
-will ask "Does anyone object?" as a final call for dissent from the
-consensus.
+When a proposal appears to have reached consensus, consensus should be confirmed in the issue by asking "Does anyone object?" as a final call for dissent.
 
-If an agenda item cannot reach a consensus a WG member can call for
-either a closing vote or a vote to table the issue to the next
-meeting. The call for a vote must be seconded by a majority of the WG
-or else the discussion will continue. Simple majority wins.
+If consensus cannot be reached in the issue, any WG member may call for either a closing vote or a vote to table the issue. If needed, an ad-hoc meeting may be convened to facilitate discussion and decision-making. The call for a vote must be seconded by a majority of the WG or else the discussion will continue. Simple majority wins.
 
 Note that changes to administrative WG membership require
 consensus. If there are any objections to adding or removing
