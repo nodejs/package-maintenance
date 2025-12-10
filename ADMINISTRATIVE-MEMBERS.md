@@ -5,6 +5,7 @@ See [how to join](https://github.com/nodejs/package-maintenance#how-to-join) and
 * Bethany Griggs ([@BethGriggs](https://github.com/bethgriggs))
 * Jordan Harband ([@ljharb](https://github.com/ljharb))
 * Wes Todd ([@wesleytodd](https://github.com/wesleytodd))
+* Sebastian Beltran ([@bjohansebas](https://github.com/bjohansebas))
 
 # Emeritus Administrative Members
 
