@@ -127,6 +127,7 @@ is for there to be:
 - 72 hours since the PR was opened 
 
 #### pkgjs organization
+
 All members of the pkgjs organization will be required to have 2FA enabled, 
 and the repository will be configured to enforce this requirement.
 
@@ -165,14 +166,33 @@ package to the `@pkgjs` org on npm.
 
 ##### Maintainers
 
-Maintainers for the repositories in the Pkgjs repository are managed
-through a team created for each repository.  They will be named as
-[REPO-maintainers](https://github.com/orgs/pkgjs/teams/REPO-maintainers/)
-where REPO is the name of the repository.  Administrative members are given
-the maintainer role these team and can add/remove members as appropriate.
-In addition all maintainers for a given repository can add/remove
-maintainers are given the maintainer role for the teams for which they are
-added and can add/remove members as appropriate.
+Maintainers for repositories in the pkgjs organization follow a "captains"
+and "committers" model.
+
+- **Committers:** Each repository will have a team named
+  [REPO-committers](https://github.com/orgs/pkgjs/teams/REPO-committers/)
+  containing individuals with push access to the repository. Committers are
+  empowered to review, approve, and merge pull requests, manage issues, and
+  carry out day-to-day maintenance activities in accordance with the
+  repository's policies.
+
+- **Captains:** One or more captains provide long-term stewardship and act
+  as the senior maintainers for the repository. Captains are a named team
+  [REPO-captains](https://github.com/orgs/pkgjs/teams/REPO-captains/) and may
+  perform the following duties:
+  - Add and remove committers from the `REPO-committers` team.
+  - Resolve disputes among committers and act as a tie-breaker when
+    consensus cannot be reached.
+  - Make and manage releases for the repository, including creating GitHub
+    releases and publishing packages when appropriate.
+  - Nominate additional captains for repositories they steward.
+
+Administrative members of the package-maintenance working group are given
+the captain role on the `REPO-captains` team and may add or remove captains
+as appropriate. Captains may add or remove committers for the repositories
+they steward. When a repository has a single committer, that committer may
+merge their own pull requests in accordance with the repository's landing
+policy.
 
 ##### Landing PRs
 
