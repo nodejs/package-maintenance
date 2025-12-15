@@ -167,32 +167,26 @@ package to the `@pkgjs` org on npm.
 ##### Maintainers
 
 Maintainers for repositories in the pkgjs organization follow a "captains"
-and "committers" model.
-
-- **Committers:** Each repository will have a team named
-  [REPO-committers](https://github.com/orgs/pkgjs/teams/REPO-committers/)
-  containing individuals with push access to the repository. Committers are
-  empowered to review, approve, and merge pull requests, manage issues, and
-  carry out day-to-day maintenance activities in accordance with the
-  repository's policies.
+model.
 
 - **Captains:** One or more captains provide long-term stewardship and act
-  as the senior maintainers for the repository. Captains are a named team
-  [REPO-captains](https://github.com/orgs/pkgjs/teams/REPO-captains/) and may
-  perform the following duties:
-  - Add and remove committers from the `REPO-committers` team.
-  - Resolve disputes among committers and act as a tie-breaker when
+  as the maintainers for the repository. Captains are a named team
+  [REPO-captains](https://github.com/orgs/pkgjs/teams/REPO-captains/) and are
+  responsible for the maintenance and releases of the repository. Captains
+  hold push access and may perform the following duties:
+  - Review, approve, and merge pull requests, and manage issues in
+    accordance with the repository's policies.
+  - Resolve disputes among contributors and act as a tie-breaker when
     consensus cannot be reached.
   - Make and manage releases for the repository, including creating GitHub
     releases and publishing packages when appropriate.
-  - Nominate additional captains for repositories they steward.
+  - Nominate additional captains for repositories they steward. Nominations
+    must be made by opening a pull request that updates `captains.md` in this repository.
 
 Administrative members of the package-maintenance working group are given
 the captain role on the `REPO-captains` team and may add or remove captains
-as appropriate. Captains may add or remove committers for the repositories
-they steward. When a repository has a single committer, that committer may
-merge their own pull requests in accordance with the repository's landing
-policy.
+as appropriate.
+For the current list of captains for each repository see [captains.md](captains.md).
 
 ##### Landing PRs
 
