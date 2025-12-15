@@ -10,7 +10,7 @@
 - [pkgjs/statusboard](https://github.com/pkgjs/statusboard) — A status page for community projects
 
   - Captains:
-    - 
+    - @bjohansebas
   - Committers:
     - 
 
@@ -45,7 +45,7 @@
 - [pkgjs/nv](https://github.com/pkgjs/nv) — Tool for getting node versions by common aliases
 
   - Captains:
-    - 
+    - @wesleytodd
   - Committers:
     - 
 
@@ -73,35 +73,14 @@
 - [pkgjs/meet](https://github.com/pkgjs/meet) — Create a meeting issue on a schedule
 
   - Captains:
-    - 
-  - Committers:
-    - 
-
-- [pkgjs/.github](https://github.com/pkgjs/.github) — Common GitHub templates and community health files for the @pkgjs organization
-
-  - Captains:
-    - 
+    - @bjohnansebas
   - Committers:
     - 
 
 - [pkgjs/wiby](https://github.com/pkgjs/wiby) — "Will I break you" - a tool for testing dependents
 
   - Captains:
-    - 
-  - Committers:
-    - 
-
-- [pkgjs/design](https://github.com/pkgjs/design) — Design assets for pkgjs
-
-  - Captains:
-    - 
-  - Committers:
-    - 
-
-- [pkgjs/support-separate-repo](https://github.com/pkgjs/support-separate-repo) — Repo required for integration tests from https://github.com/pkgjs/support package
-
-  - Captains:
-    - 
+    - @bjohansebas
   - Committers:
     - 
 
@@ -115,7 +94,7 @@
 - [pkgjs/action](https://github.com/pkgjs/action) — Github Actions tooling for testing Node.js packages
 
   - Captains:
-    - 
+    - @dominykas
   - Committers:
     - 
 
@@ -136,6 +115,6 @@
 - [pkgjs/request-codeowner-review](https://github.com/pkgjs/request-codeowner-review) — 
 
   - Captains:
-    - 
+    - @avivkeller
   - Committers:
     - 
