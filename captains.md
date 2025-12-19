@@ -1,12 +1,12 @@
 # Captains (pkgjs repositories)
 
-- [pkgjs/create-package-json](https://github.com/pkgjs/create-package-json): @wesleytodd
+- [pkgjs/create-package-json](https://github.com/pkgjs/create-package-json): @rxmarbles @wesleytodd
 - [pkgjs/statusboard](https://github.com/pkgjs/statusboard): @bjohansebas @wesleytodd
 - [pkgjs/gh-pages](https://github.com/pkgjs/gh-pages):
 - [pkgjs/support](https://github.com/pkgjs/support): @ljharb
 - [pkgjs/triagebot](https://github.com/pkgjs/triagebot):
-- [pkgjs/create-pkg](https://github.com/pkgjs/create-pkg): @wesleytodd
-- [pkgjs/nv](https://github.com/pkgjs/nv): @ljharb @wesleytodd
+- [pkgjs/create-pkg](https://github.com/pkgjs/create-pkg): @rxmarbles @wesleytodd
+- [pkgjs/nv](https://github.com/pkgjs/nv): @ljharb @rxmarbles @wesleytodd
 - [pkgjs/detect-node-support](https://github.com/pkgjs/detect-node-support): 
 - [pkgjs/membership-updater](https://github.com/pkgjs/membership-updater):
 - [pkgjs/dependents](https://github.com/pkgjs/dependents):
