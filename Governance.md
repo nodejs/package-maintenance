@@ -127,6 +127,7 @@ is for there to be:
 - 72 hours since the PR was opened 
 
 #### pkgjs organization
+
 All members of the pkgjs organization will be required to have 2FA enabled, 
 and the repository will be configured to enforce this requirement.
 
@@ -165,14 +166,27 @@ package to the `@pkgjs` org on npm.
 
 ##### Maintainers
 
-Maintainers for the repositories in the Pkgjs repository are managed
-through a team created for each repository.  They will be named as
-[REPO-maintainers](https://github.com/orgs/pkgjs/teams/REPO-maintainers/)
-where REPO is the name of the repository.  Administrative members are given
-the maintainer role these team and can add/remove members as appropriate.
-In addition all maintainers for a given repository can add/remove
-maintainers are given the maintainer role for the teams for which they are
-added and can add/remove members as appropriate.
+Maintainers for repositories in the pkgjs organization follow a "captains"
+model.
+
+- **Captains:** One or more captains provide long-term stewardship and act
+  as the maintainers for the repository. Captains are a named team
+  [REPO-captains](https://github.com/orgs/pkgjs/teams/REPO-captains/) and are
+  responsible for the maintenance and releases of the repository. Captains
+  hold push access and may perform the following duties:
+  - Review, approve, and merge pull requests, and manage issues in
+    accordance with the repository's policies.
+  - Resolve disputes among contributors and act as a tie-breaker when
+    consensus cannot be reached.
+  - Make and manage releases for the repository, including creating GitHub
+    releases and publishing packages when appropriate.
+  - Nominate additional captains for repositories they steward. Nominations
+    must be made by opening a pull request that updates `captains.md` in this repository.
+
+Administrative members of the package-maintenance working group are given
+the captain role on the `REPO-captains` team and may add or remove captains
+as appropriate.
+For the current list of captains for each repository see [captains.md](captains.md).
 
 ##### Landing PRs
 
