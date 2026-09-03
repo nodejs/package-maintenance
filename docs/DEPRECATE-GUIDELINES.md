@@ -36,7 +36,7 @@ Some criteria to determine if it's unmaintained:
 If you are using a package that meets your requirements but you found issues or need enhancements, then these are some actions you can follow:
 
 - Note the deprecation messages during `npm install` and follow the instruction if the message offered any.
-- Check the package's npm page at `https://www.npmjs.com/package/<package-name>`. ie: <https://www.npmjs.com/package/express>
+- Check the package's npm page at `https://www.npmjs.com/package/<package-name>`. i.e.: <https://www.npmjs.com/package/express>
   - Check the "last publish" date and versions history to get a sense of its latest activity. Note that you may want to `npm show $package time` to see all the published versions and times, regardless of their dist-tag setting.
   - Check if its `package.json` has a `support` field that indicates its support status.
   - Open the "repository" link if it has one to view development activities (you can run `npm repo $package` to do this as well)
@@ -60,7 +60,7 @@ When you've opened the package's repo, to further check development activities:
   - if npm audit identified vulnerabilities that are critical
   - if package fails to install/build for an LTS release of node.js
 
-- Check last activity on github issues and PRs. If there're no responses within some reasonable time to high priority issues or PRs, then consider the package as an unmaintained candidate.
+- Check last activity on github issues and PRs. If there are no responses within some reasonable time to high priority issues or PRs, then consider the package as an unmaintained candidate.
 
 #### Taking Further Actions
 
@@ -84,11 +84,11 @@ If you own a package and you want to stop maintaining it, then please help your 
 #### `npm deprecate` command
 
 - npm has the "deprecate" command, you can utilize this.
-- You can use semvers to deprecate a range. ie: `npm deprecate package@^1.0.0`
+- You can use semvers to deprecate a range. i.e.: `npm deprecate package@^1.0.0`
 - deprecate your latest version with a message that includes `"abandoned and unmaintained"`.
   - It allows updating the message so you can change it later - verified as of 02/05/2019
   - It can be undone by setting an empty message.
-    - ie: `npm deprecate package@1.0.0 ""`
+    - i.e.: `npm deprecate package@1.0.0 ""`
 - Please consider marking an old version with critical issues or vulnerabilities as deprecated.
 
 #### Mark abandoned/unmaintained
@@ -106,6 +106,6 @@ If you own a package and you want to stop maintaining it, then please help your 
 
 ### Further Ideas and Tools
 
-There are some ongoing discussion related to npm to make managing unmaintained packages easier.
+There are some ongoing discussions related to npm to make managing unmaintained packages easier.
 
 - Package override RFC https://github.com/aeschright/rfcs/blob/ca127d7c5fb7ecde534172d771351c0b8f819e79/accepted/0009-package-overrides.md
