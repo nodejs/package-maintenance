@@ -7,7 +7,7 @@ As a project grows and contributions and activity start to increase, establishin
 The aim of this document is to provide thoughts and recommendations to project maintainers for ways they can organize, document, and ultimately establish a Governance model that can be applied to their own project's needs.
 
 ## Vision
-It is always helpful to include a section that clearly states the solution space / objectives of the project.  This helps introduce the overarching vision of the project and help contextualize all further decision making.  (technical or otherwise).  Articulating the "why" of the project helps ensure maintainers and contributors alike are aligned on the direction of the project as so is a good candidate to put first.
+It is always helpful to include a section that clearly states the solution space / objectives of the project.  This helps introduce the overarching vision of the project and help contextualize all further decision making (technical or otherwise).  Articulating the "why" of the project helps ensure maintainers and contributors alike are aligned on the direction of the project as so is a good candidate to put first.
 
 ## Team Organization
 
@@ -26,7 +26,7 @@ This is helpful for maintainers because they wouldn't have to clone a fork to te
 > _As with owners and maintainers, enumerating the privileges and permissions of this group would also be recommended._
 
 ## Project Organization
-There can be different models for how the project is structured / distributed and how the team is organized. This may the case with projects that use a monorepo structure or have a plugin like architecture, and are often building on top of a "core" or "cli" base package (`peerDependency` model).  As projects expand horizontally and vertically, delegating maintainers to oversee sections of code or packages in your project can help with scaling communication and ownership, in particular in regards to issue triage and PR reviews.  In addition, this helps build up subject matter expertise.
+There can be different models for how the project is structured / distributed and how the team is organized. This may be the case with projects that use a monorepo structure or have a plugin like architecture, and are often building on top of a "core" or "cli" base package (`peerDependency` model).  As projects expand horizontally and vertically, delegating maintainers to oversee sections of code or packages in your project can help with scaling communication and ownership, in particular in regards to issue triage and PR reviews.  In addition, this helps build up subject matter expertise.
 
 If your project groups multiple related packages (e.g. _transforms_, _middleware_, _plugins_, etc), consider how to govern those projects as they fan outwards, in particular when it comes to managing breaking changes, new APIs, and how that all cascades downstream to the users of the core package.
 
@@ -36,7 +36,7 @@ If your project groups multiple related packages (e.g. _transforms_, _middleware
 ## Technical Organization
 
 ### Code Quality 
-If the project has a preferred style guide, coding conventions, or other general rules around code quality, documenting those can be a good courtesy to those first time contributors to your project.  This can help prepare  contributions for such "housekeeping" tasks like minding the projects linting and formatting rules, expectations around writing unit test, or necessity around writing / updating documentation.
+If the project has a preferred style guide, coding conventions, or other general rules around code quality, documenting those can be a good courtesy to those first time contributors to your project.  This can help prepare  contributions for such "housekeeping" tasks like minding the projects linting and formatting rules, expectations around writing unit tests, or necessity around writing / updating documentation.
 
 ### RFC Process
 It's often good to segment off, or flag certain issues as `RFC` in particular to communicate important changes, potentially breaking, that are deserving of deeper conversation and analysis.  Standing for [_"Request for Comment"_](https://en.wikipedia.org/wiki/Request_for_Comments), it is a good way to initiate high level changes to the project that can be set aside and reviewed periodically by the maintainers, or can be used by the maintainers to communicate back outwards to the community.

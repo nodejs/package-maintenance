@@ -26,11 +26,11 @@ These guidelines exist to help package owners with some practices on managing pa
 | publish config                 | [`publishConfig`]           | Helpful if you need to publish to a different registry    |
 | publish package                | [`npm publish`]             | Actually publish the package                              |
 | search/view published packages | [public registry]           | [for example](https://www.npmjs.com/package/npm)          |
-| filter publish files           | [`.npmignore`] or [`files`] | Use one base on your preference                           |
+| filter publish files           | [`.npmignore`] or [`files`] | Use one based on your preference                          |
 
 ### `.npmignore` or `files`
 
-[npm] has default ignore rules and loads from `.gitignore` but it also offer two methods for you to keep your published packages tidy.
+[npm] has default ignore rules and loads from `.gitignore` but it also offers two methods for you to keep your published packages tidy.
 
 - blacklisting - specifying ignore files in `.npmignore`
 - whitelisting - specifying files you only want to publish with `files` in your `package.json`.
